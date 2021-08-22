@@ -108,7 +108,8 @@
   
     <script async defer data-domain="snooozeworks.com" src="https://plausible.io/js/plausible.js"></script>
     
-  {% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}</head> 
+  {% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}  {% render 'judgeme_core' %}
+</head> 
 
   <body class="prestige--v4 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
 {% capture the_snippet_content %}{% render 'socialshopwave-helper' %}{% endcapture %}
