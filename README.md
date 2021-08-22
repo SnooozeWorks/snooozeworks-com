@@ -6,7 +6,6 @@ All updates made here will appear on the live website.
 ### Information
 * Latest Version: 2.10
 * Updated: 08.22.2021
-* Dev: Daniel Watts
 
 ### Features
 * Fully Liquid, created specifically for the Shopify Theme System
