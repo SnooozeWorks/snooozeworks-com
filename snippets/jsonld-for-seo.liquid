@@ -3,7 +3,7 @@
 
   It could be updated from time to time as I add new JSON-LD features, so it should
   not be edited. If you run into an issues, or would like to request a JSON-LD feature,
-  please contact me at shopify@littlestreamsoftware.com.
+  please contact me at support@ilanadavis.com.
 
   Thanks!
 
@@ -301,6 +301,9 @@
   {% when 'judge-me' %}
     {%- assign jsonld_review_count = jsonld_for_seo_product.metafields.judgeme.badge | split: "data-number-of-reviews='" | last | split: "'" |first | plus: 0 -%}
     {%- assign jsonld_review_value = jsonld_for_seo_product.metafields.judgeme.badge | split: "data-average-rating='" | last | split: "'" |first | plus: 0 -%}
+  {% when 'rivyo' %}
+    {%- assign jsonld_review_value = jsonld_for_seo_product.metafields.product_schema.th_ratingValue %}
+    {%- assign jsonld_review_count = jsonld_for_seo_product.metafields.product_schema.th_ratingCount %}
   {% else %}
     {%- assign jsonld_review_value = "" %}
     {%- assign jsonld_review_count = "" %}
@@ -484,6 +487,12 @@
     "description": "Okendo.io reviews",
     "ratingValue": {{ jsonld_for_seo_product.metafields.okendo.ReviewAverageValue }},
     "ratingCount": {{ jsonld_for_seo_product.metafields.okendo.ReviewCount }}
+  }{% elsif jsonld_for_seo_product.metafields.product_schema.th_ratingCount and jsonld_for_seo_product.metafields.product_schema.th_ratingCount != "0" and jsonld_for_seo_product.metafields.product_schema.th_ratingCount != 0 %},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "description": "Rivyo",
+    "ratingValue": {{ jsonld_for_seo_product.metafields.product_schema.th_ratingValue }},
+    "ratingCount": {{ jsonld_for_seo_product.metafields.product_schema.th_ratingCount }}
   }{% elsif jsonld_for_seo_product.metafields.judgeme.badge and jsonld_for_seo_product.metafields.judgeme.badge != blank %}
     {%- assign jsonld_review_count = jsonld_for_seo_product.metafields.judgeme.badge | split: "data-number-of-reviews='" | last | split: "'" |first | plus: 0 -%}
     {%- assign jsonld_review_value = jsonld_for_seo_product.metafields.judgeme.badge | split: "data-average-rating='" | last | split: "'" |first | plus: 0 -%}
@@ -509,7 +518,7 @@
 {% else %}
   {% assign jsonld_render_article = false %}
 {% endif %}
-{% if jsonld_render_article %}
+{% if jsonld_render_article and jsonld_for_seo_object != nil %}
 <script type="application/ld+json">
 {
   "@context": "{{ jsonld_for_seo_protocol }}schema.org",
