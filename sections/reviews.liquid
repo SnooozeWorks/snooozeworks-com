@@ -1,0 +1,49 @@
+{%- if section.settings.show_section -%}
+
+  <section class="Section Section--spacingNormal Container--narrow Judge__Reviews" data-section-id="{{ section.id }}" data-section-type="product-reviews" data-section-settings='{{ section_settings }}'>
+    {%- if section.settings.heading != blank -%}
+      <header class="SectionHeader SectionHeader--center">
+        <div class="Container">
+          <h2 class="SectionHeader__Heading Heading u-h2" style="font-size: 28px !important;">{{ section.settings.heading | escape }}</h2>
+        </div>
+      </header>
+    {%- endif -%}
+
+      {% capture the_snippet_reviews %}
+        {% include 'socialshopwave-widget-recommends' with 1 %}
+      {% endcapture %}
+    
+		{% unless the_snippet_reviews contains 'Liquid error' %}
+    
+    	{{ the_snippet_reviews }}
+    
+	  {% endunless %}
+
+  </section>
+
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Reviews",
+    "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_section",
+      "label": "Show section",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Customer Reviews"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

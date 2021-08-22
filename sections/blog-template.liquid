@@ -1,0 +1,142 @@
+<div id="section-{{ section.id }}" class="Section Page_Container" data-section-id="{{ section.id }}" data-section-type="article-list">
+  {%- if blog.articles_count == 0 -%}
+    <div class="EmptyState">
+      <div class="Container">
+        <h1 class="EmptyState__Title Heading u-h5">{{ 'blog.general.no_articles' | t: blog_title: blog.title }}</h1>
+        <a href="/" class="EmptyState__Action Button Button--primary">{{ 'blog.general.empty_button' | t }}</a>
+      </div>
+    </div>
+  {%- else -%}
+
+  <div class="PageHeader_Blog">
+    {% if section.settings.show_title %}
+      <div class="Page_Header_H1">{{- section.settings.title | escape -}}</div>
+      <div class="Page_Header_Subtitle">{{- section.settings.subtitle | escape -}}</div>
+    {% endif %}      
+  </div>
+     
+  <div class="Blog">
+    
+    {% if section.settings.show_title %}
+      <div class="Blog__Title">
+          <h1 class="SectionHeader__Heading Heading u-h1">
+            {{- section.settings.title | escape -}}
+          </h1>
+      </div>
+    {% endif %}
+    
+    {%- if section.settings.show_menu -%}
+      <ul class="Blog__TagList HorizontalList HorizontalList--spacingExtraLoose">
+        {%- for link in linklists.blog.links -%}
+          <li class="HorizontalList__Item">
+            <a href="{{ link.url }}" class="Heading Link Link--primary Text--subdued u-h6 {% if link.current == true %}is-active{% endif %}">{{ link.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+    
+  </div>
+
+    {%- assign articles_per_page = 6 -%}
+    {%- paginate blog.articles by articles_per_page -%}
+
+    <div class="Blog__Grid">
+      {%- for article in blog.articles -%}
+        <div class="Blog__Item">
+            {%- include 'blog-template-item', article: article -%}
+        </div>
+      {%- endfor -%}
+    </div>
+
+      {%- include 'pagination' -%}
+    {%- endpaginate -%}
+
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Blog page",
+  "settings": [
+  {
+    "type": "header",
+    "content": "Heading and Navigation"
+  },
+  {
+     "type": "text",
+     "id": "title",
+     "label": "Heading",
+     "default": "Blog posts"
+   },
+   {
+     "type": "text",
+     "id": "subtitle",
+     "label": "Subtitle",
+     "default": "Product Launches, Sounds of the Studio, Monthly Updates, and more"
+   },
+   {
+     "type": "checkbox",
+     "id": "show_title",
+     "label": "Show Title",
+     "default": true
+   },
+   {
+     "type": "checkbox",
+     "id": "show_rss",
+     "label": "Show RSS",
+     "default": false
+   },
+   {
+     "type": "checkbox",
+     "id": "show_menu",
+     "label": "Show Blog Navigation",
+     "default": true
+   },
+   {
+     "type": "header",
+     "content": "Article"
+   },
+   {
+     "type": "checkbox",
+     "id": "show_category",
+     "label": "Show article category",
+     "info": "The first article's tag is used as the main category.",
+     "default": false
+  },
+  {
+    "type": "checkbox",
+    "id": "show_date",
+    "label": "Show Article Date",
+    "default": true
+  },
+  {
+    "type": "checkbox",
+    "id": "show_readtime",
+    "label": "Show Estimated Reading Time",
+    "default": true
+  },
+  {
+    "type": "checkbox",
+    "id": "show_excerpt",
+    "label": "Show Article Excerpt",
+    "default": true
+  },
+  {
+    "type": "header",
+    "content": "Button"
+  },
+  {
+    "type": "checkbox",
+    "id": "show_button",
+    "label": "Show Read More Button",
+    "default": true
+  },
+  {
+    "type": "text",
+    "id": "button_label",
+    "label": "Button Label",
+    "default": "Read More"
+  }
+]
+}
+{% endschema %}

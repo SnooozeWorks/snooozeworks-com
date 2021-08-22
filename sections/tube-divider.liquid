@@ -1,0 +1,99 @@
+<section id="section-{{ section.id }}" class="tubeDivider">
+  {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+
+  <div class="FlexboxIeFix">
+    <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter Image--lazyLoad Image--zoomOut" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1' }})"{% endif %}>
+      <div class="ImageHero__ImageWrapper">
+        <div class="ImageHero__Image ImageHero__Image--parallax Image--lazyLoad Image--zoomOut  {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
+             data-optimumx="1.4"
+             data-expand="-150"
+             {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+        </div>
+
+        <noscript>
+          <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background-image: url({{ section.settings.image | img_url: '1000x' }})"></div>
+        </noscript>
+
+        {%- unless section.settings.image != blank -%}
+          <div class="PlaceholderBackground PlaceholderSvg--dark">
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+          </div>
+        {%- endunless -%}
+      </div>
+
+      <div class="ImageHero__ContentOverlay">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #section-{{ section.id }},
+  #section-{{ section.id }} .Heading {
+    color: {{ section.settings.text_color }};
+  }
+
+  #section-{{ section.id }} .Form__Submit {
+    border-color: {{ section.settings.text_color }};
+    color: {{ section.settings.button_color }};
+  }
+
+  #section-{{ section.id }} .Form__Submit::before {
+    background-color: {{ section.settings.text_color }};
+  }
+
+  @media (-moz-touch-enabled: 0), (hover: hover) {
+    #section-{{ section.id }} .Form__Submit:hover {
+      color: {{ section.settings.text_color }};
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Tube Divider",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_size",
+      "label": "Section size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "small"
+    },   
+    {
+      "type": "checkbox",
+      "id": "apply_overlay",
+      "label": "Apply overlay on image",
+      "info": "This can improve text visibility.",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1500 x 800px .jpg recommended"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Tube Divider",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,170 @@
+<div class="Page_Container">
+  
+  	<div class="PageHeader_Story">
+    	<div class="Page_Header_H1">OUR STORY</div>
+      <div class="Page_Header_Subtitle">A brief tale of SnooozeWorks</div>
+ 	</div>
+    
+  <div class="PageSection_1">
+      
+    <div class="Section_H1 slideanim">The Beginning</div>
+      <div class="Section_Paragraph slideanim">
+        <p class="Section_Text">
+          
+        	It's been four years since SnooozeWorks was started as a side project. It quickly morphed into something so much more, 
+            and given opportunities for personal, professional, and spiritual growth. My name is Daniel, and I started SnooozeWorks 
+            in late 2016 as a creative outlet, and an avenue to release some of the pieces that I had been creating.
+          
+			<br /><br />
+          
+        	It all started with a single poster design, building into nearly 500 products across a multitude of types and styles. 
+            Throughout the first two years,  I worked full-time during the day, in addition to attending University full-time in 
+            pursuit of a Bachelor's degree in Graphic Design. It was a lot of late nights and early mornings designing, printing, 
+            making, attending to customer service, taking care of finances. Crazy long work weeks, but SnooozeWorks was my reprieve. 
+            It quickly become a passion, and it felt like I was living in a dream when orders started coming in.
+          
+        </p>
+      </div>
+  </div>
+
+  <div class="PageSection_2">
+      
+      <div class="Section_H1 slideanim">Going Full-Time</div>
+      <div class="Section_Paragraph slideanim">
+        <p class="Section_Text">
+          
+          Eventually, I decided to take this passion, and double down. It was time to put my full focus into this business. 
+          It was a risk, but it was worth it. Taking the forty hours from my day job and putting them into SnooozeWorks 
+          allowed me to add product lines, redesign storefronts and the website, and expanding the amount of products that we could sell.
+		
+          <br /><br />
+           
+          None of this wouldn be possible without the help of those around us, particularly the families and friends who listen to our 
+          ramblings and are the first to see things we're working on. The shop puppy, Loki, and two furbabies, Slugger and Baxter, are equally 
+          helpful in listening while we pace around and think outloud at all hours. The support around SnooozeWorks is crazy, and
+          it's made diving head first into this so much better.
+          
+        </p>
+      </div>
+  </div>
+  
+  <div class="PageSection_1">
+      
+      <div class="Section_H1 slideanim">Moving Forward</div>
+      <div class="Section_Paragraph slideanim">
+        <p class="Section_Text">
+          
+          It's 2020! We're well into the new year and SnooozeWorks has lots of plans! The year started with some new equipment,
+          namely the Canon TA-20 printer and the Sawgrass SG400 sublimation printer. These two have revolutionized how efficiently
+          we can work, while providing an unbelieveable boost to our overall product quality. Since then, we've added new HUGE poster sizes, 
+          all the way up to 24"x36", premium vinyl stickers, tons of new designs and gift cards. We have some new products in 
+          the pipeline, and maybe a few more surprises along the way!
+          
+		  <br /><br />
+          
+		  Rest assured, we have a ton of stuff planned for this year and beyond! With your help and support, we look forward to 
+          crushing the start of the Roaring Twenties! If you'd like to keep up with all the new stuff we're coming up with, please
+          feel free to join our Newsletter. It goes out once per month, that's the only email you'll ever get from us! Each monthly
+          newsletter includes a little promo code for you, too!
+        
+        </p>
+        
+    </div>
+  </div>
+  
+    <div class="PageSection_2">
+     
+    <div class="Section_H1 slideanim">
+      
+      Newsletter
+      
+    </div>
+    
+    <div class="Section_Paragraph slideanim">
+      
+      <span class="Section_Subtitle">
+        Join our mailing list to get notified of new products, discount codes, various promotions, and 
+        some behind-the-scenes stuff. It drops once per month and always include a little discount code to thank you for being a member!
+      </span>
+            
+      {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form' -%}
+         {%- if form.posted_successfully? -%}
+           <p class="Form__Alert Alert Alert--success">{{ 'footer.newsletter.success' | t }}</p>
+           {%- else -%}
+           {%- if form.errors -%}
+           <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+           {%- endif -%}
+
+           <input type="hidden" name="contact[tags]" value="newsletter">
+           <input type="email" name="contact[email]" class="Form__Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+           <button type="submit" class="Form__Submit Button Button--primary">{{ 'footer.newsletter.submit' | t }}</button>
+         {%- endif -%}
+       {%- endform -%}
+       
+    </div>
+  </div>
+  
+    
+  <div class="PageSection_1" id="instagram">
+     
+    <div class="Section_H1 slideanim">
+      Instagram
+      <br />
+      <span class="Section_Subtitle">To see out more, follow us at <a href="https://instagram.com/snooozeworks" target="_blank">snooozeworks</a></span>
+    </div>
+    
+    <div class="Section_Paragraph slideanim">
+      <div id="insta-feed"></div>
+       
+    </div>
+  </div>
+  
+  {% comment %}
+  
+    <div class="PageSection_2">
+     
+    <div class="Section_H1 slideanim">
+      Where to find us
+      <br />
+      <span class="Section_Subtitle">We're located in the small coastal town of Dover, NH.</span>
+    </div>
+    
+    <div class="Section_Paragraph slideanim">
+     
+      <div id="map"></div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<script>
+
+function initMap() {
+
+  var snooozeWorks = {
+    lat: 43.2020685,
+    lng: -70.8763372
+  };
+
+  var map = new google.maps.Map(
+    document.getElementById('map'), {
+      zoom: 14,
+      center: snooozeWorks,
+      mapId: '2ebec432ba8da0e7',
+      disableDefaultUI: true,
+    });
+
+  var marker = new google.maps.Marker({
+    position: snooozeWorks,
+    map: map
+  });
+}
+  
+</script>
+
+<script defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEYwCtBJ56Re3zx5_JK6ld4oNhewutw4M&map_ids=2ebec432ba8da0e7&callback=initMap">
+</script>
+
+{% endcomment %}

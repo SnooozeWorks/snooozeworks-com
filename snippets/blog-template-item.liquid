@@ -1,0 +1,52 @@
+<article class="ArticleItem" {% if block %}{{ block.shopify_attributes }}{% endif %}>
+
+  <div class="Article--Item">
+  {%- if article.image != blank -%}
+    {%- include 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image: article.image -%}
+    {%- assign image_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+    <a class="ArticleItem__ImageWrapper AspectRatio AspectRatio--withFallback" style="background: url({{ article.image | img_url: '1x1', format: 'jpg' }}); padding-bottom: 58%; --aspect-ratio: 1.3" href="{{ article.url }}">
+      <img class="ArticleItem__Image Image--lazyLoad Image--fadeIn"
+           data-src="{{ image_url }}"
+           data-widths="[{{ supported_sizes }}]"
+           data-sizes="auto"
+           alt="{{ article.image.alt | escape }}">
+
+      <noscript>
+        <img class="ArticleItem__Image" src="{{ article.image | img_url: '600x' }}" alt="{{ article.image.alt | escape }}">
+      </noscript>
+    </a>
+  {%- endif -%}
+  </div>
+
+        <div class="Article--Item">
+          {%- if section.settings.show_category and article.tags != empty -%}
+          <span class="ArticleItem__Category Heading u-h6 Text--subdued">{{ article.tags.last }}</span>
+          {%- endif -%}
+          {%- if section.settings.show_date -%}
+          <span class="ArticleItem__Date Heading u-h6 Text--subdued">{{ article.published_at | date: "%m.%d.%Y" }}</span>
+          {%- endif -%}
+        </div>
+
+        <div class="Article--Item">
+        <h2 class="ArticleItem__Title Heading u-h2">
+          <a href="{{ article.url }}">{{ article.title }}</a>
+        </h2>
+      </div>
+      <div class="Article--Item">
+          {%- if section.settings.show_excerpt -%}
+          <p class="ArticleItem__Excerpt Truncate">{{ article.excerpt }}</p>
+          {%- endif -%}
+      </div>
+      <div class="Article--Item">
+        {%- if section.settings.show_readtime -%}
+        <p class="ArticleItem__Excerpt"><strong>Estimated Reading Time:</strong> {{ article.tags.first }}</p>
+        {%- endif -%}
+      </div>
+        <div class="Article--Item">
+          {%- if section.settings.show_button -%}
+          <a href="{{ article.url }}" target="_self" class="Button Button--primary">{{ section.settings.button_label }}</a>
+          {%- endif -%}
+      </div>
+
+</article>

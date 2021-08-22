@@ -1,0 +1,91 @@
+#review_title {
+  display: none;
+}
+
+.spr-review-header-title {
+  display: none;
+}
+
+.spr-review-header-byline::before {
+  content: "Reviewed by: ";
+}
+
+.spr-badge {
+  float: right !important;
+  margin-top: -30px !important;
+}
+
+.spr-badge-caption::before {
+  content: "| ";
+}
+
+@media only screen and (max-width: 1007px) {
+  .spr-badge {
+    float: none !important;
+    margin-top: 20px !important;
+  }
+}
+
+.spr-summary-actions {
+  display: flex !important;
+  align-items: stretch !important;
+  width: 100% !important;
+}
+
+.spr-pagination-next {
+  flex: 1 !important;
+}
+
+.spr-summary-actions-newreview {
+  flex: 1 !important;
+}
+
+@media only screen and (max-width: 1007px) {
+  .spr-summary-actions {
+    display: block !important;
+    flex: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1007px) {
+  .spr-badge {
+    flex: 0 !important;
+  }
+}
+
+.spr-review {
+  border-top: 1px solid #d5d5d5 !important;
+  padding: 20px 0 !important;
+}
+
+.spr-review-content {
+  padding: 15px 0 !important;
+}
+
+/*** Collection Page Review Badges ***/
+
+@media only screen and (min-width: 1008px) {
+	#badge .spr-badge {
+  		padding-top: 35px !important;
+  		float: none !important;
+		}
+    #badge .spr-badge-caption::before {
+  		content: " ";
+		}
+}
+
+@media only screen and (min-width: 1008px) {
+	#badge .spr-badge-caption {
+  		text-align: center !important;
+    	}
+}
+
+@media only screen and (min-width: 1008px) {
+	#badge .spr-badge-starrating {
+  		margin: 0 !important;
+}
+  
+@media only screen and (max-width: 1007px) {
+	#badge .spr-badge {
+  		margin-top: 0px !important;
+}
