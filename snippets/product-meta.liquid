@@ -35,10 +35,14 @@
       {%- else -%}
         <span class="ProductMeta__Price Price Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
       {%- endif -%}
+  
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
+
 
   </div>
-
+  {% comment %}
   <a href="#ProductAside" title="More Information"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></a>
+  {% endcomment %}
     
   {%- endif -%}
 
