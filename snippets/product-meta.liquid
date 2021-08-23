@@ -36,15 +36,11 @@
         <span class="ProductMeta__Price Price Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
       {%- endif -%}
   
-	 {% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-profile' %}{% endcapture %}
-  	   {% unless the_snippet_review_avg contains 'Liquid error' %}
-       {{ the_snippet_review_avg }}
-     {% endunless %}
 
   </div>
-  {% comment %}
+
   <a href="#ProductAside" title="More Information"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></a>
-  {% endcomment %}
+
     
   {%- endif -%}
 
