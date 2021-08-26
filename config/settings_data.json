@@ -225,11 +225,11 @@
         "type": "popup",
         "settings": {
           "show_popup": true,
-          "show_only_on_index": true,
+          "show_only_on_index": false,
           "show_only_for_visitors": true,
           "show_only_once": true,
           "title": "Pst... Do you want 10% off?",
-          "content": "<p>Drop your email in the box below to subscribe to our mailing list. <\/p><p>We&#x27;ll send you a <strong>promo code <\/strong>right away!<\/p>",
+          "content": "<p>Drop your email in the box below to subscribe to our mailing list. <\/p><p>We'll send you a <strong>promo code <\/strong>right away!<\/p>",
           "show_newsletter": true,
           "apparition_delay": 3
         }
