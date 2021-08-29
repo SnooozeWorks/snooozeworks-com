@@ -109,9 +109,6 @@
 </head> 
 
   <body class="prestige--v4 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
-
-
-    
     
     <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
     <span class="LoadingBar"></span>
@@ -139,13 +136,6 @@
     <!-- This line added automatically by JSON-LD for SEO. -->
     {% include 'jsonld-for-seo' %}
 
-    {% render "afterpay" %}
-<!-- This line added automatically by JSON-LD for SEO. -->{% include 'jsonld-for-seo' %}
-{% include 'appikon-discounts' %}
-{% render 'special-offers' %}
-
-
-{%render 'sc-quantity-break'%}
 </body>
 </html>
 
