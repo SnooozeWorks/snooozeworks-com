@@ -84,7 +84,7 @@
     </script>
 
     <script src="{{ 'lazysizes.min.js' | asset_url }}" defer></script>
-<!--     <script src="https://js.afterpay.com/afterpay-1.x.js" async></script> -->
+
     {% if settings.currency_conversion_enabled %}
       <script src="//cdn.shopify.com/s/javascripts/currencies.js" defer></script>
     {% endif %}
@@ -99,22 +99,18 @@
     <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
     <script src="{{ 'float-panel.js' | asset_url }}" defer></script>
     <script src="{{ 'flipdown.js' | asset_url }}" defer></script>
+
     {% comment %}
     {% include 'microdata-schema' %}
     {% endcomment %}
 
+    {% render 'judgeme_core' %}
 
-  
-    <script async defer data-domain="snooozeworks.com" src="https://plausible.io/js/plausible.js"></script>
-    
-  {% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}  {% render 'judgeme_core' %}
 </head> 
 
   <body class="prestige--v4 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
-{% capture the_snippet_content %}{% render 'socialshopwave-helper' %}{% endcapture %}
-            {% unless the_snippet_content contains 'Liquid error' %}
-              {{ the_snippet_content }}
-            {% endunless %}
+
+
     
     
     <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
