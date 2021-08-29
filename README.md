@@ -3,6 +3,7 @@
 This theme is connected to the official SnooozeWorks.com storefront.
 
 All updates made here will appear on the live website.
+
 ## Information
 
 * Latest Version: 3.02
