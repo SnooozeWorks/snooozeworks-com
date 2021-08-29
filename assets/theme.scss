@@ -12552,7 +12552,7 @@ $vertical-spacing-two-products-per-row  : 0px;
  * ----------------------------------------------------------------------------
  */
 
-/*** -- Shipping Calculator Plus Customization -- INACTIVE
+/* Shipping Calculator Plus Customization
 
 .cbb-shipping-rates-calculator {
   margin-top: 0px !important;
@@ -12626,10 +12626,11 @@ $vertical-spacing-two-products-per-row  : 0px;
   display: block !important;
 }
 
---- **/
+*/
 
-  
-/*** -- CUSTOM PAGES -- ***/
+/******************
+// CUSTOM PAGES
+******************/
 
 @font-face {
   font-family: "Poppins-Bold";
@@ -12637,7 +12638,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 }
 
 
-/*** -- Header Banners -- ***/
+// Header Banners
 
 .Page_Container {
   width: 100%;
@@ -12714,7 +12715,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 }
 
 
-/*** -- Header Typography -- ***/
+// Header Typography
 
 .Page_Header_H1 {
   font-size: to-size(60px);
@@ -12757,7 +12758,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   }
 }
 
-/*** -- Sections -- ***/
+// Sections
 
 .PageSection_1 {
   background-color: #fff;
@@ -12769,7 +12770,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   padding: 55px 0;
 }
 
-/*** -- Typography -- ***/
+// Typography
 
 .Section_H1 {
   font-size: to-size(25px);
@@ -12860,7 +12861,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   }
 }
 
-/*** -- Newsletter Section - Story Page -- ***/
+// Newsletter Section - Story Page
 
 .Section_Paragraph .Form__Input {
   width: 70%;
@@ -12889,14 +12890,16 @@ $vertical-spacing-two-products-per-row  : 0px;
   }
 }
 
-/*** -- Google Maps -- ***/
+/* Google Maps
 
 #map {
   height: 500px;
   width: 100%;
  }
 
-/*** -- Featured Collections -- ***/
+*/
+
+// Featured Collections
 
 .ProductItem__Info .ProductItem__Title {
   width: 60%;
@@ -12977,7 +12980,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     }
 }
 
-/*** -- Featured Product Section -- ***/
+// Featured Product Section
 
 .featured_product_title {
   display: inline-block;
@@ -13026,7 +13029,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   margin-top: 15px;
 }
 
-/*** -- Sales Notification Popup -- ***/
+// Sales Notification Popup 
 
 .sn-info-wrapper a {
   overflow: hidden;
@@ -13040,7 +13043,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   color: #fff3f1;
 }
 
-/*** --- Size Buttons and Color Swatches -- ***/ 
+// Size Buttons and Color Swatches
 
 .ColorSwatch--large {
   width: 60px;
@@ -13056,7 +13059,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   flex-basis: 150px !important;
 }
 
-/*** -- Shopify Reviews -- ***
+/* Shopify Reviews
 
 
 #review_title {
@@ -13157,18 +13160,6 @@ $vertical-spacing-two-products-per-row  : 0px;
     } 
 }
 
-/*** -- Afterpay -- ***/
-
-.afterpay-product {
-  text-align: center;
-  margin: 0 auto;
-}
-
-@include av-mq('tablet-and-up'){
-	.afterpay-paragraph {
-      padding: 10px 0 !important;
-	}
-}
 
 /*** -- Judge.Me Reviews -- ***/
 
