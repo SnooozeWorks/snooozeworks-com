@@ -1,17 +1,19 @@
 # SnooozeWorks Live Theme
 
-This theme is connected to the official SnooozeWorks.com storefront.<br />
+This theme is connected to the official SnooozeWorks.com storefront.
+
 All updates made here will appear on the live website.
+## Information
 
-### Information
-* Latest Version: 2.10
-* Updated: 08.22.2021
+* Latest Version: 3.02
+* Updated: 08.29.2021
 
-### Features
+## Features
+
 * Fully Liquid, created specifically for the Shopify Theme System
 * Built-in Chat and Review systems
 * Optimized for Desktop, Tablet, and Mobile Devices
 
-### Questions
+## Questions
 
 Join our [Discord](https://discord.gg/MH2JCMwcnr) with any questions, concerns, or recommendations.
