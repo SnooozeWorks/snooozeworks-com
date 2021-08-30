@@ -77,7 +77,7 @@
             <div class="Cart__Recap">
 
               {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
-
+				<div id="af-cart-subtotal"></div>
               <span class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: 
               <span data-money-convertible>{{ cart.total_price | money_without_trailing_zeros }}</span>
 			  </span>
@@ -131,6 +131,7 @@
       <div id="also__bought"></div>
     </div>
   {%- endif -%}
+  
 </section>
 
 {% schema %}
