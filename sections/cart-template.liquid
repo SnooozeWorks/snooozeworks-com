@@ -78,7 +78,12 @@
 
               {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
 
-
+              <span class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: 
+				<span class="saso-cart-original-total"><span data-money-convertible>{{ cart.total_price | money_without_trailing_zeros }}</span>
+              </span>
+				<span class="saso-cart-total"></span>
+				</span>
+              </span>
               
               <div class="route-div"></div>
               
