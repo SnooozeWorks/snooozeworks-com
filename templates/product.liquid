@@ -1,3 +1,13 @@
+
+<!-- Custom-Collections-Builder -->
+<script> 
+ const easy_collections = {}; 
+easy_collections.baseUrl='https://www.easy-collections.com';
+easy_collections.productId = '{{product.id}}';
+easy_collections.shop = 'snooozeworks.myshopify.com'; 
+</script>
+<script src="{{ 'easy-coll-client.js' | asset_url }}"></script>
+<!-- Custom-Collections-Builder end -->
 {% section 'product-template' %}
 {% section 'reviews' %}
 {% section 'tube-divider' %}
