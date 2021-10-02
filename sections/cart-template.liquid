@@ -77,11 +77,10 @@
             <div class="Cart__Recap">
 
               {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
-
-              <span class="Cart__Total Heading u-h6"><span id="revy-cart-subtotal-price">{{ 'cart.general.total' | t }}: 
-<span class="saso-cart-original-total"><span data-money-convertible>{{ cart.total_price | money_without_trailing_zeros }}</span></span>
-<span class="saso-cart-total"></span>
-</span></span>
+				<div id="af-cart-subtotal"></div>
+              <span class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: 
+              <span data-money-convertible>{{ cart.total_price | money_without_trailing_zeros }}</span>
+			  </span>
               
               <div class="route-div"></div>
               
@@ -132,6 +131,7 @@
       <div id="also__bought"></div>
     </div>
   {%- endif -%}
+  
 </section>
 
 {% schema %}

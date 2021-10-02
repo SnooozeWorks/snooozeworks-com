@@ -239,7 +239,7 @@
   word-break: break-all;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .ProductItem__Info .ProductItem__PriceList {
@@ -256,13 +256,13 @@
   font-weight: normal;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   font-size: 13px;
   letter-spacing: 0.5px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .coming-soon {
@@ -273,35 +273,35 @@
   letter-spacing: 0;
 }
 
-@include av-mq('phone') {
+@include av-mq('phone'){
   .ProductItem__Info .ProductItem__Title {
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden; 
     font-size: to-size(11);
   }
 }
 
-@include av-mq('phone') {
+@include av-mq('phone'){
   .ProductItem__Info .ProductItem__PriceList {
     font-size: to-size(11);
   }
 }
 
 @include av-mq('phone') {
-  .Footer__Block--links {
-    display: none;
-  }
+	.Footer__Block--links {
+      display:none;
+    }
 
-  .Footer__Block--newsletter {
-    display: none;
-  }
+	.Footer__Block--newsletter {
+      display:none;
+    }
 
-  .Footer__Block--text {
-    text-align: justify;
-    margin-top: -20px;
-    padding-bottom: 20px;
-  }
+	.Footer__Block--text {
+      text-align: justify;
+      margin-top: -20px;
+      padding-bottom: 20px;
+    }
 }
 
 /*** -- Featured Product Section -- ***/
@@ -312,7 +312,7 @@
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .featured_product_meta {
@@ -329,7 +329,7 @@
     width: 100%;
     text-align: center;
   }
-
+  
   .featured_product_meta {
     display: none;
   }
@@ -360,7 +360,7 @@
 
 /*** -- Misc -- ***/
 
-.Newsletter__Inner .Form__Input:focus::placeholder {
+ .Newsletter__Inner .Form__Input:focus::placeholder {
   color: transparent;
 
 }
