@@ -1,0 +1,782 @@
+/**
+ * For now testimonials are only used on home page but may be expanded
+ 
+
+@-webkit-keyframes testimonialOpening {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes testimonialOpening {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes testimonialClosing {
+  from {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    visibility: visible;
+    opacity: 0;
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes testimonialClosing {
+  from {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    visibility: visible;
+    opacity: 0;
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.Testimonial {
+  text-align: center;
+  font-size: to-size(18px);
+}
+
+.Testimonial__Logo {
+  margin-top: 54px;
+}
+
+.js .TestimonialList {
+  opacity: 0;
+  -webkit-transition: opacity 0s linear 0.5s;
+  transition: opacity 0s linear 0.5s;
+
+  &.flickity-enabled {
+    opacity: 1;
+  }
+
+  .flickity-viewport {
+    overflow: visible;
+  }
+
+  .flickity-page-dots {
+    position: relative;
+    margin-top: 60px;
+  }
+
+  .Testimonial {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-animation: testimonialClosing 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
+    animation: testimonialClosing 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
+  }
+
+  .Testimonial.is-selected {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-animation: testimonialOpening 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s forwards;
+    animation: testimonialOpening 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s forwards;
+  }
+}
+
+@include av-mq('phone') {
+  .Testimonial__Logo {
+    max-width: 110px;
+  }
+}
+
+@include av-mq('tablet-and-up') {
+  .Testimonial {
+    font-size: to-size(20px);
+  }
+
+  .Testimonial__Content {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .Testimonial__Logo,
+  .TestimonialNav__Item {
+    max-width: 150px;
+  }
+}
+
+@include av-mq('lap-and-up') {
+  .TestimonialList--withNav .flickity-page-dots {
+    display: none;
+  }
+
+  .TestimonialNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .TestimonialNav__Item {
+    margin: 0 25px;
+    cursor: pointer;
+    opacity: 0.25;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    will-change: opacity;
+  }
+
+  .TestimonialNav__Item.is-selected {
+    opacity: 1;
+  }
+}
+
+@include av-mq('desk') {
+  .TestimonialNav__Item {
+    margin: 0 45px;
+  }
+}
+
+
+/**
+ * ----------------------------------------------------------------------------
+ * For now timeline are only used on home page but may be expanded
+ * ----------------------------------------------------------------------------
+ 
+
+.Timeline {
+  -webkit-box-shadow: 0 -2px 10px rgba(#363636, 0.2);
+  box-shadow: 0 -2px 10px rgba(#363636, 0.2);
+}
+
+.Timeline__ListItem {
+  position: relative;
+  height: 540px;
+  text-shadow: 0 1px rgba(#000000, 0.5);
+}
+
+.Timeline__Item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(#363636, 0.2);
+  pointer-events: none;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Timeline__ImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Timeline__Image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: translateX(-50px) scale(1.1);
+  transform: translateX(-50px) scale(1.1);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Timeline__Inner {
+  position: relative;
+  padding: 80px 14px 40px 14px;
+  max-height: 100%;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Timeline__Header > * {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s, -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.Timeline__Header > .SectionHeader__Description {
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+.Timeline__Item.is-selected {
+  opacity: 1;
+  pointer-events: auto;
+
+  .Timeline__Image {
+    -webkit-transform: translateX(0) scale(1.1);
+    transform: translateX(0) scale(1.1);
+  }
+
+  .Timeline__Header > * {
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@include av-mq('phone') {
+  .shopify-section--timeline {
+    border-top: none !important;
+  }
+
+  .shopify-section--timeline .Section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .shopify-section--timeline .Container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .Timeline__Header .Heading,
+  .Timeline__Header .Rte a {
+    color: inherit;
+  }
+
+  .Timeline__Header .SectionHeader__Description {
+    margin: 34px 30px 0 30px;
+  }
+}
+
+@include av-mq('tablet-and-up') {
+  .Timeline__ListItem {
+    max-width: 1230px;
+    margin: 0 auto;
+    height: 400px;
+    text-shadow: none;
+  }
+
+  .Timeline__Item {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background-color: $light-background;
+  }
+
+  .Timeline__ImageWrapper,
+  .Timeline__Inner {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 50%;
+  }
+
+  .Timeline__ImageWrapper {
+    position: relative;
+    height: 100%;
+
+    &::after {
+      display: none; /* Remove any contrast that may have been added to image 
+    }
+  }
+
+  .Timeline__Image {
+    -webkit-transform: translateX(-60px) scale(1.1);
+    transform: translateX(-60px) scale(1.1);
+  }
+
+  .Timeline__Inner {
+    padding: 34px 40px;
+    color: $text-color;
+  }
+
+  .Timeline__Header {
+    text-align: left;
+  }
+}
+
+@include av-mq('lap-and-up') {
+  .Timeline__ListItem {
+    height: 515px;
+  }
+
+  .Timeline__Inner {
+    padding: 54px 60px;
+  }
+}
+
+/**
+ * ----------------------------------------------------------------------------
+ * Timeline nav
+ * ----------------------------------------------------------------------------
+ 
+
+.Timeline__Nav {
+  position: relative;
+  font-size: to-size(11px);
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  font-style: $heading-font-style;
+  letter-spacing: 0.2em;
+  color: $text-color-light;
+  background: $light-background;
+}
+
+.Timeline__NavWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+.Timeline__NavWrapper--center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Timeline__NavItem {
+  position: relative;
+  padding: 30px 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  letter-spacing: inherit;
+  vertical-align: text-bottom;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 20px;
+    height: 3px;
+    width: calc(100% - 40px - 0.2em);
+    opacity: 0;
+    background: $text-color;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  }
+}
+
+.Timeline__NavItem.is-selected {
+  font-size: to-size(18px);
+  color: $text-color;
+
+  &::after {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+.Timeline__NavLabel {
+  display: block;
+  line-height: 0;
+}
+
+@include av-mq('tablet-and-up') {
+  .Timeline {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .Timeline__Nav {
+    margin-top: 40px;
+    background: none;
+    font-size: to-size(12px);
+  }
+
+  .Timeline__NavWrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .Timeline__NavItem {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@include av-mq('desk') {
+  .Timeline__Nav {
+    margin-top: 65px;
+  }
+}
+
+/**
+ * ----------------------------------------------------------------------------
+ * CSS Customization
+ * ----------------------------------------------------------------------------
+ */
+
+/* Shipping Calculator Plus Customization
+
+.cbb-shipping-rates-calculator {
+  margin-top: 0px !important;
+  margin-bottom: 10px !important;
+  border-bottom: 1px solid #d5d5d5 !important;
+}
+
+.cbb-shipping-rates-calculator-header {
+  text-transform: uppercase !important;
+  text-align: center !important;
+  letter-spacing: 1px !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+}
+
+.cbb-shipping-rates-label {
+  display: inline-block !important;
+  margin-left: 0 !important;
+}
+
+.cbb-shipping-rates-rate-list {
+  padding: 0 !important;
+}
+
+.cbb-shipping-rates-rate-item {
+  display: inline-block !important;
+  margin-left: auto !important;
+}
+
+.cbb-shipping-rates-calculator-change-shipping-address {
+  display:  block !important;
+  border-top: 1px solid #d5d5d5 !important;
+  margin-top: 0px !important;
+  margin-bottom: 10px !important;
+  padding: 10px 0 0 0 !important;
+  text-align: center !important;
+}
+
+.cbb-shipping-rates-calculator-country-select {
+  width: 100% !important;
+}
+
+.cbb-shipping-rates-calculator-region-select {
+  width: 100% !important;
+}
+
+.cbb-shipping-rates-calculator-zip-code {
+  width: 100% !important;
+}
+
+.cbb-shipping-rates-calculator-update-button {
+  width: 100% !important;
+  -webkit-transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+}
+
+.cbb-shipping-rates-error-message {
+  background-color: transparent !important;
+}
+
+.cbb-shipping-rates-calculator-update-button {
+	background-color: #5c5c5c;
+}
+
+
+.hide__mobile {
+  display: none !important;
+}
+
+.show__mobile {
+  display: block !important;
+}
+
+*/
+
+/* Google Maps
+
+#map {
+  height: 500px;
+  width: 100%;
+ }
+
+*/
+
+/* Shopify Reviews
+
+
+#review_title {
+  display: none;
+}
+
+.spr-review-header-title {
+  display: none;
+}
+
+.spr-review-header-byline::before {
+  content: "Reviewed by: ";
+}
+
+.spr-badge {
+  float: right !important;
+  margin-top: -30px !important;
+}
+
+.spr-badge-caption::before {
+  content: "| ";
+}
+
+@media only screen and (max-width: 1007px) {
+  .spr-badge {
+    float: none !important;
+    margin-top: 20px !important;
+  }
+}
+
+.spr-summary-actions {
+  display: flex !important;
+  align-items: stretch !important;
+  width: 100% !important;
+}
+
+.spr-pagination-next {
+  flex: 1 !important;
+}
+
+.spr-summary-actions-newreview {
+  flex: 1 !important;
+}
+
+@media only screen and (max-width: 1007px) {
+  .spr-summary-actions {
+    display: block !important;
+    flex: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1007px) {
+  .spr-badge {
+    flex: 0 !important;
+  }
+}
+
+.spr-review {
+  border-top: 1px solid #d5d5d5 !important;
+  padding: 20px 0 !important;
+}
+
+.spr-review-content {
+  padding: 15px 0 !important;
+}
+
+.spr-badge[data-rating="0.0"] {   /* Hide stars when no reviews 
+  visibility:hidden;
+  display: none;
+}
+
+*/
+
+
+
+/* Growave Custom CSS
+
+
+// Wishlist 
+
+.ssw-fave-side-bar-header-title {
+  font-family: 'Poppins';
+  letter-spacing: 2px;
+}
+
+.ssw-wrap-h3 .ssw-count {
+  padding-left: 10px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.ssw-photo-layout__aside_button {
+  color: #f9f9f9 !important;
+  background-color: #ef3340 !important;
+}
+
+.ssw-fave-wrap-share {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ssw-fave-wrap-share .share-faves {
+  width: 100%;
+}
+
+.ssw-share-text {
+  display: none;
+}
+
+// Reviews
+
+.ssw-photo-layout__head {
+  border: 0 !important;
+}
+
+.ssw-photo-layout__aside {
+  border: 0 !important;
+}
+
+.ssw-photo-layout__reviews_content {
+  border: 0 !important;
+}
+
+.ssw-photo-layout__sort_current {
+  color: #ef3340 !important;
+}
+
+.theme__ssw-photo-layout__tabs_item_active {
+  border-bottom: 3px solid #ef3340 !important;
+} 
+
+.ssw-faveiticon {
+  display: none;
+}
+
+.ssw-timestamp {
+  display: none;
+}
+
+.ssw-review-count::before {
+  padding: 0px 5px;
+  content: "|";
+}
+
+.ssw-photo-layout__aside_progress-bars {
+  margin-top: 15px;
+}
+
+.ssw-photo-layout__aside_progress-bar-visual-inner {
+  background: #ef3340 !important;
+}
+
+.ssw-or {
+  padding: 0 10px;
+}
+
+#ssw-review-simple-html::before {
+  content: "Your Review:";
+  font-weight: 700;
+}
+
+.ssw-span12 {
+  padding-top: 15px;
+}
+
+#ssw-reviews-photo-layout-modal .ssw-photo-layout__reviews_date {
+  display: none !important;
+}
+
+#ssw-reviews-photo-layout-modal .ssw-photo-layout-modal__content {
+  padding: 15px !important;
+}
+
+.ssw-modal-content {
+  border-radius: 10px !important;
+}
+
+#ssw-reviews-photo-layout-modal .ssw-close-modal {
+  right: 3px !important;
+}
+
+@include av-mq ('lap-and-up') {
+    #ssw-avg-rate-profile-html {
+      float: right;
+    }
+}
+
+@include av-mq ('tablet'){
+	#ssw-avg-rate-profile-html {
+  	  text-align: center;
+      padding: 10px 0;
+	}
+}
+
+@include av-mq ('phone') {
+	#ssw-avg-rate-profile-html {
+  	  text-align: center;
+      padding: 10px 0;
+    } 
+    .ssw-photo-layout__head {
+      align-items: center;
+      margin-bottom: 0 !important;
+	}
+    .ssw-photo-layout__aside {
+      padding: 30px !important;
+      margin-right: 0 !important;
+    }
+    .ssw-photo-layout__aside_buttons {
+      padding: 0 15px;
+    }
+    .ssw-photo-layout__reviews_content {
+      padding: 20px 0px 36px !important;
+    }
+    .ssw-photo-layout__aside_progress-bars {
+      margin-top: 15px;
+  }
+}
+
+*/
