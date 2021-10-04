@@ -237,24 +237,34 @@
       "header": {
         "type": "header",
         "blocks": {
-          "16675410-0675-4eb9-8a16-cca53abb2497": {
+          "2c45a09f-8973-4059-9e77-a4f176baecd3": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menu": "Posters",
-              "push_1_image": "shopify:\/\/shop_images\/fallout-nuka-quantum-illustration-sticker.jpg",
+              "navigation_mega_menu": "Patents",
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
-              "push_2_image": "shopify:\/\/shop_images\/call-duty-zombies-ray-gun-sticker.jpg",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
               "push_2_url": ""
             }
           },
-          "2c45a09f-8973-4059-9e77-a4f176baecd3": {
+          "149ffe4f-b6ae-45b2-a076-d46babad8d25": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menu": "Stickers",
+              "navigation_mega_menu": "Posters",
+              "push_1_heading": "Example heading",
+              "push_1_subheading": "Example sub-heading",
+              "push_1_url": "",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Example sub-heading",
+              "push_2_url": ""
+            }
+          },
+          "3d54d8ea-5295-4634-8fd0-741ad21d4635": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Patent Mugs",
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
@@ -275,10 +285,10 @@
               "push_2_url": ""
             }
           },
-          "149ffe4f-b6ae-45b2-a076-d46babad8d25": {
+          "16675410-0675-4eb9-8a16-cca53abb2497": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menu": "Decals",
+              "navigation_mega_menu": "Stickables",
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
@@ -289,18 +299,19 @@
           }
         },
         "block_order": [
-          "16675410-0675-4eb9-8a16-cca53abb2497",
           "2c45a09f-8973-4059-9e77-a4f176baecd3",
+          "149ffe4f-b6ae-45b2-a076-d46babad8d25",
+          "3d54d8ea-5295-4634-8fd0-741ad21d4635",
           "59fa34aa-f6af-4735-b2b4-3b8acfb950a5",
-          "149ffe4f-b6ae-45b2-a076-d46babad8d25"
+          "16675410-0675-4eb9-8a16-cca53abb2497"
         ],
         "settings": {
           "use_sticky_header": true,
           "logo": "shopify:\/\/shop_images\/snooozeworks_light-logo.png",
           "logo_max_width": 325,
           "mobile_logo_max_width": 200,
-          "navigation_menu": "main-menu",
-          "navigation_style": "sidebar",
+          "navigation_menu": "mega-menu",
+          "navigation_style": "inline",
           "show_icons": true,
           "enable_transparent_header": false,
           "enable_transparent_header_collection": false,
