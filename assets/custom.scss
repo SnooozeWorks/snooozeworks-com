@@ -1,231 +1,40 @@
-/** --- CUSTOM PAGES --- **/
+//*** -- Mega Menu Styling -- ***//
 
-
-@font-face {
-  font-family: "Poppins-Bold";
-  src: url("Poppins-Bold.woff") format("woff");
+.MegaMenu__Inner {
+  justify-content: flex-start !important;
+  max-width: 100%;
 }
 
-/*** -- Header Banners -- ***/
-
-.Page_Container {
-  width: 100%;
+.MegaMenu__Item {
+  margin: 20px 0;
+  padding: 0 40px;
+  min-width: 15%;
 }
 
-.PageHeader_Cart {
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-position: 50% 50%;
-  background-image: url(https://cdn.shopify.com/s/files/1/2422/1433/files/cart-14134.jpg?v=1602539114);
+.MegaMenu__Item:first-of-type {
+  border-right: 1px solid #ffffe1;
+  padding-right: 80px;
+  align-self: stretch;
+  min-width: 10%;
+  width: 15%;
 }
 
-.PageHeader_Contact {
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-position: 50% 50%;
-  background-image: url(https://cdn.shopify.com/s/files/1/2422/1433/files/contact-1973441.jpg?v=1602539113);
+.MegaMenu__Item:nth-of-type(2) {
+  padding-left: 80px;
 }
 
-.PageHeader_FAQ {
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-position: 50% 50%;
-  background-image: url(https://cdn.shopify.com/s/files/1/2422/1433/files/question-mark-190814.jpg?v=1602539113);
+.MegaMenu__Item:nth-of-type(4) {
+  flex-grow: 1;
 }
 
-.PageHeader_Resources {
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-position: 50% 50%;
-  background-image: url(https://cdn.shopify.com/s/files/1/2422/1433/files/technology-collection.jpg?v=1602539114);
+// Hides Browse All on Patents and Patent Mugs Menus
+
+nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
+  visibility: hidden;
 }
 
-.PageHeader_Returns {
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-position: 50% 50%;
-  background-image: url(https://cdn.shopify.com/s/files/1/2422/1433/files/tube_mockup_d0d1bf0e-8285-43f0-b2ff-99679ff061eb.jpg?v=1602539113);
-}
-
-.PageHeader_Story {
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-position: 50% 50%;
-  background-image: url(https://cdn.shopify.com/s/files/1/2422/1433/files/pf-ab4e658e--vinyldecalcollections.jpg?v=1602539114);
-}
-
-/*** -- Header Typography -- ***/
-
-.Page_Header_H1 {
-  font-size: 60px;
-  font-family: Poppins-Bold;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  text-shadow: 2px 3px 3px #000;
-  color: #fff;
-  z-index: -1;
-}
-
-.Page_Header_Subtitle {
-  font-size: 18px;
-  font-family: $heading-font-family;
-  text-align: center;
-  letter-spacing: .5px;
-  text-shadow: 1px 2px 2px #000;
-  color: #fff;
-  z-index: -1;
-}
-
-@include av-mq('phone') {
-  .Page_Header_H1 {
-    font-size: 34px;
-  }
-
-  .Page_Header_Subtitle {
-    padding: 0 10px !important;
-  }
-}
-
-/*** -- Sections -- ***/
-
-.PageSection_1 {
-  background-color: #f8f8f8;
-  padding: 55px 0;
-}
-
-.PageSection_2 {
-  background-color: #fff;
-  padding: 55px 0;
-}
-
-/*** -- Typography -- ***/
-
-.Section_H1 {
-  font-size: 25px;
-  font-family: $heading-font-family;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-  padding-bottom: 25px;
-  color: #000;
-}
-
-.Section_Subtitle {
-  font-family: $text-font-family;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  line-height: 2em;
-  text-transform: none;
-  color: #898989;
-  font-weight: 400;
-}
-
-.Section_Subtitle a:hover {
-  color: #000;
-  transition-duration: .75s;
-}
-
-.Section_Paragraph {
-  padding: 0 100px;
-  max-width: 1170px;
-  margin: auto;
-}
-
-.Section_Paragraph ol {
-  list-style: none;
-  counter-reset: counter;
-}
-
-.Section_Paragraph ol li {
-  counter-increment: counter;
-}
-
-.Section_Paragraph ol li::before {
-  content: counter(counter) ". ";
-  font-weight: bold;
-}
-
-.Section_Text {
-  font-family: $text-font-family;
-  font-size: to-size(16px);
-  font-weight: 400;
-  text-align: justify;
-  letter-spacing: 0.5px;
-  line-height: 2em;
-  color: #898989;
-}
-
-.Section_Text a:hover {
-  color: #000;
-  transition-duration: .25s;
-  transition-timing-function: ease-in-out;
-}
-
-
-@include av-mq('phone') {
-  .Section_H1 {
-    font-size: 20px;
-    padding-bottom: 15px;
-  }
-
-  .Section_Paragraph {
-    padding: 0px 20px;
-    text-align: justify;
-    font-size: to-size(16px);
-  }
-
-  .Section_Text {
-    font-size: to-size(16px);
-  }
-
-  #instagram {
-    display: none;
-  }
-}
-
-/*** -- Newsletter Section - Story Page -- ***/
-
-.Section_Paragraph .Form__Input {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.Section_Paragraph .Form__Input:focus::placeholder {
-  color: transparent;
-}
-
-.Section_Paragraph .Form__Submit {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@include av-mq('phone') {
-
-  .Section_Paragraph .Form__Input {
-    width: 100%;
-  }
-
-  .Section_Paragraph .Form__Submit {
-    width: 100%;
-  }
-}
-
-/*** -- Google Maps -- ***/
-
-#map {
-  height: 500px;
-  width: 100%;
+nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
+  visibility: hidden;
 }
 
 
@@ -239,7 +48,7 @@
   word-break: break-all;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .ProductItem__Info .ProductItem__PriceList {
@@ -256,13 +65,13 @@
   font-weight: normal;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   font-size: 13px;
   letter-spacing: 0.5px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .coming-soon {
@@ -273,35 +82,35 @@
   letter-spacing: 0;
 }
 
-@include av-mq('phone') {
+@include av-mq('phone'){
   .ProductItem__Info .ProductItem__Title {
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden; 
     font-size: to-size(11);
   }
 }
 
-@include av-mq('phone') {
+@include av-mq('phone'){
   .ProductItem__Info .ProductItem__PriceList {
     font-size: to-size(11);
   }
 }
 
 @include av-mq('phone') {
-  .Footer__Block--links {
-    display: none;
-  }
+	.Footer__Block--links {
+      display:none;
+    }
 
-  .Footer__Block--newsletter {
-    display: none;
-  }
+	.Footer__Block--newsletter {
+      display:none;
+    }
 
-  .Footer__Block--text {
-    text-align: justify;
-    margin-top: -20px;
-    padding-bottom: 20px;
-  }
+	.Footer__Block--text {
+      text-align: justify;
+      margin-top: -20px;
+      padding-bottom: 20px;
+    }
 }
 
 /*** -- Featured Product Section -- ***/
@@ -312,7 +121,7 @@
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .featured_product_meta {
@@ -329,7 +138,7 @@
     width: 100%;
     text-align: center;
   }
-
+  
   .featured_product_meta {
     display: none;
   }
@@ -360,12 +169,10 @@
 
 /*** -- Misc -- ***/
 
-.Newsletter__Inner .Form__Input:focus::placeholder {
+ .Newsletter__Inner .Form__Input:focus::placeholder {
   color: transparent;
-
-}
-
-.Drawer__Main::-webkit-scrollbar {
+   
+}.Drawer__Main::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }

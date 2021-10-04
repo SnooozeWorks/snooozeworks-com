@@ -1,4 +1,41 @@
-/** --- CUSTOM PAGES --- **/
+//*** -- Mega Menu Styling -- ***//
+
+.MegaMenu__Inner {
+  justify-content: flex-start !important;
+  max-width: 100%;
+}
+
+.MegaMenu__Item {
+  margin: 20px 0;
+  padding: 0 40px;
+  min-width: 15%;
+}
+
+.MegaMenu__Item:first-of-type {
+  border-right: 1px solid #ffffe1;
+  padding-right: 80px;
+  align-self: stretch;
+  min-width: 10%;
+  width: 15%;
+}
+
+.MegaMenu__Item:nth-of-type(2) {
+  padding-left: 80px;
+}
+
+.MegaMenu__Item:nth-of-type(4) {
+  flex-grow: 1;
+}
+
+// Hides Browse All on Patents and Patent Mugs Menus
+
+nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
+  visibility: hidden;
+}
+
+nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
+  visibility: hidden;
+}
 
 
 /*** -- Featured Collections -- ***/
