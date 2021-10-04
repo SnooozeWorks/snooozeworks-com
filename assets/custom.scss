@@ -1,15 +1,12 @@
 // Fonts
 
-@font-face {
-  font-family: "Poppins";
-  src: url("Poppins.woff") format("woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,700&display=swap');
 
 // Mega Menu Styling
 
 .nav__heading {
   font-family: Poppins, san-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
