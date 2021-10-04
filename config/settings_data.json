@@ -749,6 +749,7 @@
       },
       "16333785563be2a01e": {
         "type": "countdown-timer",
+        "disabled": true,
         "settings": {
           "section_size": "large",
           "title": "Heading",
