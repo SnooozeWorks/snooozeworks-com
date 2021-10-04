@@ -1,4 +1,4 @@
-{% assign namespace = "snooozeworks" %}
+{% assign namespace = "snoooze" %}
 {% if template.name == "product" and metafields == "product" %}
   {% for metafield in product.metafields[namespace] %}
 	 {% if metafield.first contains "_image_miracle" %}
@@ -6,7 +6,7 @@
 		: <img src="{{ metafield | last }}" alt="{{ metafield.first | remove: "_image_miracle" }}" class="front_img">
          {% elsif metafield.first contains "_download_file" %}
                 {{ metafield.first | remove: "_download_file" }}
-		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a>  
+		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a>   
          {% elsif metafield.first contains "_url_data" %}
                 {{ metafield.first | remove: "_url_data" }}
 		: <a  href="{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_url_data" }}">{{ metafield | last }}</a>        
@@ -15,7 +15,7 @@
 		: <a  href="tel:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_tel_data" }}">{{ metafield | last }}</a>   
          {% elsif metafield.first contains "_email_data" %}
                 {{ metafield.first | remove: "_email_data" }}
-		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>           
+		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>          
 	 {% else %}
 		{{ metafield | first }}:{{ metafield | last }}
 	 {% endif %}<br>
@@ -26,19 +26,19 @@
 	   {% if metafield.first contains "_image_miracle" %}
 		  {{ metafield.first | remove: "_image_miracle" }}
 		  : <img src="{{ metafield | last }}" alt="{{ metafield.first | remove: "_image_miracle" }}" class="front_img">
-           {% elsif metafield.first contains "_download_file" %}
+            {% elsif metafield.first contains "_download_file" %}
                 {{ metafield.first | remove: "_download_file" }}
-		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a>    
-	   {% elsif metafield.first contains "_url_data" %}
+		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a>  
+            {% elsif metafield.first contains "_url_data" %}
                 {{ metafield.first | remove: "_url_data" }}
 		: <a  href="{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_url_data" }}">{{ metafield | last }}</a>        
-           {% elsif metafield.first contains "_tel_data" %}
+            {% elsif metafield.first contains "_tel_data" %}
                 {{ metafield.first | remove: "_tel_data" }}
 		: <a  href="tel:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_tel_data" }}">{{ metafield | last }}</a>   
-           {% elsif metafield.first contains "_email_data" %}
+            {% elsif metafield.first contains "_email_data" %}
                 {{ metafield.first | remove: "_email_data" }}
-		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>    
-           {% else %}
+		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>     
+	   {% else %}
 		  {{ metafield | first }}:{{ metafield | last }}
 	   {% endif %}<br>
 	{% endfor %}
@@ -59,7 +59,7 @@
 		: <a  href="tel:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_tel_data" }}">{{ metafield | last }}</a>   
          {% elsif metafield.first contains "_email_data" %}
                 {{ metafield.first | remove: "_email_data" }}
-		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>           
+		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>        
 	 {% else %}
 		{{ metafield | first }}:{{ metafield | last }}
 	 {% endif %}<br>
@@ -80,7 +80,7 @@
 		: <a  href="tel:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_tel_data" }}">{{ metafield | last }}</a>   
          {% elsif metafield.first contains "_email_data" %}
                 {{ metafield.first | remove: "_email_data" }}
-		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>           
+		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>        
 	 {% else %}
 		{{ metafield | first }}:{{ metafield | last }}
 	 {% endif %}<br>
@@ -92,7 +92,7 @@
 		: <img src="{{ metafield | last }}" alt="{{ metafield.first | remove: "_image_miracle" }}" class="front_img">
          {% elsif metafield.first contains "_download_file" %}
                 {{ metafield.first | remove: "_download_file" }}
-		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a>   
+		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a>
          {% elsif metafield.first contains "_url_data" %}
                 {{ metafield.first | remove: "_url_data" }}
 		: <a  href="{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_url_data" }}">{{ metafield | last }}</a>        
@@ -101,7 +101,7 @@
 		: <a  href="tel:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_tel_data" }}">{{ metafield | last }}</a>   
          {% elsif metafield.first contains "_email_data" %}
                 {{ metafield.first | remove: "_email_data" }}
-		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>           
+		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>        
 	 {% else %}
 		{{ metafield | first }}:{{ metafield | last }}
 	 {% endif %}<br>
@@ -122,7 +122,7 @@
 		: <a  href="tel:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_tel_data" }}">{{ metafield | last }}</a>   
          {% elsif metafield.first contains "_email_data" %}
                 {{ metafield.first | remove: "_email_data" }}
-		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>           
+		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>        
 	 {% else %}
 		{{ metafield | first }}:{{ metafield | last }}
 	 {% endif %}<br>
@@ -146,7 +146,7 @@
 		: <a  href="tel:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_tel_data" }}">{{ metafield | last }}</a>   
          {% elsif metafield.first contains "_email_data" %}
                 {{ metafield.first | remove: "_email_data" }}
-		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>           
+		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>        
 	 {% else %}
 		{{ metafield | first }}:{{ metafield | last }}
 	 {% endif %}<br>
@@ -159,7 +159,7 @@
 		: <img src="{{ metafield | last }}" alt="{{ metafield.first | remove: "_image_miracle" }}" class="front_img">
          {% elsif metafield.first contains "_download_file" %}
                 {{ metafield.first | remove: "_download_file" }}
-		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a>  
+		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a> 
          {% elsif metafield.first contains "_url_data" %}
                 {{ metafield.first | remove: "_url_data" }}
 		: <a  href="{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_url_data" }}">{{ metafield | last }}</a>        
@@ -168,7 +168,7 @@
 		: <a  href="tel:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_tel_data" }}">{{ metafield | last }}</a>   
          {% elsif metafield.first contains "_email_data" %}
                 {{ metafield.first | remove: "_email_data" }}
-		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>           
+		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>        
 	 {% else %}
 		{{ metafield | first }}:{{ metafield | last }}
 	 {% endif %}<br>
@@ -181,7 +181,7 @@
 		: <img src="{{ metafield | last }}" alt="{{ metafield.first | remove: "_image_miracle" }}" class="front_img">
          {% elsif metafield.first contains "_download_file" %}
                 {{ metafield.first | remove: "_download_file" }}
-		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a>  
+		: <a  href="{{ metafield | last }}" alt="{{ metafield.first | remove: "_download_file" }}">{{ metafield | last | split: "/" | last | split: "?" | first }}</a>
          {% elsif metafield.first contains "_url_data" %}
                 {{ metafield.first | remove: "_url_data" }}
 		: <a  href="{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_url_data" }}">{{ metafield | last }}</a>        
@@ -190,7 +190,7 @@
 		: <a  href="tel:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_tel_data" }}">{{ metafield | last }}</a>   
          {% elsif metafield.first contains "_email_data" %}
                 {{ metafield.first | remove: "_email_data" }}
-		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>           
+		: <a  href="mailto:{{ metafield | last }}" target="_blank" alt="{{ metafield.first | remove: "_email_data" }}">{{ metafield | last }}</a>        
 	 {% else %}
 		{{ metafield | first }}:{{ metafield | last }}
 	 {% endif %}<br>
