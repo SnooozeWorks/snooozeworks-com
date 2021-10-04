@@ -1,3 +1,5 @@
+{{ "flipdown.css" | asset_url | stylesheet_tag }}
+
 <section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="countdown-timer">
   {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
 
