@@ -29,7 +29,7 @@
     {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
     {{ 'custom.scss.css' | asset_url | stylesheet_tag }}
     
-    {%- if section == 'countdown-timer' -%}
+    {%- if section.id == 'countdown-timer' -%}
     
     {{ "flipdown.css" | asset_url | stylesheet_tag }}
     
