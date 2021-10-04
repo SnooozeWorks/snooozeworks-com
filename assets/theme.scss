@@ -12896,6 +12896,7 @@ hr {
   padding-right: 80px;
   align-self: stretch;
   min-width: 10%;
+  width: 12%;
 }
 
 .MegaMenu__Item:nth-of-type(2) {
@@ -12905,6 +12906,8 @@ hr {
 .MegaMenu__Item:nth-of-type(4) {
   flex-grow: 1;
 }
+
+// Hides Browse All on Patents and Patent Mugs Menus
 
 nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
   visibility: hidden;
