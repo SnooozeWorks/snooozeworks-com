@@ -29,7 +29,7 @@
     {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
     {{ 'custom.scss.css' | asset_url | stylesheet_tag }}
     
-    {%- if section.id == 'section-1633369666f8d55a75' -%}
+    {%- if data-section-type == 'countdown-timer' -%}
     	{{ "flipdown.css" | asset_url | stylesheet_tag }}
     {%- endif -%}
 
