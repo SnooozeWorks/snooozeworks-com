@@ -141,7 +141,7 @@ HEADER CONTENT
         {%- assign mega_menu_names = mega_menu_names | downcase | split: ',' | compact -%}
 
         <nav class="Header__MainNav hidden-pocket hidden-lap" aria-label="{{ 'header.navigation.title' | t }}">
-          <ul class="HorizontalList HorizontalList--spacingExtraLoose">
+          <ul class="HorizontalList HorizontalList--spacingLoose">
             {%- for link in main_menu.links -%}
               {%- assign downcased_link_title = link.title | downcase | strip -%}
               {%- assign use_mega_menu = false -%}
