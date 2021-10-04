@@ -12910,3 +12910,6 @@ nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-
   visibility: hidden;
 }
 
+nav .HorizontalList__Item .is-expanded:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
+  visibility: hidden;
+}
