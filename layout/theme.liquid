@@ -26,8 +26,8 @@
 
     {{ content_for_header }}
 
-    {{ "theme.scss.css" | asset_url | stylesheet_tag }}
     {{ "custom.scss.css" | asset_url | stylesheet_tag }}
+    {{ "theme.scss.css" | asset_url | stylesheet_tag }}
     
     {%- if section == 'countdown-timer' -%}
     	{{ "flipdown.css" | asset_url | stylesheet_tag }}
