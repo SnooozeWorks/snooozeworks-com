@@ -27,6 +27,10 @@
   flex-grow: 1;
 }
 
+nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(2) .MegaMenu__Title {
+  cursor: default;
+}
+
 // Hides Browse All on Patents and Patent Mugs Menus
 
 nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
