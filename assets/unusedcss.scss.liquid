@@ -1,0 +1,242 @@
+// Shop the Look -- Original Line: 11576
+
+@keyframes shopTheLookDotKeyframe {
+    0% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.ShopTheLook {
+    z-index: 2;
+}
+
+.ShopTheLook__Item {
+    padding: 0 5px;
+    width: calc(100% - 40px);
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ShopTheLook__Item.is-selected {
+    z-index: 1;
+}
+
+.ShopTheLook__ImageWrapper {
+    position: relative;
+    max-width: 100%;
+}
+
+.ShopTheLook__Image {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.ShopTheLook__Dot {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: #ffffff;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 1px 10px rgba(#000000, 0.25);
+    box-shadow: 0 1px 10px rgba(#000000, 0.25);
+    cursor: pointer;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 40px;
+        left: -12px;
+        /* This is 40/2 - 16/2  */
+        top: -12px; /* This is 40/2 - 16/2 */
+        border-radius: 100%;
+        background: rgba(#ffffff, 0.4);
+        -webkit-animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite;
+        animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite;
+    }
+}
+
+.ShopTheLook__Dot--dark {
+  background: #000000;
+
+  &::after {
+    background: rgba(#000000, 0.4);
+  }
+}
+
+.ShopTheLook__Dot.is-active,
+.supports-hover .ShopTheLook__Dot:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.ShopTheLook__ProductItem .ProductItem__ImageWrapper {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.ShopTheLook__DiscoverButtonWrapper {
+  margin: 24px 24px 0 24px;
+  text-align: center;
+}
+
+@include av-mq('phone') {
+  .ShopTheLook__ViewButton {
+    width: 100%;
+  }
+
+  .ShopTheLook__ProductItem--withHiddenInfo .ProductItem__Info {
+    display: none;
+  }
+
+  .ShopTheLook__ProductItem {
+    padding: 15px 0;
+  }
+}
+
+@include av-mq('pocket') {
+  .ShopTheLook > .flickity-viewport {
+    -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+
+  .ShopTheLook::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $background;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .ShopTheLook.is-zoomed {
+    &::before {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+    }
+
+    .ShopTheLook__Item:not(.is-selected) {
+      opacity: 0;
+    }
+  }
+
+  .ShopTheLook__ProductItem {
+    padding: 30px 0 40px 0;
+  }
+}
+
+@include av-mq('tablet-and-up') {
+  .ShopTheLook__DiscoverButtonWrapper {
+    margin-top: 50px;
+  }
+
+  .ShopTheLook__Item {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  .ShopTheLook__ProductItem .ProductItem__Wrapper {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@include av-mq('lap-and-up') {
+  .ShopTheLook {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 130px;
+  }
+
+  .ShopTheLook__Item {
+    width: 100%;
+    padding: 0;
+  }
+
+  .ShopTheLook__Inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 550px;
+  }
+
+  .ShopTheLook__ImageWrapper {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+  }
+
+  .ShopTheLook__Image {
+    max-height: 100%;
+    width: auto;
+  }
+
+  .ShopTheLook__ProductList {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 270px;
+    margin: 0 80px;
+  }
+
+  .ShopTheLook__ProductItem .ProductItem__Wrapper {
+    max-width: none;
+  }
+
+  .ShopTheLook__ProductItem .ProductItem__ImageWrapper {
+    max-width: 250px;
+  }
+
+  .ShopTheLook__ViewButton {
+    margin-top: 25px;
+  }
+
+  .ShopTheLook .flickity-prev-next-button {
+    top: calc(50% - (45px / 2));
+  }
+
+  .ShopTheLook .flickity-prev-next-button.next {
+    right: 40px;
+  }
+
+  .ShopTheLook .flickity-prev-next-button.previous {
+    left: 40px;
+  }
+}
+
