@@ -8471,6 +8471,12 @@ $vertical-spacing-two-products-per-row  : 0px;
   }
 }
 
+@include av-mq('phone') {
+  .Footer__Block--text {
+    display: none;
+  }
+}
+
 @include av-mq('desk') {
   .Footer__Block--text {
     -ms-flex-preferred-size: 460px;
