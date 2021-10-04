@@ -29,9 +29,9 @@
     {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
     {{ 'custom.scss.css' | asset_url | stylesheet_tag }}
     
-    {%- if section.id = 'countdown-timer' -%}
+    {% if section.id == 'countdown-timer' %}
     	{{ "flipdown.css" | asset_url | stylesheet_tag }}
-    {%- endif -%}
+    {% endif %}
 
     <script>
       // This allows to expose several variables to the global scope, to be used in scripts
