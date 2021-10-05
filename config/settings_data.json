@@ -242,10 +242,10 @@
             "settings": {
               "navigation_mega_menu": "Patents",
               "push_1_image": "shopify:\/\/shop_images\/866-1000x800.jpg",
-              "push_1_heading": "All purchases over $45",
+              "push_1_heading": "",
               "push_1_subheading": "",
               "push_1_url": "",
-              "push_2_image": "shopify:\/\/shop_images\/test.jpg",
+              "push_2_image": "shopify:\/\/shop_images\/free.jpg",
               "push_2_heading": "",
               "push_2_subheading": "",
               "push_2_url": ""
