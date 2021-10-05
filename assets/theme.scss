@@ -9121,6 +9121,10 @@ $vertical-spacing-two-products-per-row  : 0px;
   flex-shrink: 0;
 }
 
+.MegaMenu__Item:nth-of-type(5) {
+  flex-grow: 2;
+}
+
 .MegaMenu__Title {
   display: block;
   margin-bottom: 20px;
