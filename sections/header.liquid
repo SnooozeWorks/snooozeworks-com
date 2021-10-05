@@ -180,7 +180,7 @@ HEADER CONTENT
                       {%- assign should_space_evenly = true -%}
                     {%- endif -%}
 
-                    <div class="MegaMenu MegaMenu--spacingEvenly {% if push_image_count == 0 and link.links.size > 4 %}MegaMenu--grid{% endif %}" aria-hidden="true" {{ block.shopify_attributes }}>
+                    <div class="MegaMenu {% if push_image_count != 0 and link.links.size == 0 %}MegaMenu--spacingCenter{% elsif should_space_evenly %}MegaMenu--spacingEvenly{% endif %}" aria-hidden="true" {{ block.shopify_attributes }}>
                       <div class="MegaMenu__Inner">
                         {%- for sub_link in link.links -%}
                           <div class="MegaMenu__Item MegaMenu__Item--fit">
