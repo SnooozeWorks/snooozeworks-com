@@ -73,6 +73,6 @@ nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of
   visibility: hidden;
 }
 
-nav .HorizontalList__Item:nth-of-type(4) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
+nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
   visibility: hidden;
 }
