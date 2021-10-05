@@ -9118,9 +9118,14 @@ $vertical-spacing-two-products-per-row  : 0px;
 
 .MegaMenu__Item--fit {
   -ms-flex-negative: 0;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
+
+
+.MegaMenu__Item:nth-of-type(5){
+ flex-grow: 2; 
+}  
 .MegaMenu__Title {
   display: block;
   margin-bottom: 20px;
