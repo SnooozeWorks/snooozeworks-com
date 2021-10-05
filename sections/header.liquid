@@ -199,7 +199,7 @@ HEADER CONTENT
                         {%- endfor -%}
 
                         {%- if push_image_count > 0 -%}
-                          <div class="MegaMenu__Item" style="{% if push_image_count == 1 %}width: 370px; min-width: 250px;{% else %}width: 660px; min-width: 425px;{% endif %}">
+                          <div class="MegaMenu__Item" style="{% if push_image_count == 1 %}width: 370px; min-width: 250px;{% else %}width: 50%; min-width: 425px;{% endif %}">
                             {%- if block.settings.push_1_image -%}
                               <div class="MegaMenu__Push {% if push_image_count == 2 %}MegaMenu__Push--shrink{% endif %}">
                                 {%- if block.settings.push_1_url != blank -%}
@@ -208,7 +208,7 @@ HEADER CONTENT
 
                                 {%- assign max_width = 370 | at_most: block.settings.push_1_image.width -%}
 
-                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
+                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: 50%; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
                                   <img class="Image--lazyLoad Image--fadeIn"
                                        data-src="{{ block.settings.push_1_image | img_url: '1000x800', scale: 2 }}"
                                        alt="{{ block.settings.push_1_image.alt | escape }}">
