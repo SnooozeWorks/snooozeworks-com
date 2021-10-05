@@ -82,3 +82,9 @@ nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of
 nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
   visibility: hidden;  // First Browse All
 }
+
+// Hide Second Vinyl Decal Title
+
+nav .HorizontalList__Item:nth-of-type(5) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
+  visibility: hidden;  // Second Vinyl Decal
+}
