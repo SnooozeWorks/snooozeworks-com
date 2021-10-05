@@ -9147,7 +9147,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 }
 
 .MegaMenu__PushImageWrapper {
-  margin: 20px auto;
+  margin: 20px auto 10px auto;
   max-width: 100%;
   overflow: hidden;
   justify-content: center;
@@ -9159,7 +9159,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 }
 
 .MegaMenu__PushSubHeading {
-  color #000 !important;
+  color: #000 !important;
 }
 
 @media (-moz-touch-enabled: 0), (hover: hover) {
