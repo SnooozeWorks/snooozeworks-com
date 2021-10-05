@@ -206,9 +206,9 @@ HEADER CONTENT
                                   <a class="MegaMenu__PushLink" href="{{ block.settings.push_1_url }}">
                                 {%- endif -%}
 
-                                {%- assign max_width = 100 | at_most: block.settings.push_1_image.width -%}
+                                {%- assign max_width = 750 | at_most: block.settings.push_1_image.width -%}
 
-                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}%; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
+                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
                                   <img class="Image--lazyLoad Image--fadeIn"
                                        data-src="{{ block.settings.push_1_image | img_url: '1000x800', scale: 2 }}"
                                        alt="{{ block.settings.push_1_image.alt | escape }}">
@@ -236,9 +236,9 @@ HEADER CONTENT
                                   <a class="MegaMenu__PushLink" href="{{ block.settings.push_2_url }}">
                                 {%- endif -%}
 
-                                {%- assign max_width = 100 | at_most: block.settings.push_2_image.width -%}
+                                {%- assign max_width = 750 | at_most: block.settings.push_2_image.width -%}
 
-                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}%; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}">
+                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}">
                                   <img class="Image--lazyLoad Image--fadeIn"
                                        data-src="{{ block.settings.push_2_image | img_url: '1000x800', scale: 2 }}"
                                        alt="{{ block.settings.push_2_image.alt | escape }}">
