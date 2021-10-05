@@ -208,7 +208,7 @@ HEADER CONTENT
 
                                 {%- assign max_width = 370 | at_most: block.settings.push_1_image.width -%}
 
-                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: 60%; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
+                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
                                   <img class="Image--lazyLoad Image--fadeIn"
                                        data-src="{{ block.settings.push_1_image | img_url: '1000x800', scale: 2 }}"
                                        alt="{{ block.settings.push_1_image.alt | escape }}">
