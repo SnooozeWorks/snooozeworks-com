@@ -236,7 +236,7 @@ HEADER CONTENT
                                   <a class="MegaMenu__PushLink" href="{{ block.settings.push_2_url }}">
                                 {%- endif -%}
 
-                                {%- assign max_width = 370 | at_most: block.settings.push_2_image.width -%}
+                                {%- assign max_width = 470 | at_most: block.settings.push_2_image.width -%}
 
                                 <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}">
                                   <img class="Image--lazyLoad Image--fadeIn"
