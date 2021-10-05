@@ -241,6 +241,7 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Patents",
+              "push_1_image": "shopify:\/\/shop_images\/Patent_Promo.jpg",
               "push_1_heading": "",
               "push_1_subheading": "",
               "push_1_url": "",
