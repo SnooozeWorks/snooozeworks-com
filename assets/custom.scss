@@ -63,7 +63,7 @@ nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaM
   pointer-events: none;
 }
 
-// Hide Browse All on Patents Menu
+// Hide Browse All 'Category Title'  on Patents Menu
 
 nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
   visibility: hidden;  // First Browse All
@@ -73,23 +73,23 @@ nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-
   visibility: hidden;  // Second Browse All
 }
 
-// Hide Browse All on Patent Mug Menu
+// Hide Browse All 'Category Title' on Patent Mug Menu
 
 nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
   visibility: hidden;  // First Browse All
 }
 
 nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
-  visibility: hidden;  // First Browse All
+  visibility: hidden;  // Second Browse All
 }
 
-// Hide Second Vinyl Decal Title
+// Hide Second  'Category Title'  Vinyl Decal Title
 
 nav .HorizontalList__Item:nth-of-type(5) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
   visibility: hidden;  // Second Vinyl Decal
 }
 
-// Hide Second Vinyl Decal Title
+// Hide Second 'Category Title'  Vinyl Decal Title
 
 nav .HorizontalList__Item:nth-of-type(5) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(5) .MegaMenu__Title {
   visibility: hidden;  // Second Vinyl Decal
