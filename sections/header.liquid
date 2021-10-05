@@ -183,7 +183,7 @@ HEADER CONTENT
                     <div class="MegaMenu {% if push_image_count != 0 and link.links.size == 0 %}MegaMenu--spacingCenter{% elsif should_space_evenly %}MegaMenu--spacingEvenly{% endif %} {% if push_image_count == 0 and link.links.size > 4 %}MegaMenu--grid{% endif %}" aria-hidden="true" {{ block.shopify_attributes }}>
                       <div class="MegaMenu__Inner">
                         {%- for sub_link in link.links -%}
-                          <div class="MegaMenu__Item MegaMenu__Item--fit">
+                          <div class="MegaMenu__Item">
                             <a href="{{ sub_link.url }}" class="MegaMenu__Title Heading Link--megatitle u-h7">{{ sub_link.title | title }}</a>
 
                             {%- if sub_link.links != blank -%}
