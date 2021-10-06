@@ -5237,7 +5237,7 @@ select::-ms-expand {
     min-height: 400px;
 
     @supports (--css: variables) {
-      min-height: calc(600px + var(--header-height) * var(--header-is-transparent, 0));
+      min-height: calc(400px + var(--header-height) * var(--header-is-transparent, 0));
     }
   }
 
