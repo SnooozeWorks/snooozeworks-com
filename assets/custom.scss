@@ -51,7 +51,7 @@
   padding-left: 60px;
 }
 
-// Hides all link events on Section Headers
+/* Hides all link events on Section Headers */
 
 nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item:nth-of-type(1) .MegaMenu__Title {
   cursor: default;
@@ -68,24 +68,34 @@ nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaM
   pointer-events: none;
 }
 
-// Hide Browse All 'Category Title'  on Patents Menu
+/**
+ *----------------------------------------------------------------------------
+ * Hide Additional Column Titles
+ *----------------------------------------------------------------------------
+ */
 
-nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
+/* Patent */
+
+/* nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
   visibility: hidden;
 }
 
 nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
   visibility: hidden;
+} */
+
+nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n+3) .MegaMenu__Title {
+  visibility: hidden;
 }
 
-// Hide Browse All 'Category Title'  on Posters Menu
+
+/* Posters */
 
 nav .HorizontalList__Item:nth-of-type(2) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
   visibility: hidden;
 }
 
-
-// Hide Browse All 'Category Title' on Patent Mug Menu
+/* Patent Mugs */
 
 nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
   visibility: hidden;
@@ -95,7 +105,7 @@ nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of
   visibility: hidden;
 }
 
-// Hide Second 'Category Title'  Vinyl Decal Title
+/* Stickables */
 
 nav .HorizontalList__Item:nth-of-type(5) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
   visibility: hidden;
