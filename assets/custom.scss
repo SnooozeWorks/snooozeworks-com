@@ -77,3 +77,7 @@ nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaM
 nav .HorizontalList__Item:nth-of-type(n) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n+2) .MegaMenu__Title {
   visibility: hidden;
 }
+
+nav .HorizontalList__Item:nth-of-type(5) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
+  visibility: hidden;
+}
