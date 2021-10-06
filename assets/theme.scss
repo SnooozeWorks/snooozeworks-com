@@ -9057,6 +9057,9 @@ $vertical-spacing-two-products-per-row  : 0px;
   overflow: auto;
   overscroll-behavior: contain;
   text-align: left;
+  background: #F9F9F9; // Changed color from $header-background
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+  opacity: 0.5;
   border-bottom: 2px solid $header-background; //Changed from  1px solid $header-border-color
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -9064,12 +9067,6 @@ $vertical-spacing-two-products-per-row  : 0px;
   @supports (--css: variables) {
     max-height: calc(100vh - var(--header-height));
   }
-}
-
-.MegaMenu::after {
-   background: #F9F9F9; // Changed color from $header-background
-  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
-  opacity: 0.75;
 }
 
 .MegaMenu[aria-hidden="false"] {
