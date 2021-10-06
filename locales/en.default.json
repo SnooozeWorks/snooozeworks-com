@@ -225,7 +225,7 @@
     "general": {
       "all_products": "All Products",
       "no_products": "No Products",
-      "empty": "Uh oh. The {{collection_title}} seem to be missing.",
+      "empty": "Uh oh. {{collection_title}} seems to be missing.",
       "empty_button": "Back to Homepage",
       "reset": "Reset Filters",
       "view_products": "View Products"
