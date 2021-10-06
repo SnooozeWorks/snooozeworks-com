@@ -338,6 +338,7 @@
         "settings": {
           "show_product_recommendations": true,
           "heading": "You May Also Like",
+          "subheading": "Take a look at some personalized recommendations",
           "show_product_info": true,
           "show_vendor": false,
           "show_color_swatch": false
