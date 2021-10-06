@@ -14,6 +14,34 @@
 
 </section>
 
+<script defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEYwCtBJ56Re3zx5_JK6ld4oNhewutw4M&map_ids=2ebec432ba8da0e7&callback=initMap">
+</script>
+
+<script>
+
+function initMap() {
+
+  var snooozeWorks = {
+    lat: 43.2020685,
+    lng: -70.8763372
+  };
+
+  var map = new google.maps.Map(
+    document.getElementById('map'), {
+      zoom: 14,
+      center: snooozeWorks,
+      mapId: '2ebec432ba8da0e7',
+      disableDefaultUI: true,
+    });
+
+  var marker = new google.maps.Marker({
+    position: snooozeWorks,
+    map: map
+  });
+}
+  
+</script>
 
 {% schema %}
   {
@@ -44,34 +72,5 @@
 {% endstylesheet %}
 
 {% javascript %}
-
-<script defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEYwCtBJ56Re3zx5_JK6ld4oNhewutw4M&map_ids=2ebec432ba8da0e7&callback=initMap">
-</script>
-
-<script>
-
-function initMap() {
-
-  var snooozeWorks = {
-    lat: 43.2020685,
-    lng: -70.8763372
-  };
-
-  var map = new google.maps.Map(
-    document.getElementById('map'), {
-      zoom: 14,
-      center: snooozeWorks,
-      mapId: '2ebec432ba8da0e7',
-      disableDefaultUI: true,
-    });
-
-  var marker = new google.maps.Marker({
-    position: snooozeWorks,
-    map: map
-  });
-}
-  
-</script>
 
 {% endjavascript %}
