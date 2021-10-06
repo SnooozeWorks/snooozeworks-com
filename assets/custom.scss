@@ -76,14 +76,6 @@ nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaM
 
 /* Patent */
 
-/* nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
-  visibility: hidden;
-}
-
-nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
-  visibility: hidden;
-} */
-
 nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n+3) .MegaMenu__Title {
   visibility: hidden;
 }
@@ -91,22 +83,18 @@ nav .HorizontalList__Item:first-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-
 
 /* Posters */
 
-nav .HorizontalList__Item:nth-of-type(2) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
+nav .HorizontalList__Item:nth-of-type(2) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n+3) .MegaMenu__Title {
   visibility: hidden;
 }
 
 /* Patent Mugs */
 
-nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(3) .MegaMenu__Title {
-  visibility: hidden;
-}
-
-nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
+nav .HorizontalList__Item:nth-of-type(3) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n+3) .MegaMenu__Title {
   visibility: hidden;
 }
 
 /* Stickables */
 
-nav .HorizontalList__Item:nth-of-type(5) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
+nav .HorizontalList__Item:nth-of-type(5) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n+3) .MegaMenu__Title {
   visibility: hidden;
 }
