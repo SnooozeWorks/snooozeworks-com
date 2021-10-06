@@ -336,7 +336,7 @@
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
-          "show_product_recommendations": false,
+          "show_product_recommendations": true,
           "heading": "You May Also Like",
           "show_product_info": true,
           "show_vendor": false,

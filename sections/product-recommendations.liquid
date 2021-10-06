@@ -30,6 +30,10 @@
       </header>
     {%- endif -%}
 
+    {%- if section.settings.title != blank -%}
+      <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+    {%- endif -%}
+    
     <div class="ProductRecommendations">
       {%- if recommendations.performed or product.metafields.sf_related_products.enabled == 1 -%}
         <div class="ProductListWrapper">
@@ -88,6 +92,12 @@
       "id": "heading",
       "label": "Heading",
       "default": "You may also like"
+    },
+	{
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Featured Products"
     },
     {
       "type": "checkbox",
