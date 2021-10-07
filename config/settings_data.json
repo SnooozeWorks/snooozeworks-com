@@ -324,7 +324,7 @@
       "1577237689645": {
         "type": "newsletter",
         "settings": {
-          "section_size": "small",
+          "section_size": "normal",
           "image": "shopify:\/\/shop_images\/newsletter_Bg_1.jpg",
           "text_color": "#ffffff",
           "button_color": "#000000",
