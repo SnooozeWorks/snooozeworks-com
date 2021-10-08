@@ -9180,6 +9180,13 @@ $vertical-spacing-two-products-per-row  : 0px;
   text-align: justify;
 }
 
+.MegaMenu__Push--link {
+  font-family: Fira Sans;
+  font-size: 14px;
+  color: #000;
+  padding-top:5px;
+}
+
 @media (-moz-touch-enabled: 0), (hover: hover) {
   .MegaMenu__Push img {
     -webkit-transform: scale(1);
