@@ -241,10 +241,7 @@ HEADER CONTENT
 
                             {%- if block.settings.push_2_image -%}
                               <div class="MegaMenu__Push {% if push_image_count >= 2 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}px">
-                                {%- if block.settings.push_2_url != blank -%}
-                                  <a class="MegaMenu__PushLink" href="{{ block.settings.push_2_url }}">
-                                {%- endif -%}
-
+                                
                                 {%- assign max_width = 400 | at_most: block.settings.push_2_image.width -%}
 
                                 <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}">
@@ -260,10 +257,15 @@ HEADER CONTENT
                                 {%- if block.settings.push_2_subheading != blank -%}
                                   <p class="MegaMenu__Push--Description">{{ block.settings.push_2_subheading | escape }}</p>
                                 {%- endif -%}
-
+                                
                                 {%- if block.settings.push_2_url != blank -%}
-                                  </a>
+                                <a class="MegaMenu__Push--Link Button Button--primary" href="{{ block.settings.push_2_url | escape }}">{{ block.settings.push_3_button_text }}</a>
                                 {%- endif -%}
+                                    
+
+
+
+
                               </div>
                             {%- endif -%}
 
