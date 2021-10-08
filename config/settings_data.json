@@ -867,7 +867,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/waves-crash-on-iceland-rocky-shore.jpg",
               "apply_overlay": true,
-              "content_position": "bottomLeft",
+              "content_position": "middleCenter",
               "subheading": "11oz and 15oz sizes. A Ton of Different Subjects! Check 'em out!",
               "title": "Patent Mugs now available",
               "button_1_text": "Shop all",
