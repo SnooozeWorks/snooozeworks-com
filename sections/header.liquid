@@ -230,9 +230,9 @@ HEADER CONTENT
                                   <p class="MegaMenu__Push--Description">{{ block.settings.push_1_subheading | escape }}</p>
                                 {%- endif -%}
 
-                                {%- if block.settings.push_2_url != blank -%}
+                                {%- if block.settings.push_1_url != blank -%}
                                   <p class="MegaMenu__Push--Link">
-                                 	<a href="{{ block.settings.push_2_url }}">{{ block.settings.push_image_2_url_text }}</a>
+                                 	<a href="{{ block.settings.push_1_url }}">{{ block.settings.push_image_1_url_text }}</a>
                                   </p>
                                 {%- endif -%}
                               </div>
@@ -285,9 +285,9 @@ HEADER CONTENT
                                 <p class="MegaMenu__Push--Description">{{ block.settings.push_3_subheading | escape }}</p>
                                 {%- endif -%}
                             
-                                {%- if block.settings.push_2_url != blank -%}
+                                {%- if block.settings.push_3_url != blank -%}
                                   <p class="MegaMenu__Push--Link">
-                                 	<a href="{{ block.settings.push_2_url }}">{{ block.settings.push_image_2_url_text }}</a>
+                                 	<a href="{{ block.settings.push_3_url }}">{{ block.settings.push_image_3_url_text }}</a>
                                   </p>
                                 {%- endif -%}
                               </div>
@@ -645,6 +645,12 @@ HEADER CONTENT
           "label": "Link"
         },
         {
+          "type": "text",
+          "id": "push_image_1_url_text",
+          "label": "Link text",
+          "default": "Shop now"
+        },
+        {
           "type": "header",
           "content": "Image 2"
         },
@@ -703,6 +709,12 @@ HEADER CONTENT
           "type": "url",
           "id": "push_3_url",
           "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "push_image_3_url_text",
+          "label": "Link text",
+          "default": "Shop now"
         }
 		]
     }
