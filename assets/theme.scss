@@ -9087,7 +9087,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   flex-wrap: nowrap;
   max-width: 1450px;
   margin: 0 auto;
-  padding: 0 10px; /* each menu has 40px margin, but header has 50px, so we normalize it here */
+  padding: 10px; /* each menu has 40px margin, but header has 50px, so we normalize it here */
 }
 
 .MegaMenu--spacingEvenly .MegaMenu__Inner {
