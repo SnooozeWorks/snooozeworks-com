@@ -217,8 +217,11 @@ HEADER CONTENT
                                 {%- assign max_width = 400 | at_most: block.settings.push_1_image.width -%}
 
                                 <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
+                                  
+                                {%- if block.settings.push_1_url != blank -%}
                                   <img class="Image--lazyLoad Image--fadeIn" data-src="{{ block.settings.push_1_image | img_url: '400x300', scale: 1 }}" alt="{{ block.settings.push_1_image.alt | escape }}">
-
+								{%- endif -%}
+                                  
                                   <span class="Image__Loader"></span>
                                 </div>
 
@@ -244,8 +247,11 @@ HEADER CONTENT
                                 {%- assign max_width = 400 | at_most: block.settings.push_2_image.width -%}
 
                                 <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}">
+                                
+                                {%- if block.settings.push_2_url != blank -%}
                                   <img class="Image--lazyLoad Image--fadeIn" data-src="{{ block.settings.push_2_image | img_url: '400x300', scale: 1 }}" alt="{{ block.settings.push_2_image.alt | escape }}">
-
+								{%- endif -%}
+                                 
                                   <span class="Image__Loader"></span>
                                 </div>
 
@@ -270,10 +276,12 @@ HEADER CONTENT
 
                                 {%- assign max_width = 400 | at_most: block.settings.push_3_image.width -%}
                             
-                                <div class="MegaMenu__PushImageWrapper AspectRatio"
-                                  style="background: url({{ block.settings.push_3_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_3_image.aspect_ratio }}">
+                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_3_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_3_image.aspect_ratio }}">
+                                  
+                                {%- if block.settings.push_3_url != blank -%}
                                   <img class="Image--lazyLoad Image--fadeIn" data-src="{{ block.settings.push_3_image | img_url: '400x300', scale: 1 }}" alt="{{ block.settings.push_3_image.alt | escape }}">
-                            
+                                {%- endif -%}
+                                  
                                   <span class="Image__Loader"></span>
                                 </div>
                             
