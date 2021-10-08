@@ -247,15 +247,15 @@
               "push_1_url": "#",
               "push_image_1_url_text": "",
               "push_2_image": "shopify:\/\/shop_images\/fff_text_Placeholder_1.png",
-              "push_2_heading": "Test",
-              "push_2_subheading": "Here i am, testing away",
+              "push_2_heading": "",
+              "push_2_subheading": "",
               "push_2_url": "#",
-              "push_image_2_url_text": "Shop",
+              "push_image_2_url_text": "",
               "push_3_image": "shopify:\/\/shop_images\/popular.jpg",
-              "push_3_heading": "Featured Collection",
-              "push_3_subheading": "Example sub-heading",
-              "push_3_url": "",
-              "push_image_3_url_text": "Shop now"
+              "push_3_heading": "",
+              "push_3_subheading": "",
+              "push_3_url": "shopify:\/\/collections\/best-selling-patents",
+              "push_image_3_url_text": ""
             }
           },
           "149ffe4f-b6ae-45b2-a076-d46babad8d25": {
