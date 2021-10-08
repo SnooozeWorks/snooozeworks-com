@@ -165,9 +165,6 @@ HEADER CONTENT
                     {%- if block.settings.push_2_image -%}
                       {%- assign push_image_count = push_image_count | plus: 1 -%}
                     {%- endif -%}
-            		{%- if block.settings.push_3_image -%}
-                      {%- assign push_image_count = push_image_count | plus: 1 -%}
-                    {%- endif -%}
 
                     {%- assign should_space_evenly = false -%}
 
@@ -180,9 +177,6 @@ HEADER CONTENT
                     {%- endif -%}
 
                     {%- if push_image_count == 2 and link.links.size == 1 -%}
-                      {%- assign should_space_evenly = true -%}
-                    {%- endif -%}
-            		{%- if push_image_count == 3 and link.links.size == 1 -%}
                       {%- assign should_space_evenly = true -%}
                     {%- endif -%}
 
@@ -216,7 +210,7 @@ HEADER CONTENT
 
                                 <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
                                   <img class="Image--lazyLoad Image--fadeIn"
-                                       data-src="{{ block.settings.push_1_image | img_url: '400x400', scale: 2 }}"
+                                       data-src="{{ block.settings.push_1_image | img_url: '1000x800', scale: 2 }}"
                                        alt="{{ block.settings.push_1_image.alt | escape }}">
 
                                   <span class="Image__Loader"></span>
@@ -246,7 +240,7 @@ HEADER CONTENT
 
                                 <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}">
                                   <img class="Image--lazyLoad Image--fadeIn"
-                                       data-src="{{ block.settings.push_2_image | img_url: '400x400', scale: 2 }}"
+                                       data-src="{{ block.settings.push_2_image | img_url: '1000x800', scale: 2 }}"
                                        alt="{{ block.settings.push_2_image.alt | escape }}">
 
                                   <span class="Image__Loader"></span>
@@ -263,37 +257,6 @@ HEADER CONTENT
                                 {%- if block.settings.push_2_url != blank -%}
                                   </a>
                                 {%- endif -%}
-                              </div>
-                            {%- endif -%}
-                            
-                            {%- if block.settings.push_3_image -%}
-                              <div class="MegaMenu__Push {% if push_image_count == 3 %}MegaMenu__Push--shrink{% endif %}">
-                                {%- if block.settings.push_3_url != blank -%}
-                                  <a class="MegaMenu__PushLink" href="{{ block.settings.push_3_url }}">
-                                {%- endif -%}
-
-                                {%- assign max_width = 300 | at_most: block.settings.push_3_image.width -%}
-
-                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_3_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_3_image.aspect_ratio }}">
-                                  <img class="Image--lazyLoad Image--fadeIn"
-                                       data-src="{{ block.settings.push_3_image | img_url: '400x400', scale: 2 }}"
-                                       alt="{{ block.settings.push_3_image.alt | escape }}">
-
-                                  <span class="Image__Loader"></span>
-                                </div>
-
-                                {%- if block.settings.push_3_heading != blank -%}
-                                  <p class="MegaMenu__PushHeading Heading u-h6">{{ block.settings.push_3_heading | escape }}</p>
-                                {%- endif -%}
-
-                                {%- if block.settings.push_3_subheading != blank -%}
-                                  <p class="MegaMenu__PushSubHeading Heading Text--subdued u-h7">{{ block.settings.push_3_subheading | escape }}</p>
-                                {%- endif -%}
-
-                                {%- if block.settings.push_3_url != blank -%}
-                                  </a>
-                                {%- endif -%}
-                                
                               </div>
                             {%- endif -%}
                           </div>
@@ -672,33 +635,6 @@ HEADER CONTENT
         {
           "type": "url",
           "id": "push_2_url",
-          "label": "Link"
-        },
-		{
-          "type": "header",
-          "content": "Image push 3"
-        },
-        {
-          "type": "image_picker",
-          "id": "push_3_image",
-          "label": "Image",
-          "info": "740 x 460 px .jpg recommended"
-        },
-        {
-          "type": "text",
-          "id": "push_3_heading",
-          "label": "Heading",
-          "default": "Example heading"
-        },
-        {
-          "type": "text",
-          "id": "push_3_subheading",
-          "label": "Sub-heading",
-          "default": "Example sub-heading"
-        },
-        {
-          "type": "url",
-          "id": "push_3_url",
           "label": "Link"
         }
       ]
