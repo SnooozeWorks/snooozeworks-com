@@ -249,7 +249,11 @@
               "push_2_image": "shopify:\/\/shop_images\/fff_text_Placeholder.png",
               "push_2_heading": "Featured Patent",
               "push_2_subheading": "Lego Building Bricks",
-              "push_2_url": "shopify:\/\/products\/lego-bricks-patent-poster"
+              "push_2_url": "shopify:\/\/products\/lego-bricks-patent-poster",
+              "push_3_image": "shopify:\/\/shop_images\/fff_text_Placeholder.png",
+              "push_3_heading": "Featured Patent",
+              "push_3_subheading": "Lego Building Bricks",
+              "push_3_url": "shopify:\/\/products\/lego-brick-mug"
             }
           },
           "149ffe4f-b6ae-45b2-a076-d46babad8d25": {
@@ -261,7 +265,10 @@
               "push_1_url": "",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
-              "push_2_url": ""
+              "push_2_url": "",
+              "push_3_heading": "Example heading",
+              "push_3_subheading": "Example sub-heading",
+              "push_3_url": ""
             }
           },
           "3d54d8ea-5295-4634-8fd0-741ad21d4635": {
@@ -273,7 +280,10 @@
               "push_1_url": "",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
-              "push_2_url": ""
+              "push_2_url": "",
+              "push_3_heading": "Example heading",
+              "push_3_subheading": "Example sub-heading",
+              "push_3_url": ""
             }
           },
           "59fa34aa-f6af-4735-b2b4-3b8acfb950a5": {
@@ -285,7 +295,10 @@
               "push_1_url": "",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
-              "push_2_url": ""
+              "push_2_url": "",
+              "push_3_heading": "Example heading",
+              "push_3_subheading": "Example sub-heading",
+              "push_3_url": ""
             }
           },
           "16675410-0675-4eb9-8a16-cca53abb2497": {
@@ -297,7 +310,10 @@
               "push_1_url": "",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
-              "push_2_url": ""
+              "push_2_url": "",
+              "push_3_heading": "Example heading",
+              "push_3_subheading": "Example sub-heading",
+              "push_3_url": ""
             }
           }
         },
