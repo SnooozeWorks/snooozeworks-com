@@ -1,11 +1,47 @@
+
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="page-content-block">
+  <div class="PageSection_1">
+    <div class="Section_H1 slideanim">{{ section.settings.title }}</div>
+      <div class="Section_Paragraph slideanim">
+        {{ section.settings.content }}
+      </div>
+  </div>
+</section>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Content - Style 2",
+    "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Section Title"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    }
+]
   }
 {% endschema %}
 
 {% stylesheet %}
+
+<style>
+  #section-{{ section.id }} {
+    background: {{ section.settings.background }};
+  }
+</style>
+
 {% endstylesheet %}
 
 {% javascript %}
