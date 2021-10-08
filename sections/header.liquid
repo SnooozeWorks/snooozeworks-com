@@ -259,6 +259,37 @@ HEADER CONTENT
                                 {%- endif -%}
                               </div>
                             {%- endif -%}
+                            
+                            {%- if block.settings.push_3_image -%}
+                              <div class="MegaMenu__Push {% if push_image_count == 3 %}MegaMenu__Push--shrink{% endif %}">
+                                {%- if block.settings.push_2_url != blank -%}
+                                  <a class="MegaMenu__PushLink" href="{{ block.settings.push_3_url }}">
+                                {%- endif -%}
+
+                                {%- assign max_width = 300 | at_most: block.settings.push_3_image.width -%}
+
+                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_3_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_3_image.aspect_ratio }}">
+                                  <img class="Image--lazyLoad Image--fadeIn"
+                                       data-src="{{ block.settings.push_3_image | img_url: '1000x800', scale: 2 }}"
+                                       alt="{{ block.settings.push_3_image.alt | escape }}">
+
+                                  <span class="Image__Loader"></span>
+                                </div>
+
+                                {%- if block.settings.push_3_heading != blank -%}
+                                  <p class="MegaMenu__PushHeading Heading u-h6">{{ block.settings.push_3_heading | escape }}</p>
+                                {%- endif -%}
+
+                                {%- if block.settings.push_3_subheading != blank -%}
+                                  <p class="MegaMenu__PushSubHeading Heading Text--subdued u-h7">{{ block.settings.push_3_subheading | escape }}</p>
+                                {%- endif -%}
+
+                                {%- if block.settings.push_3_url != blank -%}
+                                  </a>
+                                {%- endif -%}
+                                
+                              </div>
+                            {%- endif -%}
                           </div>
                         {%- endif -%}
                       </div>
