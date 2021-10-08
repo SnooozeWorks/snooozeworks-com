@@ -1,9 +1,12 @@
-<div class="PageSection_1">
-  <div class="Section_H1 slideanim">{{ section.settings.title }}</div>
-    <div class="Section_Paragraph slideanim">
-      {{ section.settings.content }}
-    </div>
-</div>
+
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="page-content-block">
+  <div class="PageSection_1">
+    <div class="Section_H1 slideanim">{{ section.settings.title }}</div>
+      <div class="Section_Paragraph slideanim">
+        {{ section.settings.content }}
+      </div>
+  </div>
+</section>
 
 {% schema %}
   {
@@ -26,6 +29,13 @@
 {% endschema %}
 
 {% stylesheet %}
+
+<style>
+  #section-{{ section.id }} {
+    background: {{ section.settings.background }};
+  }
+</style>
+
 {% endstylesheet %}
 
 {% javascript %}
