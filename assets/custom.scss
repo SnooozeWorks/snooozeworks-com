@@ -41,6 +41,11 @@
   padding: 0 35px;
 }
 
+nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .MegaMenu__Item:first-of-type {
   border-right: 2px solid #ef3340;
   padding-right: 60px;
