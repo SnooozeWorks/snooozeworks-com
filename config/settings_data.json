@@ -662,6 +662,7 @@
       },
       "1602658768670": {
         "type": "collection-list",
+        "disabled": true,
         "blocks": {
           "1602658768670-0": {
             "type": "collection",
@@ -678,6 +679,7 @@
           },
           "1602658768670-1": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "",
               "image": "shopify:\/\/shop_images\/coinbase-blue-white-exchange-cloud.jpg",
@@ -856,9 +858,55 @@
           "title": "Section Title",
           "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
         }
+      },
+      "16337274257e2f4e22": {
+        "type": "slideshow",
+        "blocks": {
+          "16337274257e2f4e22-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/waves-crash-on-iceland-rocky-shore.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "11oz and 15oz sizes. A Ton of Different Subjects! Check 'em out!",
+              "title": "Patent Mugs now available",
+              "button_1_text": "Shop all",
+              "button_1_link": "shopify:\/\/collections\/best-selling-coffee-mugs",
+              "button_2_text": "Best Sellers",
+              "button_2_link": "shopify:\/\/collections\/best-selling-patent-mugs"
+            }
+          },
+          "16337274257e2f4e22-1": {
+            "type": "image",
+            "settings": {
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "16337274257e2f4e22-0",
+          "16337274257e2f4e22-1"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
       }
     },
     "content_for_index": [
+      "16337274257e2f4e22",
       "1602658768670",
       "featured-collections",
       "1577237689645",
