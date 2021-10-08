@@ -12879,3 +12879,70 @@ hr {
   padding: 40px 0;
 }
 
+/**
+ *----------------------------------------------------------------------------
+ *
+ * Mega Menu Styling
+ *
+ * ----------------------------------------------------------------------------
+ */
+
+.nav__heading {
+  font-family: Fira Sans, san-serif;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.Link--megatitle {
+  color: #ef3340 !important;
+} 
+
+.Link--mega {
+  color: #000;
+}
+
+.MegaMenu__Inner {
+  justify-content: flex-start !important;
+  max-width: 100%;
+}
+
+.MegaMenu__Item {
+  margin: 20px 0;
+  padding: 0 35px;
+}
+
+.MegaMenu__Item:first-of-type {
+  border-right: 2px solid #ef3340;
+  padding-right: 60px;
+  align-self: stretch;
+}
+
+.MegaMenu__Item:nth-of-type(2) {
+  padding-left: 60px;
+}
+
+/**
+ *----------------------------------------------------------------------------
+ * Hides all link events on Section Headers
+ *----------------------------------------------------------------------------
+ */
+
+nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n) .MegaMenu__Title {
+  cursor: default;
+  pointer-events: none;
+}
+
+/**
+ *----------------------------------------------------------------------------
+ * Hide Additional Column Titles on all Menus 'Category'
+ *----------------------------------------------------------------------------
+ */
+
+nav .HorizontalList__Item:nth-of-type(-n+4) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n+3) .MegaMenu__Title {
+  visibility: hidden;
+}
+
+nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
+  visibility: hidden;
+}
+
