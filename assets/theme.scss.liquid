@@ -9150,7 +9150,24 @@ $vertical-spacing-two-products-per-row  : 0px;
   font-size: 14px;
   color: #000;
   padding-top:5px;
-  text-align: left;
+  text-align: left; 
+}
+
+.MegaMenu__Push--link .underline
+{
+    position: relative;
+}
+
+.MegaMenu__Push--link .underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (-moz-touch-enabled: 0), (hover: hover) {
