@@ -265,7 +265,7 @@ HEADER CONTENT
                             {%- endif -%}
 
                             {%- if block.settings.push_3_image -%}
-                              <div class="MegaMenu__Push {% if push_image_count == 3 %}MegaMenu__Push--shrink{% endif %}">
+                              <div class="MegaMenu__Push {% if push_image_count > 2 %}MegaMenu__Push--shrink{% endif %}">
                                 {%- if block.settings.push_3_url != blank -%}
                                   <a class="MegaMenu__PushLink" href="{{ block.settings.push_3_url }}">
                                 {%- endif -%}
