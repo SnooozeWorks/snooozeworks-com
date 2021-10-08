@@ -259,7 +259,7 @@ HEADER CONTENT
                                 {%- endif -%}
                                 
                                 {%- if block.settings.push_2_url != blank -%}
-                                	<a class="MegaMenu__Push--Link" href="{{ block.settings.push_2_url }}">{{ block.settings.push_2_button_text | escape }}</a>
+                                	<a class="MegaMenu__Push--Link" href="{{ block.settings.push_2_url }}">{{ block.settings.push_2_url_text | escape }}</a>
                                 {%- endif -%}
                               </div>
                             {%- endif -%}
@@ -673,8 +673,8 @@ HEADER CONTENT
         },
         {
           "type": "text",
-          "id": "push_image_2_button_text",
-          "label": "Button text",
+          "id": "push_image_2_url_text",
+          "label": "Link text",
           "default": "Shop now"
         },
         {
