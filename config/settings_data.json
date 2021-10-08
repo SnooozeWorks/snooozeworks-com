@@ -865,9 +865,9 @@
           "16337274257e2f4e22-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/waves-crash-on-iceland-rocky-shore.jpg",
+              "image": "shopify:\/\/shop_images\/self-serve-coffee-shop.jpg",
               "apply_overlay": true,
-              "content_position": "middleCenter",
+              "content_position": "bottomLeft",
               "subheading": "11oz and 15oz sizes. A Ton of Different Subjects! Check 'em out!",
               "title": "Patent Mugs now available",
               "button_1_text": "Shop all",
@@ -879,14 +879,15 @@
           "16337274257e2f4e22-1": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/waves-crash-on-iceland-rocky-shore.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
-              "subheading": "Slide title",
-              "title": "Tell your story",
-              "button_1_text": "",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
+              "subheading": "Get a jump on your holiday shopping with some of our best sellers!",
+              "title": "Premium Patent Posters",
+              "button_1_text": "Shop All",
+              "button_1_link": "shopify:\/\/collections\/patents",
+              "button_2_text": "Best Sellers",
+              "button_2_link": "shopify:\/\/collections\/best-selling-patents"
             }
           }
         },
