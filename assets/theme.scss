@@ -9185,28 +9185,26 @@ $vertical-spacing-two-products-per-row  : 0px;
   font-size: 14px;
   color: #000;
   padding:5px 0;
-  text-align: left;
 }
 
 .underline {
-    display: inline-block;
-    color: #000;
-    text-decoration: none;
-    margin-left: 0 !important;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  text-align: left !important;
 }
 
 .underline::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ef3340;
-    transition: width .3s ease-in-out;
+  content: '';
+  display: block;
+  height: 2px;
+  background: #ef3340;
+  transition: width .3s ease-in-out;
 }
 
 .underline:hover::after {
-    width: 100%;
-    //transition: width .3s;
+  width: 100%;
+  //transition: width .3s;
 }
 
 @media (-moz-touch-enabled: 0), (hover: hover) {
