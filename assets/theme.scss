@@ -9138,8 +9138,16 @@ $vertical-spacing-two-products-per-row  : 0px;
   width: 33%;
 }
 
+.MenuMenu__Push--shrink:first-child {
+  padding-right: 15px;
+}
+
 .MegaMenu__Push--shrink:nth-child(2) {
-  padding: 0px;
+  padding: 0 15px;
+}
+
+.MenuMenu__Push--shrink:last-child {
+  padding-left: 15px;
 }
 
 .MegaMenu__PushImageWrapper {
