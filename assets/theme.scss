@@ -9162,7 +9162,8 @@ $vertical-spacing-two-products-per-row  : 0px;
   justify-content: center;
 }
 
-.MegaMenu__PushHeading {
+.MegaMenu__Push--Heading {
+  font-family: Poppins;
   margin-bottom: 2px;
   color: #000 !important;
   text-align: left;
@@ -9170,7 +9171,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 
 .MegaMenu__Push--Description {
   font-family: Fira Sans;
-  font-size: 12px;
+  font-size: 14px;
   color: #000 !important;
   text-align: left;
 }
