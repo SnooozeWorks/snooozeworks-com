@@ -213,9 +213,6 @@ HEADER CONTENT
                             
                             {%- if block.settings.push_1_image -%}
                               <div class="MegaMenu__Push {% if push_image_count > 2 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}px">
-                                {%- if block.settings.push_1_url != blank -%}
-                                  <a class="MegaMenu__PushLink" href="{{ block.settings.push_1_url }}">
-                                {%- endif -%}
 
                                 {%- assign max_width = 400 | at_most: block.settings.push_1_image.width -%}
 
@@ -233,8 +230,10 @@ HEADER CONTENT
                                   <p class="MegaMenu__Push--Description">{{ block.settings.push_1_subheading | escape }}</p>
                                 {%- endif -%}
 
-                                {%- if block.settings.push_1_url != blank -%}
-                                  </a>
+                                {%- if block.settings.push_2_url != blank -%}
+                                  <p class="MegaMenu__Push--Link">
+                                 	<a href="{{ block.settings.push_2_url }}">{{ block.settings.push_image_2_url_text }}</a>
+                                  </p>
                                 {%- endif -%}
                               </div>
                             {%- endif -%}
@@ -268,10 +267,7 @@ HEADER CONTENT
 
                             {%- if block.settings.push_3_image -%}
                               <div class="MegaMenu__Push {% if push_image_count == 3 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}px">
-                                {%- if block.settings.push_3_url != blank -%}
-                                  <a class="MegaMenu__PushLink" href="{{ block.settings.push_3_url }}">
-                                {%- endif -%}
-                            
+
                                 {%- assign max_width = 400 | at_most: block.settings.push_3_image.width -%}
                             
                                 <div class="MegaMenu__PushImageWrapper AspectRatio"
@@ -289,8 +285,10 @@ HEADER CONTENT
                                 <p class="MegaMenu__Push--Description">{{ block.settings.push_3_subheading | escape }}</p>
                                 {%- endif -%}
                             
-                                {%- if block.settings.push_3_url != blank -%}
-                                  </a>
+                                {%- if block.settings.push_2_url != blank -%}
+                                  <p class="MegaMenu__Push--Link">
+                                 	<a href="{{ block.settings.push_2_url }}">{{ block.settings.push_image_2_url_text }}</a>
+                                  </p>
                                 {%- endif -%}
                               </div>
                             {%- endif -%}
