@@ -9204,6 +9204,12 @@ $vertical-spacing-two-products-per-row  : 0px;
   transition: all 0.3s ease-in-out;
 }
 
+.MegaMenu__Push--link a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+
 @media (-moz-touch-enabled: 0), (hover: hover) {
   .MegaMenu__Push img {
     -webkit-transform: scale(1);
