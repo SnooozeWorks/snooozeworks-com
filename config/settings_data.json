@@ -246,6 +246,7 @@
               "push_1_heading": "Boeing B-24 Liberator",
               "push_1_subheading": "Take a look at some of our favorite patents for this month.",
               "push_1_url": "shopify:\/\/products\/boeing-b24-patent-poster",
+              "push_image_1_url_text": "Shop now",
               "push_2_image": "shopify:\/\/shop_images\/fff_text_Placeholder_1.png",
               "push_2_heading": "Featured Patent",
               "push_2_subheading": "Lego Building Bricks",
@@ -254,7 +255,8 @@
               "push_3_image": "shopify:\/\/shop_images\/fff_text_Placeholder_1.png",
               "push_3_heading": "Featured Collection",
               "push_3_subheading": "Example sub-heading",
-              "push_3_url": ""
+              "push_3_url": "shopify:\/\/collections\/firearm-patents",
+              "push_image_3_url_text": "Shop now"
             }
           },
           "149ffe4f-b6ae-45b2-a076-d46babad8d25": {
@@ -264,13 +266,15 @@
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
+              "push_image_1_url_text": "Shop now",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
               "push_2_url": "",
               "push_image_2_url_text": "Shop now",
               "push_3_heading": "Example heading",
               "push_3_subheading": "Example sub-heading",
-              "push_3_url": ""
+              "push_3_url": "",
+              "push_image_3_url_text": "Shop now"
             }
           },
           "3d54d8ea-5295-4634-8fd0-741ad21d4635": {
@@ -280,13 +284,15 @@
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
+              "push_image_1_url_text": "Shop now",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
               "push_2_url": "",
               "push_image_2_url_text": "Shop now",
               "push_3_heading": "Example heading",
               "push_3_subheading": "Example sub-heading",
-              "push_3_url": ""
+              "push_3_url": "",
+              "push_image_3_url_text": "Shop now"
             }
           },
           "59fa34aa-f6af-4735-b2b4-3b8acfb950a5": {
@@ -296,13 +302,15 @@
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
+              "push_image_1_url_text": "Shop now",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
               "push_2_url": "",
               "push_image_2_url_text": "Shop now",
               "push_3_heading": "Example heading",
               "push_3_subheading": "Example sub-heading",
-              "push_3_url": ""
+              "push_3_url": "",
+              "push_image_3_url_text": "Shop now"
             }
           },
           "16675410-0675-4eb9-8a16-cca53abb2497": {
@@ -312,13 +320,15 @@
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
+              "push_image_1_url_text": "Shop now",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
               "push_2_url": "",
               "push_image_2_url_text": "Shop now",
               "push_3_heading": "Example heading",
               "push_3_subheading": "Example sub-heading",
-              "push_3_url": ""
+              "push_3_url": "",
+              "push_image_3_url_text": "Shop now"
             }
           }
         },
