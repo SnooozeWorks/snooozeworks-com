@@ -210,7 +210,7 @@ HEADER CONTENT
                           <div class="MegaMenu__Item" style="{% if push_image_count == 1 %}width: 100%;{% else %}width: 50%;{% endif %}; margin: auto;">
                             
                             {%- if block.settings.push_1_image -%}
-                              <div class="MegaMenu__Push {% if push_image_count > 2 %}MegaMenu__Push--shrink{% endif %}">
+                              <div class="MegaMenu__Push {% if push_image_count > 2 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}">
                                 {%- if block.settings.push_1_url != blank -%}
                                   <a class="MegaMenu__PushLink" href="{{ block.settings.push_1_url }}">
                                 {%- endif -%}
@@ -224,11 +224,11 @@ HEADER CONTENT
                                 </div>
 
                                 {%- if block.settings.push_1_heading != blank -%}
-                                  <p class="MegaMenu__PushHeading Heading u-h6" style="max-width: {{ max_width }}">{{ block.settings.push_1_heading | escape }}</p>
+                                  <p class="MegaMenu__PushHeading Heading u-h6">{{ block.settings.push_1_heading | escape }}</p>
                                 {%- endif -%}
 
                                 {%- if block.settings.push_1_subheading != blank -%}
-                                  <p class="MegaMenu__PushSubHeading Heading u-h7" style="max-width: {{ max_width }}">{{ block.settings.push_1_subheading | escape }}</p>
+                                  <p class="MegaMenu__PushSubHeading Heading u-h7">{{ block.settings.push_1_subheading | escape }}</p>
                                 {%- endif -%}
 
                                 {%- if block.settings.push_1_url != blank -%}
@@ -238,7 +238,7 @@ HEADER CONTENT
                             {%- endif -%}
 
                             {%- if block.settings.push_2_image -%}
-                              <div class="MegaMenu__Push {% if push_image_count >= 2 %}MegaMenu__Push--shrink{% endif %}">
+                              <div class="MegaMenu__Push {% if push_image_count >= 2 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}">
                                 {%- if block.settings.push_2_url != blank -%}
                                   <a class="MegaMenu__PushLink" href="{{ block.settings.push_2_url }}">
                                 {%- endif -%}
@@ -252,11 +252,11 @@ HEADER CONTENT
                                 </div>
 
                                 {%- if block.settings.push_2_heading != blank -%}
-                                  <p class="MegaMenu__PushHeading Heading u-h6" style="max-width: {{ max_width }}">{{ block.settings.push_2_heading | escape }}</p>
+                                  <p class="MegaMenu__PushHeading Heading u-h6">{{ block.settings.push_2_heading | escape }}</p>
                                 {%- endif -%}
 
                                 {%- if block.settings.push_2_subheading != blank -%}
-                                  <p class="MegaMenu__PushSubHeading Heading Text--subdued u-h7" style="max-width: {{ max_width }}">{{ block.settings.push_2_subheading | escape }}</p>
+                                  <p class="MegaMenu__PushSubHeading Heading Text--subdued u-h7">{{ block.settings.push_2_subheading | escape }}</p>
                                 {%- endif -%}
 
                                 {%- if block.settings.push_2_url != blank -%}
@@ -266,7 +266,7 @@ HEADER CONTENT
                             {%- endif -%}
 
                             {%- if block.settings.push_3_image -%}
-                              <div class="MegaMenu__Push {% if push_image_count == 3 %}MegaMenu__Push--shrink{% endif %}">
+                              <div class="MegaMenu__Push {% if push_image_count == 3 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}">
                                 {%- if block.settings.push_3_url != blank -%}
                                   <a class="MegaMenu__PushLink" href="{{ block.settings.push_3_url }}">
                                 {%- endif -%}
@@ -281,11 +281,11 @@ HEADER CONTENT
                                 </div>
                             
                                 {%- if block.settings.push_3_heading != blank -%}
-                                <p class="MegaMenu__PushHeading Heading u-h6" style="max-width: {{ max_width }}">{{ block.settings.push_3_heading | escape }}</p>
+                                <p class="MegaMenu__PushHeading Heading u-h6">{{ block.settings.push_3_heading | escape }}</p>
                                 {%- endif -%}
                             
                                 {%- if block.settings.push_3_subheading != blank -%}
-                                <p class="MegaMenu__PushSubHeading Heading Text--subdued u-h7" style="max-width: {{ max_width }}>{{ block.settings.push_3_subheading | escape }}</p>
+                                <p class="MegaMenu__PushSubHeading Heading Text--subdued u-h7">{{ block.settings.push_3_subheading | escape }}</p>
                                 {%- endif -%}
                             
                                 {%- if block.settings.push_3_url != blank -%}
