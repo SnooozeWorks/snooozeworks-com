@@ -9189,13 +9189,15 @@ $vertical-spacing-two-products-per-row  : 0px;
 }
 
 .underline {
+    display: inline-block;
     color: #000;
     text-decoration: none;
-    text-align: left !important;
+    margin-left: 0 !important;
 }
 
 .underline::after {
     content: '';
+    display: block;
     width: 0;
     height: 2px;
     background: #ef3340;
