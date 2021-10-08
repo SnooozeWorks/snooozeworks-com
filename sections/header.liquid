@@ -165,6 +165,9 @@ HEADER CONTENT
                     {%- if block.settings.push_2_image -%}
                       {%- assign push_image_count = push_image_count | plus: 1 -%}
                     {%- endif -%}
+            		{%- if block.settings.push_3_image -%}
+                      {%- assign push_image_count = push_image_count | plus: 1 -%}
+                    {%- endif -%}
 
                     {%- assign should_space_evenly = false -%}
 
@@ -177,6 +180,9 @@ HEADER CONTENT
                     {%- endif -%}
 
                     {%- if push_image_count == 2 and link.links.size == 1 -%}
+                      {%- assign should_space_evenly = true -%}
+                    {%- endif -%}
+            		{%- if push_image_count == 3 and link.links.size == 1 -%}
                       {%- assign should_space_evenly = true -%}
                     {%- endif -%}
 
@@ -201,7 +207,7 @@ HEADER CONTENT
                         {%- if push_image_count > 0 -%}
                           <div class="MegaMenu__Item" style="{% if push_image_count == 1 %}width: 100%;{% else %}width: 40%;{% endif %}; margin: auto;">
                             {%- if block.settings.push_1_image -%}
-                              <div class="MegaMenu__Push {% if push_image_count == 3 %}MegaMenu__Push--shrink{% endif %}">
+                              <div class="MegaMenu__Push {% if push_image_count == 2 %}MegaMenu__Push--shrink{% endif %}">
                                 {%- if block.settings.push_1_url != blank -%}
                                   <a class="MegaMenu__PushLink" href="{{ block.settings.push_1_url }}">
                                 {%- endif -%}
