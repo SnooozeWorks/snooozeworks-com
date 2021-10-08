@@ -241,7 +241,7 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Patents",
-              "push_1_image": "shopify:\/\/shop_images\/popular.jpg",
+              "push_1_image": "shopify:\/\/shop_images\/fff_text_Placeholder_1.png",
               "push_1_heading": "",
               "push_1_subheading": "",
               "push_1_url": "#",
@@ -251,7 +251,7 @@
               "push_2_subheading": "Here i am, testing away",
               "push_2_url": "#",
               "push_image_2_url_text": "Shop",
-              "push_3_image": "shopify:\/\/shop_images\/fff_text_Placeholder_1.png",
+              "push_3_image": "shopify:\/\/shop_images\/popular.jpg",
               "push_3_heading": "Featured Collection",
               "push_3_subheading": "Example sub-heading",
               "push_3_url": "",
