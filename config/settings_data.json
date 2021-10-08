@@ -241,12 +241,10 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Patents",
-              "push_1_image": "shopify:\/\/shop_images\/lego-bricks-patent-poster-blueprint-blue.jpg",
               "push_1_heading": "",
               "push_1_subheading": "",
               "push_1_url": "#",
               "push_image_1_url_text": "",
-              "push_2_image": "shopify:\/\/shop_images\/fff_text_Placeholder_1.png",
               "push_2_heading": "Test",
               "push_2_subheading": "Here i am, testing away",
               "push_2_url": "#",
