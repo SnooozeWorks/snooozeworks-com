@@ -239,7 +239,7 @@ HEADER CONTENT
                             {%- endif -%}
 
                             {%- if block.settings.push_2_image -%}
-                              <div class="MegaMenu__Push {% if push_image_count == 2 %}MegaMenu__Push--shrink--2--image{% elsif push_image_count > 2 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}px">
+                              <div class="MegaMenu__Push {% if push_image_count >= 2 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}px">
                                 
                                 {%- assign max_width = 400 | at_most: block.settings.push_2_image.width -%}
 
