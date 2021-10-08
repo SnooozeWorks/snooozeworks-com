@@ -39,6 +39,8 @@
 .MegaMenu__Item {
   margin: 20px 0;
   padding: 0 35px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item {
