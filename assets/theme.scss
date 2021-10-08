@@ -9170,6 +9170,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   // Restrict to one line
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .MegaMenu__Push--Description {
