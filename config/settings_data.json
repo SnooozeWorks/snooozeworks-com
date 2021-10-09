@@ -862,6 +862,20 @@
       "16337274257e2f4e22": {
         "type": "slideshow",
         "blocks": {
+          "16337274257e2f4e22-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/c130-sr71-patent-slide.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Get a jump on your holiday shopping with some of our best sellers!",
+              "title": "Premium Patent Posters for Every Subject",
+              "button_1_text": "Shop All",
+              "button_1_link": "shopify:\/\/collections\/patents",
+              "button_2_text": "Best Sellers",
+              "button_2_link": "shopify:\/\/collections\/best-selling-patents"
+            }
+          },
           "16337274257e2f4e22-0": {
             "type": "image",
             "settings": {
@@ -875,25 +889,11 @@
               "button_2_text": "Best Sellers",
               "button_2_link": "shopify:\/\/collections\/best-selling-patent-mugs"
             }
-          },
-          "16337274257e2f4e22-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/waves-crash-on-iceland-rocky-shore.jpg",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "Get a jump on your holiday shopping with some of our best sellers!",
-              "title": "Premium Patent Posters",
-              "button_1_text": "Shop All",
-              "button_1_link": "shopify:\/\/collections\/patents",
-              "button_2_text": "Best Sellers",
-              "button_2_link": "shopify:\/\/collections\/best-selling-patents"
-            }
           }
         },
         "block_order": [
-          "16337274257e2f4e22-0",
-          "16337274257e2f4e22-1"
+          "16337274257e2f4e22-1",
+          "16337274257e2f4e22-0"
         ],
         "settings": {
           "show_fullscreen": true,
