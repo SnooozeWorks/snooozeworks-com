@@ -978,6 +978,21 @@
         ],
         "settings": {
         }
+      },
+      "story-header": {
+        "type": "story-header",
+        "settings": {
+          "show_banner": true,
+          "apply_overlay": true,
+          "banner_size": "normal",
+          "heading": "Our Story",
+          "subheading": "Description of Page"
+        }
+      },
+      "story-content": {
+        "type": "story-content",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
