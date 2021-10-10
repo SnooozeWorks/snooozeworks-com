@@ -63,12 +63,15 @@
   #section-{{ section.id }} .Page_Content {
     background-color: {{ block.settings.background }};
   }
-  
+  .Page_Content {
+    border-bottom: 1px solid #000;
+  }
   .Page_Content:first-of-type {
     padding-top: 50px;
   }
   .Page_Content:last-of-type {
     padding-bottom: 50px;
+    border-bottom: none;
   }
 </style>
 
