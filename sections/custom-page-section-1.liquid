@@ -1,5 +1,5 @@
 <section id="section-{{ section.id }}">
-  <div class="Container" style="background-color: {{ block.settings.background }}">
+  <div class="Container" style="background-color: {{ section.settings.background }}">
   {%- for block in section.blocks -%}
     <div class="Page_Content Content__Block--{{ block.type }}" {{ block.shopify_attributes }}>
       {%- case block.type -%}
@@ -27,18 +27,19 @@
 {% schema %}
   {
     "name": "Page Content",
-    "settings": [],
-  "blocks": [
-    {
-      "type": "text",
-      "name": "Section Content",
-      "settings": [
+    "settings": [
     	{
       	  "type": "color",
           "id": "background",
           "label": "Background Color",
           "default": "#ffffff"
-        },
+        }
+],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Section Content",
+      "settings": [
         {
           "type": "text",
           "id": "title",
