@@ -12152,7 +12152,11 @@ $vertical-spacing-two-products-per-row  : 0px;
   right: auto !important;
 }
 
-// CUSTOM PAGES //
+/*
+ * ----------------------------------------------------------------------------
+ * CUSTOM PAGES
+ * ----------------------------------------------------------------------------
+ */
 
 // Header Banners
 
@@ -12566,7 +12570,10 @@ $vertical-spacing-two-products-per-row  : 0px;
   flex-basis: 150px !important;
 }
 
-/*** -- Judge.Me Reviews -- ***/
+/*----------------------------------------------------------------------------
+ * Judge.Me Reviews
+ *----------------------------------------------------------------------------
+ */
 
 .jdgm-prev-badge__text::before {
   padding: 0px 5px;
@@ -12873,6 +12880,16 @@ hr {
   overflow: hidden;
 }
 
+.shop_pay {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.spacer {
+  padding: 40px 0;
+}
+
+
 /* Accounts */
 
 .AccountHeader {
@@ -12903,15 +12920,6 @@ hr {
 
 .AccountSubmit {
   width: 100%;
-}
-
-.shop_pay {
-  margin: 10px auto;
-  text-align: center;
-}
-
-.spacer {
-  padding: 40px 0;
 }
 
 /**
