@@ -869,11 +869,26 @@
               "button_2_text": "Best Sellers",
               "button_2_link": "shopify:\/\/collections\/best-selling-patent-mugs"
             }
+          },
+          "8d71b795-0e1a-4406-8849-6a038c25a722": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/get-together-fortnite-slide_a5fd0fa7-3333-451b-bcf3-b70ba07b07e8.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Pop Culture Posters for a variety of Subjects",
+              "title": "Available in sizes from 8x10 up to 24x36!",
+              "button_1_text": "All Posters",
+              "button_1_link": "shopify:\/\/collections\/posters",
+              "button_2_text": "Best Sellers",
+              "button_2_link": "shopify:\/\/collections\/best-selling-posters"
+            }
           }
         },
         "block_order": [
           "16337274257e2f4e22-1",
-          "16337274257e2f4e22-0"
+          "16337274257e2f4e22-0",
+          "8d71b795-0e1a-4406-8849-6a038c25a722"
         ],
         "settings": {
           "show_fullscreen": true,
@@ -1154,8 +1169,7 @@
               "show_banner": true,
               "apply_overlay": true,
               "banner_image": "shopify:\/\/shop_images\/contact_header_5ef331db-6b8a-4ffe-a878-22a932320e14.jpg",
-              "banner_size": "normal",
-              "heading": "Your Account"
+              "banner_size": "normal"
             }
           }
         },
