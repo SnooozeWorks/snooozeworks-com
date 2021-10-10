@@ -1,5 +1,5 @@
 <section id="section-{{ section.id }}">
-  <div class="Container">
+  <div class="Container" style="{{ block.settings.background }}">
   {%- for block in section.blocks -%}
     <div class="Page_Content Content__Block--{{ block.type }}" {{ block.shopify_attributes }}>
       {%- case block.type -%}
