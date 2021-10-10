@@ -1,7 +1,7 @@
 <section id="section-{{ section.id }}">
 
   {%- for block in section.blocks -%}
-    <div class="Content__Block Content__Block--{{ block.type }}" {{ block.shopify_attributes }}>
+    <div class="Container Content__Block Content__Block--{{ block.type }}" {{ block.shopify_attributes }}>
       {%- case block.type -%}
         {%- when 'text' -%}
       
@@ -10,7 +10,7 @@
           {%- endif -%}
 
           {%- if block.settings.content != blank -%}
-             <div class="Page__Content Rte">                   
+             <div class="PageContent PageContent--narrow Rte">                   
                {{ block.settings.content }} 
              </div>
           {%- endif -%}
