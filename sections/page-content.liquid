@@ -6,7 +6,7 @@
         {%- when 'text' -%}
       
           {%- if block.settings.title != blank -%}
-    	    <div class="SectionHeader--center">
+    	    <div class="SectionHeader--center" style="margin-bottom: 25px;">
               <h2 class="SectionHeader__Heading Heading u-h2">{{ block.settings.title | escape }}</h2>
       	    </div>
           {%- endif -%}
@@ -61,9 +61,6 @@
 
 <style>
 
-  #section-{{ section.id }} .SectionHeader--center {
-    margin-bottom: 25px;
-  }
   #section-{{ section.id }} .Container {
     margin: 0 auto;
     padding: 40px;
