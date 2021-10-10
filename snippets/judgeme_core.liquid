@@ -3,7 +3,7 @@
   It's recommended to include this file right before closing </head> tag
 {% endcomment %}
 <!-- Start of Judge.me Core -->
-<link rel="preconnect" href="https://cdn.judge.me/">
+<link rel="dns-prefetch" href="https://cdn.judge.me/">
 {{ shop.metafields.judgeme.settings }}
 {% for count in (0..5) %}
   {% assign metafield_key = 'html_miracle_' | append: count %}
