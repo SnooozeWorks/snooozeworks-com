@@ -1103,6 +1103,32 @@
         ],
         "settings": {
         }
+      },
+      "contact-header": {
+        "type": "contact-header",
+        "blocks": {
+          "3beda4a7-a947-488c-a0d8-aca278373df9": {
+            "type": "header",
+            "settings": {
+              "show_banner": true,
+              "apply_overlay": true,
+              "banner_image": "shopify:\/\/shop_images\/contact_header.jpg",
+              "banner_size": "small",
+              "heading": "Contact Us",
+              "subheading": "Customer Service Hours: 9am through 6pm, Monday to Saturday"
+            }
+          }
+        },
+        "block_order": [
+          "3beda4a7-a947-488c-a0d8-aca278373df9"
+        ],
+        "settings": {
+        }
+      },
+      "contact-content": {
+        "type": "contact-content",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
