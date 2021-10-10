@@ -1,7 +1,7 @@
   {%- for block in section.blocks -%}
       {%- case block.type -%}
-        {%- when 'text' -%}
-      	  {%- include 'page-content' -%}
+        {%- when 'header' -%}
+      	  {%- include 'page-header' -%}
        {%- endcase -%}
   {%- endfor -%}
 
