@@ -832,23 +832,22 @@
           "grid_desktop_items_per_row": 4
         }
       },
-      "custom-page-banner": {
-        "type": "custom-page-banner",
-        "settings": {
-          "show_banner": true,
-          "apply_overlay": true,
-          "banner_image": "shopify:\/\/shop_images\/384-750x500.jpg",
-          "banner_size": "normal",
-          "heading": "Page Title",
-          "subheading": "Description of Page"
-        }
-      },
       "custom-page-section-1": {
         "type": "custom-page-section-1",
+        "blocks": {
+          "2fd844d6-5b09-42fb-8361-ec8283ebe7fb": {
+            "type": "text",
+            "settings": {
+              "title": "Section Header",
+              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "2fd844d6-5b09-42fb-8361-ec8283ebe7fb"
+        ],
         "settings": {
-          "background": "#8e4848",
-          "title": "Section Title",
-          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          "background": "#8e4848"
         }
       },
       "custom-page-section-2": {
@@ -903,6 +902,17 @@
           "text_color": "#ffffff",
           "button_color": "#363636",
           "button_background": "#ffffff"
+        }
+      },
+      "page-header": {
+        "type": "page-header",
+        "settings": {
+          "show_banner": true,
+          "apply_overlay": true,
+          "banner_image": "shopify:\/\/shop_images\/blog_header.jpg",
+          "banner_size": "normal",
+          "heading": "Page Title",
+          "subheading": "Description of Page"
         }
       }
     },
