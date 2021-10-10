@@ -932,6 +932,52 @@
         ],
         "settings": {
         }
+      },
+      "resources-header": {
+        "type": "resources-header",
+        "settings": {
+          "show_banner": true,
+          "apply_overlay": true,
+          "banner_size": "normal",
+          "heading": "Resources",
+          "subheading": "Some of the stuff we use here."
+        }
+      },
+      "resources-content": {
+        "type": "resources-content",
+        "blocks": {
+          "aa179724-eed3-4884-a55a-4460d214b7c3": {
+            "type": "text",
+            "settings": {
+              "background": "#ffffff",
+              "title": "Section Header",
+              "content": "<p>Use this text area to tell your story.<\/p>"
+            }
+          },
+          "dd5fc429-c915-48fd-8af1-a633d9c2cb04": {
+            "type": "text",
+            "settings": {
+              "background": "#ffffff",
+              "title": "Section Header",
+              "content": "<p>Use this text area to tell your story.<\/p>"
+            }
+          },
+          "49140a56-8b70-4782-911d-7d92d7bd14f5": {
+            "type": "text",
+            "settings": {
+              "background": "#ffffff",
+              "title": "",
+              "content": "<p>Use this text area to tell your story.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "aa179724-eed3-4884-a55a-4460d214b7c3",
+          "dd5fc429-c915-48fd-8af1-a633d9c2cb04",
+          "49140a56-8b70-4782-911d-7d92d7bd14f5"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
