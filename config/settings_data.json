@@ -1127,6 +1127,19 @@
       },
       "contact-content": {
         "type": "contact-content",
+        "blocks": {
+          "4bdba6ef-c4d7-4c0b-9f49-87d150122d91": {
+            "type": "text",
+            "settings": {
+              "background": "#ffffff",
+              "title": "",
+              "content": "<p>Please fill out this form and we'll get back to you within 24-48 hours<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "4bdba6ef-c4d7-4c0b-9f49-87d150122d91"
+        ],
         "settings": {
         }
       }
