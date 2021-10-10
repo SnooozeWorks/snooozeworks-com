@@ -1,10 +1,14 @@
 <section id="section-{{ section.id }}">
+  <div class="Container">
   {%- for block in section.blocks -%}
+    <div class="Page_Content Page_Content--{{ block.type }}" {{ block.shopify_attributes }}>
       {%- case block.type -%}
-        {%- when 'header' -%}
-      	  {%- include 'page-header' -%}
+        {%- when 'text' -%}
+      	  {%- include 'page-content' -%}
        {%- endcase -%}
+    </div>
   {%- endfor -%}
+  </div>
 </section>
 
 {% schema %}
@@ -72,7 +76,6 @@
     ]
   } 
 {% endschema %}
-
 {% stylesheet %}
 {% endstylesheet %}
 
