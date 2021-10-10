@@ -1,9 +1,9 @@
-  {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when 'header' -%}
-      	  {%- include 'page-header' -%}
-       {%- endcase -%}
-  {%- endfor -%}
+{%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'header' -%}
+      {%- include 'page-header' -%}
+    {%- endcase -%}
+{%- endfor -%}
 
 {% schema %}
   {
