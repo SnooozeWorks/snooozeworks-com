@@ -935,6 +935,22 @@
       },
       "resources-header": {
         "type": "resources-header",
+        "blocks": {
+          "afb9dd56-bb59-4564-a822-e58e5bd6a1a1": {
+            "type": "header",
+            "settings": {
+              "show_banner": true,
+              "apply_overlay": true,
+              "banner_image": "shopify:\/\/shop_images\/self-serve-coffee-shop.jpg",
+              "banner_size": "normal",
+              "heading": "Page Title",
+              "subheading": "Description of Page"
+            }
+          }
+        },
+        "block_order": [
+          "afb9dd56-bb59-4564-a822-e58e5bd6a1a1"
+        ],
         "settings": {
         }
       },
