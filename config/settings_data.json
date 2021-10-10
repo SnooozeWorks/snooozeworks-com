@@ -936,11 +936,6 @@
       "resources-header": {
         "type": "resources-header",
         "settings": {
-          "show_banner": true,
-          "apply_overlay": true,
-          "banner_size": "normal",
-          "heading": "Resources",
-          "subheading": "Some of the stuff we use here."
         }
       },
       "resources-content": {
@@ -981,12 +976,23 @@
       },
       "story-header": {
         "type": "story-header",
+        "blocks": {
+          "5c5dc7ca-38f5-487b-8a68-671b9eaf230e": {
+            "type": "header",
+            "settings": {
+              "show_banner": true,
+              "apply_overlay": true,
+              "banner_image": "shopify:\/\/shop_images\/blog_header.jpg",
+              "banner_size": "normal",
+              "heading": "Page Title",
+              "subheading": "Description of Page"
+            }
+          }
+        },
+        "block_order": [
+          "5c5dc7ca-38f5-487b-8a68-671b9eaf230e"
+        ],
         "settings": {
-          "show_banner": true,
-          "apply_overlay": true,
-          "banner_size": "normal",
-          "heading": "Our Story",
-          "subheading": "Description of Page"
         }
       },
       "story-content": {
