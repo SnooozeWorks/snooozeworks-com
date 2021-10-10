@@ -1,49 +1,21 @@
-{%- if section.settings.show_banner -%}
-  <div class="FlexboxIeFix">
-    <header class="PageHeader PageHeader--withBackground {% if section.settings.banner_size != 'normal' %}PageHeader--{{ section.settings.banner_size }}{% endif %}" style="background: url({{ section.settings.banner_image | img_url: '1x1', format: 'webp' }})">
-      <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %}" data-optimumx="1.2" data-bgset="{{ section.settings.banner_image | img_url: 'x600' }} 600w, {{ section.settings.banner_image | img_url: '800x' }} 800w, {{ section.settings.banner_image | img_url: '1200x' }} 1200w, {{ section.settings.banner_image | img_url: '1400x' }} 1400w, {{ section.settings.banner_image | img_url: '1600x' }} 1600w"></div>
-
-    <noscript>
-      <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ section.settings.banner_image | img_url: '800x' }})"></div>
-    </noscript>
-
-      <div class="Container">
-        <div class="SectionHeader SectionHeader--center">
-          <h1 class="SectionHeader__Heading Heading collection-h1" style="text-shadow: 2px 3px 3px #000; letter-spacing: 2px; text-transform: uppercase; font-weight: 700;">{{ section.settings.heading }}</h1>
-         
-          {%- if section.settings.subheading != blank -%}
-            <div class="SectionHeader__Heading Heading u-h4" style="letter-spacing: 1px; text-shadow: 2px 3px 3px #000;">
-              {{- section.settings.subheading -}}
-            </div>
-          {%- endif -%}
-              
-        </div>
-      </div>
-    </header>
-	</div>
-    
-	{%- else -%}
-
-    <header class="PageHeader">
-      <div class="Container">
-        <div class="SectionHeader SectionHeader--center">
-          <h1 class="SectionHeader__Heading Heading u-h1">{{ section.settings.heading }}</h1>
-
-            {%- if collection.description != blank -%}
-              <div class="SectionHeader__Description Rte">
-                {{- section.settings.subheading -}}
-              </div>
-            {%- endif -%}
-        </div>
-      </div>
-    </header>
-{%- endif -%}
+<section id="section-{{ section.id }}">
+  {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'header' -%}
+      	  {%- include 'page-header' -%}
+       {%- endcase -%}
+  {%- endfor -%}
+</section>
 
 {% schema %}
-{
-  "name": "Page Header",
-  "class": "shopify-section--bordered",
-  "settings": [
+  {
+    "name": "Page Header",
+    "settings": [],
+  	"blocks": [
+    {
+      "type": "header",
+      "name": "Section Header",
+      "settings": [
     {
       "type": "checkbox",
       "id": "show_banner",
@@ -95,9 +67,12 @@
       "label": "Sub-Heading",
       "default": "Description of Page"
     }
-  ]
-}
+        ]
+      }
+    ]
+  } 
 {% endschema %}
+
 {% stylesheet %}
 {% endstylesheet %}
 
