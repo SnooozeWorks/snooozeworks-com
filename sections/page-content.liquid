@@ -60,8 +60,14 @@
 {% stylesheet %}
 
 <style>
-  #section-{{ section.id }} .Page_Content {
-    background-color: {{ block.settings.background }};
+
+  #section-{{ section.id }} .SectionHeader {
+    margin-bottom: 25px;
+  }
+
+  #section-{{ section.id }} .Container {
+    margin: 0 auto;
+    padding: 40px 0;
   }
   .Page_Content {
     border-bottom: 1px solid #B1B1B1;
@@ -78,14 +84,6 @@
   padding: 30px;
   margin: 0 auto;
   text-align: justify;
-  }
-  #section-{{ section.id }} .SectionHeader {
-    margin-bottom: 25px;
-  }
-
-  #section-{{ section.id }} .Container {
-    margin: 0 auto;
-    padding: 40px 0;
   }
   
 </style>
