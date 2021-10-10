@@ -8,6 +8,27 @@
   </div>
 </section>
 
+
+		{%- for block in section.blocks -%}
+          <div class="Footer__Block Footer__Block--{{ block.type }}" {{ block.shopify_attributes }}>
+            {%- case block.type -%}
+              {%- when 'text' -%}
+                {%- if block.settings.title != blank -%}
+                  {% comment %}<h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>{% endcomment %}
+                {%- endif -%}
+
+                {%- if block.settings.content != blank -%}
+                  <div class="Footer__Content Rte">                   
+
+                    {{ block.settings.content }}
+                    
+                  </div>
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endfor -%}
+
+
+
 {% schema %}
   {
     "name": "Page Content",
