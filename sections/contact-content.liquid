@@ -1,6 +1,7 @@
 <section id="section-{{ section.id }}">
   <div class="Container">
-      {%- for block in section.blocks -%}
+    
+  {%- for block in section.blocks -%}
     <div class="Page_Content Page_Content--{{ block.type }}" {{ block.shopify_attributes }}>
       {%- case block.type -%}
         {%- when 'text' -%}
@@ -8,6 +9,7 @@
        {%- endcase -%}
     </div>
   {%- endfor -%}
+    
    <div class="PageContent PageContent--narrow">
     <div class="Rte">
 
@@ -92,8 +94,8 @@
         <button type="submit" class="Form__Submit Button Button--three Button--full">{{ 'contact.form.submit' | t }}</button>
       {%- endform -%}
       
+      </div>
     </div>
-</div>
     
   </div>
 </section>
