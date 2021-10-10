@@ -11,11 +11,9 @@
         <div class="SectionHeader SectionHeader--center">
           <h1 class="SectionHeader__Heading Heading collection-h1" style="text-shadow: 2px 3px 3px #000; letter-spacing: 2px; text-transform: uppercase; font-weight: 700;">{{ block.settings.heading }}</h1>
          
-          {%- if block.settings.subheading != blank -%}
             <div class="SectionHeader__Heading Heading u-h4" style="letter-spacing: 1px; text-shadow: 2px 3px 3px #000;">
               {{ 'customer.account.welcome' | t: first_name: customer.first_name }}
             </div>
-          {%- endif -%}
               
         </div>
       </div>
