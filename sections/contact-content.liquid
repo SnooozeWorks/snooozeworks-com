@@ -1,12 +1,77 @@
+<section id="section-{{ section.id }}">
+  <div class="Container">
+  {%- for block in section.blocks -%}
+    <div class="Page_Content Page_Content--{{ block.type }}" {{ block.shopify_attributes }}>
+      {%- case block.type -%}
+        {%- when 'text' -%}
+      	  {%- include 'contact-form' -%}
+       {%- endcase -%}
+    </div>
+  {%- endfor -%}
+  </div>
+</section>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+    "name": "Page Content",
+    "settings": [],
+  	"blocks": [
+    {
+      "type": "text",
+      "name": "Section Content",
+      "settings": [
+    	{
+      	  "type": "color",
+          "id": "background",
+          "label": "Background Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Section Header"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Use this text area to tell your story.</p>"
+        }
+        ]
+      }
+    ]
+  } 
 {% endschema %}
 
 {% stylesheet %}
+
+<style>
+
+  #section-{{ section.id }} .Container {
+    margin: 0 auto;
+    padding: 40px;
+  }
+  .Page_Content {
+    max-width: 1000px;
+    padding: 40px 25px;
+    margin: 0 auto;
+    text-align: justify;
+    border-bottom: 1px #B1B1B1 solid;
+  }
+  .Page_Content:first-of-type {
+    padding-top: 50px;
+  }
+  .Page_Content:last-of-type {
+    padding-bottom: 50px;
+    border-bottom: none;
+  }
+  
+</style>
+
 {% endstylesheet %}
 
 {% javascript %}
 {% endjavascript %}
+
