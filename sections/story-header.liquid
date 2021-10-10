@@ -1,10 +1,9 @@
   {%- for block in section.blocks -%}
       {%- case block.type -%}
-        {%- when 'image' -%}
+        {%- when 'header' -%}
       	  {%- include 'page-header' -%}
        {%- endcase -%}
   {%- endfor -%}
-
 
 {% schema %}
   {
@@ -12,7 +11,7 @@
     "settings": [],
   	"blocks": [
     {
-      "type": "image",
+      "type": "header",
       "name": "Section Header",
       "settings": [
     {
