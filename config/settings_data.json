@@ -892,7 +892,7 @@
           "show_banner": true,
           "apply_overlay": true,
           "banner_image": "shopify:\/\/shop_images\/blog_header.jpg",
-          "banner_size": "normal",
+          "banner_size": "small",
           "heading": "Our Story",
           "subheading": "Join us for a quick recap of the history behind SnooozeWorks"
         }
