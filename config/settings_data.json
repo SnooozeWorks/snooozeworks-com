@@ -1113,7 +1113,7 @@
               "show_banner": true,
               "apply_overlay": true,
               "banner_image": "shopify:\/\/shop_images\/contact_header.jpg",
-              "banner_size": "small",
+              "banner_size": "normal",
               "heading": "Contact Us",
               "subheading": "Customer Service Hours: 9am through 6pm, Monday to Saturday"
             }
@@ -1121,33 +1121,6 @@
         },
         "block_order": [
           "3beda4a7-a947-488c-a0d8-aca278373df9"
-        ],
-        "settings": {
-        }
-      },
-      "contact-content": {
-        "type": "contact-content",
-        "blocks": {
-          "4bdba6ef-c4d7-4c0b-9f49-87d150122d91": {
-            "type": "text",
-            "settings": {
-              "background": "#ffffff",
-              "title": "",
-              "content": "<p>Please fill out this form and we'll get back to you within 24-48 hours<\/p>"
-            }
-          },
-          "66e03d18-cd8b-43c3-abf3-2d8cd51465db": {
-            "type": "custom_field",
-            "settings": {
-              "title": "Do you have an order number?",
-              "use_long_text": false,
-              "is_required": false
-            }
-          }
-        },
-        "block_order": [
-          "4bdba6ef-c4d7-4c0b-9f49-87d150122d91",
-          "66e03d18-cd8b-43c3-abf3-2d8cd51465db"
         ],
         "settings": {
         }
