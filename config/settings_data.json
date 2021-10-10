@@ -1144,6 +1144,27 @@
         ],
         "settings": {
         }
+      },
+      "accounts-header": {
+        "type": "accounts-header",
+        "blocks": {
+          "cb55b602-5ad1-42c7-8f17-4f7a026e575e": {
+            "type": "header",
+            "settings": {
+              "show_banner": true,
+              "apply_overlay": true,
+              "banner_image": "shopify:\/\/shop_images\/contact_header_5ef331db-6b8a-4ffe-a878-22a932320e14.jpg",
+              "banner_size": "normal",
+              "heading": "Page Title",
+              "subheading": "Description of Page"
+            }
+          }
+        },
+        "block_order": [
+          "cb55b602-5ad1-42c7-8f17-4f7a026e575e"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
