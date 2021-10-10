@@ -51,7 +51,7 @@
             {%- capture field_title -%}Custom field {% increment custom_field %}{%- endcapture -%}
           {%- endif -%}
 
-          {%- if block.type == 'text' -%}
+          {%- if block.type == 'custom_field' -%}
             <div class="Form__Item">
               {%- if block.settings.use_long_text -%}
                 <textarea name="contact[{{ field_title | escape }}]" cols="30" rows="10" class="Form__Textarea" aria-label="{{ block.settings.title | escape }}" placeholder="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}></textarea>
@@ -106,7 +106,31 @@
     "name": "Page Content",
     "settings": [],
   	"blocks": [
-    {
+        {
+      "type": "custom_field",
+      "name": "Text field",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Name",
+          "default": "Custom field"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_long_text",
+          "label": "Use long text",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "is_required",
+          "label": "Field is required",
+          "default": false
+        }
+      ]
+    },
+	{
       "type": "text",
       "name": "Section Content",
       "settings": [
