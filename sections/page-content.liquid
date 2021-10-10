@@ -60,9 +60,6 @@
 {% stylesheet %}
 
 <style>
-  #section-{{ section.id }} .Page_Content {
-    background-color: {{ block.settings.background }};
-  }
   .Page_Content {
     border-bottom: 1px solid #B1B1B1;
   }
@@ -74,10 +71,10 @@
     border-bottom: none;
   }
   .Page_Content {
-  max-width: 1000px;
-  padding: 30px;
-  margin: 0 auto;
-  text-align: justify;
+    max-width: 1000px;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: justify;
   }
   #section-custom-page-section-1 .SectionHeader {
     margin-bottom: 25px;
@@ -86,6 +83,7 @@
   #section-custom-page-section-1 .Container {
     margin: 0 auto;
     padding: 40px 0;
+    background-color: {{ block.settings.background }}
   }
   
 </style>
