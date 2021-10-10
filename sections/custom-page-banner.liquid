@@ -1,6 +1,6 @@
 {%- if section.settings.show_banner -%}
   <div class="FlexboxIeFix">
-    <header class="PageHeader PageHeader--withBackground {% if section.settings.banner_size != 'normal' %}PageHeader--{{ section.settings.banner_size }}{% endif %}" style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})">
+    <header class="PageHeader PageHeader--withBackground {% if section.settings.banner_size != 'normal' %}PageHeader--{{ section.settings.banner_size }}{% endif %}" style="background: url({{ section.settings.banner_image | img_url: '1x1', format: 'jpg' }})">
       <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %}" data-optimumx="1.2" data-bgset="{{ section.settings.banner_image | img_url: 'x600' }} 600w, {{ section.settings.banner_image | img_url: '800x' }} 800w, {{ section.settings.banner_image | img_url: '1200x' }} 1200w, {{ section.settings.banner_image | img_url: '1400x' }} 1400w, {{ section.settings.banner_image | img_url: '1600x' }} 1600w"></div>
 
     <noscript>
