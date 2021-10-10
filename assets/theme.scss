@@ -12594,37 +12594,6 @@ border-color: $button-background;
 }
 
 
-/* Accounts */
-
-.AccountHeader {
-  padding-bottom: 60px;
-}
-
-.Logout {
-  text-align: right;
-}
-
-.AccountPage {
-  margin: 50px 0;
-}
-
-.PageLayout {
-  margin-bottom: 60px;
-}
-
-.AccountHeader {
-  text-transform: Capitalize;
-  text-align: left !important;
-  color: #ef3340;
-}
-
-.AccountDescription {
-  text-align-last: left;
-}
-
-.AccountSubmit {
-  width: 100%;
-}
 
 /**
  *----------------------------------------------------------------------------
@@ -12694,19 +12663,19 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 }
 
 
-  #section- .Container {
-    margin: 0 auto;
-    padding: 40px;
-  }
-  .Page_Content {
-    max-width: 1000px;
-    padding: 40px 25px;
-    margin: 0 auto;
-    text-align: justify;
-  }
-  .Page_Content:first-of-type {
-    padding-top: 50px;
-  }
-  .Page_Content:last-of-type {
-    padding-bottom: 50px;
-  }
+#section- .Container {
+  margin: 0 auto;
+  padding: 40px;
+}
+.Page_Content {
+  max-width: 1000px;
+  padding: 40px 25px;
+  margin: 0 auto;
+  text-align: justify;
+}
+.Page_Content:first-of-type {
+  padding-top: 50px;
+}
+.Page_Content:last-of-type {
+  padding-bottom: 50px;
+}
