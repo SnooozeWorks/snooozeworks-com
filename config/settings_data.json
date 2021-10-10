@@ -1013,6 +1013,37 @@
       },
       "story-content": {
         "type": "story-content",
+        "blocks": {
+          "221ee6e6-e485-4581-a5d0-a4637c841e20": {
+            "type": "text",
+            "settings": {
+              "background": "#ffffff",
+              "title": "Section Header",
+              "content": "<p>Use this text area to tell your story.<\/p>"
+            }
+          },
+          "79ae4c80-236c-4489-ac26-4f243d13c12a": {
+            "type": "text",
+            "settings": {
+              "background": "#ffffff",
+              "title": "Section Header",
+              "content": "<p>Use this text area to tell your story.<\/p>"
+            }
+          },
+          "412560e1-f2ca-43ea-9176-628948c6ff28": {
+            "type": "text",
+            "settings": {
+              "background": "#ffffff",
+              "title": "Section Header",
+              "content": "<p>Use this text area to tell your story.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "221ee6e6-e485-4581-a5d0-a4637c841e20",
+          "79ae4c80-236c-4489-ac26-4f243d13c12a",
+          "412560e1-f2ca-43ea-9176-628948c6ff28"
+        ],
         "settings": {
         }
       }
