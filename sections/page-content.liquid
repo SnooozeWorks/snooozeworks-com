@@ -33,6 +33,12 @@
       "type": "text",
       "name": "Section Content",
       "settings": [
+    	{
+      	  "type": "color",
+          "id": "background",
+          "label": "Background Color",
+          "default": "#ffffff"
+        },
         {
           "type": "text",
           "id": "title",
@@ -54,12 +60,11 @@
 {% stylesheet %}
 
 <style>
-  
+  #section-{{ section.id }} .Page_Content {
+    background-color: {{ block.settings.background }};
+  }
   .Page_Content {
-    max-width: 1000px;
-    padding: 30px;
-    margin: 0 auto;
-    text-align: justify;
+    border-bottom: 1px solid #B1B1B1;
   }
   .Page_Content:first-of-type {
     padding-top: 50px;
@@ -68,10 +73,17 @@
     padding-bottom: 50px;
     border-bottom: none;
   }
-  #section-page-content .SectionHeader {
+  .Page_Content {
+  max-width: 1000px;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: justify;
+  }
+  #section-custom-page-section-1 .SectionHeader {
     margin-bottom: 25px;
   }
-  #section-page-content .Container {
+
+  #section-custom-page-section-1 .Container {
     margin: 0 auto;
     padding: 40px 0;
   }
