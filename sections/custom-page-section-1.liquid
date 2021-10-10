@@ -30,8 +30,35 @@
       "label": "Text",
       "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
     }
-]
-  }
+],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text / social media",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "About the shop"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social_media",
+          "label": "Show social media",
+          "info": "Make sure to have properly configured your social media in the theme settings.",
+          "default": true
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
@@ -46,3 +73,4 @@
 
 {% javascript %}
 {% endjavascript %}
+
