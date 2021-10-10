@@ -1124,6 +1124,27 @@
         ],
         "settings": {
         }
+      },
+      "faq-header": {
+        "type": "faq-header",
+        "blocks": {
+          "b18f5c6c-1685-4057-b9f4-bb1267b72b51": {
+            "type": "header",
+            "settings": {
+              "show_banner": true,
+              "apply_overlay": true,
+              "banner_image": "shopify:\/\/shop_images\/faq_header.jpg",
+              "banner_size": "normal",
+              "heading": "FAQ",
+              "subheading": "Got a question? Lets figure it out!"
+            }
+          }
+        },
+        "block_order": [
+          "b18f5c6c-1685-4057-b9f4-bb1267b72b51"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
