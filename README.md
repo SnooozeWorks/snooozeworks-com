@@ -6,8 +6,8 @@ All updates made here will appear on the live website.
 
 ## Information
 
-* Latest Version: 3.02
-* Updated: 08.29.2021
+* Latest Version: 3.1
+* Updated: 10.10.2021
 
 ## Features
 
