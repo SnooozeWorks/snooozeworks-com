@@ -12267,6 +12267,11 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
   overflow: hidden; 
 }
 
+@include av-mq('phone'){
+  .sub-title  {
+    display: none;  
+  }
+}
 .coming-soon {
   width: 40%;
   display: inline-block;
