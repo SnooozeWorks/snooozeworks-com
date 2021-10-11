@@ -165,7 +165,7 @@ border-color: $button-background;
 }
 
 
-@include av-mq ('lap-and-up'){
+  @include av-mq ('lap-and-up'){
 	.jdgm-preview-badge {
   	  float: right;
 	}
@@ -180,9 +180,9 @@ border-color: $button-background;
     .jdgm-histogram__bar {
       width: 250px !important;
     }
-}
+  }
 
-@include av-mq ('tablet'){
+  @include av-mq ('tablet'){
 	.jdgm-preview-badge {
   	  text-align: center;
       padding: 10px 0;
@@ -194,13 +194,17 @@ border-color: $button-background;
       text-align: justify;
       margin-top: 5px;
    }
-  #judgeme_product_reviews {
+    #judgeme_product_reviews {
       padding: 0 20px;
     }
-}
+  }
 
-@include av-mq ('phone'){
-	.jdgm-preview-badge {
+  @include av-mq ('phone'){
+    .jdgm.histogram {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .jdgm-preview-badge {
   	  text-align: center;
       padding: 10px 0;
 	}
