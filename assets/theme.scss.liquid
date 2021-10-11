@@ -2747,6 +2747,12 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   display: none;
 }
 
+@include av-mq('phone') {
+  .Carousel .flickity-page-dots {
+    display: inline-block;
+  }
+}
+
 .Carousel--insideDots {
   .flickity-page-dots {
     position: absolute;
