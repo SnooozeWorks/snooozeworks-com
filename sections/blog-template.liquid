@@ -8,13 +8,6 @@
     </div>
   {%- else -%}
     
-  <div class="PageHeader_Blog">
-    {% if section.settings.show_title %}
-      <div class="Page_Header_H1">{{- section.settings.title | escape -}}</div>
-      <div class="Page_Header_Subtitle">{{- section.settings.subtitle | escape -}}</div>
-    {% endif %}      
-  </div>
-  
   <div class="Blog">
     
     {% if section.settings.show_title %}
