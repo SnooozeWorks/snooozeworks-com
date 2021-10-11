@@ -80,6 +80,8 @@
         {%- if show_vendor -%}
           <p class="ProductItem__Vendor Heading">{{ product.vendor }}</p>
         {%- endif -%}
+        
+        <!-- clean this up -->
 
         <h2 class="ProductItem__Title Heading">
           <a href="{{ product.url | within: collection }}">
