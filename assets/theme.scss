@@ -12652,6 +12652,10 @@ border-color: $button-background;
   width: auto !important;
 }
 
+.Newsletter__Inner .Form__Input:focus::placeholder {
+  color: transparent;
+}
+
 // Hide Sidebar scrollbar on small devices
 
 .Drawer__Main::-webkit-scrollbar {
