@@ -11648,7 +11648,7 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 
     .ProductItem__Info {
       margin-top: 0;
-      text-align: left;
+      text-align: center;
     }
   }
 }
@@ -12679,21 +12679,4 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 .shop_pay {
   margin: 10px auto;
   text-align: center;
-}
-
-
-
-@include av-mq ('phone') {
-  .ProductItem__Info .sub-title {
-    display: none;
-  }
-
-  .ProductItem__Info .ProductItem__Title {
-    text-align: center;
-  }
-
-  .ProductItem__Info .ProductItem__PriceList {
-    display: block;
-    text-align: center;
-  }
 }
