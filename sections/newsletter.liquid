@@ -61,6 +61,10 @@
 </section>
 
 <style>
+  .Newsletter__Inner .Form__Input:focus::placeholder {
+    color: transparent;
+  }
+  
   #section-{{ section.id }},
   #section-{{ section.id }} .Heading {
     color: {{ section.settings.text_color }};
