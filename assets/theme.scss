@@ -12638,16 +12638,6 @@ border-color: $button-background;
  *----------------------------------------------------------------------------
 */
 
-.tube_divider {
-  padding: 40px 0 0;
-}
-
-@include av-mq('phone'){
-  .tube_divider {
-    display: none;
-  }
-}
-
 .CartItem__QuantitySelector .QuantitySelector {
   width: auto !important;
 }

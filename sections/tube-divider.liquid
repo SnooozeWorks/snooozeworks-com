@@ -29,6 +29,16 @@
 </section>
 
 <style>
+  .tube_divider {
+    padding: 40px 0 0;
+  }
+
+  @include av-mq('phone'){
+    .tube_divider {
+      display: none;
+    }
+  }
+  
   #section-{{ section.id }},
   #section-{{ section.id }} .Heading {
     color: {{ section.settings.text_color }};
