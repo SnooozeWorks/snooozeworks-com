@@ -9236,6 +9236,73 @@ $vertical-spacing-two-products-per-row  : 0px;
 }
 
 /**
+ *----------------------------------------------------------------------------
+ *
+ * Mega Menu Custom Styling
+ *
+ * ----------------------------------------------------------------------------
+ */
+
+.nav__heading {
+  font-family: Fira Sans, san-serif;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.Link--megatitle {
+  color: #ef3340 !important;
+} 
+
+.Link--mega {
+  color: #000;
+}
+
+.MegaMenu__Inner {
+  justify-content: flex-start !important;
+  max-width: 100%;
+}
+
+.MegaMenu__Item {
+  margin: 20px 0;
+  padding: 0 35px;
+}
+
+.MegaMenu__Item:first-of-type {
+  border-right: 2px solid #ef3340;
+  padding-right: 60px;
+  align-self: stretch;
+}
+
+.MegaMenu__Item:nth-of-type(2) {
+  padding-left: 60px;
+}
+
+/**
+ *----------------------------------------------------------------------------
+ * Hides all link events on Section Headers
+ *----------------------------------------------------------------------------
+ */
+
+nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n) .MegaMenu__Title {
+  cursor: default;
+  pointer-events: none;
+}
+
+/**
+ *----------------------------------------------------------------------------
+ * Hide Additional Column Titles on all Menus 'Category'
+ *----------------------------------------------------------------------------
+ */
+
+nav .HorizontalList__Item:nth-of-type(-n+4) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n+3) .MegaMenu__Title {
+  visibility: hidden;
+}
+
+nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
+  visibility: hidden;
+}
+
+/**
  * ----------------------------------------------------------------------------
  * Image with text overlay section
  * ----------------------------------------------------------------------------
@@ -9448,11 +9515,12 @@ $vertical-spacing-two-products-per-row  : 0px;
     bottom: 50px;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Instagram feed
  * ----------------------------------------------------------------------------
- */
+ 
 
 .Instafeed {
   height: 250px;
@@ -9500,7 +9568,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 
 .Instafeed__Caption {
   position: relative;
-  height: 6.6em; /* this is four times the default line height */
+  height: 6.6em; /* this is four times the default line height 
   margin: 20px 0;
   overflow: hidden;
   word-break: break-word;
@@ -9579,10 +9647,11 @@ $vertical-spacing-two-products-per-row  : 0px;
 
 @include av-mq('widescreen') {
   .Instafeed__Caption {
-    height: 9.9em; /* this is six times the default line height */
+    height: 9.9em; /* this is six times the default line height 
   }
 }
 
+*/
 
 .NewsletterPopup {
   position: fixed;
@@ -12155,7 +12224,14 @@ $vertical-spacing-two-products-per-row  : 0px;
   right: auto !important;
 }
 
+/**
+ * -----------------------------
+ * Custom CSS
+ * -----------------------------
+ **/
+
 // Featured Collections
+// Sets up how the Product info is display on collection pages.
 
 .ProductItem__Info .ProductItem__Title {
   width: 60%;
@@ -12237,6 +12313,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 }
 
 // Featured Product Section
+// Sets up how product information is displayed in a featured product section
 
 .featured_product_title {
   display: inline-block;
@@ -12285,7 +12362,12 @@ $vertical-spacing-two-products-per-row  : 0px;
   margin-top: 15px;
 }
 
-// Size Buttons and Color Swatches
+/**
+ * ----------------------------------------
+ * Size Buttons and Color Swatches
+ * Align and size color swatches on product page.
+ * ----------------------------------------
+ **/
 
 .ColorSwatch--large {
   width: 60px;
@@ -12301,10 +12383,11 @@ $vertical-spacing-two-products-per-row  : 0px;
   flex-basis: 150px !important;
 }
 
-/*----------------------------------------------------------------------------
+/**
+ *------------------------------------------
  * Judge.Me Reviews
- *----------------------------------------------------------------------------
- */
+ *------------------------------------------
+ **/
 
 .jdgm-prev-badge__text::before {
   padding: 0px 5px;
@@ -12581,71 +12664,4 @@ border-color: $button-background;
 .shop_pay {
   margin: 10px auto;
   text-align: center;
-}
-
-/**
- *----------------------------------------------------------------------------
- *
- * Mega Menu Styling
- *
- * ----------------------------------------------------------------------------
- */
-
-.nav__heading {
-  font-family: Fira Sans, san-serif;
-  font-style: normal;
-  font-size: 14px;
-}
-
-.Link--megatitle {
-  color: #ef3340 !important;
-} 
-
-.Link--mega {
-  color: #000;
-}
-
-.MegaMenu__Inner {
-  justify-content: flex-start !important;
-  max-width: 100%;
-}
-
-.MegaMenu__Item {
-  margin: 20px 0;
-  padding: 0 35px;
-}
-
-.MegaMenu__Item:first-of-type {
-  border-right: 2px solid #ef3340;
-  padding-right: 60px;
-  align-self: stretch;
-}
-
-.MegaMenu__Item:nth-of-type(2) {
-  padding-left: 60px;
-}
-
-/**
- *----------------------------------------------------------------------------
- * Hides all link events on Section Headers
- *----------------------------------------------------------------------------
- */
-
-nav .HorizontalList__Item .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n) .MegaMenu__Title {
-  cursor: default;
-  pointer-events: none;
-}
-
-/**
- *----------------------------------------------------------------------------
- * Hide Additional Column Titles on all Menus 'Category'
- *----------------------------------------------------------------------------
- */
-
-nav .HorizontalList__Item:nth-of-type(-n+4) .MegaMenu__Inner .MegaMenu__Item:nth-of-type(n+3) .MegaMenu__Title {
-  visibility: hidden;
-}
-
-nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-type(4) .MegaMenu__Title {
-  visibility: hidden;
 }
