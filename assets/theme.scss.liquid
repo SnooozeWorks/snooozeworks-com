@@ -11143,11 +11143,11 @@ $vertical-spacing-two-products-per-row  : 0px;
 .shopify-payment-button__button--unbranded {
   @extend .Button, .Button--primary;
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Product reviews (integration with Shopify Reviews free app)
  * ----------------------------------------------------------------------------
- */
 
 #shopify-product-reviews {
   margin: 18px 0 28px 0 !important;
@@ -11406,6 +11406,8 @@ $vertical-spacing-two-products-per-row  : 0px;
   }
 }
 
+*/
+
 @include av-mq('lap-and-up') {
   #shopify-product-reviews {
     margin-bottom: 4px !important;
@@ -11586,6 +11588,9 @@ $vertical-spacing-two-products-per-row  : 0px;
     margin-bottom: 48px;
   }
 }
+
+/*
+
 @-webkit-keyframes shopTheLookDotKeyframe {
   0% {
     -webkit-transform: scale(1.0);
@@ -11619,8 +11624,6 @@ $vertical-spacing-two-products-per-row  : 0px;
     transform: scale(1);
   }
 }
-
-/**
 
 .ShopTheLook {
   z-index: 2;
@@ -12499,18 +12502,12 @@ border-color: $button-background;
  *----------------------------------------------------------------------------
 */
 
-@include av-mq('phone') {
-	.tubeDivider {
-  	display: none;
-	}
-}
-
-.tubeDivider {
+.tube_divider {
   padding: 40px 0 0;
 }
 
-@include av-mq('phone') {
-  .NewsletterPopup {
+@include av-mq('phone'){
+  .tube_divider {
     display: none;
   }
 }
@@ -12519,13 +12516,8 @@ border-color: $button-background;
   width: auto !important;
 }
 
- .Newsletter__Inner .Form__Input:focus::placeholder {
+.Newsletter__Inner .Form__Input:focus::placeholder {
   color: transparent;
- }
-   
-.footer__logo {
-  max-width: 80%;
-  text-align: center;
 }
 
 .Drawer__Main::-webkit-scrollbar {
