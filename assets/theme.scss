@@ -2780,6 +2780,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 
 .Carousel--insideDots {
   .flickity-page-dots {
+    display: none;
     position: absolute;
     width: auto;
     margin: 0;
