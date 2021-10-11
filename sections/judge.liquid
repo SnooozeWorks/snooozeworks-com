@@ -56,10 +56,6 @@
 .jdgm-ask-question-btn, .jdgm-write-rev-link {
   padding: 15px 25px !important;
 }
-  
-.jdgm-review-widget--medium .jdgm-histogram {
-  margin: 16px 0 !important;
-}
 
 .jdgm-histogram__bar-content {
   background: #EA3340 !important;
@@ -193,8 +189,11 @@ border-color: $button-background;
   }
 
   @include av-mq ('phone'){
+    .jdgm-review-widget--medium .jdgm-histogram {
+  	  margin: 16px 0 !important;
+	}
     .jdgm-widget-actions-wrapper {
- 	 float: none !important;
+ 	  float: none !important;
 	}
     .jdgm-histogram {
   	  float: none !important;
