@@ -12245,21 +12245,25 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
   letter-spacing: 0;
 }
 
-@include av-mq('phone'){
+@include av-mq('phone') {
   .ProductItem__Info .ProductItem__Title {
+    width: 100%;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden; 
+    overflow: hidden;
     font-size: to-size(11);
+    text-align: center;
   }
 }
 
-@include av-mq('phone'){
+@include av-mq('phone') {
   .ProductItem__Info .ProductItem__PriceList {
     font-size: to-size(11);
+    display: block;
+    text-align: center;
+    width: 100%;
   }
 }
-
 @media only screen and (max-width: 1366px)  {
 	.Footer__Block--links {
       display:none;
