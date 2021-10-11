@@ -12299,7 +12299,6 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
   }
 }
 
-
 @media only screen and (max-width: 1366px)  {
 	.Footer__Block--links {
       display:none;
@@ -12460,6 +12459,7 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 }
 
 /* copy of button and button--primary to make review link uniform */
+// try find a cleaner way to do this?
 
 .jdgm-write-rev-link {
   position: relative;
@@ -12666,12 +12666,7 @@ border-color: $button-background;
   }
 }
 
-.Truncate {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
-}
+
 
 .shop_pay {
   margin: 10px auto;
