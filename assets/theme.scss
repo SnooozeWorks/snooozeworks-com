@@ -12273,6 +12273,7 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 
 @include av-mq('phone') {
   .ProductItem__Info .ProductItem__Title {
+    width: 100%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -12286,6 +12287,7 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
     font-size: to-size(11);
     display: block;
     text-align: center;
+    width: 100%;
   }
 }
 
