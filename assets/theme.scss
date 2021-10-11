@@ -11648,7 +11648,7 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 
     .ProductItem__Info {
       margin-top: 0;
-      text-align: center;
+      text-align: left;
     }
   }
 }
@@ -12277,12 +12277,15 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
     white-space: nowrap;
     overflow: hidden;
     font-size: to-size(11);
+    text-align: center;
   }
 }
 
 @include av-mq('phone') {
   .ProductItem__Info .ProductItem__PriceList {
     font-size: to-size(11);
+    display: block;
+    text-align: center;
   }
 }
 
