@@ -5181,10 +5181,10 @@ select::-ms-expand {
   }
 
   .PageHeader--small.PageHeader--withBackground {
-    min-height: 450px;
+    min-height: 300px;
 
     @supports (--css: variables) {
-      min-height: calc(450px + var(--header-height) * var(--header-is-transparent, 0));
+      min-height: calc(300px + var(--header-height) * var(--header-is-transparent, 0));
     }
   }
 
@@ -5216,10 +5216,10 @@ select::-ms-expand {
   }
 
   .PageHeader--small.PageHeader--withBackground {
-    min-height: 300px;
+    min-height: 350px;
 
     @supports (--css: variables) {
-      min-height: calc(300px + var(--header-height) * var(--header-is-transparent, 0));
+      min-height: calc(350px + var(--header-height) * var(--header-is-transparent, 0));
     }
   }
 
@@ -5242,10 +5242,10 @@ select::-ms-expand {
   }
 
   .PageHeader--small.PageHeader--withBackground {
-    min-height: 300px;
+    min-height: 350px;
 
     @supports (--css: variables) {
-      min-height: calc(300px + var(--header-height) * var(--header-is-transparent, 0));
+      min-height: calc(350px + var(--header-height) * var(--header-is-transparent, 0));
     }
   }
 
