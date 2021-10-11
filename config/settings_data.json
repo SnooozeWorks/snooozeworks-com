@@ -172,7 +172,7 @@
           "apply_overlay": true,
           "show_color_swatch": false,
           "show_vendor": false,
-          "collection_image_size": "normal",
+          "collection_image_size": "small",
           "show_sort_by": true,
           "show_layout_switch": true,
           "toolbar_position": "top",
