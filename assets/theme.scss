@@ -12670,3 +12670,18 @@ border-color: $button-background;
   margin: 10px auto;
   text-align: center;
 }
+
+
+
+@include av-mq('phone'){
+  .sub-title {
+    display:none;
+  }
+  .ProductItem__Title {
+    text-align: center;
+  }
+  .ProductItem__PriceList {
+    display: block;
+    text-align: center;
+  }
+}
