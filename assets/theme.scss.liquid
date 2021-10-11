@@ -12232,11 +12232,6 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
   overflow: hidden; 
 }
 
-@include av-mq('phone'){
-  .sub-title  {
-    display: none;  
-  }
-}
 .coming-soon {
   width: 40%;
   display: inline-block;
@@ -12244,6 +12239,8 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
   text-align: right;
   letter-spacing: 0;
 }
+
+// On mobile, everything is centered, category hidden.
 
 @include av-mq('phone') {
   .ProductItem__Info .ProductItem__Title {
@@ -12254,9 +12251,7 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
     font-size: to-size(11);
     text-align: center;
   }
-}
-
-@include av-mq('phone') {
+  
   .ProductItem__Info .ProductItem__PriceList {
     font-size: to-size(11);
     display: block;
@@ -12264,13 +12259,19 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
     width: 100%;
     margin-top: -10px;
   }
+  .sub-title  {
+    display: none;  
+  }
 }
+
 
 @media only screen and (max-width: 1366px)  {
 	.Footer__Block--links {
       display:none;
     }
 }
+
+// On mobile, only show copyright and payment icons
 
 @include av-mq('phone') {
 	.Footer__Block--links {
