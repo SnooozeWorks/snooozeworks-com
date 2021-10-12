@@ -12303,19 +12303,17 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 // On mobile, only show copyright and payment icons
 
 @include av-mq('phone') {
-	.Footer__Block--links {
-      display:none;
-    }
-
-	.Footer__Block--newsletter {
-      display:none;
-    }
-
-	.Footer__Block--text {
-      text-align: justify;
-      margin-top: -20px;
-      padding-bottom: 20px;
-    }
+  .Footer__Block--links {
+    display:none;
+  }
+  .Footer__Block--newsletter {
+    display:none;
+  }
+  .Footer__Block--text {
+    text-align: justify;
+    margin-top: -20px;
+    padding-bottom: 20px;
+  }
 }
 
 /* Featured Product Section
