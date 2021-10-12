@@ -292,8 +292,8 @@ for size, we use it to display a size chart (if applicable)
     {%- endif -%}
   </button>
 
-	<div class="shop_pay">
-		{{ form | payment_terms }}
+	<div style="margin: 10px auto; text-align: center;">
+	  {{ form | payment_terms }}
 	</div>
       
     {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}
@@ -339,7 +339,6 @@ for size, we use it to display a size chart (if applicable)
   {%- endcapture -%}
 {%- endif -%}
 
-<div id="bundler-target-element"></div>
 
 {% comment %}
 
