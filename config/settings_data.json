@@ -149,10 +149,20 @@
               "grid_items_count": 8,
               "button_text": ""
             }
+          },
+          "1eec6347-0ad8-4b49-8611-b8bdeb82e545": {
+            "type": "collection",
+            "settings": {
+              "collection": "our-favorite-patents",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
           }
         },
         "block_order": [
-          "featured-collection-0"
+          "featured-collection-0",
+          "1eec6347-0ad8-4b49-8611-b8bdeb82e545"
         ],
         "settings": {
           "title": "Take a peek at some of our best selling products",
@@ -1128,6 +1138,7 @@
       },
       "1634016111dba72e6a": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "1634016111dba72e6a-0": {
             "type": "collection",
