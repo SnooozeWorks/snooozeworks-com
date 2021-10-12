@@ -3202,6 +3202,13 @@ $drawer-header-height : 50px;
   }
 }
 
+// Hide Sidebar scrollbar on small devices
+
+.Drawer__Main::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 /**
  * ----------------------------------------------------------------------------
  * Animation
@@ -4341,6 +4348,27 @@ select::-ms-expand {
   border-color: $text-color;
   color: #fff;
   background-color: #5c5c5c;
+}
+
+/**
+ * ----------------------------------------
+ * Size Buttons and Color Swatches
+ * Align and size color swatches on product page.
+ * ----------------------------------------
+ **/
+
+.ColorSwatch--large {
+  width: 60px;
+  height: 60px;
+}
+
+.ColorSwatchItem {
+  flex-grow: 0 !important;
+  flex-basis: 0 !important;
+}
+
+.SizeSwatchItem {
+  flex-basis: 150px !important;
 }
 
 /**
@@ -12281,7 +12309,7 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
   }
 }
 
-/* Featured Product Section
+// Featured Product Section
 // Sets up how product information is displayed in a featured product section
 
 .featured_product_title {
@@ -12331,28 +12359,9 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
   margin-top: 15px;
 }
 
-*/
 
-/**
- * ----------------------------------------
- * Size Buttons and Color Swatches
- * Align and size color swatches on product page.
- * ----------------------------------------
- **/
 
-.ColorSwatch--large {
-  width: 60px;
-  height: 60px;
-}
 
-.ColorSwatchItem {
-  flex-grow: 0 !important;
-  flex-basis: 0 !important;
-}
-
-.SizeSwatchItem {
-  flex-basis: 150px !important;
-}
 
 /*
  *----------------------------------------------------------------------------
@@ -12382,16 +12391,3 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
   }
 }
 */
-
-/*
- *----------------------------------------------------------------------------
- * Misc
- *----------------------------------------------------------------------------
-*/
-
-// Hide Sidebar scrollbar on small devices
-
-.Drawer__Main::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
