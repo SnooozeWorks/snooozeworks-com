@@ -81,29 +81,22 @@
           <p class="ProductItem__Vendor Heading">{{ product.vendor }}</p>
         {%- endif -%}
         
-        <!-- clean this up; on mobile: remove subtitle/category, center short-title and price, put price on bottom -->
-        <!-- keep title to single line with truncate -->
-        <!-- truncate is located under productitem__info productitem__title -->
+        <!-- change metafield names here. -->
 
         <h2 class="ProductItem__Title Heading">
           <a href="{{ product.url | within: collection }}">
-            
             {% if product.metafields.custom_fields["short_title"] != blank %}
-  			      {{ product.metafields.custom_fields["short_title"] }}
-			      {% else %}
-  			      {{ product.title }}
-			      {% endif %}
-          
+  			  {{ product.metafields.custom_fields["short_title"] }}
+			{% else %}
+  			  {{ product.title }}
+			{% endif %}
           </a>
-          
           <div class="sub-title">
-          
             {% if product.metafields.custom_fields["subtitle"] != blank %}
-  			      {{ product.metafields.custom_fields["subtitle"] }}
-			      {% else %}
-  			      {{ collection.title }}
-			      {% endif %}
-          
+  			   {{ product.metafields.custom_fields["subtitle"] }}
+			{% else %}
+  			   {{ collection.title }}
+	        {% endif %}
            </div>
         </h2>
 
