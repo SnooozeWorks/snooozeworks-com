@@ -152,6 +152,7 @@
           },
           "1eec6347-0ad8-4b49-8611-b8bdeb82e545": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "our-favorite-patents",
               "title": "",
