@@ -12270,14 +12270,6 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
   overflow: hidden; 
 }
 
-.coming-soon {
-  width: 40%;
-  display: inline-block;
-  vertical-align: top;
-  text-align: right;
-  letter-spacing: 0;
-}
-
 // On mobile, everything is centered, category hidden.
 
 @include av-mq('phone') {
