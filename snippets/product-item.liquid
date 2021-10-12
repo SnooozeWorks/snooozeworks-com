@@ -159,7 +159,7 @@
         {%- endif -%}
 
         {%- if product.template_suffix != 'coming-soon' -%}
-          <div class="ProductItem__Info ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
+          <div class="ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
             {%- if product.compare_at_price > product.price -%}
                 <span class="ProductItem__Price Price Price--highlight Text--subdued" data-money-convertible>{{ product.price | money_without_trailing_zeros }}</span>
                 <span class="ProductItem__Price Price Price--compareAt Text--subdued" data-money-convertible>{{ product.compare_at_price | money_without_trailing_zeros }}</span>
@@ -178,10 +178,6 @@
            
             {%- endif -%}
           </div>
-        
-        {%- else -%}
-            
-          <div>Coming Soon</div>
             
         {%- endif -%}
 
