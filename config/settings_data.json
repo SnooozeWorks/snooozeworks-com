@@ -660,51 +660,6 @@
           "image": ""
         }
       },
-      "1602658768670": {
-        "type": "collection-list",
-        "disabled": true,
-        "blocks": {
-          "1602658768670-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "patent-coffee-mugs",
-              "image_alignment": "center left",
-              "content_position": "bottomRight",
-              "subheading": "11oz and 15oz sizes. A Ton of Different Subjects! Check 'em out!",
-              "title": "Premium Patent Coffee Mugs",
-              "button_text": "View Collection",
-              "button_link": "shopify:\/\/collections\/patent-coffee-mugs",
-              "apply_overlay": true
-            }
-          },
-          "1602658768670-1": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "",
-              "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "Checkout using Bitcoin, Etherium, and Litecoin securely with Coinbase!",
-              "title": "Now Accepting Crypto!",
-              "button_text": "View our Best Sellers",
-              "button_link": "shopify:\/\/collections\/best-sellers",
-              "apply_overlay": true
-            }
-          }
-        },
-        "block_order": [
-          "1602658768670-0",
-          "1602658768670-1"
-        ],
-        "settings": {
-          "image_size": "large",
-          "add_spacing": true,
-          "expand_collection": true,
-          "stack_on_mobile": false,
-          "text_color": "#ffffff",
-          "button_color": "#363636"
-        }
-      },
       "cart-rec": {
         "type": "cart-rec",
         "settings": {
@@ -829,14 +784,6 @@
           "grid_items_per_page": 12,
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
-        }
-      },
-      "custom-page-section-2": {
-        "type": "custom-page-section-2",
-        "settings": {
-          "background": "#f9f9f9",
-          "title": "Section Title",
-          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
         }
       },
       "16337274257e2f4e22": {
@@ -1178,12 +1125,38 @@
         ],
         "settings": {
         }
+      },
+      "1634016111dba72e6a": {
+        "type": "featured-collections",
+        "blocks": {
+          "1634016111dba72e6a-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "our-favorite-patents",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "1634016111dba72e6a-0"
+        ],
+        "settings": {
+          "title": "Some of our Favorite Patent Posters for the Month",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
       }
     },
     "content_for_index": [
       "16337274257e2f4e22",
-      "1602658768670",
       "featured-collections",
+      "1634016111dba72e6a",
       "1577237689645",
       "1604945335f6874936",
       "16333964471f320cc9"
