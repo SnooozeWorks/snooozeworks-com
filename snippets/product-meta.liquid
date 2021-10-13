@@ -27,27 +27,19 @@
   {%- endif -%}
   
   {%- if product.template_suffix != 'coming-soon' -%}
-  
-
-     
-      <div class="Grid Grid--center" style="padding-top: 10px;">
-        <div class="Grid__Cell 1/1--pocket 1/2--lap-and-up Heading">
-          {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
-        </div>
-        <div class="Grid__Cell 1/1--pocket 1/2--lap-and-up Heading CurrentPrice">
-        {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
-          <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
-          <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
-        {%- else -%}
-          <span class="ProductMeta__Price Price Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
-        {%- endif -%}
-        </div>
+    <div class="Grid Grid--center CurrentPrice">
+      <div class="Grid__Cell 1/1--pocket 1/2--lap-and-up Heading">
+        {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
       </div>
-
-    {% comment %}
-      <a href="#ProductAside" title="More Information"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></a>
-    {% endcomment %}
-    
+      <div class="Grid__Cell 1/1--pocket 1/2--lap-and-up Heading CurrentPrice">
+      {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+        <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+        <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
+      {%- else -%}
+        <span class="ProductMeta__Price Price Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+      {%- endif -%}
+      </div>
+    </div>
   {%- endif -%}
 
   {%- if show_description and section.settings.description_below_add_to_cart == false -%}
