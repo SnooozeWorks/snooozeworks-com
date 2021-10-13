@@ -4229,7 +4229,7 @@ select::-ms-expand {
  */
 
 .Price {
-  display: inline-block;
+  float: right;
 }
 
 .Price--highlight {
@@ -4248,6 +4248,12 @@ select::-ms-expand {
     width: calc(100% + 0.8em);
     height: 1px;
     background: currentColor;
+  }
+}
+
+@include av-mq('phone'){
+  .Price {
+    display: inline-block;
   }
 }
 
