@@ -2,7 +2,7 @@
   "404": {
     "general": {
       "title": "404",
-      "content": "Uh oh. You seem to have taken a wrong turn.",
+      "content": "You seem to have taken a wrong turn.",
       "button": "Back to Homepage"
     }
   },
