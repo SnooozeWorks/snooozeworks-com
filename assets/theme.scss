@@ -12580,10 +12580,7 @@ border-color: $button-background;
   }
   .jdgm-preview-badge {
     text-align: center;
-    padding: 10px 0;
-  }
-  .jdgm-preview-badge--with-link {
-    padding: 10px 0px;
+    padding: 10px 0 !important;
   }
   .jdgm-rev__body>p {
     text-align: justify;
