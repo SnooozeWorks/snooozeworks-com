@@ -12405,9 +12405,6 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 .jdgm-histogram__bar-content {
   background: #EA3340 !important;
 }
-#judgeme_product_reviews {
-  padding: 0 80px;
-}
 .jdgm-rev__title {
   padding: 10px 0;
 }
@@ -12526,6 +12523,11 @@ border-color: $button-background;
       }
   	}
   } 
+}
+@include av-mq('lap-and-up'){
+  #judgeme_product_reviews {
+    padding: 0 80px;
+  }
 }
 
 @include av-mq ('pocket'){
