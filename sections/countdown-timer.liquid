@@ -1,5 +1,31 @@
 {{ "flipdown.css" | asset_url | stylesheet_tag }}
 
+<style>
+  .Countdown__Overlay {
+  position: relative;
+  -ms-flex-preferred-size: 80%;
+  flex-basis: 80%;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  padding: 0 15px;
+}
+
+.countdown .flipdown {
+  margin-top: 0;
+  margin-bottom: 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media(max-width: 550px) {
+  .countdown {
+    width: 100%;
+  }
+}
+*/
+</style>
+
 <section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="countdown-timer">
   {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
 
