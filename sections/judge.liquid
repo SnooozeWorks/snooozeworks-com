@@ -23,11 +23,6 @@
 
 {% stylesheet %}
 <style>
-.jdgm-preview-badge {
-  display: inline-block !important;
-  text-align: left !important;
-  padding-top: 0 !important;
-}
 .jdgm-rev__title {
   padding: 10px 0;
 }
@@ -142,6 +137,11 @@ border-color: $button-background;
 }
 
 @include av-mq ('lap-and-up'){
+  .jdgm-preview-badge {
+    display: inline-block !important;
+    text-align: left !important;
+    padding-top: 0 !important;
+  }
   .jdgm-preview-badge-with--link {
     padding: 0 !important;
   }
