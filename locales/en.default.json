@@ -1,9 +1,10 @@
 {
   "404": {
     "general": {
-      "title": "Uh oh...",
+      "title": "404",
       "content": "You seem to have taken a wrong turn.",
-      "button": "Our Catalog"
+      "button": "Back to Homepage",
+      "catalog": "Our Catalog"
     }
   },
   "general": {
