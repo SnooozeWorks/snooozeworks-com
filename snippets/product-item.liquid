@@ -85,15 +85,15 @@
 
         <h2 class="ProductItem__Title Heading">
           <a href="{{ product.url | within: collection }}">
-            {% if product.metafields.custom_fields["short_title"] != blank %}
-  			  {{ product.metafields.custom_fields["short_title"] }}
+            {% if product.metafields.snoooze["short_title"] != blank %}
+  			  {{ product.metafields.snoooze["short_title"] }}
 			{% else %}
   			  {{ product.title }}
 			{% endif %}
           </a>
           <div class="ProductItem__Category">
-            {% if product.metafields.custom_fields["subtitle"] != blank %}
-  			   {{ product.metafields.custom_fields["subtitle"] }}
+            {% if product.metafields.snoooze["category"] != blank %}
+  			   {{ product.metafields.snoooze["category"] }}
 			{% else %}
   			   {{ collection.title }}
 	        {% endif %}
