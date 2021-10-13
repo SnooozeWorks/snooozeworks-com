@@ -4294,6 +4294,12 @@ select::-ms-expand {
   }
 }
 
+@include av-mq('pocket'){
+  .CurrentPrice {
+    text-align: center !important;
+  }
+}
+
 /**
  * ----------------------------------------------------------------------------
  * Color swatch
