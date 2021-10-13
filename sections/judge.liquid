@@ -23,6 +23,9 @@
 
 {% stylesheet %}
 <style>
+.jdgm-histogram__bar-content {
+  background: #EA3340 !important;
+}
 .jdgm-rev__title {
   padding: 10px 0;
 }
@@ -43,9 +46,6 @@
 }
 .jdgm-ask-question-btn, .jdgm-write-rev-link {
   padding: 15px 25px !important;
-}
-.jdgm-histogram__bar-content {
-  background: #EA3340 !important;
 }
 .jdgm-rev__thumb-btn:after {
   color: #EA3340 !important;
@@ -113,7 +113,7 @@
 }
   &[disabled] {
   cursor: not-allowed;
-}
+  }
 }
 .jdgm-write-rev-link {
 color: $button-text-color;
@@ -145,7 +145,7 @@ border-color: $button-background;
   .jdgm-prev-badge {
     text-align: left;
   }
-  .jdgm-preview-badge-with--link {
+  .jdgm-preview-badge--with-link {
     padding: 0 !important;
   }
   #judgeme_product_reviews {
