@@ -12127,6 +12127,7 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
     height: 70px;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Slideshow
@@ -12268,60 +12269,7 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 // Featured Collections
 // Sets up how the Product info is display on collection pages.
 
-.ProductItem__Info .ProductItem__Title {
-  display: inline-block;
-  width: 60%;
-  text-align: left;
-  // Truncate
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden; 
-}
 
-.ProductItem__Info .ProductItem__PriceList {
-  display: inline-block;
-  vertical-align: top;
-  width: 40%;
-  text-align: right;
-}
-
-.ProductItem__Info .ProductItem__Category {
-  font-family: $text-font-family;
-  font-weight: normal;
-  color: #1F1F1E;
-  // Restrict to single line
-  display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-  // Truncate
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden; 
-}
-
-// On mobile, everything is centered, category hidden.
-
-@include av-mq('phone') {
-  .ProductItem__Info .ProductItem__Title {
-    width: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: to-size(11);
-    text-align: center;
-  }
-  
-  .ProductItem__Info .ProductItem__PriceList {
-    font-size: to-size(11);
-    display: block;
-    text-align: center;
-    width: 100%;
-    margin-top: -10px;
-  }
-  .ProductItem_Info .ProductItem__Category {
-    display: none;  
-  }
-}
 
 @media only screen and (max-width: 1366px)  {
   .Footer__Block--links {
@@ -12394,32 +12342,3 @@ nav .HorizontalList__Item:last-of-type .MegaMenu__Inner .MegaMenu__Item:nth-of-t
 .FeaturedProduct__ViewWrapper {
   margin-top: 15px;
 }
-
-/*
- *----------------------------------------------------------------------------
- * Countdown Timer
- *----------------------------------------------------------------------------
-
-.Countdown__Overlay {
-  position: relative;
-  -ms-flex-preferred-size: 80%;
-  flex-basis: 80%;
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  padding: 0 15px;
-}
-
-.countdown .flipdown {
-  margin-top: 0;
-  margin-bottom: 35px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media(max-width: 550px) {
-  .countdown {
-    width: 100%;
-  }
-}
-*/
