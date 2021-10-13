@@ -4287,6 +4287,10 @@ select::-ms-expand {
   }
 }
 
+.ReviewBadge {
+  padding-top: 15px;
+}
+
 @include av-mq('lap-and-up'){
   .Price {
     display: block;
@@ -4300,12 +4304,8 @@ select::-ms-expand {
     padding-top: 10px;
   }
   .ReviewBadge {
-    padding-top 0px;
+    padding-top: 0px;
   }
-}
-
-.ReviewBadge {
-  padding-top: 15px;
 }
 
 /**
