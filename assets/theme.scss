@@ -4264,7 +4264,7 @@ select::-ms-expand {
  */
 
 .Price {
-  float: right;
+  display: inline-block;
 }
 
 .Price--highlight {
@@ -4286,9 +4286,9 @@ select::-ms-expand {
   }
 }
 
-@include av-mq('phone'){
+@include av-mq('lap-and-up'){
   .Price {
-    display: inline-block;
+    float: right;
   }
 }
 
@@ -12538,6 +12538,9 @@ border-color: $button-background;
 }
 
 @include av-mq ('pocket'){
+  .jdgm-prev-badge {
+    text-align: center;
+  }
   .jdgm-review-widget--medium .jdgm-histogram {
   	margin: 16px 0 !important;
   }
