@@ -29,6 +29,8 @@
   {%- else -%}
  
     <div class="Container">
+      <div class="PageContent">
+
 	  <form action="/cart" method="POST" class="Cart Cart--expanded" novalidate>
           <input type="hidden" name="attributes[collection_mobile_items_per_row]" value="">
           <input type="hidden" name="attributes[collection_desktop_items_per_row]" value="">
@@ -94,6 +96,7 @@
           </div>
         {%- endif -%}
       </div>
+    </div>
   {%- endif -%}
   
 </section>
