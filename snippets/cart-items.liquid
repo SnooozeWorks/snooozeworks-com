@@ -58,9 +58,9 @@
 
           <div class="CartItem__PriceList">
             {%- if line_item.original_price > line_item.price -%}
-              <span class="CartItem__Price Price Price--highlight" data-money-convertible>{{ line_item.price | money_without_trailing_zeros }}</span>
+              <span class="CartItem__Price Price Price--highlight" data-money-convertible>Price: {{ line_item.price | money_without_trailing_zeros }}</span>
             {%- else -%}
-              <span class="CartItem__Price Price" data-money-convertible>{{ line_item.price | money_without_trailing_zeros }}</span>
+              <span class="CartItem__Price Price" data-money-convertible>Price: {{ line_item.price | money_without_trailing_zeros }}</span>
             {%- endif -%}
           </div>
         </div>
