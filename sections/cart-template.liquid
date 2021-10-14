@@ -12,7 +12,7 @@
     <div class="EmptyState">
       <div class="Container">
         
-        {{ image | img_url: "cart" }}
+        {{ empty_cart.png | img_url: '400x400'  }}
                 
         <h1 class="EmptyState__Title Heading u-h3">{{ 'cart.general.empty' | t }}</h1>
         {%- if settings.cart_show_free_shipping_threshold -%}
