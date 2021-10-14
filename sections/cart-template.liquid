@@ -15,16 +15,7 @@
         <img style="padding: 20px;" src="{{ 'empty_cart.png' | file_img_url: '400x400' }}">
                 
         <h1 class="EmptyState__Title Heading u-h3">{{ 'cart.general.empty' | t }}</h1>
-        {%- if settings.cart_show_free_shipping_threshold -%}
-          {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
-          <span id="revy-cart-subtotal-price"><span id="revy-cart-subtotal-price">{%- capture remaining_amount -%}<span>
-<span class="saso-cart-original-total"><span class="zrx-cart-total">{{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span></span>
-<span class="saso-cart-total"></span>
-</span>{%- endcapture -%}</span></span>
-
-          <p class="Text--subdued">{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
-        {%- endif -%}
-
+       
         <a href="/collections/catalog" class="EmptyState__Action Button Button--primary">{{ 'cart.general.empty_button' | t }}</a>
       </div>
     </div>
