@@ -1,9 +1,13 @@
-  {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when 'header' -%}
-      	  {%- include 'page-header' -%}
-       {%- endcase -%}
-  {%- endfor -%}
+{% if cart.item_count != 0 -%}
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'header' -%}
+    {%- include 'page-header' -%}
+  {%- endcase -%}
+{%- endfor -%}
+
+{% endif %}
 
 {% schema %}
   {
