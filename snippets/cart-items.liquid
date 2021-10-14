@@ -30,8 +30,8 @@
         <h2 class="CartItem__Title Heading">
           <a href="{{ line_item.url }}">            
             
-            {% if line_item.product.metafields.custom_fields["short_title"] != blank %}
-  			  {{ line_item.product.metafields.custom_fields["short_title"] }}
+            {% if line_item.product.metafields.snoooze["short-title"] != blank %}
+  			  {{ line_item.product.metafields.snoooze["short-title"] }}
 			{% else %}
   			  {{ line_item.product.title }}
 			{% endif %}
