@@ -1163,6 +1163,27 @@
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
         }
+      },
+      "cart-header": {
+        "type": "cart-header",
+        "blocks": {
+          "dcc9d5c6-873a-4d39-8813-38917d7ec08d": {
+            "type": "header",
+            "settings": {
+              "show_banner": true,
+              "apply_overlay": true,
+              "banner_image": "shopify:\/\/shop_images\/cart-14134.jpg",
+              "banner_size": "normal",
+              "heading": "Shopping Cart",
+              "subheading": "Almost there! One more step and it's all yours!"
+            }
+          }
+        },
+        "block_order": [
+          "dcc9d5c6-873a-4d39-8813-38917d7ec08d"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
