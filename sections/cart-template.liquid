@@ -11,7 +11,9 @@
   {%- if cart.item_count == 0 -%}
     <div class="EmptyState">
       <div class="Container">
-        <img style="text-align: center;" src="https://cdn.shopify.com/s/files/1/2422/1433/files/empty_cart.png?v=1634227280" />
+        
+        {{ image | img_url: "empty_cart.png" }}
+                
         <h1 class="EmptyState__Title Heading u-h3">{{ 'cart.general.empty' | t }}</h1>
         {%- if settings.cart_show_free_shipping_threshold -%}
           {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
