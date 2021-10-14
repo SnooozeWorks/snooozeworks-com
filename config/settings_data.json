@@ -1173,7 +1173,7 @@
               "show_banner": true,
               "apply_overlay": true,
               "banner_image": "shopify:\/\/shop_images\/cart-14134.jpg",
-              "banner_size": "normal",
+              "banner_size": "small",
               "heading": "Shopping Cart",
               "subheading": "Almost there! One more step and it's all yours!"
             }
