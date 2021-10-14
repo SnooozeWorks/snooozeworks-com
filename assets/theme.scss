@@ -4550,13 +4550,13 @@ select::-ms-expand {
 
 @include av-mq('tablet-and-up') {
   .EmptyState {
-    margin: 200px 0;
+    margin: 150px 0;
   }
 }
 
 @include av-mq('desk') {
   .EmptyState {
-    margin: 250px 0;
+    margin: 200px 0;
   }
 }
 
