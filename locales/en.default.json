@@ -91,7 +91,7 @@
       "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "update": "Update",
       "checkout": "Checkout",
-      "empty": "Oh no, your cart is empty!",
+      "empty": "I am empty.",
       "cookies_required": "Enable cookies to use the shopping cart",
       "edit": "Edit",
       "cancel": "Cancel",
