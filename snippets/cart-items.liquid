@@ -29,19 +29,17 @@
       <div class="CartItem__Info">
         <h2 class="CartItem__Title Heading">
           <a href="{{ line_item.url }}">            
-            
             {% if line_item.product.metafields.snoooze["short-title"] != blank %}
   			  {{ line_item.product.metafields.snoooze["short-title"] }}
 			{% else %}
   			  {{ line_item.product.title }}
 			{% endif %}
-          
           </a>
         </h2>
 
         <div class="CartItem__Meta Heading Text--subdued">
           {%- unless line_item.product.has_only_default_variant -%}
-            <p class="CartItem__Variant">{{ line_item.variant.title }}</p>
+            <p class="CartItem__Variant">Variant: {{ line_item.variant.title }}</p>
           {%- endunless -%}
 
           {%- if line_item.properties != empty -%}
