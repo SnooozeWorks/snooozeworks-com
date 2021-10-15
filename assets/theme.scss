@@ -12621,28 +12621,11 @@ border-color: $button-background;
 }
 
 .underline-animation {
-  position: relative;
-  color: #fff;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
 }
 
 .underline-animation:hover {
-  color: #fff;
-}
-
-.underline-animation::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.underline-animation:hover::before {
-  transform: scaleX(1);
+  text-decoration-color: rgba(255, 255, 255, 1);
 }
