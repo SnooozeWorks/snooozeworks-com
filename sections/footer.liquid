@@ -52,8 +52,6 @@
                   <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
                 {%- endif -%}
 
-  
-
                 {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form' -%}
                   {%- if form.posted_successfully? -%}
                     <p class="Form__Alert Alert Alert--success">{{ 'footer.newsletter.success' | t }}</p>
@@ -75,7 +73,7 @@
 
     <div class="Footer__Aside">
       <div class="Footer__Copyright Link Link--secondary Footer__StoreName">
-        <a href="{{ shop.url }}">© {{ 'now' | date: '%Y' }} {{ shop.name }}</a> | All Rights Reserved
+        <a href="{{ shop.url }}">© {{ 'now' | date: '%Y' }} {{ shop.name }}</a>
       </div>
 
       {%- if section.settings.show_payment_methods -%}
