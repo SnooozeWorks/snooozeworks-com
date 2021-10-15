@@ -1182,7 +1182,8 @@
         "settings": {
           "show_section": true,
           "title": "Logos",
-          "primary": "shopify:\/\/shop_images\/social-media-logo.jpg"
+          "primary": "shopify:\/\/shop_images\/social-media-logo.jpg",
+          "alternate": "shopify:\/\/shop_images\/snooozeworks_square-red-png.png"
         }
       }
     },
