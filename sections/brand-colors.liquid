@@ -5,7 +5,9 @@
 	  <div class="Grid Grid--center">
         <div class="Grid__Cell 1/2--pocket 1/4--lap-and-up" style="text-align: center;">
           <h3 class="SectionHeader__Heading Heading u-h4">Imperial Red</h3>
-       	  <div class="brand-primary"></div>
+       	  <svg height="100" width="100">
+  			<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="{{ section.settings.primary }}" />
+		  </svg>
         </div>
         <div class="Grid__Cell 1/2--pocket 1/4--lap-and-up" style="text-align: center;">
           <h3 class="SectionHeader__Heading Heading u-h4">Ivory</h3>
@@ -63,41 +65,8 @@
   ]
 }
 {% endschema %}
+
 {% stylesheet %}
-<style>
-.brand-primary {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: #ef3340;
-  border: 3px solid #000;
-  margin: 0 auto;
-}
-.brand-secondary {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: #f9f9f9;
-  border: 3px solid #000;
-  margin: 0 auto;
-}
-.brand-black {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: #1f1f1e;
-  border: 3px solid #000;
-  margin: 0 auto;
-}
-.brand-white {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: #fff;
-  border: 3px solid #000;
-  margin: 0 auto;
-}
-</style>
 {% endstylesheet %}
 
 {% javascript %}
