@@ -23,10 +23,8 @@
                 {%- endif -%}
 
                 {%- if block.settings.content != blank -%}
-                  <div class="Footer__Content Rte">                   
-
+                  <div class="Footer__Content Rte">
                     {{ block.settings.content }}
-                    
                   </div>
                 {%- endif -%}
 
@@ -54,11 +52,7 @@
                   <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
                 {%- endif -%}
 
-                {%- if block.settings.content != blank -%}
-                  <div class="Footer__Content Rte">
-                    {{ block.settings.content }}
-                  </div>
-                {%- endif -%}
+  
 
                 {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form' -%}
                   {%- if form.posted_successfully? -%}
