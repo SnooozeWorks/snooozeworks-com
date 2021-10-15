@@ -1170,10 +1170,19 @@
         "type": "brand-colors",
         "settings": {
           "show_section": true,
+          "title": "Colors",
           "primary": "#ef3340",
           "secondary": "#fffef1",
           "black": "#1f1f1e",
           "white": "#f9f9f9"
+        }
+      },
+      "brand-logos": {
+        "type": "brand-logos",
+        "settings": {
+          "show_section": true,
+          "title": "Logos",
+          "primary": "shopify:\/\/shop_images\/social-media-logo.jpg"
         }
       }
     },
