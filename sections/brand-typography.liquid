@@ -1,3 +1,6 @@
+{% assign header_font = settings.brand_heading_font %}
+{% assign base_font = settings.brand_base_font %}
+
 {%- if section.settings.show_section -%}
 <section id="section-{{ section.id }}">
   <div class="Container">
@@ -14,7 +17,7 @@
           <h3 style="SectionHeader__Heading Heading u-h3">{{ section.settings.brand_heading_font }}</h3>
         </div>
         <div class="Grid__Cell 1/1--pocket 1/4--lap-and-up" style="text-align: center;">
-	      <h3 style="SectionHeader__Heading Heading u-h3">{{ section.settings.brand_body_font }}</h3>
+	      <h3 style="SectionHeader__Heading Heading u-h3">{{ section.settings.brand_base_font }}</h3>
         </div>
       </div>   
     </div>
@@ -51,7 +54,7 @@
     },
 	{
       "type": "font_picker",
-      "id": "brand_body_font",
+      "id": "brand_base_font",
       "label": "Body Font",
 	  "default": "work_sans_n6"
     }
