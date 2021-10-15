@@ -12621,25 +12621,28 @@ border-color: $button-background;
 }
 
 .underline-animation {
-  display: inline-block;
   position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+.underline-animation:hover {
   color: #fff;
 }
 
-.underline-animation:after {
-  content: '';
+.underline-animation::before {
+  content: "";
   position: absolute;
-  width: 50%;
-  transform: scaleX(0);
+  display: block;
+  width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
   background-color: #fff;
-  transform-origin: bottom left;
-  transition: transform 0.25s ease-in-out;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
-.underline-animation:hover:after {
+.underline-animation:hover::before {
   transform: scaleX(1);
-  transform-origin: bottom left;
 }
