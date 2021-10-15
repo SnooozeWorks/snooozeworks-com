@@ -1191,7 +1191,8 @@
         "settings": {
           "show_section": true,
           "title": "Typography",
-          "brand_heading_font": "poppins_n6"
+          "brand_heading_font": "poppins_n6",
+          "brand_base_font": "fira_sans_n4"
         }
       }
     },
