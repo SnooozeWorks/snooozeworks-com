@@ -41,7 +41,7 @@
                   <ul class="Linklist">
                     {%- for link in linklist.links -%}
                       <li class="Linklist__Item">
-                        <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
+                        <a href="{{ link.url }}" class="Link Link--primary underline-animation">{{ link.title | escape }}</a>
                       </li>
                     {%- endfor -%}
                   </ul>
