@@ -14,11 +14,7 @@
        	  <img src="{{ snooozeworks_rect-red-svg.svg | asset_url }}" alt"{{ shop.name }}" />
         </div>
         <div class="Grid__Cell 1/1--pocket 1/2--lap-and-up" style="text-align: center;">
-          <svg height="200" width="200">
-  			<circle cx="100" cy="100" r="90" stroke="black" stroke-width="3" fill="{{ section.settings.secondary }}" />
-            <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle">Ivory White</text> 
-            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">#FFFEF1</text> 
-		  </svg>
+       	  <img src="{{ snooozeworks_rect-red-svg.svg | asset_url }}" alt"{{ shop.name }}" />
         </div>
       </div>   
     </div>
@@ -48,10 +44,10 @@
 	  "content": "Colors"
 	},
     {
-      "type": "color",
+      "type": "image_picker",
       "id": "primary",
       "label": "Primary",
-      "default": "#ef3340"
+      "info": "Set default logo."
     }
   ]
 }
