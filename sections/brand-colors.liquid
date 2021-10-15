@@ -2,11 +2,11 @@
 <section id="section-{{ section.id }}">
   <div class="Container">
     <div class="Page_Content Page_Content--normal">    
-      
+     
       {%- if section.settings.title != blank -%}
-        <div class="SectionHeader--center" style="margin-bottom: 25px;">
-           <h2 class="SectionHeader__Heading Heading u-h2">{{ block.settings.title | escape }}</h2>
-        </div>
+      <div class="SectionHeader--center" style="margin-bottom: 25px;">
+         <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.title | escape }}</h2>
+      </div>
 	  {%- endif -%}
       
 	  <div class="Grid Grid--center">
