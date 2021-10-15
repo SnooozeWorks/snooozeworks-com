@@ -1,5 +1,9 @@
 {
   "current": {
+    "primary": "#ef3340",
+    "secondary": "#323232",
+    "black": "#1f1f1e",
+    "white": "#f9f9f9",
     "heading_color": "#1f1f1e",
     "text_color": "#1f1f1e",
     "text_light_color": "#323232",
