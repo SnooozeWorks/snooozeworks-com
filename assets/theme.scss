@@ -12620,12 +12620,14 @@ border-color: $button-background;
   }
 }
 
-.underline-animation {
-  color: inherit;
-  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-  transition: text-decoration-color 300ms;
+
+.underline-animation::after {
+	opacity 1;
+	transform: scale(0);
+	transform-origin: center;
 }
 
-.underline-animation:hover {
-  text-decoration-color: rgba(255, 255, 255, 1);
+.underline-animation:hover::after,
+.underline-animation:focus::after{
+	transform: scale(1);
 }
