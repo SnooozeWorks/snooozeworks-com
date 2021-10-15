@@ -12619,15 +12619,3 @@ border-color: $button-background;
 	margin-bottom: 25px !important;
   }
 }
-
-
-.underline-animation::after {
-	opacity 1;
-	transform: scale(0);
-	transform-origin: center;
-}
-
-a:hover::after,
-a:focus::after{
-	transform: scale(1);
-}
