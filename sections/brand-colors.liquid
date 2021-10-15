@@ -1,6 +1,6 @@
 {%- if section.settings.show_section -%}
 <section id="section-{{ section.id }}">
-  <div class="PageContent Container">
+  <div class="Container">
     <div class="Page_Content Page_Content--normal">    
      
       {%- if section.settings.title != blank -%}
@@ -94,22 +94,6 @@
 {% endschema %}
 
 {% stylesheet %}
-<style>
-  .Page_Content {
-    max-width: 1000px;
-    padding: 40px 25px;
-    margin: 0 auto;
-    text-align: justify;
-    border-bottom: 1px #B1B1B1 solid;
-  }
-  .Page_Content:first-of-type {
-    padding-top: 50px;
-  }
-  .Page_Content:last-of-type {
-    padding-bottom: 50px;
-    border-bottom: none;
-  }
-</style>
 {% endstylesheet %}
 
 {% javascript %}
