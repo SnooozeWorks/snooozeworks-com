@@ -12627,7 +12627,7 @@ border-color: $button-background;
 	transform-origin: center;
 }
 
-.underline-animation:hover::after,
-.underline-animation:focus::after{
+a:hover::after,
+a:focus::after{
 	transform: scale(1);
 }
