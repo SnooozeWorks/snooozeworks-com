@@ -12619,3 +12619,14 @@ border-color: $button-background;
 	margin-bottom: 25px !important;
   }
 }
+
+.underline-animation {
+	opacity 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+.underline-animation:hover,
+.underline-animation:focus {
+	transform: scale(1);
+}
