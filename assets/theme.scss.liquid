@@ -12584,3 +12584,22 @@ border-color: $button-background;
 	margin-bottom: 25px !important;
   }
 }
+
+.underline-animation {
+	display: block;
+	position: relative;
+	padding: 0.2em 0;
+}
+
+.underline-animation {
+	opacity 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+.underline-animation:hover {
+  transform: scale(1);
+}
+.underline-animation:focus {
+	transform: scale(1);
+}
