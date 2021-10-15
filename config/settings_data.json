@@ -1185,6 +1185,14 @@
           "primary": "shopify:\/\/shop_images\/social-media-logo.jpg",
           "alternate": "shopify:\/\/shop_images\/social-media-logo.jpg"
         }
+      },
+      "brand-typography": {
+        "type": "brand-typography",
+        "settings": {
+          "show_section": true,
+          "title": "Typography",
+          "brand_heading_font": "poppins_n6"
+        }
       }
     },
     "content_for_index": [
