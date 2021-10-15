@@ -12623,13 +12623,13 @@ border-color: $button-background;
 .underline-animation {
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: #fff;
 }
 
 .underline-animation:after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 20%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
