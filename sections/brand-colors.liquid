@@ -1,10 +1,21 @@
 {%- if section.settings.show_section -%}
 <section id="section-{{ section.id }}">
   <div class="Container">
-     <div class="Page_Content Page_Content--normal">        
-
-      <div class="brand-red"></div>
-              
+    <div class="Page_Content Page_Content--normal">        
+	  <div class="Grid Grid--center">
+        <div class="Grid__Cell 1/2--pocket 1/4--lap-and-up">
+       	  <div class="brand-red"></div>
+        </div>
+        <div class="Grid__Cell 1/2--pocket 1/4--lap-and-up">
+       	  <div class="brand-white"></div>
+        </div>
+        <div class="Grid__Cell 1/2--pocket 1/4--lap-and-up">
+       	  <div class="brand-black"></div>
+        </div>
+        <div class="Grid__Cell 1/2--pocket 1/4--lap-and-up">
+       	  <div class="brand-red"></div>
+        </div>
+      </div>   
     </div>
   </div>
 </section>
@@ -31,6 +42,23 @@
   height: 200px;
   border-radius: 50%;
   background: #ef3340;
+}
+.brand-white {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #1f1f1e;
+}
+.brand-black {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #ef3340;
+}.brand-red {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #000;
 }
 
 {% endstylesheet %}
