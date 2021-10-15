@@ -1184,6 +1184,18 @@
         ],
         "settings": {
         }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "section_size": "normal",
+          "image": "shopify:\/\/shop_images\/blog_header.jpg",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "",
+          "title": "Our Monthly Newsletter",
+          "content": "<p>Join our mailing list to get notified of new products, discount codes, various promotions, and some behind-the-scenes stuff.<br\/><\/p><p>You'll also get a 10% off code you can use immediately just for joining!<\/p>"
+        }
       }
     },
     "content_for_index": [
