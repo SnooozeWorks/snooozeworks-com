@@ -1,8 +1,62 @@
+{%- if section.settings.show_section -%}
+<section id="section-{{ section.id }}">
+  <div class="Container">
+    <div class="Page_Content Page_Content--normal">    
+     
+      {%- if section.settings.title != blank -%}
+      <div class="SectionHeader--center" style="margin-bottom: 25px;">
+         <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.title | escape }}</h2>
+      </div>
+	  {%- endif -%}
+      
+	  <div class="Grid Grid--center">
+        <div class="Grid__Cell 1/1--pocket 1/4--lap-and-up" style="text-align: center;">
+			
+        </div>
+        <div class="Grid__Cell 1/1--pocket 1/4--lap-and-up" style="text-align: center;">
+			
+        </div>
+      </div>   
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Brand Typography",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_section",
+      "label": "Show Section",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Typography"
+    },
+	{
+	  "type": "header",
+	  "content": "Typography"
+	},
+    {
+      "type": "font_picker",
+      "id": "brand_heading_font",
+      "label": "Heading Font",
+	  "default": "work_sans_n6"
+    },
+	{
+      "type": "font_picker",
+      "id": "brand_body_font",
+      "label": "Body Font",
+	  "default": "work_sans_n6"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
