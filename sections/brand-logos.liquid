@@ -14,7 +14,7 @@
        	  <img src="{{ section.settings.primary | img_url: '500x' }}" alt"{{ shop.name }}" />
         </div>
         <div class="Grid__Cell 1/1--pocket 1/2--lap-and-up" style="text-align: center;">
-       	  <img src="{{ section.settings.secondary | img_url: '500x' }}" alt"{{ shop.name }}" />
+       	  <img src="{{ section.settings.alternate | img_url: '500x' }}" alt"{{ shop.name }}" />
         </div>
       </div>   
     </div>
@@ -46,8 +46,14 @@
     {
       "type": "image_picker",
       "id": "primary",
-      "label": "Primary",
+      "label": "Primary Logo",
       "info": "Set default logo."
+    },
+    {
+      "type": "image_picker",
+      "id": "alternate",
+      "label": "Alternate Logo",
+      "info": "Set alternate logo."
     }
   ]
 }
