@@ -18,13 +18,9 @@
 {% schema %}
   {
     "name": "Page Content",
-    "settings": [],
-  	"blocks": [
+    "class": "shopify-section--bordered",
+    "settings": [
     {
-      "type": "text",
-      "name": "Section Content",
-      "settings": [
-    	{
       	  "type": "color",
           "id": "background",
           "label": "Background Color",
@@ -42,9 +38,7 @@
           "label": "Text",
           "default": "<p>Use this text area to tell your story.</p>"
         }
-      ]
-	}
-  ],
+      ],
   "presets": [
     {
       "category": "Text",
