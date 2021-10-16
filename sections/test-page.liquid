@@ -1,12 +1,20 @@
 {% for block in section.blocks %}
-    {% case block.type %}
-        {% when 'video' %}
-        {% include 'video-on-page' %}
-    {% endcase %}
+    {% case block.type %}
+        {% when 'text' %}
+        {% include 'page-content' %}
+        {% when 'video' %}
+        {% include 'video-on-page' %}
+    {% endcase %}
 {% endfor %}
+
 {% schema %}
 {
 "blocks": [
+{
+  "type": "rich-text",
+  "name": "Rich text",
+  "settings": [ ]
+},
 {
   "type": "video",
   "name": "Full Width YouTube Video",
