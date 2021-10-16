@@ -1,10 +1,10 @@
 {% for block in section.blocks %}
-    {% case block.type %}
-        {% when 'text' %}
-        {% include 'page-content' %}
-        {% when 'video' %}
-        {% include 'video-on-page' %}
-    {% endcase %}
+  {% case block.type %}
+      {% when 'text' %}
+      {% include 'page-content' %}
+      {% when 'video' %}
+      {% include 'video-on-page' %}
+  {% endcase %}
 {% endfor %}
 
 {% schema %}
@@ -32,20 +32,20 @@
           "label": "Text",
           "default": "<p>Use this text area to tell your story.</p>"
         }
-]
-},
-{
-  "type": "video",
-  "name": "Full Width YouTube Video",
-  "settings": [
-    {
-      "type": "text",
-      "id": "videoID",
-      "label": "Video ID",
-      "default": "Enter Video ID Here"
+		]
+		},
+		{
+  		"type": "video",
+  		"name": "Full Width YouTube Video",
+  		"settings": [
+   		{
+      	"type": "text",
+        "id": "videoID",
+        "label": "Video ID",
+        "default": "Enter Video ID Here"
+        }
+        ]
     }
   ]
-}
-]
 }
 {% endschema %}
