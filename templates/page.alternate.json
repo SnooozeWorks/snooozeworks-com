@@ -11,24 +11,6 @@
         "subheading": "Description of Page"
       }
     },
-    "content": {
-      "type": "page-content",
-      "blocks": {
-        "79a52e97-ceda-42ff-977e-136ed6bd3685": {
-          "type": "text",
-          "settings": {
-            "background": "#ffffff",
-            "title": "Section Header",
-            "content": "<p>Use this text area to tell your story.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "79a52e97-ceda-42ff-977e-136ed6bd3685"
-      ],
-      "settings": {
-      }
-    },
     "1634392257e3b9448c": {
       "type": "featured-products",
       "blocks": {
@@ -58,7 +40,6 @@
   },
   "order": [
     "main",
-    "content",
     "1634392257e3b9448c"
   ]
 }
