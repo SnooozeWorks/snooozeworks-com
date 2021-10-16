@@ -5,30 +5,31 @@
       "settings": {
         "show_banner": true,
         "apply_overlay": true,
-        "banner_image": "shopify:\/\/shop_images\/contact_header.jpg",
+        "banner_image": "shopify:\/\/shop_images\/stickers-collection_ce764cfc-401a-4bf5-8d50-26fa565f979b.jpg",
         "banner_size": "normal",
-        "heading": "Page Title",
-        "subheading": "Description of Page"
+        "heading": "Our Story",
+        "subheading": "The brief history of SnooozeWorks"
       }
     },
     "1634394741a52ea6a8": {
       "type": "page-content",
       "settings": {
         "background": "#ffffff",
-        "title": "Section Header",
-        "content": "<p>Use this text area to tell your story.<\/p>"
+        "title": "The Beginning",
+        "content": "<p><br\/>It's been four years since SnooozeWorks was started as a side hustle and it's morphed into something so much more -- granting opportunities for incredible personal, professional, and spiritual growth. My name is Daniel, and I started SnooozeWorks in late-2016 as a creative outlet to add a little self-fulfillment to my life. I was a Junior in college at the time, a late bloomer as they say, and needed to find a little happiness in what I was pursuing as a career. The early designs that I created before opening, or considering opening, SnooozeWorks helped me build a style, and the emotional uplift I received from finishing a piece let me know this is what I wanted to be doing with my life.<br\/><br\/>It started with a single poster design that's transformed into into almost 700 products across a multitude of types and styles. Throughout the first two years, I worked full-time during the day, in addition to attending college full-time in pursuit of a Bachelor's degree. It was a lot of late nights and early mornings designing, printing, making, attending to customer service, taking care of finances. Crazy long work weeks, but SnooozeWorks was my reprieve. It was my passion, and it felt like I was living in a dream every time I heard the little 'ding' of an order being placed.<\/p>"
       }
     },
     "16343947497c7af6c8": {
       "type": "page-content",
       "settings": {
-        "background": "#ffffff",
-        "title": "Section Header",
-        "content": "<p>Use this text area to tell your story.<\/p>"
+        "background": "#792c2c",
+        "title": "Going Full-Time",
+        "content": "<p>It's been four years since SnooozeWorks was started as a side hustle and it's morphed into something so much more -- granting opportunities for incredible personal, professional, and spiritual growth. My name is Daniel, and I started SnooozeWorks in late-2016 as a creative outlet to add a little self-fulfillment to my life. I was a Junior in college at the time, a late bloomer as they say, and needed to find a little happiness in what I was pursuing as a career. The early designs that I created before opening, or considering opening, SnooozeWorks helped me build a style, and the emotional uplift I received from finishing a piece let me know this is what I wanted to be doing with my life.<\/p><p>None of this would be possible without the help of those around us, particularly the families and friends who listen to our ramblings and are the first to see things we're working on. The shop puppy, Loki, and two fur-babies, Slugger and Baxter, are equally helpful in listening while we pace around and think out-loud at all hours. The support around SnooozeWorks is crazy, and it's made diving head first into this so much better.<\/p>"
       }
     },
     "1634392257e3b9448c": {
       "type": "featured-products",
+      "disabled": true,
       "blocks": {
         "1634392257e3b9448c-0": {
           "type": "collection",
@@ -52,12 +53,69 @@
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4
       }
+    },
+    "163440463540dbd497": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Moving Forward",
+        "image": "shopify:\/\/shop_images\/TubeMockup_1f66d240-9bab-4647-905a-624eae9c06d0.jpg",
+        "image_position": "left",
+        "content": "<p>None of this would be possible without the help of those around us, particularly the families and friends who listen to our ramblings and are the first to see things we're working on. The shop puppy, Loki, and two fur-babies, Slugger and Baxter, are equally helpful in listening while we pace around and think out-loud at all hours. The support around SnooozeWorks is crazy, and it's made diving head first into this so much better.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1634405098aa48fdca": {
+      "type": "timeline",
+      "blocks": {
+        "1634405098aa48fdca-0": {
+          "type": "item",
+          "settings": {
+            "apply_overlay": true,
+            "title": "2000",
+            "subheading": "Sub-heading",
+            "heading": "Heading",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "1634405098aa48fdca-1": {
+          "type": "item",
+          "settings": {
+            "apply_overlay": true,
+            "title": "2001",
+            "subheading": "Sub-heading",
+            "heading": "Heading",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "1634405098aa48fdca-2": {
+          "type": "item",
+          "settings": {
+            "apply_overlay": true,
+            "title": "2002",
+            "subheading": "Sub-heading",
+            "heading": "Heading",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1634405098aa48fdca-0",
+        "1634405098aa48fdca-1",
+        "1634405098aa48fdca-2"
+      ],
+      "settings": {
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
     "main",
     "1634394741a52ea6a8",
     "16343947497c7af6c8",
-    "1634392257e3b9448c"
+    "1634392257e3b9448c",
+    "163440463540dbd497",
+    "1634405098aa48fdca"
   ]
 }
