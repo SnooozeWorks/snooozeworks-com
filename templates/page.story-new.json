@@ -27,33 +27,6 @@
         "content": "<p>It's been four years since SnooozeWorks was started as a side hustle and it's morphed into something so much more -- granting opportunities for incredible personal, professional, and spiritual growth. My name is Daniel, and I started SnooozeWorks in late-2016 as a creative outlet to add a little self-fulfillment to my life. I was a Junior in college at the time, a late bloomer as they say, and needed to find a little happiness in what I was pursuing as a career. The early designs that I created before opening, or considering opening, SnooozeWorks helped me build a style, and the emotional uplift I received from finishing a piece let me know this is what I wanted to be doing with my life.<\/p><p>None of this would be possible without the help of those around us, particularly the families and friends who listen to our ramblings and are the first to see things we're working on. The shop puppy, Loki, and two fur-babies, Slugger and Baxter, are equally helpful in listening while we pace around and think out-loud at all hours. The support around SnooozeWorks is crazy, and it's made diving head first into this so much better.<\/p>"
       }
     },
-    "1634392257e3b9448c": {
-      "type": "featured-products",
-      "disabled": true,
-      "blocks": {
-        "1634392257e3b9448c-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "astronomy-mugs",
-            "title": "",
-            "grid_items_count": 16,
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "1634392257e3b9448c-0"
-      ],
-      "settings": {
-        "title": "Featured Products",
-        "layout_mode": "carousel",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": true,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
-      }
-    },
     "1634413718fbd14ce6": {
       "type": "page-content",
       "settings": {
@@ -61,13 +34,30 @@
         "title": "Looking Toward the Future",
         "content": "<p>It's 2021! We're well into the new year and SnooozeWorks has lots of plans! The year started with some new equipment, namely the Canon TA-20 printer and the Sawgrass SG400 sublimation printer. These two have revolutionized how efficiently we can work, while providing an unbelievable boost to our overall product quality. Since then, we've added new HUGE poster sizes, all the way up to 24\"x36\", premium vinyl stickers, tons of new designs and gift cards. We have some new products in the pipeline, and maybe a few more surprises along the way!<br\/><br\/>Rest assured, we have a ton of stuff planned for this year and beyond! With your help and support, we look forward to crushing the start of the Roaring Twenties! If you'd like to keep up with all the new stuff we're coming up with, please feel free to join our Newsletter. It goes out once per month, that's the only email you'll ever get from us! Each monthly newsletter includes a little promo code for you, too!<\/p>"
       }
+    },
+    "163441382801b4b6cd": {
+      "type": "apps",
+      "blocks": {
+        "3f59a333-c39c-4758-ae3c-52c87153ef9c": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080,
+            "show_header": true
+          }
+        }
+      },
+      "block_order": [
+        "3f59a333-c39c-4758-ae3c-52c87153ef9c"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "1634394741a52ea6a8",
     "16343947497c7af6c8",
-    "1634392257e3b9448c",
-    "1634413718fbd14ce6"
+    "1634413718fbd14ce6",
+    "163441382801b4b6cd"
   ]
 }
