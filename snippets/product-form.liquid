@@ -292,8 +292,8 @@ for size, we use it to display a size chart (if applicable)
     {%- endif -%}
   </button>
 
-	<div style="margin: 10px auto; text-align: center;">
-	  {{ form | payment_terms }}
+	<div class="shop_pay">
+		{{ form | payment_terms }}
 	</div>
       
     {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}
@@ -339,7 +339,6 @@ for size, we use it to display a size chart (if applicable)
   {%- endcapture -%}
 {%- endif -%}
 
-
 {% comment %}
 
 {%- if product.type == 'Shirts' -%}
@@ -377,13 +376,10 @@ for size, we use it to display a size chart (if applicable)
 {% endcomment %}
 
 {%- if section.settings.show_payment_button and selected_variant.available == false -%}
-<style>
-  #shopify-section-{{ section.id }} .shopify-payment-button {
-    display: none;
-  }
-  .CartItem__QuantitySelector .QuantitySelector {
-    width: auto !important;
-  }
+  <style>
+    #shopify-section-{{ section.id }} .shopify-payment-button {
+      display: none;
+    }
   </style>
 
 {%- endif -%}
