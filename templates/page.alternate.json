@@ -3,16 +3,62 @@
     "main": {
       "type": "page-header",
       "settings": {
+        "show_banner": true,
+        "apply_overlay": true,
+        "banner_image": "shopify:\/\/shop_images\/contact_header.jpg",
+        "banner_size": "normal",
+        "heading": "Page Title",
+        "subheading": "Description of Page"
       }
     },
     "content": {
       "type": "page-content",
+      "blocks": {
+        "79a52e97-ceda-42ff-977e-136ed6bd3685": {
+          "type": "text",
+          "settings": {
+            "background": "#ffffff",
+            "title": "Section Header",
+            "content": "<p>Use this text area to tell your story.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "79a52e97-ceda-42ff-977e-136ed6bd3685"
+      ],
       "settings": {
+      }
+    },
+    "1634392257e3b9448c": {
+      "type": "featured-products",
+      "blocks": {
+        "1634392257e3b9448c-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "astronomy-mugs",
+            "title": "",
+            "grid_items_count": 16,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1634392257e3b9448c-0"
+      ],
+      "settings": {
+        "title": "Featured Products",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": true,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
       }
     }
   },
   "order": [
     "main",
-    "content"
+    "content",
+    "1634392257e3b9448c"
   ]
 }
