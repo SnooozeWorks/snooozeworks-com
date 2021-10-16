@@ -54,59 +54,12 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "163440463540dbd497": {
-      "type": "text-with-image",
+    "1634413718fbd14ce6": {
+      "type": "page-content",
       "settings": {
-        "subheading": "",
-        "title": "Moving Forward",
-        "image": "shopify:\/\/shop_images\/TubeMockup_1f66d240-9bab-4647-905a-624eae9c06d0.jpg",
-        "image_position": "left",
-        "content": "<p>None of this would be possible without the help of those around us, particularly the families and friends who listen to our ramblings and are the first to see things we're working on. The shop puppy, Loki, and two fur-babies, Slugger and Baxter, are equally helpful in listening while we pace around and think out-loud at all hours. The support around SnooozeWorks is crazy, and it's made diving head first into this so much better.<\/p>",
-        "link_text": "",
-        "link_url": ""
-      }
-    },
-    "1634405098aa48fdca": {
-      "type": "timeline",
-      "blocks": {
-        "1634405098aa48fdca-0": {
-          "type": "item",
-          "settings": {
-            "apply_overlay": true,
-            "title": "2000",
-            "subheading": "Sub-heading",
-            "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        },
-        "1634405098aa48fdca-1": {
-          "type": "item",
-          "settings": {
-            "apply_overlay": true,
-            "title": "2001",
-            "subheading": "Sub-heading",
-            "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        },
-        "1634405098aa48fdca-2": {
-          "type": "item",
-          "settings": {
-            "apply_overlay": true,
-            "title": "2002",
-            "subheading": "Sub-heading",
-            "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1634405098aa48fdca-0",
-        "1634405098aa48fdca-1",
-        "1634405098aa48fdca-2"
-      ],
-      "settings": {
-        "text_color": "#ffffff"
+        "background": "#ffffff",
+        "title": "Looking Toward the Future",
+        "content": "<p>It's 2021! We're well into the new year and SnooozeWorks has lots of plans! The year started with some new equipment, namely the Canon TA-20 printer and the Sawgrass SG400 sublimation printer. These two have revolutionized how efficiently we can work, while providing an unbelievable boost to our overall product quality. Since then, we've added new HUGE poster sizes, all the way up to 24\"x36\", premium vinyl stickers, tons of new designs and gift cards. We have some new products in the pipeline, and maybe a few more surprises along the way!<br\/><br\/>Rest assured, we have a ton of stuff planned for this year and beyond! With your help and support, we look forward to crushing the start of the Roaring Twenties! If you'd like to keep up with all the new stuff we're coming up with, please feel free to join our Newsletter. It goes out once per month, that's the only email you'll ever get from us! Each monthly newsletter includes a little promo code for you, too!<\/p>"
       }
     }
   },
@@ -115,7 +68,6 @@
     "1634394741a52ea6a8",
     "16343947497c7af6c8",
     "1634392257e3b9448c",
-    "163440463540dbd497",
-    "1634405098aa48fdca"
+    "1634413718fbd14ce6"
   ]
 }
