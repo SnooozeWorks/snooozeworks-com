@@ -11,6 +11,22 @@
         "subheading": "Description of Page"
       }
     },
+    "1634394741a52ea6a8": {
+      "type": "page-content",
+      "settings": {
+        "background": "#ffffff",
+        "title": "Section Header",
+        "content": "<p>Use this text area to tell your story.<\/p>"
+      }
+    },
+    "16343947497c7af6c8": {
+      "type": "page-content",
+      "settings": {
+        "background": "#ffffff",
+        "title": "Section Header",
+        "content": "<p>Use this text area to tell your story.<\/p>"
+      }
+    },
     "1634392257e3b9448c": {
       "type": "featured-products",
       "blocks": {
@@ -40,6 +56,8 @@
   },
   "order": [
     "main",
+    "1634394741a52ea6a8",
+    "16343947497c7af6c8",
     "1634392257e3b9448c"
   ]
 }
