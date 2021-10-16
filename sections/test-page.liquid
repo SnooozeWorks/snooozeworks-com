@@ -1,12 +1,24 @@
+{% for block in section.blocks %}
+    {% case block.type %}
+        {% when 'video' %}
+        {% include 'video-on-page' %}
+    {% endcase %}
+{% endfor %}
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+"blocks": [
+{
+  "type": "video",
+  "name": "Full Width YouTube Video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "videoID",
+      "label": "Video ID",
+      "default": "Enter Video ID Here"
+    }
+  ]
+}
+]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
