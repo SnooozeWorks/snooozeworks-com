@@ -35,6 +35,15 @@
         "content": "<p>It's 2021! We're well into the new year and SnooozeWorks has lots of plans! The year started with some new equipment, namely the Canon TA-20 printer and the Sawgrass SG400 sublimation printer. These two have revolutionized how efficiently we can work, while providing an unbelievable boost to our overall product quality. Since then, we've added new HUGE poster sizes, all the way up to 24\"x36\", premium vinyl stickers, tons of new designs and gift cards. We have some new products in the pipeline, and maybe a few more surprises along the way!<br\/><br\/>Rest assured, we have a ton of stuff planned for this year and beyond! With your help and support, we look forward to crushing the start of the Roaring Twenties! If you'd like to keep up with all the new stuff we're coming up with, please feel free to join our Newsletter. It goes out once per month, that's the only email you'll ever get from us! Each monthly newsletter includes a little promo code for you, too!<\/p>"
       }
     },
+    "163441442228b9ce7a": {
+      "type": "page-content",
+      "disabled": true,
+      "settings": {
+        "background": "#ffffff",
+        "title": "Section Header",
+        "content": ""
+      }
+    },
     "163441382801b4b6cd": {
       "type": "apps",
       "blocks": {
@@ -42,7 +51,7 @@
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1080,
-            "show_header": true
+            "show_header": false
           }
         }
       },
@@ -58,6 +67,7 @@
     "1634394741a52ea6a8",
     "16343947497c7af6c8",
     "1634413718fbd14ce6",
+    "163441442228b9ce7a",
     "163441382801b4b6cd"
   ]
 }
