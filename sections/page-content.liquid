@@ -1,16 +1,18 @@
 <section id="section-{{ section.id }}">
   <div class="Container">
-{%- if section.settings.title != blank -%}
-  <div class="SectionHeader--center" style="margin-bottom: 25px;">
-    <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.title | escape }}</h2>
-  </div>
-{%- endif -%}
+    <div class="Page_Content">
+	  {%- if section.settings.title != blank -%}
+  		<div class="SectionHeader--center" style="margin-bottom: 25px;">
+    	  <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.title | escape }}</h2>
+  		</div>
+      {%- endif -%}
 
-{%- if section.settings.content != blank -%}
-  <div class="Rte">                   
-    {{ section.settings.content }} 
-  </div>
-{%- endif -%}
+	  {%- if section.settings.content != blank -%}
+  		<div class="Rte">                   
+   		 {{ section.settings.content }} 
+  		</div>
+	  {%- endif -%}
+    </div>
   </div>
 </section>
 
