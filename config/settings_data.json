@@ -1194,6 +1194,42 @@
           "brand_heading_font": "poppins_n6",
           "brand_base_font": "fira_sans_n4"
         }
+      },
+      "test-page": {
+        "type": "test-page",
+        "blocks": {
+          "5fad56c2-1ba3-422f-89c5-96e9d1d31d04": {
+            "type": "text",
+            "settings": {
+              "background": "#a33d3d",
+              "title": "Section Header",
+              "content": "<p>dfadfadfafadf<\/p>"
+            }
+          },
+          "4e82b113-0743-4113-80dc-5907dda38cdb": {
+            "type": "text",
+            "settings": {
+              "background": "#ffffff",
+              "title": "Section Header",
+              "content": "<p>Use this text area to tell your story.<\/p>"
+            }
+          },
+          "80da1908-4751-4ae9-b136-59dfc0d3754d": {
+            "type": "text",
+            "settings": {
+              "background": "#ffffff",
+              "title": "Section Header",
+              "content": "<p>Use this text area to tell your story.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "5fad56c2-1ba3-422f-89c5-96e9d1d31d04",
+          "4e82b113-0743-4113-80dc-5907dda38cdb",
+          "80da1908-4751-4ae9-b136-59dfc0d3754d"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
