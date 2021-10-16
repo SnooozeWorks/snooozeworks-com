@@ -1202,7 +1202,7 @@
             "type": "text",
             "settings": {
               "background": "#a33d3d",
-              "title": "Section Header",
+              "title": "This Is My Test Page",
               "content": "<p>dfadfadfafadf<\/p>"
             }
           },
