@@ -26,6 +26,19 @@
     <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
   {%- endif -%}
   
+  
+    
+{%- if product.template_suffix != 'coming-soon' -%}
+
+  <div class="ProductMeta__PriceList Heading">
+    
+     <span class="ProductMeta__Price Price Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+    
+  </div>
+  
+{%- endif -%}
+  
+  
 {%- if product.template_suffix != 'coming-soon' -%}
    <div class="ProductMeta__PriceList Heading">
       {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
