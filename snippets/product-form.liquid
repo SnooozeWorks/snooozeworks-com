@@ -292,13 +292,6 @@ for size, we use it to display a size chart (if applicable)
     {%- endif -%}
   </button>
 
-	<div class="shop_pay">
-		{{ form | payment_terms }}
-	</div>
-      
-    {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}
-	{% unless the_snippet_fave contains 'Liquid error' %}{{ the_snippet_fave }}{% endunless %}
-    
   {%- if section.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
     {{ form | payment_button }}
   {%- endif -%}
