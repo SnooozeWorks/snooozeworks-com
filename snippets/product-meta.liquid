@@ -44,7 +44,7 @@
   {%- if show_description and section.settings.description_below_add_to_cart == false -%}
     <div class="ProductMeta__Description">
       
-      {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
+      {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: 'margin: 0 auto;', concierge_install: false %}
 
       <div class="Rte" style="margin-top:10px;">
         {{ product.description }}
