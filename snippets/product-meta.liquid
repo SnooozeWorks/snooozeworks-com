@@ -12,8 +12,6 @@
     </h2>
   {%- endif -%}
 
-    {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
-  
   <h1 class="ProductMeta__Title Heading u-h2">
     {%- if template.name == 'product' -%}
     
@@ -27,6 +25,8 @@
   {%- if section.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
     <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
   {%- endif -%}
+  
+    {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
   
 {%- if product.template_suffix != 'coming-soon' -%}
    
