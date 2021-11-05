@@ -252,11 +252,16 @@ for size, we use it to display a size chart (if applicable)
     {%- endif -%}
     
     <div class="ProductForm__Custom">
-      <span class="ProductForm__Label Text--subdued" style="letter-spacing: 0.5px;"><b>Upload your File:</b></span>
-  	  <input for="file-upload" required class="ProductForm__Upload required" type="file" name="properties[Custom File]">
+      <label for="file-upload" class="ProductForm__Label Text--subdued" style="letter-spacing: 0.5px;"><b>Upload your File:</b></label>
+  	  <input id="file-upload" required class="ProductForm__Upload required" type="file" name="properties[Custom File]">
       <p class="ProductForm__CustomDirections" style="text-align: center;"><b>File Size Requirements: 4.0 x 3.0 inches</b></p>
 	</div>
 
+    <label for="file-upload" class="custom-file-upload">
+    	<i class="fa fa-cloud-upload"></i> Custom Upload
+	</label>
+	<input id="file-upload" type="file"/>
+    
 
     {%- if section.settings.show_inventory_quantity -%}
       {%- assign hide_inventory_quantity_by_default = false -%}
