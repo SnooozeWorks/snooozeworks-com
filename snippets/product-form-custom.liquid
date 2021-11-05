@@ -235,7 +235,7 @@ for size, we use it to display a size chart (if applicable)
 
     {%- if section.settings.show_quantity_selector -%}
       {%- if show_option_label -%}
-    <span class="ProductForm__Label Text--subdued" style="letter-spacing: 0.5px;"><b>{{ 'product.form.quantity' | t }}:</b></span>
+    	<span class="ProductForm__Label Text--subdued" style="letter-spacing: 0.5px;"><b>{{ 'product.form.quantity' | t }}:</b></span>
       {%- endif -%}
 
       <div class="ProductForm__QuantitySelector">
@@ -251,11 +251,11 @@ for size, we use it to display a size chart (if applicable)
       <input type="hidden" name="quantity" value="1">
     {%- endif -%}
     
-    <p class="line-item-property__field">
+    <div class="ProductForm__Custom">
     	<span class="ProductForm__Label Text--subdued" style="letter-spacing: 0.5px;"><b>Custom Text:</b></span>
 
   		<input required class="required" id="custom-text" type="text" name="properties[Custom Text]">
-	</p>
+	</div>
 
 
     {%- if section.settings.show_inventory_quantity -%}
