@@ -803,11 +803,11 @@
           "16337274257e2f4e22-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/c130-sr71-patent-slides_1.jpg",
+              "image": "shopify:\/\/shop_images\/sale.png",
               "apply_overlay": true,
               "content_position": "bottomLeft",
-              "subheading": "Add some history to your walls, with our Patent Posters!",
-              "title": "Premium Patent Posters for Every Subject",
+              "subheading": "Add a splash of color to your walls, today, with our Premium Posters!",
+              "title": "20% off all Posters until the end of July!",
               "button_1_text": "Shop All",
               "button_1_link": "shopify:\/\/collections\/patents",
               "button_2_text": "Best Sellers",
