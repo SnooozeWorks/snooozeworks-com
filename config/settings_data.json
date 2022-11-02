@@ -842,12 +842,27 @@
               "button_2_text": "Best Sellers",
               "button_2_link": "shopify:\/\/collections\/best-selling-patent-mugs"
             }
+          },
+          "862ee752-e4a1-4a77-9e45-451a58856a50": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/thick-lush-green-forest.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "For each order, we make a donation to plant a tree with One Tree Planted!",
+              "title": "WE'RE PLANTING TREES",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
           }
         },
         "block_order": [
           "16337274257e2f4e22-1",
           "8d71b795-0e1a-4406-8849-6a038c25a722",
-          "16337274257e2f4e22-0"
+          "16337274257e2f4e22-0",
+          "862ee752-e4a1-4a77-9e45-451a58856a50"
         ],
         "settings": {
           "show_fullscreen": true,
