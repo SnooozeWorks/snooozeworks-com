@@ -285,8 +285,6 @@ for size, we use it to display a size chart (if applicable)
   ADD TO CART BUTTON
   --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
-
-  <div id="bundle-countdown_box"></div>
                 
   <button type="submit" class="ProductForm__AddToCart Button {% if selected_variant.available and section.settings.show_payment_button == false %}Button--primary{% else %}Button--primary{% endif %} Button--full" {% if selected_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
     {%- if selected_variant.available -%}
