@@ -1908,16 +1908,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       key: '_onVariantChanged',
       value: function _onVariantChanged(previousVariant, newVariant) {
         // 1st: the prices
-        this._updateProductPrices(newVariant, previousVariant);
+        this._updateProductPrices(previousVariant, newVariant);
 
         // 2nd: update inventory
-        this._updateInventory(newVariant, previousVariant);
+        this._updateInventory(previousVariant, newVariant);
 
         // 3rd: update SKU
-        this._updateSku(newVariant, previousVariant);
+        this._updateSku(previousVariant, newVariant);
 
         // 4th: the add to cart button
-        this._updateAddToCartButton(newVariant, previousVariant);
+        this._updateAddToCartButton(previousVariant, newVariant);
 
         if (window.theme.currencyConversionEnabled) {
           __WEBPACK_IMPORTED_MODULE_4__helper_Currency__["default"].convertAll(this.element);
