@@ -93,7 +93,7 @@
           </a>
           <div class="ProductItem__Category">
             {% if product.metafields.snoooze["category"] != blank %}
-  			   <a href="{{ product.metafields.snoooze["category_url" }}">{{ product.metafields.snoooze["category"] }}</a>
+  			   <a href="{{ product.metafields.snoooze["category_url"] }}">{{ product.metafields.snoooze["category"] }}</a>
 			{% else %}
   			   {{ collection.title }}
 	        {% endif %}
