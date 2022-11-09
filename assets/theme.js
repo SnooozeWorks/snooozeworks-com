@@ -1942,13 +1942,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (!newVariant) {
           productMetaPrices.style.display = 'none';
         } else {
-          if (previousVariant && previousVariant['compare_at_price'] === newVariant['compare_at_price'] && previousVariant['price'] === newVariant['price']) {
+          if (previousVariant && previousVariant['price'] === newVariant['price'] && previousVariant['compare_at_price'] === newVariant['compare_at_price']) {
             return; // The price do not have changed so let's return to avoid changing the DOM for nothing
           }
 
           productMetaPrices.innerHTML = '';
 
-          if (newVariant['compare_at_price'] > newVariant['price']) {
+          if (newVariant['price'] > newVariant['compare_at_price']) {
             productMetaPrices.innerHTML += '<span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4" data-money-convertible>' + __WEBPACK_IMPORTED_MODULE_4__helper_Currency__["default"].formatMoney(newVariant['compare_at_price'], window.theme.moneyFormat) + '</span>';
             productMetaPrices.innerHTML += '<span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4" data-money-convertible>' + __WEBPACK_IMPORTED_MODULE_4__helper_Currency__["default"].formatMoney(newVariant['price'], window.theme.moneyFormat) + '</span>';
           } else {
