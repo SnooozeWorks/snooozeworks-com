@@ -1942,7 +1942,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (!newVariant) {
           productMetaPrices.style.display = 'none';
         } else {
-          if (previousVariant && previousVariant['price'] === newVariant['price'] && previousVariant['compare_at_price'] === newVariant['compare_at_price']) {
+          if (previousVariant && previousVariant['compare_at_price'] === newVariant['compare_at_price'] && previousVariant['price'] === newVariant['price']) {
             return; // The price do not have changed so let's return to avoid changing the DOM for nothing
           }
 
