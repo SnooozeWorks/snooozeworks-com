@@ -5759,7 +5759,11 @@ select::-ms-expand {
 
   li {
     padding: 2px 0;
+
+  @include av-mq('phone') {
+    padding-right: 15px;
   }
+}
 
   h1,
   h2,
