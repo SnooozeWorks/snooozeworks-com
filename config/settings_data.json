@@ -284,6 +284,24 @@
               "push_image_3_url_text": "Shop now"
             }
           },
+          "c0d57d5b-7ccd-4c6a-990a-87b11806e493": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Shirts",
+              "push_1_heading": "Example heading",
+              "push_1_subheading": "Description",
+              "push_1_url": "",
+              "push_image_1_url_text": "Shop now",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Description",
+              "push_2_url": "",
+              "push_image_2_url_text": "Shop now",
+              "push_3_heading": "Example heading",
+              "push_3_subheading": "Description",
+              "push_3_url": "",
+              "push_image_3_url_text": "Shop now"
+            }
+          },
           "3d54d8ea-5295-4634-8fd0-741ad21d4635": {
             "type": "mega_menu",
             "settings": {
@@ -342,6 +360,7 @@
         "block_order": [
           "2c45a09f-8973-4059-9e77-a4f176baecd3",
           "149ffe4f-b6ae-45b2-a076-d46babad8d25",
+          "c0d57d5b-7ccd-4c6a-990a-87b11806e493",
           "3d54d8ea-5295-4634-8fd0-741ad21d4635",
           "59fa34aa-f6af-4735-b2b4-3b8acfb950a5",
           "16675410-0675-4eb9-8a16-cca53abb2497"
