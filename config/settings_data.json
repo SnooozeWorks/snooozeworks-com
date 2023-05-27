@@ -834,6 +834,20 @@
               "button_2_link": "shopify:\/\/collections\/best-selling-patents"
             }
           },
+          "16337274257e2f4e22-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/t-shirts-hanging-on-rack.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Available in a variety of colors and sizes from S to 3XL!",
+              "title": "Now Arriving... T-Shirts!",
+              "button_1_text": "Shop Gaming",
+              "button_1_link": "shopify:\/\/collections\/gaming-tees",
+              "button_2_text": "Shop Patents",
+              "button_2_link": "shopify:\/\/collections\/patent-tees"
+            }
+          },
           "8d71b795-0e1a-4406-8849-6a038c25a722": {
             "type": "image",
             "settings": {
@@ -846,20 +860,6 @@
               "button_1_link": "shopify:\/\/collections\/posters",
               "button_2_text": "Best Sellers",
               "button_2_link": "shopify:\/\/collections\/best-selling-posters"
-            }
-          },
-          "16337274257e2f4e22-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/self-serve-coffee-shop.jpg",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "11oz and 15oz sizes. A Ton of Different Subjects! Check 'em out!",
-              "title": "Patent Mugs now available",
-              "button_1_text": "Shop all",
-              "button_1_link": "shopify:\/\/collections\/best-selling-coffee-mugs",
-              "button_2_text": "Best Sellers",
-              "button_2_link": "shopify:\/\/collections\/best-selling-patent-mugs"
             }
           },
           "862ee752-e4a1-4a77-9e45-451a58856a50": {
@@ -879,8 +879,8 @@
         },
         "block_order": [
           "16337274257e2f4e22-1",
-          "8d71b795-0e1a-4406-8849-6a038c25a722",
           "16337274257e2f4e22-0",
+          "8d71b795-0e1a-4406-8849-6a038c25a722",
           "862ee752-e4a1-4a77-9e45-451a58856a50"
         ],
         "settings": {
