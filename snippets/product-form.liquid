@@ -56,6 +56,12 @@ for size, we use it to display a size chart (if applicable)
                   <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal" aria-controls="modal-color-chart">
                     <b style="letter-spacing: 0.5px;">View Color Chart</b>
                   </button>
+
+               {% elsif product.type == 'T-Shirt' %}
+
+                  <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal" aria-controls="modal-color-chart">
+                    <b style="letter-spacing: 0.5px;"><div id="vitals-size_chart"></div></b>
+                  </button>
               
               	{%- endif -%}
 
@@ -152,7 +158,7 @@ for size, we use it to display a size chart (if applicable)
                             {%- assign min_price_for_variant = min_price_for_variant | at_most: variant.price -%}
                           {%- endif -%}
                         {%- endfor -%}
-<div id="vitals-size_chart"></div>
+
                         <div class="VariantSelector__Choice {% if value == option.selected_value %}is-selected{% endif %}">
                           <div class="VariantSelector__ChoiceColor">
                             {%- assign downcase_value = value | downcase -%}
