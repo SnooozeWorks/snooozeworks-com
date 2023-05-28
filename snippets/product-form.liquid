@@ -152,7 +152,7 @@ for size, we use it to display a size chart (if applicable)
                             {%- assign min_price_for_variant = min_price_for_variant | at_most: variant.price -%}
                           {%- endif -%}
                         {%- endfor -%}
-
+<div id="vitals-size_chart"></div>
                         <div class="VariantSelector__Choice {% if value == option.selected_value %}is-selected{% endif %}">
                           <div class="VariantSelector__ChoiceColor">
                             {%- assign downcase_value = value | downcase -%}
@@ -285,7 +285,7 @@ for size, we use it to display a size chart (if applicable)
   ADD TO CART BUTTON
   --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
-                <div id="vitals-size_chart"></div>
+
   <button type="submit" class="ProductForm__AddToCart Button {% if selected_variant.available and section.settings.show_payment_button == false %}Button--primary{% else %}Button--primary{% endif %} Button--full" {% if selected_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
     {%- if selected_variant.available -%}
       <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
