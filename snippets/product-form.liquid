@@ -87,14 +87,6 @@ for size, we use it to display a size chart (if applicable)
                   <input id="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch__Radio" type="radio" name="option-{{ forloop.parentloop.index0 }}" value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked"{% endif %} data-option-position="{{ option.position }}">
                   <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>
                 </li>
-              {%- endfor -%}
-            </ul>
-          {%- else -%}
-            <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
-              <span class="ProductForm__OptionName">{% unless show_option_label %}{{ option.name }}: {% endunless %}<span class="ProductForm__SelectedValue">{{ option.selected_value }}</span></span>
-              {%- include 'icon' with 'select-arrow' -%}
-            </button>
-
               	{%- if product.type == 'T-Shirt' -%}
               
                   <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal" aria-controls="modal-color-chart">
@@ -102,6 +94,14 @@ for size, we use it to display a size chart (if applicable)
                   </button>
               
               	{%- endif -%}
+              
+              {%- endfor -%}
+            </ul>
+          {%- else -%}
+            <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
+              <span class="ProductForm__OptionName">{% unless show_option_label %}{{ option.name }}: {% endunless %}<span class="ProductForm__SelectedValue">{{ option.selected_value }}</span></span>
+              {%- include 'icon' with 'select-arrow' -%}
+            </button>
           
             {%- capture popover_html -%}
               {%- if color_label contains downcase_option and section.settings.show_color_carousel -%}
