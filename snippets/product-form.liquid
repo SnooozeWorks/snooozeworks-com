@@ -204,7 +204,7 @@ for size, we use it to display a size chart (if applicable)
                         {{- 'product.form.color_chart' | t -}}
                       </button>
                     
-                    {%- elsif product.type == 'Shirts' and size_chart_page != empty -%}
+                    {%- elsif product.type == 'T-Shirts' -%}
                     
                       <button type="button" class="Popover__FooterHelp Heading Link Link--primary Text--subdued u-h6" data-action="open-modal" aria-controls="modal-size-chart">
                         {{- 'product.form.size_chart' | t -}}
@@ -241,15 +241,7 @@ for size, we use it to display a size chart (if applicable)
 
     {%- if section.settings.show_quantity_selector -%}
       {%- if show_option_label -%}
-    <span class="ProductForm__Label Text--subdued" style="letter-spacing: 0.5px;"><b>{{ 'product.form.quantity' | t }}:</b></span>
-              	{%- if product.type == 'T-Shirt' -%}
-              
-                  <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal" aria-controls="modal-color-chart">
-                    <div id="vitals-size_chart">View Size Chart</div>
-                  </button>
-              
-              	{%- endif -%}
-                
+    <span class="ProductForm__Label Text--subdued" style="letter-spacing: 0.5px;"><b>{{ 'product.form.quantity' | t }}:</b></span>   
       {%- endif -%}
 
       <div class="ProductForm__QuantitySelector">
