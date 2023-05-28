@@ -81,13 +81,6 @@ for size, we use it to display a size chart (if applicable)
               {%- endfor -%}
             </ul>
           {%- elsif section.settings.selector_mode == 'block' -%}
-                          	{%- if product.type == 'T-Shirt' -%}
-              
-                  <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal" aria-controls="modal-color-chart">
-                    <div id="vitals-size_chart"></div>
-                  </button>
-              
-              	{%- endif -%}
             <ul class="SizeSwatchList HorizontalList HorizontalList--spacingFill">
               {%- for value in option.values -%}
                 <li class="HorizontalList__Item SizeSwatchItem">
@@ -97,6 +90,13 @@ for size, we use it to display a size chart (if applicable)
               {%- endfor -%}
             </ul>
           {%- else -%}
+                          	{%- if product.type == 'T-Shirt' -%}
+              
+                  <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal" aria-controls="modal-color-chart">
+                    <div id="vitals-size_chart"></div>
+                  </button>
+              
+              	{%- endif -%}
             <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
               <span class="ProductForm__OptionName">{% unless show_option_label %}{{ option.name }}: {% endunless %}<span class="ProductForm__SelectedValue">{{ option.selected_value }}</span></span>
               {%- include 'icon' with 'select-arrow' -%}
