@@ -207,7 +207,7 @@ for size, we use it to display a size chart (if applicable)
                     {%- elsif product.type == 'T-Shirts' -%}
                     
                       <button type="button" class="Popover__FooterHelp Heading Link Link--primary Text--subdued u-h6" data-action="open-modal" aria-controls="modal-size-chart">
-                        {{- 'product.form.size_chart' | t -}}
+                        <div id="vitals-size_chart"></div>
                       </button>
                     
                     {%- endif -%}  
