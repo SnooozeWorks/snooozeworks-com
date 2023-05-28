@@ -12554,7 +12554,7 @@ input[type="file"] {
   }
 }
 .jdgm-write-rev-link {
-color: #fff;
+color: #fff !important ;
 border-color: $button-background !important;
 &::before {
   background-color: $button-background;
@@ -12564,7 +12564,7 @@ border-color: $button-background !important;
   @media (-moz-touch-enabled: 0), (hover: hover) {
     &:not([disabled]):hover {
       @if ((contrast($button-background, $light-background) > 2.5) or ($button-text-color == $background)) {
-        color: $button-background;
+        color: #ef3340 !important;
       } @else {
         color: #ef3340 !important;
         }
