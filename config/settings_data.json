@@ -781,7 +781,7 @@
           "16333964471f320cc9-0"
         ],
         "settings": {
-          "title": "Our Featured Collection for May 2023",
+          "title": "Our Featured Collection for June 2023",
           "layout_mode": "carousel",
           "show_product_info": true,
           "show_vendor": false,
@@ -864,6 +864,7 @@
           },
           "862ee752-e4a1-4a77-9e45-451a58856a50": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/thick-lush-green-forest.jpg",
               "apply_overlay": true,
