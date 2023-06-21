@@ -111,7 +111,7 @@
     {% render 'gsf-conversion-pixels' %}
 	{% render 'vitals-loader' %}
 
-</head> 
+{% include "openGeo" %}</head> 
 
   <body class="prestige--v4 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
     
