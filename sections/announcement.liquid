@@ -5,7 +5,7 @@
         <div class="AnnouncementBar__Wrapper">
           <p class="AnnouncementBar__Content Heading">
 
-
+            {% comment %} 
     
         {%- if settings.announcement_bar_show_free_shipping_threshold -%}
             {%- assign threshold_in_cents = settings.free_shipping_threshold | times: 100 -%}
@@ -17,14 +17,11 @@
             {%- endif -%}
         {%- endif -%}
     
-
-            {% comment %} 
-    
-            {{ section.settings.content }}
-            
             {% endcomment %} 
-    
-    
+
+            {{ section.settings.content }}
+
+          
           </p>
         </div>
       </div>
