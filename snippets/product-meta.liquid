@@ -22,7 +22,7 @@
 
   </h1>
 
-  <div>Category: {{ product.metafields.snoooze["Category"] }}</div>
+  <div>Category: {{ product.metafields.snoooze["category"] }}</div>
 
   {%- if section.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
     <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
