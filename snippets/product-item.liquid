@@ -86,8 +86,7 @@
         <h2 class="ProductItem__Title Heading">
           <a href="{{ product.url | within: collection }}">
             {% if product.metafields.snoooze["short-title"] != blank %}
-  			  {{ product.metafields.snoooze["short-title"] }}<br />
-              {{ product.metafields.snoooze["subtitle"] }}
+  			  {{ product.metafields.snoooze["short-title"] }}
 			{% else %}
   			  {{ product.title }}
 			{% endif %}
