@@ -1,0 +1,20 @@
+<div class="bullet-points">
+  <div class="bullet-points_title">Key Features</div>
+  <ul>
+    <li><b style="color:#ef0034;">651 Oracle</b> Glossy Vinyl; 2.5 mil Outdoor-Rated</li>
+    <li><b style="color:#ef0034;">High-Quality</b> Die-Cut Design, using Professional Vinyl Plotter</li>
+    <li>All sizes are listed in Inches, unless otherwise noted.</li>
+    <li>Fast Shipping and <b style="color: #ef0034;">Easy</b> 30-Day Returns</li>
+  </ul>
+</div>
+
+{% if product.metafields.snoooze.category_url != blank %}
+  <div class="ProductMeta__Category">
+    <a href="{{ product.metafields.snoooze.category_url }}"
+      ><span id="ProductMeta__Category-Title">View more from this Collection</span></a>
+  </div>
+
+  {% else %}
+
+{% endif %}
+
