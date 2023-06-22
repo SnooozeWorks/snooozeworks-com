@@ -1,0 +1,20 @@
+<div class="bullet-points">
+  <div class="bullet-points_title">Key Features</div>
+  <ul>
+    <li><b style="color:#ef0034;">100%</b> Airlume Combed and Ringspun Cotton</li>
+    <li>Light, <b style="color:#ef0034;">Comfortable</b> Fabric (4.2 oz/yd² (142 g/m²))</li>
+    <li><b style="color:#ef0034;">True-to-Size</b>, Retail Fit with Tear Away Label</li>
+    <li>Fast Shipping and <b style="color: #ef0034;">Easy</b> 30-Day Returns</li>
+  </ul>
+</div>
+
+{% if product.metafields.snoooze.category_url != blank %}
+  <div class="ProductMeta__Category">
+    <a href="{{ product.metafields.snoooze.category_url }}"
+      ><span id="ProductMeta__Category-Title">View more from this Collection</span></a>
+  </div>
+
+  {% else %}
+
+{% endif %}
+
