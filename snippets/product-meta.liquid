@@ -45,8 +45,11 @@
       <div class="Rte">
         {{ product.description }}
       </div>
-
-      {% render 'patent_bullet-points' %}
+      {% if product.type == 'Patents' %}
+        {% render 'patent_bullet-points' %}
+        {% else %}
+        
+      {% endif %}
       
       {%- if section.settings.show_share_buttons -%}
         <div class="ProductMeta__ShareButtons hidden-pocket">
