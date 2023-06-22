@@ -41,7 +41,10 @@
 
   {%- if show_description and section.settings.description_below_add_to_cart == false -%}
     <div class="ProductMeta__Description">
-      
+    
+      <div class="Rte">
+        {{ product.description }}
+      </div>
       {% if product.metafields.snoooze["category"] != blank %}
         
           <div class="ProductMeta__Category">
@@ -52,11 +55,6 @@
         {% else %}
     
       {% endif %}
-    
-      <div class="Rte">
-        {{ product.description }}
-      </div>
-
       {%- if section.settings.show_share_buttons -%}
         <div class="ProductMeta__ShareButtons hidden-pocket">
           <span class="ProductMeta__ShareTitle Heading Text--subdued u-h7">{{ 'product.form.share' | t }}</span>
