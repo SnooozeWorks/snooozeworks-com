@@ -46,7 +46,11 @@
         {{ product.description }}
       </div>
 
-
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  Key Features Section, Update by Product Type using Snippets
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
       
       {% if product.type == 'Patents' %}
           {% render 'ProductInfo_Patents' %}
