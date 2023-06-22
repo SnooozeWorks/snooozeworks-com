@@ -19,16 +19,6 @@
       <a href="{{ product.url }}">{{ product.title }}</a>
     {%- endif -%}
   </h1>
-  
-  {% if product.metafields.snoooze["category"] != blank %}
-      <div class="ProductMeta__Category">
-        <span id="ProductMeta__Category-Title">Collection: </span> 
-        <a href="{{ product.metafields.snoooze.category_url }}"><span id="ProductMeta__Category-Content">{{ product.metafields.snoooze["category"] }}</span></a>
-      </div>
-
-    {% else %}
-    
-  {% endif %}
 
   {%- if section.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
     <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
@@ -51,7 +41,15 @@
 
   {%- if show_description and section.settings.description_below_add_to_cart == false -%}
     <div class="ProductMeta__Description">
+  {% if product.metafields.snoooze["category"] != blank %}
+      <div class="ProductMeta__Category">
+        <span id="ProductMeta__Category-Title">Collection: </span> 
+        <a href="{{ product.metafields.snoooze.category_url }}"><span id="ProductMeta__Category-Content">{{ product.metafields.snoooze["category"] }}</span></a>
+      </div>
 
+    {% else %}
+    
+  {% endif %}
       <div class="Rte">
         {{ product.description }}
       </div>
