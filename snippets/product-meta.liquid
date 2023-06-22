@@ -31,8 +31,6 @@
     <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
   {%- endif -%}
   
-  
-  
   {%- if product.template_suffix != 'coming-soon' -%}
    <div class="ProductMeta__PriceList Heading">
     
@@ -44,12 +42,9 @@
       {%- endif -%}
      
     </div>
-  
-        {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
  
   <a href="#ProductAside" title="More Information"></a>
   {%- endif -%}
-  
 
   {%- if show_description and section.settings.description_below_add_to_cart == false -%}
     <div class="ProductMeta__Description">
