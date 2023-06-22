@@ -46,7 +46,7 @@
         {{ product.description }}
       </div>
       
-      {% if product.metafields.snoooze["category"] != blank %}
+      {% if product.metafields.snoooze["category_url"] != blank %}
         
           <div class="ProductMeta__Category">
             <a href="{{ product.metafields.snoooze.category_url }}"><span id="ProductMeta__Category-Title">View more from this Collection</span></a>
