@@ -1,0 +1,18 @@
+<div class="bullet-points">
+  <div class="bullet-points_title">Key Features</div>
+  <ul>
+    <li>Created from <b style="color: #ef0034;">official</b> patent filing artwork</li>
+    <li><b style="color: #ef0034;">Premium</b>&nbsp;Heavy-Weight Fine-Art Paper with Satin Finish</li>
+    <li>Fast Shipping and <b style="color: #ef0034;">Easy</b> 30-Day Returns</li>
+  </ul>
+</div>
+
+{% if product.metafields.snoooze.category_url != blank %}
+  <div class="ProductMeta__Category">
+    <a href="{{ product.metafields.snoooze.category_url }}"
+      ><span id="ProductMeta__Category-Title">View more from this Collection</span></a>
+  </div>
+
+  {% else %}
+
+{% endif %}
