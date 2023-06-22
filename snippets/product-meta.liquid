@@ -47,8 +47,9 @@
       </div>
       {% if product.type == 'Patents' %}
         {% render 'patent_bullet-points' %}
+        {% elsif product.type == 'Posters'%}
+        {% render 'poster_bullet-points' %}
         {% else %}
-        
       {% endif %}
       
       {%- if section.settings.show_share_buttons -%}
