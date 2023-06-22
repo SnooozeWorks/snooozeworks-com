@@ -45,6 +45,8 @@
       <div class="Rte">
         {{ product.description }}
       </div>
+
+      {% render patent-desc %}
       
       {% if product.metafields.snoooze["category_url"] != blank %}
         
