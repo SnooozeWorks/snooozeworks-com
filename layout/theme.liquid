@@ -104,15 +104,17 @@
     <!-- <script src="{{ 'flipdown.js' | asset_url }}" defer></script> -->
     
     {% include 'microdata-schema' %}
-    {% render 'judgeme_core' %}
 
     <meta name="google-site-verification" content="BhLbsG1xzPepc_elF5wAxFvPxh2xEoo43HQKH4QhtQw" />
     
     {% render 'gsf-conversion-pixels' %}
 	{% render 'vitals-loader' %}
-
-{% include "openGeo" %}</head> 
-
+</head> 
+  
+  <div id="delivery-topbar"> 
+    <div id="delivery_timer_wrapper"></div> 
+  </div>
+  
   <body class="prestige--v4 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
     
     <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
@@ -138,9 +140,6 @@
       {% section 'footer' %}
     </div>
     
-  <div id="delivery-topbar"> 
-    <div id="delivery_timer_wrapper"></div> 
-  </div>
     
 </body>
 </html>
