@@ -46,11 +46,13 @@
         {{ product.description }}
       </div>
       {% if product.type == 'Patents' %}
-        {% render 'patent_bullet-points' %}
+          {% render 'patent_bullet-points' %}
         {% elsif product.type == 'Posters'%}
-        {% render 'poster_bullet-points' %}
+          {% render 'poster_bullet-points' %}
         {% elsif product.type == 'Patent Mug'%}
-        {% render 'patent-mugs_bullet-points' %}
+          {% render 'patent-mugs_bullet-points' %}
+        {% elsif product.type == 'Mugs'%}
+        {% render 'mugs_bullet-points' %}
         {% else %}
       {% endif %}
       
