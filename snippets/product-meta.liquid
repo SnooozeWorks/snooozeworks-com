@@ -13,12 +13,22 @@
   {%- endif -%}
 
   <h1 class="ProductMeta__Title Heading u-h2">
+
+            {% if product.metafields.snoooze["short-title"] != blank %}
+  			  {{ product.metafields.snoooze["short-title"] }}<br />
+              {{ product.metafields.snoooze["subtitle"] }}
+			{% else %}
+  			  {{ product.title }}
+			{% endif %}
+
+    {% comment %}
     {%- if template.name == 'product' -%}
-    
+      
       {{- product.title -}}
     {%- else -%}
       <a href="{{ product.url }}">{{ product.title }}</a>
     {%- endif -%}
+    {% endcomment %}
     
   </h1>
 
