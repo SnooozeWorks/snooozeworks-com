@@ -14,12 +14,8 @@
 
   <h1 class="ProductMeta__Title Heading u-h2">
 
-            {% if product.metafields.snoooze["short-title"] != blank %}
-  			  {{ product.metafields.snoooze["short-title"] }}<br />
+  			  {{ product.title }}<br />
               {{ product.metafields.snoooze["subtitle"] }}
-			{% else %}
-  			  {{ product.title }}
-			{% endif %}
 
     {% comment %}
     {%- if template.name == 'product' -%}
