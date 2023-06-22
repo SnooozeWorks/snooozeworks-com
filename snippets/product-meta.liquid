@@ -41,15 +41,18 @@
 
   {%- if show_description and section.settings.description_below_add_to_cart == false -%}
     <div class="ProductMeta__Description">
-  {% if product.metafields.snoooze["category"] != blank %}
-      <div class="ProductMeta__Category">
-        <span id="ProductMeta__Category-Title">Collection: </span> 
-        <a href="{{ product.metafields.snoooze.category_url }}"><span id="ProductMeta__Category-Content">{{ product.metafields.snoooze["category"] }}</span></a>
-      </div>
+      
+      {% if product.metafields.snoooze["category"] != blank %}
+        
+          <div class="ProductMeta__Category">
+          <span id="ProductMeta__Category-Title">Collection: </span> 
+          <a href="{{ product.metafields.snoooze.category_url }}"><span id="ProductMeta__Category-Content">{{ product.metafields.snoooze["category"] }}</span></a>
+          </div>
 
-    {% else %}
+        {% else %}
     
-  {% endif %}
+      {% endif %}
+    
       <div class="Rte">
         {{ product.description }}
       </div>
