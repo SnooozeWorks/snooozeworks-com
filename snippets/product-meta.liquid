@@ -45,18 +45,21 @@
       <div class="Rte">
         {{ product.description }}
       </div>
+
+
+      
       {% if product.type == 'Patents' %}
-          {% render 'patent_bullet-points' %}
+          {% render 'ProductInfo_Patents' %}
         {% elsif product.type == 'Posters'%}
-          {% render 'poster_bullet-points' %}
+          {% render 'ProductInfo_Posters' %}
         {% elsif product.type == 'Patent Mug'%}
-          {% render 'patent-mugs_bullet-points' %}
+          {% render 'ProductInfo_PatentMugs' %}
         {% elsif product.type == 'Mugs'%}
-          {% render 'mugs_bullet-points' %}
+          {% render 'ProductInfo_Mugs' %}
         {% elsif product.type == 'T-Shirt'%}
-          {% render 'tees_bullet-points' %}
+          {% render 'ProductInfo_Tees' %}
         {% elsif product.type == 'Decals'%}
-          {% render 'decals_bullet-points' %}
+          {% render 'ProductInfo_Decals' %}
         {% else %}
       {% endif %}
       
