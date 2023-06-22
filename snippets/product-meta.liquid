@@ -49,6 +49,8 @@
         {% render 'patent_bullet-points' %}
         {% elsif product.type == 'Posters'%}
         {% render 'poster_bullet-points' %}
+        {% elsif product.type == 'Patent Mugs'%}
+        {% render 'patent-mugs_bullet-points' %}
         {% else %}
       {% endif %}
       
