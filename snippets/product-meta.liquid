@@ -13,18 +13,16 @@
   {%- endif -%}
 
   <h1 class="ProductMeta__Title Heading u-h2">
-
     {%- if template.name == 'product' -%}
       {{- product.title -}}
     {%- else -%}
       <a href="{{ product.url }}">{{ product.title }}</a>
     {%- endif -%}
-
   </h1>
 
-  <div class="productmeta__category">
-    <span id="productmeta__category-title">Category: </span> 
-    <span id="productmeta__category-content">{{ product.metafields.snoooze["category"] }}</span>
+  <div class="ProductMeta__Category">
+    <span id="ProductMeta__Category-Title">Category: </span> 
+    <span id="ProductMeta__Category-Content">{{ product.metafields.snoooze["category"] }}</span>
   </div>
 
   {%- if section.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
