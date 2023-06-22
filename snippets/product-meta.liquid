@@ -14,19 +14,15 @@
 
   <h1 class="ProductMeta__Title Heading u-h2">
 
-  			  {{ product.title }}<br />
-              {{ product.metafields.snoooze["subtitle"] }}
-
-    {% comment %}
     {%- if template.name == 'product' -%}
-      
       {{- product.title -}}
     {%- else -%}
       <a href="{{ product.url }}">{{ product.title }}</a>
     {%- endif -%}
-    {% endcomment %}
-    
+
   </h1>
+
+  <div>Category: {{ product.metafields.snoooze["Category"] }}</div>
 
   {%- if section.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
     <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
