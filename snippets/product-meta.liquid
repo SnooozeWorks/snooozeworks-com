@@ -48,15 +48,6 @@
 
       {% render 'patent_bullet-points' %}
       
-      {% if product.metafields.snoooze["category_url"] != blank %}
-        
-          <div class="ProductMeta__Category">
-            <a href="{{ product.metafields.snoooze.category_url }}"><span id="ProductMeta__Category-Title">View more from this Collection</span></a>
-          </div>
-
-        {% else %}
-    
-      {% endif %}
       {%- if section.settings.show_share_buttons -%}
         <div class="ProductMeta__ShareButtons hidden-pocket">
           <span class="ProductMeta__ShareTitle Heading Text--subdued u-h7">{{ 'product.form.share' | t }}</span>
