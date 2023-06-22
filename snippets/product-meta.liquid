@@ -55,6 +55,8 @@
           {% render 'mugs_bullet-points' %}
         {% elsif product.type == 'T-Shirt'%}
           {% render 'tees_bullet-points' %}
+        {% elsif product.type == 'Decals''%}
+          {% render 'decals_bullet-points' %}
         {% else %}
       {% endif %}
       
