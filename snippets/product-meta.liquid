@@ -52,7 +52,9 @@
         {% elsif product.type == 'Patent Mug'%}
           {% render 'patent-mugs_bullet-points' %}
         {% elsif product.type == 'Mugs'%}
-        {% render 'mugs_bullet-points' %}
+          {% render 'mugs_bullet-points' %}
+        {% elsif product.type == 'T-Shirt'%}
+          {% render 'tees_bullet-points' %}
         {% else %}
       {% endif %}
       
