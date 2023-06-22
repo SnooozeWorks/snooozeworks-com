@@ -24,7 +24,7 @@
     
       <div class="ProductMeta__Category">
         <span id="ProductMeta__Category-Title">Category: </span> 
-        <a href="{{ product.url | within: collection }}"><span id="ProductMeta__Category-Content">{{ product.metafields.snoooze["category"] }}</span></a>
+        <a href="{{ product.metafields.snoooze.category_url }}"><span id="ProductMeta__Category-Content">{{ product.metafields.snoooze["category"] }}</span></a>
       </div>
 
     {% else %}
