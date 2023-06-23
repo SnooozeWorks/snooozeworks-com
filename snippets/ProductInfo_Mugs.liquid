@@ -1,19 +1,26 @@
-<div class="ProductInfo__Bullets">
-  <div class="ProductInfo__Bullets-Title">Key Features</div>
-  <ul>
-    <li><b style="color: #ef0034;">Premium</b> Ceramic Drinkware, with a Protective Gloss Finish</li>
-    <li>Graphic Printed on <b style="color: #ef0034;">Both Sides</b> of the Mug</li>
-    <li><b style="color: #ef0034;">Durable</b> and High-Quality. Both Dishwasher and Microwave Safe.</li>
-    <li>Fast Shipping and <b style="color: #ef0034;">Easy</b> 30-Day Returns</li>
-  </ul>
+<div class="ProductInfo__Features">
+  <div class="ProductInfo__Features-Title">DETAILS</div>
+
+    <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
+    <div class="ProductInfo__Content"><b>Premium</b> Ceramic Drinkware, with a Protective Gloss Finish</div>
+      
+    <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
+    <div class="ProductInfo__Content">Graphic Printed on <b>Both Sides</b> of the Mug</div>
+      
+    <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
+    <div class="ProductInfo__Content"><b>Durable</b> and High-Quality. Safe for both the Dishwasher and Microwave.</div>
+      
+    <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
+    <div class="ProductInfo__Content">Fast Shipping and <b>Easy</b> 30-Day Returns</div>
+
 </div>
 
+<!-- View more from this category link -->
+  
 {% if product.metafields.snoooze.category_url != blank %}
   <div class="ProductMeta__Category">
     <a href="{{ product.metafields.snoooze.category_url }}"
       ><span id="ProductMeta__Category-Title">View more from this Collection</span></a>
   </div>
-
   {% else %}
-
 {% endif %}
