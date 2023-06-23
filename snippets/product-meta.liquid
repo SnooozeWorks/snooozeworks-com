@@ -27,11 +27,11 @@
   {%- if product.template_suffix != 'coming-soon' -%}
    <div class="ProductMeta__Flex">
     <div class="column">
-      <div class="ProductMeta__Rating">Rating
+      <div class="ProductMeta__FlexRating">Rating
       </div>
     </div>
      <div class="column">
-      <div class="ProductMeta__Price">
+      <div class="ProductMeta__FlexPrice">
       {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
         <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h2" data-money-convertible>{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
         <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h2" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
