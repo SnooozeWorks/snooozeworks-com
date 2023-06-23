@@ -1,20 +1,29 @@
-<div class="ProductInfo__Bullets">
-  <div class="ProductInfo__Bullets-Title">Key Features</div>
-  <ul>
-    <li><b style="color:#ef0034;">651 Oracle</b> Glossy Vinyl; 2.5 mil Outdoor-Rated</li>
-    <li><b style="color:#ef0034;">High-Quality</b> Die-Cut Design, using Professional Vinyl Plotter</li>
-    <li>All sizes are listed in Inches, unless otherwise noted.</li>
-    <li>Fast Shipping and <b style="color: #ef0034;">Easy</b> 30-Day Returns</li>
-  </ul>
+<div class="ProductInfo__Features">
+  <div class="ProductInfo__Features-Title">DETAILS</div>
+
+    <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
+    <div class="ProductInfo__Content"><b>651 Oracle</b> Glossy Vinyl; 2.5 mil Outdoor-Rated</div>
+      
+    <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
+    <div class="ProductInfo__Content"><b>High-Quality</b> Die-Cut Design, using Professional Vinyl Plotter</div>
+      
+    <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
+    <div class="ProductInfo__Content">All sizes are listed in Inches, unless otherwise noted.</div>
+      
+    <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
+    <div class="ProductInfo__Content"><b>Durable</b> and High-Quality. Safe for both the Dishwasher and Microwave.</div>
+      
+    <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
+    <div class="ProductInfo__Content">Fast Shipping and <b>Easy</b> 30-Day Returns</div>
+
 </div>
 
+<!-- View more from this category link -->
+  
 {% if product.metafields.snoooze.category_url != blank %}
   <div class="ProductMeta__Category">
     <a href="{{ product.metafields.snoooze.category_url }}"
       ><span id="ProductMeta__Category-Title">View more from this Collection</span></a>
   </div>
-
   {% else %}
-
 {% endif %}
-
