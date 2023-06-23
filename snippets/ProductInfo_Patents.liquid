@@ -1,5 +1,6 @@
 <div class="ProductInfo__Features">
   <div class="ProductInfo__Features-Title">DETAILS</div>
+  
     <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
     <div class="ProductInfo__Content"><b>Digitally-Remastered</b> Design created from the original Patent Filing Artwork</div>
 
@@ -10,16 +11,16 @@
     <div class="ProductInfo__Content">Available in various sizes, so you can choose the <b>perfect</b> dimensions to suit your space and preferences.</div>
     
     <div class="ProductInfo__Icon"><i class="fa-solid fa-check-square"></i></div>
-    <div class="ProductInfo__Content"><b>Free</b> Shipping and Easy 30-Day Returns</li>
-  </ul>
+    <div class="ProductInfo__Content"><b>Free</b> Shipping and Easy 30-Day Returns</div>
+
 </div>
 
+<!-- View more from this category link -->
+  
 {% if product.metafields.snoooze.category_url != blank %}
   <div class="ProductMeta__Category">
     <a href="{{ product.metafields.snoooze.category_url }}"
       ><span id="ProductMeta__Category-Title">View more from this Collection</span></a>
   </div>
-
   {% else %}
-
 {% endif %}
