@@ -13014,3 +13014,54 @@ button #dummy-chat-button .chat-toggle .bottom-right {
   font-size: to-size(14px);
   color: $button-background;
 }
+
+/** Price and Rating Flex */
+
+.ProductMeta__Flex {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.ProductMeta__Price {
+  background: #0066ff;
+  text-align: left;
+  color: $text-color;
+  font-size: to-size(15px);
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.ProductMeta__Rating {
+  background: #0066ff;
+  text-align: right;
+  color: white;
+  font-size: to-size(15px);
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.column {
+  padding: 0 10px;
+  box-sizing: border-box;
+  flex: 50%;
+  max-width: 50%;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
