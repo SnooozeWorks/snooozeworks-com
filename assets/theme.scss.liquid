@@ -13046,11 +13046,15 @@ button #dummy-chat-button .chat-toggle .bottom-right {
   font-weight: bold;
 }
 
-.vital_reviews_under_title {
+#vital_reviews_under_title {
   font-family: $text-font-family;
   font-size: to-size(15px);
   color: $text-color;
   width: 100%;
+}
+
+#vitals_reviews_under_title:empty {
+  display: none;
 }
 
 .review-column {
@@ -13060,9 +13064,6 @@ button #dummy-chat-button .chat-toggle .bottom-right {
   max-width: 50%;
 }
 
-.review-column[content=""] {
-  display: none !important;
-}
 
 .column {
   padding: 0 10px;
