@@ -12994,11 +12994,15 @@ button #dummy-chat-button .chat-toggle .bottom-right {
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: left;
-  list-style-type: "\f00c";
+  padding-left: 2ch;
 }
 
 .ProductInfo__Bullets li::marker {
-  color: #ef0034;
+  font: var(--fa-font-solid);
+  content: "\f00c ";
+  font-size: to-size(12px);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .ProductInfo__Bullets-Title {
