@@ -225,7 +225,7 @@
           "image_size": "large",
           "stack_images": true,
           "show_thumbnails": false,
-          "enable_image_zoom": false,
+          "enable_image_zoom": true,
           "tab_page_1_handle": "",
           "tab_page_2_handle": "",
           "reviews_enabled": false,
