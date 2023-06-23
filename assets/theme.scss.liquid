@@ -12996,7 +12996,8 @@ button #dummy-chat-button .chat-toggle .bottom-right {
 }
 
 .ProductInfo__Bullets li::marker {
-  content: '\f00c ';
+  font: var(--fa-font-solid);
+  content: "\f00c ";
   font-size: to-size(12px);
 }
 
@@ -13064,4 +13065,17 @@ button #dummy-chat-button .chat-toggle .bottom-right {
 
 .vtl-pr-ss__inner-el {
   font-weight: bold;
+}
+
+
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.checkmark::before {
+  font: var(--fa-font-solid);
+  content: "\f00c";
 }
