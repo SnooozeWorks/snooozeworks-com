@@ -12996,7 +12996,8 @@ button #dummy-chat-button .chat-toggle .bottom-right {
 }
 
 .ProductInfo__Features-Title {
-  position: relative;
+  display: flex;
+  align-items: center;
   font-weight: bold;
   font-size: to-size(15px);
   margin-bottom: 12px;
@@ -13004,16 +13005,14 @@ button #dummy-chat-button .chat-toggle .bottom-right {
   overflow: hidden;
 }
 
-.ProductInfo__Feature-Title:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0.5em;
-  border-top: 1px solid black;
-  z-index: -1;
+.ProductInfo__Features-Title:after {
+  content: '';
+  flex: 1;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: #000;
 }
+
 
 .ProductMeta__Category {
   margin-top: 15px;
