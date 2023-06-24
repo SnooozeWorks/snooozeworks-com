@@ -13123,13 +13123,25 @@ button #dummy-chat-button .chat-toggle .bottom-right {
   display: flex;
   align-items: center;
   font-weight: bold;
-  font-size: to-size(15px);
-  margin-bottom: 12px;
   letter-spacing: .1em;
   overflow: hidden;
   position: relative;
   color: #000;
   text-decoration: none;
+}
+
+.Reviews--custom::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 17%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(31, 31, 30, 1);
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
 }
 
 .SectionHeader--custom {
