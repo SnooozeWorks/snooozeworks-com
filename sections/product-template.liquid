@@ -50,19 +50,19 @@
     --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
 
-    {%- assign product.images[3] = product.featured_image.id -%}
+    {%- assign initial_image_id = product.featured_image.id -%}
     {%- assign initial_image_index = 0 -%}
     {%- assign image_count = 0 -%}
 
     {%- capture slideshow_images -%}
       {%- for image in product.images -%}
         {%- if image.alt == 'featured' or image.alt == 'featured mobile' -%}
-          {%- continue -%}`
+          {%- continue -%}
         {%- endif -%}
 
         {%- if image.id == product.selected_or_first_available_variant.image.id -%}
           {%- assign initial_image_index = image_count -%}
-          {%- assign product.images[3] = image.id -%}
+          {%- assign initial_image_id = image.id -%}
         {%- endif -%}
 
         {%- include 'image-size', sizes: '200,400,600,700,800,900,1000,1200,1400,1600', image: image -%}
