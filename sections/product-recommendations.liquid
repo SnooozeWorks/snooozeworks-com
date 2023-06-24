@@ -2,7 +2,7 @@
 {
   "productId": {{ product.id | json }},
   "useRecommendations": {% if product.metafields.sf_related_products.enabled == 1 %}false{% else %}true{% endif %},
-  "recommendationsCount": 4
+  "recommendationsCount": 8
 }
 {%- endcapture -%}
 
@@ -21,7 +21,7 @@
 {%- endcapture -%}
 
 {%- if section.settings.show_product_recommendations -%}
-  <section class="Section Section--spacingNormal"  data-section-id="{{ section.id }}" data-section-type="product-recommendations" data-section-settings='{{ section_settings }}'>
+  <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="product-recommendations" data-section-settings='{{ section_settings }}'>
     {%- if section.settings.heading != blank -%}
       <header class="SectionHeader SectionHeader--center">
         <div class="Container">
