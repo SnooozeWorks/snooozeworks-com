@@ -1,5 +1,6 @@
 <section id="section-{{ section.id }}" class="tube_divider">
   {%- capture mobile_size -%}750x{% if custom_image.height >= 960 %}960{% else %}{{ custom_image.height }}{% endif %}{%- endcapture -%}
+  
   {% assign custom_image = product.images[3] %}
 
   <div class="FlexboxIeFix">
@@ -17,7 +18,7 @@
 
         {%- unless custom_image != blank -%}
           <div class="PlaceholderBackground PlaceholderSvg--dark">
-            {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+            {{ 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup_230cbe13-a58f-4adf-bcec-991643ad8a88.jpg?v=1603067380' }}
           </div>
         {%- endunless -%}
       </div>
