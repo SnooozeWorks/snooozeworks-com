@@ -3,7 +3,6 @@
   {%- capture mobile_size -%}750x{% if no_image.height >= 960 %}960{% else %}{{ no_image.height }}{% endif %}{%- endcapture -%}
 
   {% assign custom_image = product.images[5] %}
-  {% assign no_image = 'tubemockup.jpg' | asset_url %}
 
   <div class="FlexboxIeFix">
     <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter Image--lazyLoad Image--zoomOut" {% if custom_image%}style="background: url({{ custom_image | img_url: '1x1' }})"{% endif %}>
@@ -23,7 +22,7 @@
             <div class="ImageHero__Image ImageHero__Image--parallax Image--lazyLoad Image--zoomOut  {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
                data-optimumx="1.4"
                data-expand="-150"
-               imageset="{{ no_image | img_url: mobile_size, crop: 'center' }} 750w, {{ no_image | img_url: '1000x' }} 1000w, {{ no_image | img_url: '1500x' }} 1500w">
+                 imageset="{{ 'TubeMockup.jpg' | asset_url | img_url: mobile_size, crop: 'center' }} 750w, {{ 'TubeMockup.jpg' | asset_url | img_url: '1000x' }} 1000w, {{ 'TubeMockup.jpg' | asset_url | img_url: '1500x' }} 1500w">
             </div>          
           </div>
         {%- endunless -%}
