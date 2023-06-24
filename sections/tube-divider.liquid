@@ -2,7 +2,7 @@
   {%- capture mobile_size -%}750x{% if custom_image.height >= 960 %}960{% else %}{{ custom_image.height }}{% endif %}{%- endcapture -%}
   {%- capture mobile_size -%}750x{% if no_image.height >= 960 %}960{% else %}{{ no_image.height }}{% endif %}{%- endcapture -%}
 
-  {% assign custom_image = product.images[5] %}
+  {% assign custom_image = product.images[2] %}
   {% assign no_image = "TubeMockup.jpg" %}
 
   <div class="FlexboxIeFix">
