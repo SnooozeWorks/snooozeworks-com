@@ -2,7 +2,7 @@
   {%- capture mobile_size -%}750x{% if custom_image.height >= 960 %}960{% else %}{{ custom_image.height }}{% endif %}{%- endcapture -%}
   
   {% assign custom_image = product.images[3] %}
-  {% assign placeholder_image = '//cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup_1f66d240-9bab-4647-905a-624eae9c06d0' %}
+  {% assign placeholder_image = 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup_1f66d240-9bab-4647-905a-624eae9c06d0.jpg?v=1614314289' %}
 
   <div class="FlexboxIeFix">
     <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter Image--lazyLoad Image--zoomOut" {% if custom_image%}style="background: url({{ custom_image | img_url: '1x1' }})"{% endif %}>
