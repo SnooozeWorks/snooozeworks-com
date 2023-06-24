@@ -19,7 +19,7 @@
 
         {%- unless custom_image != blank -%}
           <div class="PlaceholderBackground PlaceholderSvg--dark">
-            <div class="ImageHero__Image ImageHero__Image--parallax Image--lazyLoad Image--zoomOut" style="background-image: url({{ 'TubeMockup.jpg' | file_img_url: 'large'  | img_url: '1000x' }})>
+            <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background-image: url({{ 'TubeMockup.jpg' | file_img_url: 'large'  | img_url: '1000x' }})">
             </div>          
           </div>
         {%- endunless -%}
