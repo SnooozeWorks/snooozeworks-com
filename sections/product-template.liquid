@@ -323,13 +323,13 @@ This saves bandwidth and allows each user to cache a single photo for multiple l
 {%- endcomment -%}
 
 
-
+{% assign featured_image = product.images[2] | default: product.featured_image %}
 
   <div class="Product__FeatureImageWrapper tubeDivider" style="background: url({{ product.featured_image | img_url: '1x1', format: 'jpg' }})">
-    <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut  Image--contrast hide-no-js" data-expand="-25" data-bgset="{{ product.featured_image }} [(max-width: 640px)] | {{ product.featured_image }}"></div>
+    <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut  Image--contrast hide-no-js" data-expand="-25" data-bgset="{{ featured_image }} [(max-width: 640px)] | {{ featured_image }}"></div>
 
     <noscript>
-      <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--contrast" style="background-image: url({{ product.featured_image }})"></div>
+      <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--contrast" style="background-image: url({{ featured_image }})"></div>
     </noscript>
   </div>
 
