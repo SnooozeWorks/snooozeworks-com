@@ -326,7 +326,7 @@ This saves bandwidth and allows each user to cache a single photo for multiple l
 
 
   <div class="Product__FeatureImageWrapper tubeDivider" style="background: url({{ product.featured_image | img_url: '1x1', format: 'jpg' }})">
-    <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut  Image--contrast hide-no-js" data-expand="-25" data-bgset="{{ 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup.jpg?v=1602574136' }} [(max-width: 640px)] | {{ 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup.jpg?v=1602574136' }}"></div>
+    <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut  Image--contrast hide-no-js" data-expand="-25" data-bgset="{{ product.featured_image }} [(max-width: 640px)] | {{ product.featured_image }}"></div>
 
     <noscript>
       <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--contrast" style="background-image: url({{ product.featured_image }})"></div>
