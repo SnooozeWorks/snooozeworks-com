@@ -1,7 +1,6 @@
 <section id="section-{{ section.id }}" class="tube_divider">
   {%- capture mobile_size -%}750x{% if custom_image.height >= 960 %}960{% else %}{{ custom_image.height }}{% endif %}{%- endcapture -%}
-  
-  {% assign custom_image = product.images[3] %}
+  {% assign custom_image = product.images[2] %}
 
   <div class="FlexboxIeFix">
     <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter Image--lazyLoad Image--zoomOut" {% if custom_image%}style="background: url({{ custom_image | img_url: '1x1' }})"{% endif %}>
@@ -16,11 +15,11 @@
           <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background-image: url({{ custom_image | img_url: '1000x' }})"></div>
         </noscript>
 
-        {%- if custom_image == blank -%}
-          <noscript>
-            <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background: url({{ 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup_230cbe13-a58f-4adf-bcec-991643ad8a88.jpg?v=1603067380' | img_url: '1x1', format: 'jpg' }})"></div>
-          </noscript>
-        {%- endif -%}
+        {%- unless custom_image != blank -%}
+          <div class="PlaceholderBackground PlaceholderSvg--dark">
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+          </div>
+        {%- endunless -%}
       </div>
 
       <div class="ImageHero__ContentOverlay">
