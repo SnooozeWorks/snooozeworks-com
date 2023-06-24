@@ -4,9 +4,12 @@
 
 
   {% assign no_image = "TubeMockup.jpg" %}
-  {% if image.alt == 'featured' %}
-    {% assign custom_image = image  %}
-  {% endif %}
+
+  {%- for image in product.images -%}
+    {% if image.alt == 'featured' %}
+      {% assign custom_image = image  %}
+    {% endif %}
+  {% endfor %}
 
   <div class="FlexboxIeFix">
     <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter Image--lazyLoad Image--zoomOut" {% if custom_image %}style="background: url({{ custom_image | img_url: '1x1' }})"{% else %}style="background: url({{ no_image | img_url: '1x1' }})"{% endif %}>
