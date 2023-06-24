@@ -2,7 +2,6 @@
   {%- capture mobile_size -%}750x{% if custom_image.height >= 960 %}960{% else %}{{ custom_image.height }}{% endif %}{%- endcapture -%}
   {%- capture mobile_size -%}750x{% if no_image.height >= 960 %}960{% else %}{{ no_image.height }}{% endif %}{%- endcapture -%}
 
-
   {% assign no_image = "TubeMockup.jpg" %}
 
   {%- for image in product.images -%}

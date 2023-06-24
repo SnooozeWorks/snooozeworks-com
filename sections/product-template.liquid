@@ -88,8 +88,6 @@
                  data-sizes="auto"
                  data-expand="-100"
                  alt="{{ image.alt | escape }}"
-                 width="{{ image.width }}"
-                 height="{{  image.height }}"
                  data-max-width="{{ image.width }}"
                  data-max-height="{{ image.height }}"
                  data-original-src="{{ image | img_url: 'master' }}">
@@ -320,25 +318,24 @@ To change this photo, update it on Lines 319, 320, and 323 in the 'background-im
 
 This saves bandwidth and allows each user to cache a single photo for multiple listings.
 --------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
 
-{% assign custom_image = product.images[3] %}
+{%- comment -%}
 
-
-  <div class="Product__FeatureImageWrapper tubeDivider" style="background: url({{ custom_image | img_url: '1500x1500' }})">
-    <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut  Image--contrast hide-no-js" data-expand="-25" data-bgset="{{ custom_image }} [(max-width: 640px)] | {{ custom_image }}"></div>
+  <div class="Product__FeatureImageWrapper tubeDivider" style="background: url({{ 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup_230cbe13-a58f-4adf-bcec-991643ad8a88.jpg?v=1603067380' | img_url: '1x1', format: 'jpg' }})">
+    <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut  Image--contrast hide-no-js" data-expand="-25" data-bgset="{{ 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup.jpg?v=1602574136' }} [(max-width: 640px)] | {{ 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup.jpg?v=1602574136' }}"></div>
 
     <noscript>
-      <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--contrast" style="background-image: url({{ custom_image }})"></div>
+      <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--contrast" style="background-image: url({{ 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup.jpg?v=1602574136' }})"></div>
     </noscript>
   </div>
-
 
   <style>
     #shopify-section-{{ section.id }} + .shopify-section--bordered {
       border-top: 0;
     }
   </style>
-  
+
 {%- endcomment -%}
 
 {%- comment -%}
