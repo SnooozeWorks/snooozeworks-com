@@ -62,7 +62,7 @@
 
         {%- if image.id == product.selected_or_first_available_variant.image.id -%}
           {%- assign initial_image_index = image_count -%}
-          {%- assign initial_image_id = image.id -%}
+          {%- assign product.images[3] = image.id -%}
         {%- endif -%}
 
         {%- include 'image-size', sizes: '200,400,600,700,800,900,1000,1200,1400,1600', image: image -%}
