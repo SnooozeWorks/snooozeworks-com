@@ -2,8 +2,11 @@
   {%- capture mobile_size -%}750x{% if custom_image.height >= 960 %}960{% else %}{{ custom_image.height }}{% endif %}{%- endcapture -%}
   {%- capture mobile_size -%}750x{% if no_image.height >= 960 %}960{% else %}{{ no_image.height }}{% endif %}{%- endcapture -%}
 
-  {% assign custom_image = product.images[3] %}
+
   {% assign no_image = "TubeMockup.jpg" %}
+  {% if image.alt == 'featured' %}
+    {% assign custom_image = image  %}
+  {% endif %}
 
   <div class="FlexboxIeFix">
     <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter Image--lazyLoad Image--zoomOut" {% if custom_image %}style="background: url({{ custom_image | img_url: '1x1' }})"{% else %}style="background: url({{ no_image | img_url: '1x1' }})"{% endif %}>
@@ -13,11 +16,9 @@
              data-expand="-150"
              {% if custom_image %}data-bgset="{{ custom_image | img_url: mobile_size, crop: 'center' }} 750w, {{ custom_image | img_url: '1000x' }} 1000w, {{ custom_image | img_url: '1500x' }} 1500w"{% else %}data-bgset="{{ no_image | file_img_url: mobile_size, crop: 'center' }} 750w, {{ no_image | file_img_url: '1000x' }} 1000w, {{ no_image | file_img_url: '1500x' }} 1500w"{% endif %}>
         </div>
-
         <noscript>
           <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background-image: url({{ custom_image | img_url: '1000x' }})"></div>
         </noscript>
-
         {%- unless custom_image != blank -%}
           <div class="PlaceholderBackground PlaceholderSvg--dark">
             <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background-image: url({{ no_image  | img_url: '1000x' }})">
@@ -26,9 +27,8 @@
         {%- endunless -%}
       </div>
 
-      <div class="ImageHero__ContentOverlay">
-
-      </div>
+      <div class="ImageHero__ContentOverlay"></div>
+      
     </div>
   </div>
 </section>
