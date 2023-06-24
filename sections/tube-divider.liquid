@@ -1,20 +1,20 @@
 <section id="section-{{ section.id }}" class="tube_divider">
-  {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+  {%- capture mobile_size -%}750x{% if product.featured_image.height >= 960 %}960{% else %}{{ product.featured_image.height }}{% endif %}{%- endcapture -%}
 
   <div class="FlexboxIeFix">
-    <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter Image--lazyLoad Image--zoomOut" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1' }})"{% endif %}>
+    <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter Image--lazyLoad Image--zoomOut" {% if product.featured_image %}style="background: url({{ product.featured_image | img_url: '1x1' }})"{% endif %}>
       <div class="ImageHero__ImageWrapper">
         <div class="ImageHero__Image ImageHero__Image--parallax Image--lazyLoad Image--zoomOut  {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
              data-optimumx="1.4"
              data-expand="-150"
-             {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+             {% if product.featured_image %}data-bgset="{{ product.featured_image | img_url: mobile_size, crop: 'center' }} 750w, {{ product.featured_image | img_url: '1000x' }} 1000w, {{ product.featured_image | img_url: '1500x' }} 1500w"{% endif %}>
         </div>
 
         <noscript>
-          <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background-image: url({{ section.settings.image | img_url: '1000x' }})"></div>
+          <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background-image: url({{ product.featured_image | img_url: '1000x' }})"></div>
         </noscript>
 
-        {%- unless section.settings.image != blank -%}
+        {%- unless product.featured_image != blank -%}
           <div class="PlaceholderBackground PlaceholderSvg--dark">
             {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
           </div>
