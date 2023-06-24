@@ -710,7 +710,7 @@
       "tube-divider": {
         "type": "tube-divider",
         "settings": {
-          "section_size": "small",
+          "section_size": "normal",
           "apply_overlay": true,
           "image": "shopify:\/\/shop_images\/TubeMockup_1f66d240-9bab-4647-905a-624eae9c06d0.jpg"
         }
