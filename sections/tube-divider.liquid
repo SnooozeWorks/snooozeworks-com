@@ -22,7 +22,7 @@
             <div class="ImageHero__Image ImageHero__Image--parallax Image--lazyLoad Image--zoomOut  {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
                data-optimumx="1.4"
                data-expand="-150"
-               imageset="{{ 'TubeMockup.jpg' | file_img_url: 'large' | img_url: mobile_size, crop: 'center' }} 750w, {{ 'TubeMockup.jpg' | file_img_url: 'large'  | img_url: '1000x' }} 1000w, {{ 'TubeMockup.jpg' | file_img_url: 'large' | img_url: '1500x' }} 1500w">
+               data-bgset="{{ 'TubeMockup.jpg' | file_img_url: 'large' | img_url: mobile_size, crop: 'center' }} 750w, {{ 'TubeMockup.jpg' | file_img_url: 'large'  | img_url: '1000x' }} 1000w, {{ 'TubeMockup.jpg' | file_img_url: 'large' | img_url: '1500x' }} 1500w">
             </div>          
           </div>
         {%- endunless -%}
