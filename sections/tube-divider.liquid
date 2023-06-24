@@ -16,11 +16,11 @@
           <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background-image: url({{ custom_image | img_url: '1000x' }})"></div>
         </noscript>
 
-        {%- unless custom_image != blank -%}
+        {%- if custom_image == blank -%}
           <noscript>
             <div class="ImageHero__Image Image--lazyLoad Image--zoomOut" style="background: url({{ 'https://cdn.shopify.com/s/files/1/2422/1433/files/TubeMockup_230cbe13-a58f-4adf-bcec-991643ad8a88.jpg?v=1603067380' | img_url: '1x1', format: 'jpg' }})"></div>
           </noscript>
-         {%- endunless -%}
+        {%- endif -%}
       </div>
 
       <div class="ImageHero__ContentOverlay">
