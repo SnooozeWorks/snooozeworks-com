@@ -1,4 +1,4 @@
-{%- if section.settings.show_section and product.metafields.reviews.rating_count != 0 -%}
+{%- if section.settings.show_section and product.metafields.reviews.rating_count != "0" -%}
 
   <section class="Section" data-section-id="{{ section.id }}" data-section-type="vital-review-header" data-section-settings='{{ section_settings }}'>
     {%- if section.settings.heading != blank -%}
