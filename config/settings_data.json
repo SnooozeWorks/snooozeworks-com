@@ -1280,13 +1280,13 @@
           "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-0": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "aviation-collection",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "Collection name",
-              "button_text": "View products",
-              "button_link": "",
+              "subheading": "Embrace Flight: Lockheed, Boeing, NASA aircraft patents, available now!",
+              "title": "Aviation Patents",
+              "button_text": "View Products",
+              "button_link": "shopify:\/\/collections\/aviation-collection",
               "apply_overlay": true
             }
           },
@@ -1297,7 +1297,7 @@
               "image": "shopify:\/\/shop_images\/toyota-supra-model-mockup.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Unlock your Style: Patents, Gaming and more.",
+              "subheading": "Unlock your Style: Patents, Gaming, Automotive and more.",
               "title": "All New Tees",
               "button_text": "View products",
               "button_link": "shopify:\/\/collections\/all-tees",
@@ -1327,7 +1327,7 @@
         "settings": {
           "image_size": "normal",
           "add_spacing": true,
-          "expand_collection": false,
+          "expand_collection": true,
           "stack_on_mobile": false,
           "text_color": "#ffffff",
           "button_color": "#363636"
