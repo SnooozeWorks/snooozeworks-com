@@ -145,7 +145,7 @@
             "type": "collection",
             "settings": {
               "collection": "best-sellers",
-              "title": "Best Selling",
+              "title": "Best Sellers",
               "grid_items_count": 8,
               "button_text": ""
             }
@@ -1325,7 +1325,7 @@
           "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-2"
         ],
         "settings": {
-          "image_size": "normal",
+          "image_size": "large",
           "add_spacing": true,
           "expand_collection": true,
           "stack_on_mobile": false,
