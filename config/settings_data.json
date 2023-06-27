@@ -818,6 +818,7 @@
       },
       "16337274257e2f4e22": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "16337274257e2f4e22-1": {
             "type": "image",
@@ -1272,9 +1273,69 @@
         "settings": {
           "show_section": true
         }
+      },
+      "0919918a-45c0-4b0c-8afc-5d9111159f48": {
+        "type": "collection-list",
+        "blocks": {
+          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "Collection name",
+              "button_text": "View products",
+              "button_link": "",
+              "apply_overlay": true
+            }
+          },
+          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image": "shopify:\/\/shop_images\/toyota-supra-model-mockup.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "All New Tees",
+              "button_text": "View products",
+              "button_link": "shopify:\/\/collections\/all-tees",
+              "apply_overlay": true
+            }
+          },
+          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-2": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "Collection name",
+              "button_text": "View products",
+              "button_link": "",
+              "apply_overlay": true
+            }
+          }
+        },
+        "block_order": [
+          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-0",
+          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-1",
+          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-2"
+        ],
+        "settings": {
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "stack_on_mobile": false,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
       }
     },
     "content_for_index": [
+      "0919918a-45c0-4b0c-8afc-5d9111159f48",
       "16337274257e2f4e22",
       "featured-collections",
       "1634016111dba72e6a",
