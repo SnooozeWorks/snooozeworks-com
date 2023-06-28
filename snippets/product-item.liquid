@@ -50,6 +50,10 @@
       </div>
     </a>
 
+      {%- if shipping_method == 'Coffee Mugs' -%}
+      <button class="btn" style="text-align: center; border: 1px solid green; border-radius: 4px; background: transparent; padding: 5px 10px; margin-left: 29%; }"> Free Shipping </button>
+      {%- endif -%}
+
     {%- if show_labels -%}
       {%- capture product_labels -%}
         {%- for tag in product.tags -%}
