@@ -50,10 +50,6 @@
       </div>
     </a>
 
-    {%- if product.tags contains 'freeship' -%}
-      <button class="btn" style="text-align: center; border: 1px solid green; border-radius: 50%; background: transparent; padding: 5px 10px; right: 0; top: 0; }"> Free Shipping </button>
-    {%- endif -%}
-
     {%- if show_labels -%}
       {%- capture product_labels -%}
         {%- for tag in product.tags -%}
