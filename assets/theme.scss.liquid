@@ -13333,22 +13333,21 @@ button #dummy-chat-button .chat-toggle .bottom-right {
 }
 
 /** Patent Selection for Bundles */
+
 .option {
   background: #f9f9f9;
   margin-top: 15px;
   padding: 0 10px;
-  
-  *:first-child {
-    margin-top: 0;
-  }
+}
+.option:first-child {
+  margin-top: 0;
 }
 
 .input {
   position: relative;
   font-family: Fira Sans;
-}
-
-.input__label {
+  
+  &__label {
     position: absolute;
     left: 0;
     top: 0;
@@ -13380,3 +13379,4 @@ button #dummy-chat-button .chat-toggle .bottom-right {
       }
     }
   }
+}
