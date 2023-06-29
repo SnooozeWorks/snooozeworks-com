@@ -285,18 +285,26 @@ for size, we use it to display a size chart (if applicable)
     {%- endif -%}
   </div>
 
-  <p class="line-item-property__field">
-    <label for="patent-1">Patent 1</label>
-    <input required class="required" id="patent-1" type="text" name="properties[_Patent 1]">
-  </p>
-  <p class="line-item-property__field">
-    <label for="patent-2">Patent 2</label>
-    <input required class="required" id="patent-2" type="text" name="properties[_Patent 2]">
-  </p>
-  <p class="line-item-property__field">
-    <label for="patent-3">Patent 3</label>
-    <input required class="required" id="patent-3" type="text" name="properties[_Patent 3]">
-  </p>
+  <div class="option">
+    <label for="patent-1" class="input">
+      <input required class="required input__field" type="text" name="properties[_Patent 1]">
+      <span class="input__label">Patent 1</span>
+    </label>
+  </div>
+  
+   <div class="option">
+    <label for="patent-1" class="input">
+      <input required class="required input__field" type="text" name="properties[_Patent 2]">
+      <span class="input__label">Patent 2</span>
+    </label>
+  </div>
+  
+   <div class="option">
+    <label for="patent-1" class="input">
+      <input required class="required input__field" type="text" name="properties[_Patent 3]">
+      <span class="input__label">Patent 3</span>
+    </label>
+  </div>
 
                 
   {%- comment -%}
