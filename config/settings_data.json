@@ -1332,6 +1332,38 @@
           "text_color": "#ffffff",
           "button_color": "#363636"
         }
+      },
+      "product-customizable-template": {
+        "type": "product-customizable-template",
+        "settings": {
+          "show_share_buttons": false,
+          "show_vendor": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_price_in_button": true,
+          "show_payment_button": true,
+          "image_size": "large",
+          "stack_images": true,
+          "show_thumbnails": false,
+          "enable_image_zoom": true,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "vital-review-header": {
+        "type": "vital-review-header",
+        "settings": {
+          "show_section": true,
+          "heading": "Customer Reviews"
+        }
       }
     },
     "content_for_index": [
