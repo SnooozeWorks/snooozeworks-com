@@ -13370,11 +13370,18 @@ button #dummy-chat-button .chat-toggle .bottom-right {
     color: #1f1f1e;
     background: transparent;
     
-    &:focus, .input__field:not(:placeholder-shown) {
+    &:focus {
       & + .input__label {
         transform: translate(4px, -65%) scale(.8);
         color: #ef3340;
       }
     }
   }
+}
+
+
+.input__field:not(:placeholder-shown) {
+    transform: translate(4px, -65%) scale(.8);
+    color: #ef3340;
+}
 }
