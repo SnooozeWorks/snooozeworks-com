@@ -117,6 +117,12 @@
       }
     </style>
     
+
+
+{% if content_for_header contains 'fastbundle.co' %}
+    {% render 'fast_bundle_service' %}
+{% endif %}
+
 </head> 
   
   <body class="prestige--v4 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
