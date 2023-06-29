@@ -13339,6 +13339,7 @@ button #dummy-chat-button .chat-toggle .bottom-right {
   margin-top: 15px;
   padding: 0 10px;
 }
+
 .option:first-child {
   margin-top: 0;
 }
@@ -13347,7 +13348,7 @@ button #dummy-chat-button .chat-toggle .bottom-right {
   position: relative;
   font-family: Fira Sans;
   
-  &__label {
+  .input__label {
     position: absolute;
     left: 0;
     top: 0;
@@ -13361,7 +13362,7 @@ button #dummy-chat-button .chat-toggle .bottom-right {
     font-weight: bold;
     line-height: 1.2;
   }
-  &__field {
+  .input__field {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -13371,8 +13372,8 @@ button #dummy-chat-button .chat-toggle .bottom-right {
     background: transparent;
     border-radius: 4px;
     
-    &:focus,
-    &:not(:placeholder-shown) {
+    .input__field:focus,
+    .input__field:not(:placeholder-shown) {
       & + .input__label {
         transform: translate(4px, -65%) scale(.8);
         color: #ef3340;
