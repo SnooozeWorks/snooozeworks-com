@@ -13346,8 +13346,9 @@ button #dummy-chat-button .chat-toggle .bottom-right {
 .input {
   position: relative;
   font-family: Fira Sans;
-  
-  &__label {
+}
+
+.input__label {
     position: absolute;
     left: 0;
     top: 0;
@@ -13371,5 +13372,11 @@ button #dummy-chat-button .chat-toggle .bottom-right {
     background: transparent;
     border-radius: 4px;
     
+    &:focus,
+    &:not(:placeholder-shown) {
+      & + .input__label {
+        transform: translate(4px, -65%) scale(.8);
+        color: #ef3340;
+      }
+    }
   }
-}
