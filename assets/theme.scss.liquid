@@ -13347,40 +13347,6 @@ button #dummy-chat-button .chat-toggle .bottom-right {
 .input {
   position: relative;
   font-family: Fira Sans;
-  
-  &__label {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 6px 8px;
-    margin: 9px 4px;
-    white-space: nowrap;
-    transform: translate(0, 0);
-    transform-origin: 0 0;
-    background: #f9f9f9;
-    transition: transform 120ms ease-in;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  &__field {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border: 3px solid currentColor;
-    padding: 12px 8px;
-    color: currentColor;
-    background: transparent;
-    border-radius: 4px;
-    
-    &:focus,
-    &:not(:placeholder-shown) {
-      & + .input__label {
-        transform: translate(4px, -65%) scale(.8);
-        color: #ef3340;
-      }
-    }
-  }
 }
-
 
 
