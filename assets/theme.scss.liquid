@@ -13347,8 +13347,9 @@ button #dummy-chat-button .chat-toggle .bottom-right {
 .input {
   position: relative;
   font-family: Fira Sans;
-  
-  .input__label {
+}
+
+.input__label {
     position: absolute;
     left: 0;
     top: 0;
@@ -13361,23 +13362,22 @@ button #dummy-chat-button .chat-toggle .bottom-right {
     transition: transform 120ms ease-in;
     font-weight: bold;
     line-height: 1.2;
-  }
-  .input__field {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border: 3px solid currentColor;
-    padding: 12px 8px;
-    color: currentColor;
-    background: transparent;
-    border-radius: 4px;
-    
-    .input__field:focus,
-    .input__field:not(:placeholder-shown) {
-      & + .input__label {
-        transform: translate(4px, -65%) scale(.8);
-        color: #ef3340;
-      }
-    }
+}
+
+.input__field {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 3px solid currentColor;
+  padding: 12px 8px;
+  color: currentColor;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.input__field:focus, .input__field:not(:placeholder-shown) {
+  & + .input__label {
+    transform: translate(4px, -65%) scale(.8);
+    color: #ef3340;
   }
 }
