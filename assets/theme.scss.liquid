@@ -13357,7 +13357,6 @@ button #dummy-chat-button .chat-toggle .bottom-right {
     transform-origin: 0 0;
     background: #f9f9f9;
     transition: transform 120ms ease-in;
-    font-weight: bold;
     line-height: 1.2;
   }
   .input__field {
@@ -13372,6 +13371,7 @@ button #dummy-chat-button .chat-toggle .bottom-right {
     &:focus, &:not(:placeholder-shown) {
       & + .input__label {
         transform: translate(4px, -65%) scale(.8);
+        font-weight: bold;
         color: #ef3340;
       }
     }
