@@ -717,7 +717,6 @@
       },
       "1604945335f6874936": {
         "type": "blog-posts",
-        "disabled": true,
         "blocks": {
           "1604945335f6874936-0": {
             "type": "blog",
@@ -729,6 +728,7 @@
         "block_order": [
           "1604945335f6874936-0"
         ],
+        "disabled": true,
         "settings": {
           "subheading": "Product Launches, Favorite Songs, Tutorials and more",
           "title": "Latest Blog Posts",
@@ -781,7 +781,7 @@
           "16333964471f320cc9-0"
         ],
         "settings": {
-          "title": "Our Featured Collection for June 2023",
+          "title": "Our Featured Collection",
           "layout_mode": "carousel",
           "show_product_info": true,
           "show_vendor": false,
@@ -818,7 +818,6 @@
       },
       "16337274257e2f4e22": {
         "type": "slideshow",
-        "disabled": true,
         "blocks": {
           "16337274257e2f4e22-1": {
             "type": "image",
@@ -885,6 +884,7 @@
           "8d71b795-0e1a-4406-8849-6a038c25a722",
           "862ee752-e4a1-4a77-9e45-451a58856a50"
         ],
+        "disabled": true,
         "settings": {
           "show_fullscreen": true,
           "show_arrow": true,
@@ -1145,7 +1145,6 @@
       },
       "1634016111dba72e6a": {
         "type": "featured-collections",
-        "disabled": true,
         "blocks": {
           "1634016111dba72e6a-0": {
             "type": "collection",
@@ -1160,6 +1159,7 @@
         "block_order": [
           "1634016111dba72e6a-0"
         ],
+        "disabled": true,
         "settings": {
           "title": "Some of our Favorite Patent Posters for the Month",
           "layout_mode": "grid",
