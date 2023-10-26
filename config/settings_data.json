@@ -1294,13 +1294,13 @@
             "type": "collection",
             "settings": {
               "collection": "",
-              "image": "shopify:\/\/shop_images\/toyota-supra-model-mockup.jpg",
+              "image": "shopify:\/\/shop_images\/20_1.png",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Unlock your Style: Patents, Gaming, Automotive and more.",
-              "title": "All New Tees",
-              "button_text": "Shop your Look",
-              "button_link": "shopify:\/\/collections\/all-tees",
+              "subheading": "Halloween Sitewide 20% Off",
+              "title": "Everything on Sale Until Halloween!",
+              "button_text": "Get Spooky!",
+              "button_link": "shopify:\/\/collections\/best-sellers",
               "apply_overlay": true
             }
           },
