@@ -418,7 +418,7 @@
           "announcement_bar_show_free_shipping_threshold": false,
           "background": "#1f1f1e",
           "text_color": "#ffffff",
-          "content": "Halloween Sitewide 20% Off Sale! Price Applied in Cart",
+          "content": "Black Friday Sitewide 20% Off Sale! Price Applied in Cart",
           "link": ""
         }
       },
@@ -1294,12 +1294,12 @@
             "type": "collection",
             "settings": {
               "collection": "",
-              "image": "shopify:\/\/shop_images\/20_1.png",
+              "image": "shopify:\/\/shop_images\/black-friday-in-chalk.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Halloween Sitewide 20% Off",
-              "title": "Everything on Sale Until Halloween!",
-              "button_text": "Get Spooky!",
+              "subheading": "Black Friday Sitewide 20% Off",
+              "title": "Everything on Sale for Black Friday!",
+              "button_text": "Get the Deals!",
               "button_link": "shopify:\/\/collections\/best-sellers",
               "apply_overlay": true
             }
