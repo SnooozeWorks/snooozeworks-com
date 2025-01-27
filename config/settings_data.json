@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "heading_color": "#1f1f1e",
@@ -45,12 +54,12 @@
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "45",
-    "share_image": "shopify:\/\/shop_images\/logomark.png",
+    "share_image": "shopify://shop_images/logomark.png",
     "social_facebook": "",
-    "social_twitter": "https:\/\/twitter.com\/snooozeworks",
+    "social_twitter": "https://twitter.com/snooozeworks",
     "social_pinterest": "",
-    "social_instagram": "https:\/\/instagram.com\/snooozeworks",
-    "social_amazon": "https:\/\/www.amazon.com\/handmade\/snooozeworks",
+    "social_instagram": "https://instagram.com/snooozeworks",
+    "social_amazon": "https://www.amazon.com/handmade/snooozeworks",
     "social_ebay": "",
     "social_vimeo": "",
     "social_tumblr": "",
@@ -58,9 +67,9 @@
     "social_linkedin": "",
     "social_snapchat": "",
     "social_fancy": "",
-    "favicon": "shopify:\/\/shop_images\/snooozeworks_square-red-png.png",
+    "favicon": "shopify://shop_images/snooozeworks_square-red-png.png",
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/snooozeworks_straight-red-png.png",
+    "checkout_logo_image": "shopify://shop_images/snooozeworks_straight-red-png.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
@@ -123,7 +132,7 @@
             "type": "text",
             "settings": {
               "title": "About the shop",
-              "content": "<p>SnooozeWorks is located in Dover, New Hampshire, USA. We strive to fulfill each order with a high-quality product that you can love for years to come. Each item is created by hand in our shop, with love and care. All under the watchful eye of our adorable shop puppy, <a href=\"https:\/\/www.instagram.com\/p\/Btz7HoDFLE1\/\" title=\"https:\/\/www.instagram.com\/p\/Btz7HoDFLE1\/\">Loki<\/a>.<\/p><p><\/p><p>If you have any questions, or concerns, please do not hesitate to <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a>!<\/p>",
+              "content": "<p>SnooozeWorks is located in Keene, New Hampshire, USA. We strive to fulfill each order with a high-quality product that you can love for years to come. Each item is created by hand in our shop, with love and care. </p><p>If you have any questions, or concerns, please do not hesitate to <a href=\"/pages/contact\" title=\"Contact\">contact us</a>!</p>",
               "show_social_media": false
             }
           }
@@ -200,7 +209,7 @@
         "type": "collection-footer",
         "settings": {
           "show_section": true,
-          "image": "shopify:\/\/shop_images\/TubeMockup.jpg",
+          "image": "shopify://shop_images/TubeMockup.jpg",
           "text_color": "#ffffff",
           "apply_overlay": true,
           "title": "",
@@ -240,7 +249,7 @@
           "show_only_for_visitors": true,
           "show_only_once": true,
           "title": "Pst... Do you like discounts?",
-          "content": "<p>Drop your email in the box below to subscribe to our mailing list. Get notified about sales, get discount codes, and find out about new products!<\/p><p>Plus, we'll send you a <strong>10% off discount code <\/strong>right away!<\/p>",
+          "content": "<p>Drop your email in the box below to subscribe to our mailing list. Get notified about sales, get discount codes, and find out about new products!</p><p>Plus, we'll send you a <strong>10% off discount code </strong>right away!</p>",
           "show_newsletter": true,
           "apparition_delay": 2
         }
@@ -262,7 +271,7 @@
               "push_image_2_url_text": "",
               "push_3_heading": "",
               "push_3_subheading": "",
-              "push_3_url": "shopify:\/\/collections\/best-selling-patents",
+              "push_3_url": "shopify://collections/best-selling-patents",
               "push_image_3_url_text": ""
             }
           },
@@ -367,7 +376,7 @@
         ],
         "settings": {
           "use_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/snooozeworks_light-logo.png",
+          "logo": "shopify://shop_images/snooozeworks_light-logo.png",
           "logo_max_width": 325,
           "mobile_logo_max_width": 200,
           "navigation_menu": "mega-menu",
@@ -383,12 +392,12 @@
         "type": "newsletter",
         "settings": {
           "section_size": "normal",
-          "image": "shopify:\/\/shop_images\/newsletter_Bg_1.jpg",
+          "image": "shopify://shop_images/newsletter_Bg_1.jpg",
           "text_color": "#ffffff",
           "button_color": "#000000",
           "subheading": "",
           "title": "Our Monthly Newsletter",
-          "content": "<p>Join our mailing list to get notified of new products, discount codes, various promotions, and some behind-the-scenes stuff. <\/p><p>You'll also get a 10% off code you can use immediately just for joining!<\/p>"
+          "content": "<p>Join our mailing list to get notified of new products, discount codes, various promotions, and some behind-the-scenes stuff. </p><p>You'll also get a 10% off code you can use immediately just for joining!</p>"
         }
       },
       "product-recommendations": {
@@ -418,7 +427,7 @@
           "announcement_bar_show_free_shipping_threshold": false,
           "background": "#1f1f1e",
           "text_color": "#ffffff",
-          "content": "Everything 20% off until April 15th!",
+          "content": "Everything 10% off until January 21st!",
           "link": ""
         }
       },
@@ -435,14 +444,14 @@
             "type": "question",
             "settings": {
               "title": "Can you guys print a custom product for me?",
-              "answer": "<p>We do not customize products, currently.<\/p>"
+              "answer": "<p>We do not customize products, currently.</p>"
             }
           },
           "1577553932751": {
             "type": "question",
             "settings": {
               "title": "The item I want is sold out, when will you have it again?",
-              "answer": "<p>If an item is showing as &#x27;Sold Out&#x27;, then it is usually temporarily out of stock. Generally, more of these are being made and the stock will replenish within 24-48 hours.<\/p><p><\/p><p>If an item or size is no longer visible, then it has been discontinued and will not be back in stock.<\/p>"
+              "answer": "<p>If an item is showing as &#x27;Sold Out&#x27;, then it is usually temporarily out of stock. Generally, more of these are being made and the stock will replenish within 24-48 hours.</p><p></p><p>If an item or size is no longer visible, then it has been discontinued and will not be back in stock.</p>"
             }
           },
           "page-faq-template-4": {
@@ -455,35 +464,35 @@
             "type": "question",
             "settings": {
               "title": "How can I check the status of my order?",
-              "answer": "<p>You can view your <a href=\"https:\/\/snooozeworks.com\/account\/login\" title=\"https:\/\/snooozeworks.com\/account\/login\">account<\/a> to check the status of your order, or you can use the &quot;Chat with us!&quot; button at the bottom right of this page. Simply follow the prompts through the chat to find out an up-to-date order status.<\/p>"
+              "answer": "<p>You can view your <a href=\"https://snooozeworks.com/account/login\" title=\"https://snooozeworks.com/account/login\">account</a> to check the status of your order, or you can use the &quot;Chat with us!&quot; button at the bottom right of this page. Simply follow the prompts through the chat to find out an up-to-date order status.</p>"
             }
           },
           "page-faq-template-5": {
             "type": "question",
             "settings": {
               "title": "What forms of payment do you accept?",
-              "answer": "<p>We accept all major credit cards, Amazon Pay, PayPal and you can Pay Later with Affirm.<\/p>"
+              "answer": "<p>We accept all major credit cards, Amazon Pay, PayPal and you can Pay Later with Affirm.</p>"
             }
           },
           "1577660392540": {
             "type": "question",
             "settings": {
               "title": "Can I cancel an order?",
-              "answer": "<p>Of course. If you&#x27;d like to cancel an order, you must contact us before the order ships. Once the order has shipped, you will have to go through a return process.<\/p>"
+              "answer": "<p>Of course. If you&#x27;d like to cancel an order, you must contact us before the order ships. Once the order has shipped, you will have to go through a return process.</p>"
             }
           },
           "1577660488185": {
             "type": "question",
             "settings": {
               "title": "Can I make changes to my order?",
-              "answer": "<p>If you&#x27;d like to make a change to your order, you&#x27;ll need to contact us before it ships. We cannot accommodate every request, but we&#x27;ll do our best to make the changes you request.<\/p><p>Once an order has been packaged or shipped, it is no longer possible to modify.<\/p>"
+              "answer": "<p>If you&#x27;d like to make a change to your order, you&#x27;ll need to contact us before it ships. We cannot accommodate every request, but we&#x27;ll do our best to make the changes you request.</p><p>Once an order has been packaged or shipped, it is no longer possible to modify.</p>"
             }
           },
           "page-faq-template-6": {
             "type": "question",
             "settings": {
               "title": "Do you sell gift cards?",
-              "answer": "<p>Yes! We introduced them in April of 2020! You can get one <a href=\"\/products\/gift-card-1\" title=\"$25 Gift Card\">here<\/a>!<\/p>"
+              "answer": "<p>Yes! We introduced them in April of 2020! You can get one <a href=\"/products/gift-card-1\" title=\"$25 Gift Card\">here</a>!</p>"
             }
           },
           "page-faq-template-7": {
@@ -496,21 +505,21 @@
             "type": "question",
             "settings": {
               "title": "Where do you ship to?",
-              "answer": "<p>We ship practically anywhere on the planet.<\/p>"
+              "answer": "<p>We ship practically anywhere on the planet.</p>"
             }
           },
           "1577290070814": {
             "type": "question",
             "settings": {
               "title": "How long does shipping take?",
-              "answer": "<p>All orders are shipped via USPS. Please allow 1-2 days for processing prior to shipment.<\/p><p><\/p><p><strong>Domestic Shipping (within the USA)<\/strong><\/p><p>  Priority Mail: 1-3 business days.<\/p><p>  First Class Mail: 2-5 business days.<\/p><p><\/p><p><strong>International Shipping (varies by country)<\/strong><\/p><p>  Standard International: 5-14 business days<\/p>"
+              "answer": "<p>All orders are shipped via USPS. Please allow 1-2 days for processing prior to shipment.</p><p></p><p><strong>Domestic Shipping (within the USA)</strong></p><p>  Priority Mail: 1-3 business days.</p><p>  First Class Mail: 2-5 business days.</p><p></p><p><strong>International Shipping (varies by country)</strong></p><p>  Standard International: 5-14 business days</p>"
             }
           },
           "1577290154995": {
             "type": "question",
             "settings": {
               "title": "Can I track my order?",
-              "answer": "<p>Of course! Every order we ship out is accompanied by a tracking number from USPS. Once your order ships, it will be emailed to you automatically. Please allow 24 hours for the link to update\/activate in the USPS system.<\/p><p>You can retrieve your tracking number by logging into your <a title=\"https:\/\/snooozeworks.com\/account\/login\" href=\"https:\/\/snooozeworks.com\/account\/login\">Account <\/a>and viewing your recent orders.<\/p>"
+              "answer": "<p>Of course! Every order we ship out is accompanied by a tracking number from USPS. Once your order ships, it will be emailed to you automatically. Please allow 24 hours for the link to update/activate in the USPS system.</p><p>You can retrieve your tracking number by logging into your <a title=\"https://snooozeworks.com/account/login\" href=\"https://snooozeworks.com/account/login\">Account </a>and viewing your recent orders.</p>"
             }
           },
           "1577290174409": {
@@ -523,14 +532,14 @@
             "type": "question",
             "settings": {
               "title": "100% Satisfaction Guarantee",
-              "answer": "<p>Our 100% Satisfaction Guarantee ensures that every item you purchase meets our high standards of quality. If you are not satified with your item, you can return it for a replacement or refund according to our return policy.<\/p>"
+              "answer": "<p>Our 100% Satisfaction Guarantee ensures that every item you purchase meets our high standards of quality. If you are not satified with your item, you can return it for a replacement or refund according to our return policy.</p>"
             }
           },
           "1577290169060": {
             "type": "question",
             "settings": {
               "title": "How do I return or exchange an order?",
-              "answer": "<p>If you need a return or exchange: please follow the instructions outlined <a href=\"\/pages\/returns\" title=\"Returns\">here<\/a>.<\/p><p><\/p><p>We do not refund shipping fees.<\/p>"
+              "answer": "<p>If you need a return or exchange: please follow the instructions outlined <a href=\"/pages/returns\" title=\"Returns\">here</a>.</p><p></p><p>We do not refund shipping fees.</p>"
             }
           },
           "page-faq-template-0": {
@@ -543,21 +552,21 @@
             "type": "question",
             "settings": {
               "title": "What is SnooozeWorks?",
-              "answer": "<p>We are a brand focused on creating, designing, and producing high-quality decor and accessories.<\/p>"
+              "answer": "<p>We are a brand focused on creating, designing, and producing high-quality decor and accessories.</p>"
             }
           },
           "page-faq-template-2": {
             "type": "question",
             "settings": {
               "title": "Where did the name come from?",
-              "answer": "<p>Snoooze began as an internet moniker, and gamertag.<\/p>"
+              "answer": "<p>Snoooze began as an internet moniker, and gamertag.</p>"
             }
           },
           "page-faq-template-3": {
             "type": "question",
             "settings": {
               "title": "Where are you located?",
-              "answer": "<p>We&#x27;re located in the small coastal town of Dover in New Hampshire, USA.<\/p>"
+              "answer": "<p>We&#x27;re located in the small coastal town of Dover in New Hampshire, USA.</p>"
             }
           },
           "1577290316224": {
@@ -570,7 +579,7 @@
             "type": "question",
             "settings": {
               "title": "Do you sell digital files of your posters?",
-              "answer": "<p>We currently don&#x27;t release any digital files of prints. We pride ourselves on providing the highest quality product we can start to finish, and we can&#x27;t do that if we aren&#x27;t printing it ourselves.<\/p>"
+              "answer": "<p>We currently don&#x27;t release any digital files of prints. We pride ourselves on providing the highest quality product we can start to finish, and we can&#x27;t do that if we aren&#x27;t printing it ourselves.</p>"
             }
           }
         },
@@ -598,8 +607,7 @@
           "1577290316224",
           "1577290327219"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "page-contact-template": {
         "type": "page-contact-template",
@@ -616,8 +624,7 @@
         "block_order": [
           "1577290697452"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "article-template": {
         "type": "article-template",
@@ -712,7 +719,7 @@
         "settings": {
           "section_size": "normal",
           "apply_overlay": true,
-          "image": "shopify:\/\/shop_images\/TubeMockup_1f66d240-9bab-4647-905a-624eae9c06d0.jpg"
+          "image": "shopify://shop_images/TubeMockup_1f66d240-9bab-4647-905a-624eae9c06d0.jpg"
         }
       },
       "1604945335f6874936": {
@@ -734,7 +741,7 @@
           "title": "Latest Blog Posts",
           "show_category": false,
           "show_excerpt": true,
-          "button_link": "shopify:\/\/blogs\/blog",
+          "button_link": "shopify://blogs/blog",
           "button_text": "View all articles"
         }
       },
@@ -792,8 +799,7 @@
       },
       "spacer": {
         "type": "spacer",
-        "settings": {
-        }
+        "settings": {}
       },
       "collection-limit-template": {
         "type": "collection-limit-template",
@@ -822,50 +828,50 @@
           "16337274257e2f4e22-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/sale.png",
+              "image": "shopify://shop_images/sale.png",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "Add a splash of color to your walls! Promo Applied Automatically!",
               "title": "20% off all Posters until the end of July!",
               "button_1_text": "Shop All",
-              "button_1_link": "shopify:\/\/collections\/patents",
+              "button_1_link": "shopify://collections/patents",
               "button_2_text": "Best Sellers",
-              "button_2_link": "shopify:\/\/collections\/best-selling-patents"
+              "button_2_link": "shopify://collections/best-selling-patents"
             }
           },
           "16337274257e2f4e22-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/t-shirts-hanging-on-rack.jpg",
+              "image": "shopify://shop_images/t-shirts-hanging-on-rack.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "Available in a variety of colors and sizes from S to 3XL!",
               "title": "Now Arriving... T-Shirts!",
               "button_1_text": "Shop Gaming",
-              "button_1_link": "shopify:\/\/collections\/gaming-tees",
+              "button_1_link": "shopify://collections/gaming-tees",
               "button_2_text": "Shop Patents",
-              "button_2_link": "shopify:\/\/collections\/patent-tees"
+              "button_2_link": "shopify://collections/patent-tees"
             }
           },
           "8d71b795-0e1a-4406-8849-6a038c25a722": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/get-together-fortnite-slide_a5fd0fa7-3333-451b-bcf3-b70ba07b07e8.jpg",
+              "image": "shopify://shop_images/get-together-fortnite-slide_a5fd0fa7-3333-451b-bcf3-b70ba07b07e8.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "Pop Culture Posters for a variety of Subjects",
               "title": "Available in sizes from 8x10 up to 24x36!",
               "button_1_text": "All Posters",
-              "button_1_link": "shopify:\/\/collections\/posters",
+              "button_1_link": "shopify://collections/posters",
               "button_2_text": "Best Sellers",
-              "button_2_link": "shopify:\/\/collections\/best-selling-posters"
+              "button_2_link": "shopify://collections/best-selling-posters"
             }
           },
           "862ee752-e4a1-4a77-9e45-451a58856a50": {
             "type": "image",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/thick-lush-green-forest.jpg",
+              "image": "shopify://shop_images/thick-lush-green-forest.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "For each order, we make a donation to plant a tree with One Tree Planted!",
@@ -899,7 +905,7 @@
         "settings": {
           "show_banner": true,
           "apply_overlay": true,
-          "banner_image": "shopify:\/\/shop_images\/blog_header.jpg",
+          "banner_image": "shopify://shop_images/blog_header.jpg",
           "banner_size": "small",
           "heading": "Branding",
           "subheading": "Join us for a quick recap of the history behind SnooozeWorks"
@@ -907,8 +913,7 @@
       },
       "page-content": {
         "type": "page-content",
-        "settings": {
-        }
+        "settings": {}
       },
       "resources-header": {
         "type": "resources-header",
@@ -918,7 +923,7 @@
             "settings": {
               "show_banner": true,
               "apply_overlay": true,
-              "banner_image": "shopify:\/\/shop_images\/self-serve-coffee-shop.jpg",
+              "banner_image": "shopify://shop_images/self-serve-coffee-shop.jpg",
               "banner_size": "normal",
               "heading": "Resources",
               "subheading": "Want to know what we use? Here you go!"
@@ -928,8 +933,7 @@
         "block_order": [
           "afb9dd56-bb59-4564-a822-e58e5bd6a1a1"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "resources-content": {
         "type": "resources-content",
@@ -939,7 +943,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Website",
-              "content": "<p><strong>Shopify - Storefront \/ Business Management<\/strong><\/p><p>Shopify provides a wonderful platform for operating our storefront at snooozeworks.com. It's highly customizable, provides detailed financial reports, analytics, and customer information. It provides the customers with an easy and secure way to purchase our products. In addition to all the benefits that come along with Shopify, they also provide full hosting included in the monthly price. It's a total package to get our website operating securely, it's the best option out there.\t<\/p>"
+              "content": "<p><strong>Shopify - Storefront / Business Management</strong></p><p>Shopify provides a wonderful platform for operating our storefront at snooozeworks.com. It's highly customizable, provides detailed financial reports, analytics, and customer information. It provides the customers with an easy and secure way to purchase our products. In addition to all the benefits that come along with Shopify, they also provide full hosting included in the monthly price. It's a total package to get our website operating securely, it's the best option out there.\t</p>"
             }
           },
           "dd5fc429-c915-48fd-8af1-a633d9c2cb04": {
@@ -947,7 +951,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Software Services",
-              "content": "<p><strong>Omnisend - Mailing List<\/strong><\/p><p>This is a new feature that we've been working on. We just introduced our newsletter, which right now is only available during checkout. OmniSend is a user-friendly and highly customizable mailing list service that gives us the options to send the right amount of emails to our subscribers. We didn't want to bombard people, so giving us the ability to limit our emails while still making them count was important.<\/p><p><\/p><p><strong>Dropbox - File Storage \/ Syncing<\/strong><\/p><p>Having access to all of our files is important, and Dropbox allows us to do that. No matter where we are in the world, we can access each and every version of our files quickly. It allows us to make changes on one computer, and them resume later on a different computer without having any extra steps in the middle. Equally as important is keeping a valuable backup of all our data. Each file is important, keeping them locally on a hard drive and in the cloud at Dropbox gives that extra bit of security.<br\/><br\/><strong>Google Analytics<\/strong><\/p><p>Advertising campaigns are boring. Let's be honest. Sifting through mountains of data, keywords, bid strategies, impressions, click-through-rates, conversion rates, can be quite mind-numbing. However, not much is more important to a business than properly utilizing an advertising budget. Google Analytics helps greatly in making quick work of analyzing your entire website, and advertising campaigns at the same time. <\/p>"
+              "content": "<p><strong>Omnisend - Mailing List</strong></p><p>This is a new feature that we've been working on. We just introduced our newsletter, which right now is only available during checkout. OmniSend is a user-friendly and highly customizable mailing list service that gives us the options to send the right amount of emails to our subscribers. We didn't want to bombard people, so giving us the ability to limit our emails while still making them count was important.</p><p></p><p><strong>Dropbox - File Storage / Syncing</strong></p><p>Having access to all of our files is important, and Dropbox allows us to do that. No matter where we are in the world, we can access each and every version of our files quickly. It allows us to make changes on one computer, and them resume later on a different computer without having any extra steps in the middle. Equally as important is keeping a valuable backup of all our data. Each file is important, keeping them locally on a hard drive and in the cloud at Dropbox gives that extra bit of security.<br/><br/><strong>Google Analytics</strong></p><p>Advertising campaigns are boring. Let's be honest. Sifting through mountains of data, keywords, bid strategies, impressions, click-through-rates, conversion rates, can be quite mind-numbing. However, not much is more important to a business than properly utilizing an advertising budget. Google Analytics helps greatly in making quick work of analyzing your entire website, and advertising campaigns at the same time. </p>"
             }
           },
           "49140a56-8b70-4782-911d-7d92d7bd14f5": {
@@ -955,7 +959,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Applications",
-              "content": "<p><strong>Adobe Creative Suite - Product and Graphic Design<\/strong><\/p><p>Illustrator is fun. It's brilliantly simple, and insanely complex, at the same time. Nearly all of our products are finished in Illustrator. It's also used widely for our website design, any graphics you see in newsletters, or on social media are usually created in Illustrator. It's the most utilized tool that we have in the box.\tIn addition to that, all of our product photography, mockups, and a small amount of our website images are created, edited, or finished in Photoshop. The software has been around for decades, and it's so intuitive and easy to use that it's a no doubt it's the most popular photo-editing software on the market.        <br\/><br\/><strong>Microsoft Excel - Research and Documentation<\/strong><\/p><p>Why else does anyone use Excel? It's great for compiling data on search keywords, financials, advertisement campaigns, and more. The ability to keep detailed records is an important aspect of any business, and Excel makes that fairly easy for us to do.<\/p>"
+              "content": "<p><strong>Adobe Creative Suite - Product and Graphic Design</strong></p><p>Illustrator is fun. It's brilliantly simple, and insanely complex, at the same time. Nearly all of our products are finished in Illustrator. It's also used widely for our website design, any graphics you see in newsletters, or on social media are usually created in Illustrator. It's the most utilized tool that we have in the box.\tIn addition to that, all of our product photography, mockups, and a small amount of our website images are created, edited, or finished in Photoshop. The software has been around for decades, and it's so intuitive and easy to use that it's a no doubt it's the most popular photo-editing software on the market.        <br/><br/><strong>Microsoft Excel - Research and Documentation</strong></p><p>Why else does anyone use Excel? It's great for compiling data on search keywords, financials, advertisement campaigns, and more. The ability to keep detailed records is an important aspect of any business, and Excel makes that fairly easy for us to do.</p>"
             }
           },
           "714ca4ee-9fcd-4c5c-a468-615c538f4d97": {
@@ -963,7 +967,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Hardware",
-              "content": "<p><strong>Custom-Built Computer - Primary Workhorse<\/strong><\/p><p>After spending years on Apple computers, I grew tired of constantly having to replace entire computers when they became a year or two old. I switched to PC, built my own computer, and now it's as easy as replacing a single part when I need a little bit more speed or power. Currently, the main computer in the office uses an Intel i7-7700k, EVGA GTX 1080ti FTW3, 32 GB of 3000Ghz RAM from Corsair.<br\/><br\/><strong>Microsoft Surfacebook 2 - Secondary \/ Travel Computer<\/strong><\/p><p>This computer has been an invaluable resource throughout the last year since it's release. Previously, I used a tablet from Wacom to digitally doodle. Now, in addition to having immense power to do graphic design tasks and more, it allows me to flip it around and draw directly onto my computer immediately. <br\/><br\/><strong>Canon TA-20<\/strong><\/p><p>The Canon TA-20 is a recent addition to the printer market, and oh boy, it's a beast. All of the prints you receive are printed on this machine. Using the Lucia Ink System, and printing up to 24 inches wide, this printer crushes everything we throw at it. It does it quickly and with absolutely premium quality.<br\/><\/p><p><strong>Sawgrass SG400 - Sublimation Printer<\/strong><\/p><p>The SG400 has revolutionized our Coffee Mug creation process. The premier sublimation printer for smaller commercial commerce, the SG400 creates some highly-detailed, spot-color accurate sublimation prints that have taken our Mugs to the next level.<br\/><\/p>"
+              "content": "<p><strong>Custom-Built Computer - Primary Workhorse</strong></p><p>After spending years on Apple computers, I grew tired of constantly having to replace entire computers when they became a year or two old. I switched to PC, built my own computer, and now it's as easy as replacing a single part when I need a little bit more speed or power. Currently, the main computer in the office uses an Intel i7-7700k, EVGA GTX 1080ti FTW3, 32 GB of 3000Ghz RAM from Corsair.<br/><br/><strong>Microsoft Surfacebook 2 - Secondary / Travel Computer</strong></p><p>This computer has been an invaluable resource throughout the last year since it's release. Previously, I used a tablet from Wacom to digitally doodle. Now, in addition to having immense power to do graphic design tasks and more, it allows me to flip it around and draw directly onto my computer immediately. <br/><br/><strong>Canon TA-20</strong></p><p>The Canon TA-20 is a recent addition to the printer market, and oh boy, it's a beast. All of the prints you receive are printed on this machine. Using the Lucia Ink System, and printing up to 24 inches wide, this printer crushes everything we throw at it. It does it quickly and with absolutely premium quality.<br/></p><p><strong>Sawgrass SG400 - Sublimation Printer</strong></p><p>The SG400 has revolutionized our Coffee Mug creation process. The premier sublimation printer for smaller commercial commerce, the SG400 creates some highly-detailed, spot-color accurate sublimation prints that have taken our Mugs to the next level.<br/></p>"
             }
           }
         },
@@ -973,8 +977,7 @@
           "49140a56-8b70-4782-911d-7d92d7bd14f5",
           "714ca4ee-9fcd-4c5c-a468-615c538f4d97"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "story-header": {
         "type": "story-header",
@@ -984,7 +987,7 @@
             "settings": {
               "show_banner": true,
               "apply_overlay": true,
-              "banner_image": "shopify:\/\/shop_images\/blog_header.jpg",
+              "banner_image": "shopify://shop_images/blog_header.jpg",
               "banner_size": "normal",
               "heading": "Our Story",
               "subheading": "A brief tale of SnooozeWorks"
@@ -994,8 +997,7 @@
         "block_order": [
           "5c5dc7ca-38f5-487b-8a68-671b9eaf230e"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "story-content": {
         "type": "story-content",
@@ -1005,7 +1007,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "The Beginning",
-              "content": "<p>It's been four years since SnooozeWorks was started as a side hustle and it's morphed into something so much more -- granting opportunities for incredible personal, professional, and spiritual growth. My name is Daniel, and I started SnooozeWorks in late-2016 as a creative outlet to add a little self-fulfillment to my life. I was a Junior in college at the time, a late bloomer as they say, and needed to find a little happiness in what I was pursuing as a career. The early designs that I created before opening, or considering opening, SnooozeWorks helped me build a style, and the emotional uplift I received from finishing a piece let me know this is what I wanted to be doing with my life.<br\/><br\/>It started with a single poster design that's transformed into into almost 700 products across a multitude of types and styles. Throughout the first two years,  I worked full-time during the day, in addition to attending college full-time in pursuit of a Bachelor's degree. It was a lot of late nights and early mornings designing, printing, making, attending to customer service, taking care of finances. Crazy long work weeks, but SnooozeWorks was my reprieve. It was my passion, and it felt like I was living in a dream every time I heard the little 'ding' of an order being placed.<br\/><\/p>"
+              "content": "<p>It's been four years since SnooozeWorks was started as a side hustle and it's morphed into something so much more -- granting opportunities for incredible personal, professional, and spiritual growth. My name is Daniel, and I started SnooozeWorks in late-2016 as a creative outlet to add a little self-fulfillment to my life. I was a Junior in college at the time, a late bloomer as they say, and needed to find a little happiness in what I was pursuing as a career. The early designs that I created before opening, or considering opening, SnooozeWorks helped me build a style, and the emotional uplift I received from finishing a piece let me know this is what I wanted to be doing with my life.<br/><br/>It started with a single poster design that's transformed into into almost 700 products across a multitude of types and styles. Throughout the first two years,  I worked full-time during the day, in addition to attending college full-time in pursuit of a Bachelor's degree. It was a lot of late nights and early mornings designing, printing, making, attending to customer service, taking care of finances. Crazy long work weeks, but SnooozeWorks was my reprieve. It was my passion, and it felt like I was living in a dream every time I heard the little 'ding' of an order being placed.<br/></p>"
             }
           },
           "79ae4c80-236c-4489-ac26-4f243d13c12a": {
@@ -1013,7 +1015,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Going Full-Time",
-              "content": "<p>Eventually, I decided to take this passion, and double down. It was time to put my full focus into this business. It was a risk, but it was worth it. Taking the forty hours from my day job and putting them into SnooozeWorks allowed me to add product lines, redesign storefronts and the website, and expanding the amount of products that we could sell.<\/p><p>None of this would be possible without the help of those around us, particularly the families and friends who listen to our ramblings and are the first to see things we're working on. The shop puppy, Loki, and two fur-babies, Slugger and Baxter, are equally helpful in listening while we pace around and think out-loud at all hours. The support around SnooozeWorks is crazy, and it's made diving head first into this so much better.<\/p>"
+              "content": "<p>Eventually, I decided to take this passion, and double down. It was time to put my full focus into this business. It was a risk, but it was worth it. Taking the forty hours from my day job and putting them into SnooozeWorks allowed me to add product lines, redesign storefronts and the website, and expanding the amount of products that we could sell.</p><p>None of this would be possible without the help of those around us, particularly the families and friends who listen to our ramblings and are the first to see things we're working on. The shop puppy, Loki, and two fur-babies, Slugger and Baxter, are equally helpful in listening while we pace around and think out-loud at all hours. The support around SnooozeWorks is crazy, and it's made diving head first into this so much better.</p>"
             }
           },
           "412560e1-f2ca-43ea-9176-628948c6ff28": {
@@ -1021,7 +1023,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Moving Forward",
-              "content": "<p>It's 2021! We're well into the new year and SnooozeWorks has lots of plans! The year started with some new equipment, namely the Canon TA-20 printer and the Sawgrass SG400 sublimation printer. These two have revolutionized how efficiently we can work, while providing an unbelievable boost to our overall product quality. Since then, we've added new HUGE poster sizes, all the way up to 24\"x36\", premium vinyl stickers, tons of new designs and gift cards. We have some new products in the pipeline, and maybe a few more surprises along the way!<br\/><br\/>Rest assured, we have a ton of stuff planned for this year and beyond! With your help and support, we look forward to crushing the start of the Roaring Twenties! If you'd like to keep up with all the new stuff we're coming up with, please feel free to join our Newsletter. It goes out once per month, that's the only email you'll ever get from us! Each monthly newsletter includes a little promo code for you, too!<br\/><\/p>"
+              "content": "<p>It's 2021! We're well into the new year and SnooozeWorks has lots of plans! The year started with some new equipment, namely the Canon TA-20 printer and the Sawgrass SG400 sublimation printer. These two have revolutionized how efficiently we can work, while providing an unbelievable boost to our overall product quality. Since then, we've added new HUGE poster sizes, all the way up to 24\"x36\", premium vinyl stickers, tons of new designs and gift cards. We have some new products in the pipeline, and maybe a few more surprises along the way!<br/><br/>Rest assured, we have a ton of stuff planned for this year and beyond! With your help and support, we look forward to crushing the start of the Roaring Twenties! If you'd like to keep up with all the new stuff we're coming up with, please feel free to join our Newsletter. It goes out once per month, that's the only email you'll ever get from us! Each monthly newsletter includes a little promo code for you, too!<br/></p>"
             }
           }
         },
@@ -1030,8 +1032,7 @@
           "79ae4c80-236c-4489-ac26-4f243d13c12a",
           "412560e1-f2ca-43ea-9176-628948c6ff28"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "returns-header": {
         "type": "returns-header",
@@ -1041,7 +1042,7 @@
             "settings": {
               "show_banner": true,
               "apply_overlay": true,
-              "banner_image": "shopify:\/\/shop_images\/returns_header.jpg",
+              "banner_image": "shopify://shop_images/returns_header.jpg",
               "banner_size": "normal",
               "heading": "Returns",
               "subheading": "Returns are Easy. Lets take care of it."
@@ -1051,8 +1052,7 @@
         "block_order": [
           "c7b11d83-1de3-405d-9718-4661948fd9ef"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "returns-content": {
         "type": "returns-content",
@@ -1062,7 +1062,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Have an issue?",
-              "content": "<p>We want you to be 100% satisfied with your purchase. Items in new condition can be returned or exchanged within 30 days of delivery. Please note that original shipping charges are non-refundable. If there was an error on our end (ie. damaged, lost in transit, etc), we'll make things right and your original shipping costs may be refundable.<br\/><br\/>If you need to send something back to us, follow the steps outlined below.<\/p>"
+              "content": "<p>We want you to be 100% satisfied with your purchase. Items in new condition can be returned or exchanged within 30 days of delivery. Please note that original shipping charges are non-refundable. If there was an error on our end (ie. damaged, lost in transit, etc), we'll make things right and your original shipping costs may be refundable.<br/><br/>If you need to send something back to us, follow the steps outlined below.</p>"
             }
           },
           "170e7d61-660e-4487-82e8-ba7c24d9a230": {
@@ -1070,7 +1070,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Return Process",
-              "content": "<p>Please <a href=\"https:\/\/snooozeworks.com\/pages\/contact\">contact us<\/a> to arrange your exchange or return. Once that's done, follow the instructions below ...<br\/><\/p><p>Package up the items safely, preferably in the original packaging. Include the packing slip that came with the order, or print a new one from your order details. <\/p><p><\/p><p>Mail your return to:<br\/><\/p><p>SnooozeWorks<br\/>Attn: Returns\/Exchanges<br\/>2 Dover Street, Unit 301<br\/>Dover, NH 03820<br\/>          <br\/>Once your return is received, your new item(s) will be shipped to you at no additional cost, or we will issue you a refund.<br\/>        <\/p>"
+              "content": "<p>Please <a href=\"https://snooozeworks.com/pages/contact\">contact us</a> to arrange your exchange or return. Once that's done, follow the instructions below ...<br/></p><p>Package up the items safely, preferably in the original packaging. Include the packing slip that came with the order, or print a new one from your order details. </p><p></p><p>Mail your return to:<br/></p><p>SnooozeWorks<br/>Attn: Returns/Exchanges<br/>2 Dover Street, Unit 301<br/>Dover, NH 03820<br/>          <br/>Once your return is received, your new item(s) will be shipped to you at no additional cost, or we will issue you a refund.<br/>        </p>"
             }
           }
         },
@@ -1078,8 +1078,7 @@
           "f8989362-6627-42ba-afee-c3a70adf0294",
           "170e7d61-660e-4487-82e8-ba7c24d9a230"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "contact-header": {
         "type": "contact-header",
@@ -1089,7 +1088,7 @@
             "settings": {
               "show_banner": true,
               "apply_overlay": true,
-              "banner_image": "shopify:\/\/shop_images\/contact_header.jpg",
+              "banner_image": "shopify://shop_images/contact_header.jpg",
               "banner_size": "normal",
               "heading": "Contact Us",
               "subheading": "Customer Service Hours: 9am through 6pm, Monday to Saturday"
@@ -1099,8 +1098,7 @@
         "block_order": [
           "3beda4a7-a947-488c-a0d8-aca278373df9"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "faq-header": {
         "type": "faq-header",
@@ -1110,7 +1108,7 @@
             "settings": {
               "show_banner": true,
               "apply_overlay": true,
-              "banner_image": "shopify:\/\/shop_images\/faq_header.jpg",
+              "banner_image": "shopify://shop_images/faq_header.jpg",
               "banner_size": "normal",
               "heading": "FAQ",
               "subheading": "Got a question? Lets figure it out!"
@@ -1120,8 +1118,7 @@
         "block_order": [
           "b18f5c6c-1685-4057-b9f4-bb1267b72b51"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "accounts-header": {
         "type": "accounts-header",
@@ -1131,7 +1128,7 @@
             "settings": {
               "show_banner": true,
               "apply_overlay": true,
-              "banner_image": "shopify:\/\/shop_images\/contact_header_5ef331db-6b8a-4ffe-a878-22a932320e14.jpg",
+              "banner_image": "shopify://shop_images/contact_header_5ef331db-6b8a-4ffe-a878-22a932320e14.jpg",
               "banner_size": "normal"
             }
           }
@@ -1139,8 +1136,7 @@
         "block_order": [
           "cb55b602-5ad1-42c7-8f17-4f7a026e575e"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "1634016111dba72e6a": {
         "type": "featured-collections",
@@ -1177,7 +1173,7 @@
             "settings": {
               "show_banner": true,
               "apply_overlay": true,
-              "banner_image": "shopify:\/\/shop_images\/cart-14134.jpg",
+              "banner_image": "shopify://shop_images/cart-14134.jpg",
               "banner_size": "small",
               "heading": "Shopping Cart",
               "subheading": "Almost there! One more step and it's all yours!"
@@ -1187,19 +1183,18 @@
         "block_order": [
           "dcc9d5c6-873a-4d39-8813-38917d7ec08d"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "newsletter": {
         "type": "newsletter",
         "settings": {
           "section_size": "normal",
-          "image": "shopify:\/\/shop_images\/blog_header.jpg",
+          "image": "shopify://shop_images/blog_header.jpg",
           "text_color": "#ffffff",
           "button_color": "#000000",
           "subheading": "",
           "title": "Our Monthly Newsletter",
-          "content": "<p>Join our mailing list to get notified of new products, discount codes, various promotions, and some behind-the-scenes stuff.<br\/><\/p><p>You'll also get a 10% off code you can use immediately just for joining!<\/p>"
+          "content": "<p>Join our mailing list to get notified of new products, discount codes, various promotions, and some behind-the-scenes stuff.<br/></p><p>You'll also get a 10% off code you can use immediately just for joining!</p>"
         }
       },
       "brand-colors": {
@@ -1218,8 +1213,8 @@
         "settings": {
           "show_section": true,
           "title": "Logos",
-          "primary": "shopify:\/\/shop_images\/social-media-logo.jpg",
-          "alternate": "shopify:\/\/shop_images\/social-media-logo.jpg"
+          "primary": "shopify://shop_images/social-media-logo.jpg",
+          "alternate": "shopify://shop_images/social-media-logo.jpg"
         }
       },
       "brand-typography": {
@@ -1239,7 +1234,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Section Header",
-              "content": "<p>Use this text area to tell your story.<\/p>"
+              "content": "<p>Use this text area to tell your story.</p>"
             }
           },
           "5fad56c2-1ba3-422f-89c5-96e9d1d31d04": {
@@ -1247,7 +1242,7 @@
             "settings": {
               "background": "#a33d3d",
               "title": "This Is My Test Page",
-              "content": "<p>dfadfadfafadf<\/p>"
+              "content": "<p>dfadfadfafadf</p>"
             }
           },
           "80da1908-4751-4ae9-b136-59dfc0d3754d": {
@@ -1255,7 +1250,7 @@
             "settings": {
               "background": "#ffffff",
               "title": "Section Header",
-              "content": "<p>Use this text area to tell your story.<\/p>"
+              "content": "<p>Use this text area to tell your story.</p>"
             }
           }
         },
@@ -1264,8 +1259,7 @@
           "5fad56c2-1ba3-422f-89c5-96e9d1d31d04",
           "80da1908-4751-4ae9-b136-59dfc0d3754d"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "judge": {
         "type": "judge",
@@ -1285,7 +1279,7 @@
               "subheading": "Take to the Skies: Lockheed, Boeing, NASA aircraft patents, available now!",
               "title": "Aviation Patents",
               "button_text": "3.. 2.. 1... lift off!",
-              "button_link": "shopify:\/\/collections\/aviation-collection",
+              "button_link": "shopify://collections/aviation-collection",
               "apply_overlay": true
             }
           },
@@ -1293,13 +1287,13 @@
             "type": "collection",
             "settings": {
               "collection": "",
-              "image": "shopify:\/\/shop_images\/sale-sign-on-angled-pink-gray-background.jpg",
+              "image": "shopify://shop_images/sale-sign-on-angled-pink-gray-background.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Flash Sale Sitewide 20% Off",
-              "title": "Everything on Sale for until April 15th!",
+              "subheading": "Flash Sale Sitewide 10% Off",
+              "title": "Everything on Sale for unil January 31st!",
               "button_text": "Get the Deals!",
-              "button_link": "shopify:\/\/collections\/best-sellers",
+              "button_link": "shopify://collections/best-sellers",
               "apply_overlay": true
             }
           },
@@ -1376,34 +1370,14 @@
     ],
     "blocks": {
       "15573056287721514228": {
-        "type": "shopify:\/\/apps\/json-ld-for-seo\/blocks\/app-embed\/3fcb4f45-bdde-43fd-84ae-8006cdcd1028",
+        "type": "shopify://apps/json-ld-for-seo/blocks/app-embed/3fcb4f45-bdde-43fd-84ae-8006cdcd1028",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "5134484470793087125": {
-        "type": "shopify:\/\/apps\/vitals-all-in-one-marketing\/blocks\/app-embed\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
-        "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "3824936769257688723": {
-        "type": "shopify:\/\/apps\/sami-product-labels-badges\/blocks\/app-embed-block\/b9b44663-5d51-4be1-8104-faedd68da8c5",
+        "type": "shopify://apps/sami-product-labels-badges/blocks/app-embed-block/b9b44663-5d51-4be1-8104-faedd68da8c5",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
-        "settings": {
-          "button_color": "#282828",
-          "button_icon": "chat_bubble",
-          "button_text": "no_text",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": "👋 Hi, let us know what you need! We're happy to help!"
-        }
+        "settings": {}
       }
     }
   },
@@ -1501,7 +1475,7 @@
             "footer-2": {
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               },
               "type": "newsletter"
             },
@@ -1515,7 +1489,7 @@
               "settings": {
                 "title": "About the shop",
                 "show_social_media": true,
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
               },
               "type": "text"
             }
@@ -1583,7 +1557,7 @@
             "text_color": "#ffffff",
             "apply_overlay": true,
             "title": "Our story",
-            "content": "<p>Add your own custom content to explain your processes...<\/p>",
+            "content": "<p>Add your own custom content to explain your processes...</p>",
             "show_section": false
           },
           "type": "collection-footer"
@@ -1627,7 +1601,7 @@
                 "apply_overlay": true,
                 "title": "2002",
                 "subheading": "Sub-heading",
-                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+                "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
               },
               "type": "item"
             },
@@ -1637,7 +1611,7 @@
                 "apply_overlay": true,
                 "title": "2001",
                 "subheading": "Sub-heading",
-                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+                "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
               },
               "type": "item"
             },
@@ -1647,7 +1621,7 @@
                 "apply_overlay": true,
                 "title": "2000",
                 "subheading": "Sub-heading",
-                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+                "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
               },
               "type": "item"
             }
@@ -1893,7 +1867,7 @@
             "footer-2": {
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               },
               "type": "newsletter"
             },
@@ -1907,7 +1881,7 @@
               "settings": {
                 "title": "About the shop",
                 "show_social_media": true,
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
               },
               "type": "text"
             }
@@ -1975,7 +1949,7 @@
             "text_color": "#ffffff",
             "apply_overlay": true,
             "title": "Our story",
-            "content": "<p>Add your own custom content to explain your processes...<\/p>",
+            "content": "<p>Add your own custom content to explain your processes...</p>",
             "show_section": false
           },
           "type": "collection-footer"
@@ -2019,7 +1993,7 @@
                 "apply_overlay": true,
                 "title": "2002",
                 "subheading": "Sub-heading",
-                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+                "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
               },
               "type": "item"
             },
@@ -2029,7 +2003,7 @@
                 "apply_overlay": true,
                 "title": "2001",
                 "subheading": "Sub-heading",
-                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+                "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
               },
               "type": "item"
             },
@@ -2039,7 +2013,7 @@
                 "apply_overlay": true,
                 "title": "2000",
                 "subheading": "Sub-heading",
-                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+                "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
               },
               "type": "item"
             }
@@ -2285,7 +2259,7 @@
             "footer-2": {
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               },
               "type": "newsletter"
             },
@@ -2299,7 +2273,7 @@
               "settings": {
                 "title": "About the shop",
                 "show_social_media": true,
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
               },
               "type": "text"
             }
@@ -2367,7 +2341,7 @@
             "text_color": "#ffffff",
             "apply_overlay": true,
             "title": "Our story",
-            "content": "<p>Add your own custom content to explain your processes...<\/p>",
+            "content": "<p>Add your own custom content to explain your processes...</p>",
             "show_section": false
           },
           "type": "collection-footer"
@@ -2411,7 +2385,7 @@
                 "apply_overlay": true,
                 "title": "2002",
                 "subheading": "Sub-heading",
-                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+                "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
               },
               "type": "item"
             },
@@ -2421,7 +2395,7 @@
                 "apply_overlay": true,
                 "title": "2001",
                 "subheading": "Sub-heading",
-                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+                "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
               },
               "type": "item"
             },
@@ -2431,7 +2405,7 @@
                 "apply_overlay": true,
                 "title": "2000",
                 "subheading": "Sub-heading",
-                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+                "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
               },
               "type": "item"
             }
