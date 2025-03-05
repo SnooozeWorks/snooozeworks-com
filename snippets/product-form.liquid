@@ -310,9 +310,11 @@ for size, we use it to display a size chart (if applicable)
 
   {%- endif -%}
 {%- endform -%}
-
+                    
+{% comment %}
     <div class="timer_title"><h2>Delivery Estimate</h2></div>    
     <div id="visual_timer_wrapper"></div>
+{% endcomment %}
 
 {%- if color_chart_page != empty and product.type == 'Decals' -%}
   {%- comment -%}If we have a size chart we capture the modal content (it must be displayed outside the form for proper positioning){%- endcomment -%}
