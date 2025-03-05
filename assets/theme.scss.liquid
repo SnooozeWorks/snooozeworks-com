@@ -11324,7 +11324,15 @@ input[type="file"] {
   text-align: center;
 }
 
+.shopify-payment-button__more-options {
+  @extend .Link, .Link--underline;
+  width: auto;
+  line-height: normal;
 
+  &[aria-hidden="false"] {
+    display: none;
+  }
+}
 
 .shopify-payment-button__more-options:hover:not([disabled]) {
   text-decoration: none;
