@@ -427,7 +427,7 @@
           "announcement_bar_show_free_shipping_threshold": false,
           "background": "#1f1f1e",
           "text_color": "#ffffff",
-          "content": "Everything 10% off until January 31st!",
+          "content": "Everything 40% off for a limited time!",
           "link": ""
         }
       },
@@ -1290,8 +1290,8 @@
               "image": "shopify://shop_images/sale-sign-on-angled-pink-gray-background.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Flash Sale Sitewide 10% Off",
-              "title": "Everything on Sale for unil January 31st!",
+              "subheading": "Flash Sale Sitewide 40% Off",
+              "title": "Everything on sale for a limited time!",
               "button_text": "Get the Deals!",
               "button_link": "shopify://collections/best-sellers",
               "apply_overlay": true
