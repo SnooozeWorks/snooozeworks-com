@@ -33,6 +33,8 @@
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
   <header class="SectionHeader SectionHeader--center">
     
+    {%- if section.settings.show_collection_info and collection.all_products_count > 0 -%}
+      {%- if section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
         <div class="FlexboxIeFix">
         <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})">
           <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
@@ -46,16 +48,9 @@
 
           <div class="Container">
             <div class="SectionHeader SectionHeader--center">
-                {%- if collection != empty -%}
-                  <h2 class="SectionHeader__Heading Heading u-h1">{{ section.blocks.first.settings.title | default: collection.title }}</h2>
-                {%- else -%}
-                  <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
-                {%- endif -%}
-              
-                {%- if section.settings.title != blank -%}
-                  <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
-          {%- endif -%}
-            {%- if collection.description != blank -%}
+              <h1 class="SectionHeader__Heading Heading collection-h1" style="letter-spacing: 2px; text-transform: uppercase; font-weight: 700;">{{ collection.title }}</h1>
+
+              {%- if collection.description != blank -%}
                 <div class="SectionHeader__Description Rte">
                   {{- collection.description -}}
                 </div>
@@ -64,7 +59,22 @@
           </div>
         </header>
         </div>
+      {%- else -%}
+        <header class="PageHeader">
+          <div class="Container">
+            <div class="SectionHeader SectionHeader--center">
+              <h1 class="SectionHeader__Heading Heading u-h1">{{ collection.title }}</h1>
 
+              {%- if collection.description != blank -%}
+                <div class="SectionHeader__Description Rte">
+                  {{- collection.description -}}
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </header>
+      {%- endif -%}
+    {%- endif -%}
     
     <div class="Container">
 
