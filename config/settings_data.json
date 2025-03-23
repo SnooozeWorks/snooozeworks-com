@@ -165,6 +165,9 @@
         ],
         "settings": {
           "title": "Take a peek at some of our best selling products",
+          "show_collection_image": true,
+          "apply_overlay": true,
+          "collection_image_size": "normal",
           "layout_mode": "grid",
           "show_product_info": true,
           "show_vendor": false,
@@ -778,6 +781,9 @@
         ],
         "settings": {
           "title": "All-new Horror-themed Patent Posters",
+          "show_collection_image": true,
+          "apply_overlay": true,
+          "collection_image_size": "small",
           "layout_mode": "carousel",
           "show_product_info": true,
           "show_vendor": false,
