@@ -769,7 +769,7 @@
               "collection": "horror-patents",
               "title": "Our Favorite Horror Patents",
               "grid_items_count": 8,
-              "button_text": ""
+              "button_text": "See more"
             }
           }
         },
@@ -1228,14 +1228,26 @@
           "show_section": true,
           "heading": "Customer Reviews"
         }
+      },
+      "custom_html_HFDzUW": {
+        "type": "custom-html",
+        "custom_css": [
+          "section {padding-top: 0; padding-bottom: 0;}"
+        ],
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "html": "<hr>"
+        }
       }
     },
     "content_for_index": [
       "0919918a-45c0-4b0c-8afc-5d9111159f48",
       "16333964471f320cc9",
-      "1577237689645",
+      "custom_html_HFDzUW",
       "1604945335f6874936",
-      "featured-collections"
+      "featured-collections",
+      "1577237689645"
     ],
     "blocks": {
       "15573056287721514228": {
