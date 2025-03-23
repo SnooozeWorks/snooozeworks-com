@@ -1232,7 +1232,7 @@
       "custom_html_HFDzUW": {
         "type": "custom-html",
         "custom_css": [
-          "section {padding-top: 0; padding-bottom: 0;}"
+          ".Section Section--spacingNormal {margin-top: 0px; margin-bottom: 0px;}"
         ],
         "settings": {
           "subheading": "",
