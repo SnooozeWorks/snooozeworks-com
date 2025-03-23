@@ -33,8 +33,7 @@
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
   <header class="SectionHeader SectionHeader--center">
     
-    {%- if section.settings.show_collection_info and collection.all_products_count > 0 -%}
-
+      {%- if section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
         <div class="FlexboxIeFix">
         <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})">
           <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
@@ -73,8 +72,7 @@
             </div>
           </div>
         </header>
-
-    {%- endif -%}
+      {%- endif -%}
     
     <div class="Container">
 
