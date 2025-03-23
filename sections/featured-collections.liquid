@@ -23,7 +23,7 @@
 {%- assign collection.title = section.settings.collection -%}
 
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
-<div class="FlexboxIeFix">
+      <div class="FlexboxIeFix">
         <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})">
           <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
                data-optimumx="1.2"
@@ -36,7 +36,7 @@
 
           <div class="Container">
             <div class="SectionHeader SectionHeader--center">
-              <h1 class="SectionHeader__Heading Heading collection-h1" style="letter-spacing: 2px; text-transform: uppercase; font-weight: 700;">{{ collection.title }}</h1>
+              <h2 class="SectionHeader__Heading Heading collection-h1" style="letter-spacing: 2px; text-transform: uppercase; font-weight: 700;">{{ collection.title }}</h2>
 
               {%- if collection.description != blank -%}
                 <div class="SectionHeader__Description Rte">
@@ -46,7 +46,7 @@
             </div>
           </div>
         </header>
-        </div>
+      </div>
 </section>
     
 <div class="Container">
