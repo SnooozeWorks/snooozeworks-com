@@ -158,21 +158,10 @@
               "grid_items_count": 8,
               "button_text": ""
             }
-          },
-          "1eec6347-0ad8-4b49-8611-b8bdeb82e545": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "our-favorite-patents",
-              "title": "",
-              "grid_items_count": 8,
-              "button_text": "View all products"
-            }
           }
         },
         "block_order": [
-          "featured-collection-0",
-          "1eec6347-0ad8-4b49-8611-b8bdeb82e545"
+          "featured-collection-0"
         ],
         "settings": {
           "title": "Take a peek at some of our best selling products",
@@ -822,84 +811,6 @@
           "grid_desktop_items_per_row": 4
         }
       },
-      "16337274257e2f4e22": {
-        "type": "slideshow",
-        "blocks": {
-          "16337274257e2f4e22-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/sale.png",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "Add a splash of color to your walls! Promo Applied Automatically!",
-              "title": "20% off all Posters until the end of July!",
-              "button_1_text": "Shop All",
-              "button_1_link": "shopify://collections/patents",
-              "button_2_text": "Best Sellers",
-              "button_2_link": "shopify://collections/best-selling-patents"
-            }
-          },
-          "16337274257e2f4e22-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/t-shirts-hanging-on-rack.jpg",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "Available in a variety of colors and sizes from S to 3XL!",
-              "title": "Now Arriving... T-Shirts!",
-              "button_1_text": "Shop Gaming",
-              "button_1_link": "shopify://collections/gaming-tees",
-              "button_2_text": "Shop Patents",
-              "button_2_link": "shopify://collections/patent-tees"
-            }
-          },
-          "8d71b795-0e1a-4406-8849-6a038c25a722": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/get-together-fortnite-slide_a5fd0fa7-3333-451b-bcf3-b70ba07b07e8.jpg",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "Pop Culture Posters for a variety of Subjects",
-              "title": "Available in sizes from 8x10 up to 24x36!",
-              "button_1_text": "All Posters",
-              "button_1_link": "shopify://collections/posters",
-              "button_2_text": "Best Sellers",
-              "button_2_link": "shopify://collections/best-selling-posters"
-            }
-          },
-          "862ee752-e4a1-4a77-9e45-451a58856a50": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "image": "shopify://shop_images/thick-lush-green-forest.jpg",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "For each order, we make a donation to plant a tree with One Tree Planted!",
-              "title": "WE'RE PLANTING TREES",
-              "button_1_text": "",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
-            }
-          }
-        },
-        "block_order": [
-          "16337274257e2f4e22-1",
-          "16337274257e2f4e22-0",
-          "8d71b795-0e1a-4406-8849-6a038c25a722",
-          "862ee752-e4a1-4a77-9e45-451a58856a50"
-        ],
-        "disabled": true,
-        "settings": {
-          "show_fullscreen": true,
-          "show_arrow": true,
-          "autoplay": true,
-          "cycle_speed": 7,
-          "text_color": "#ffffff",
-          "button_color": "#363636",
-          "button_background": "#ffffff"
-        }
-      },
       "page-header": {
         "type": "page-header",
         "settings": {
@@ -1138,33 +1049,6 @@
         ],
         "settings": {}
       },
-      "1634016111dba72e6a": {
-        "type": "featured-collections",
-        "blocks": {
-          "1634016111dba72e6a-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "our-favorite-patents",
-              "title": "",
-              "grid_items_count": 8,
-              "button_text": ""
-            }
-          }
-        },
-        "block_order": [
-          "1634016111dba72e6a-0"
-        ],
-        "disabled": true,
-        "settings": {
-          "title": "Some of our Favorite Patent Posters for the Month",
-          "layout_mode": "grid",
-          "show_product_info": true,
-          "show_vendor": false,
-          "show_color_swatch": false,
-          "grid_mobile_items_per_row": "2",
-          "grid_desktop_items_per_row": 4
-        }
-      },
       "cart-header": {
         "type": "cart-header",
         "blocks": {
@@ -1298,34 +1182,19 @@
               "button_link": "shopify://collections/best-sellers",
               "apply_overlay": true
             }
-          },
-          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-2": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "",
-              "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "Collection name",
-              "button_text": "View products",
-              "button_link": "",
-              "apply_overlay": true
-            }
           }
         },
         "block_order": [
           "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-0",
-          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-1",
-          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-2"
+          "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-1"
         ],
         "settings": {
-          "image_size": "large",
-          "add_spacing": true,
+          "image_size": "normal",
+          "add_spacing": false,
           "expand_collection": true,
           "stack_on_mobile": false,
           "text_color": "#ffffff",
-          "button_color": "#363636"
+          "button_color": "#b00e19"
         }
       },
       "product-customizable-template": {
@@ -1363,9 +1232,7 @@
     },
     "content_for_index": [
       "0919918a-45c0-4b0c-8afc-5d9111159f48",
-      "16337274257e2f4e22",
       "featured-collections",
-      "1634016111dba72e6a",
       "1577237689645",
       "1604945335f6874936",
       "16333964471f320cc9"
