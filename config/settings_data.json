@@ -767,7 +767,7 @@
             "type": "collection",
             "settings": {
               "collection": "horror-patents",
-              "title": "Horror Patents",
+              "title": "Our Favorite Horror Patents",
               "grid_items_count": 8,
               "button_text": ""
             }
