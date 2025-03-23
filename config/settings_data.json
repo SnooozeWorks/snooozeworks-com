@@ -1232,12 +1232,12 @@
       "custom_html_HFDzUW": {
         "type": "custom-html",
         "custom_css": [
-          ".Section--spacingNormal {padding: 0px;}"
+          ".Section--spacingNormal {padding: 0px; margin: 0px;}"
         ],
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "<hr>"
+          "html": ""
         }
       }
     },
