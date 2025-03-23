@@ -17,18 +17,12 @@
 {%- capture section_settings -%}
 {
   "layout": {{ section.settings.layout_mode | json }}
+  "collectionUrl": {{ collection.url | default: '/collections/all' | json }},
+  "currentTags": {% if active_tags != blank %}{{ active_tags | split: '+' | json }}{% else %}[]{% endif %},
+  "sortBy": {{ collection.sort_by | default: collection.default_sort_by | json }},
+  "filterPosition": {{ section.settings.filter_position | json }}
 }
 {%- endcapture -%}
-
-  {%- capture section_settings -%}
-  {
-    "collectionUrl": {{ collection.url | default: '/collections/all' | json }},
-    "currentTags": {% if active_tags != blank %}{{ active_tags | split: '+' | json }}{% else %}[]{% endif %},
-    "sortBy": {{ collection.sort_by | default: collection.default_sort_by | json }},
-    "filterPosition": {{ section.settings.filter_position | json }}
-  }
-  {%- endcapture -%}
-
 
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
   <header class="SectionHeader SectionHeader--center">
