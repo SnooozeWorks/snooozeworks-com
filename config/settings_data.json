@@ -1273,18 +1273,20 @@
           "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-0": {
             "type": "collection",
             "settings": {
-              "collection": "aviation-collection",
+              "collection": "horror-patents",
+              "image": "shopify://shop_images/pexels-elina-araja-1743227-3414766.jpg",
               "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "Take to the Skies: Lockheed, Boeing, NASA aircraft patents, available now!",
-              "title": "Aviation Patents",
-              "button_text": "3.. 2.. 1... lift off!",
-              "button_link": "shopify://collections/aviation-collection",
+              "content_position": "bottomCenter",
+              "subheading": "All-new historical creepy patent posters available now!",
+              "title": "Horror Patents",
+              "button_text": "Death Awaits",
+              "button_link": "shopify://collections/horror-patents",
               "apply_overlay": true
             }
           },
           "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-1": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "",
               "image": "shopify://shop_images/sale-sign-on-angled-pink-gray-background.jpg",
