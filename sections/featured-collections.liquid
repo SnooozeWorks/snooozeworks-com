@@ -36,9 +36,13 @@
 
           <div class="Container">
             <div class="SectionHeader SectionHeader--center">
-              <h1 class="SectionHeader__Heading Heading collection-h1" style="letter-spacing: 2px; text-transform: uppercase; font-weight: 700;">{{ collection.title }}</h1>
+                {%- if collection != empty -%}
+                  <h2 class="SectionHeader__Heading Heading u-h1">{{ section.blocks.first.settings.title | default: collection.title }}</h2>
+                {%- else -%}
+                  <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
+                {%- endif -%}
 
-              {%- if collection.description != blank -%}
+            {%- if collection.description != blank -%}
                 <div class="SectionHeader__Description Rte">
                   {{- collection.description -}}
                 </div>
