@@ -42,6 +42,11 @@
                   <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
                 {%- endif -%}
 
+                  {%- if section.settings.title != blank -%}
+      <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
+    {%- endif -%}
+    
+
             {%- if collection.description != blank -%}
                 <div class="SectionHeader__Description Rte">
                   {{- collection.description -}}
