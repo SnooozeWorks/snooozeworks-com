@@ -42,11 +42,6 @@
                   <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
                 {%- endif -%}
 
-                  {%- if section.settings.title != blank -%}
-      <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
-    {%- endif -%}
-    
-
             {%- if collection.description != blank -%}
                 <div class="SectionHeader__Description Rte">
                   {{- collection.description -}}
@@ -60,36 +55,7 @@
     
     <div class="Container">
 
-    {%- if section.blocks.size > 1 -%}
-      <div class="SectionHeader__TabList TabList" role="tablist">
-        {%- for block in section.blocks -%}
-          {%- assign collection = collections[block.settings.collection] -%}
 
-          <button class="Heading u-h1 TabList__Item {% if forloop.first %}is-active{% endif %}" data-action="toggle-tab" aria-controls="block-{{ block.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" role="tab">
-            {%- if collection != empty -%}
-              {{- block.settings.title | default: collection.title -}}
-            {%- else -%}
-              {{- 'home_page.onboarding.collection_title' | t -}}
-            {%- endif -%}
-          </button>
-        {%- endfor -%}
-      </div>
-    {%- else -%}
-      {%- assign collection = collections[section.blocks.first.settings.collection] -%}
-
-      {%- if collection != empty -%}
-        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.blocks.first.settings.title | default: collection.title }}</h2>
-      {%- else -%}
-        <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
-      {%- endif -%}
-    {%- endif -%}
-      
-    {%- if section.settings.title != blank -%}
-      <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
-    {%- endif -%}
-    
-    </div>
-  </header>
 
   {%- for block in section.blocks -%}
     {%- assign collection = collections[block.settings.collection] -%}
