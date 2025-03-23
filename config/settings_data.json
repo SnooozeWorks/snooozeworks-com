@@ -784,7 +784,7 @@
           "show_collection_image": true,
           "apply_overlay": true,
           "collection_image_size": "small",
-          "layout_mode": "carousel",
+          "layout_mode": "grid",
           "show_product_info": true,
           "show_vendor": false,
           "show_color_swatch": false,
