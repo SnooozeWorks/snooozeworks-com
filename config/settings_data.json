@@ -154,7 +154,7 @@
             "type": "collection",
             "settings": {
               "collection": "best-sellers",
-              "title": "",
+              "title": "Best Selling Products",
               "grid_items_count": 8,
               "button_text": ""
             }
