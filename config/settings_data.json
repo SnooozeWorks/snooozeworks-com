@@ -237,12 +237,12 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "show_popup": false,
-          "show_only_on_index": false,
+          "show_popup": true,
+          "show_only_on_index": true,
           "show_only_for_visitors": true,
           "show_only_once": true,
           "title": "Pst... Do you like discounts?",
-          "content": "<p>Drop your email in the box below to subscribe to our mailing list. Get notified about sales, get discount codes, and find out about new products!</p><p>Plus, we'll send you a <strong>10% off discount code </strong>right away!</p>",
+          "content": "<p>Drop your email in the box below to subscribe to our mailing list. Get notified about sales, get discount codes, and find out about new products!</p><p>Plus, we'll send you a <strong>20% off discount code </strong>right away!</p>",
           "show_newsletter": true,
           "apparition_delay": 2
         }
@@ -1178,7 +1178,6 @@
           },
           "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-1": {
             "type": "collection",
-            "disabled": true,
             "settings": {
               "collection": "",
               "image": "shopify://shop_images/sale-sign-on-angled-pink-gray-background.jpg",
