@@ -20,8 +20,6 @@
 }
 {%- endcapture -%}
 
-{%- assign collection = collections[block.settings.collection] -%}
-
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
   <header class="SectionHeader SectionHeader--center">
     
@@ -40,7 +38,7 @@
           <div class="Container">
             <div class="SectionHeader SectionHeader--center">
               <h1 class="SectionHeader__Heading Heading collection-h1" style="letter-spacing: 2px; text-transform: uppercase; font-weight: 700;">{{ collection.title }}</h1>
-                
+                {% for block in section.blocks %}
                 {%- if block.settings.title != blank -%}
                   <h2 class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.title | escape }}</h2>
                 {%- endif -%}
@@ -54,6 +52,7 @@
                   {{- collection.description -}}
                 </div>
               {%- endif -%}
+              {%- endfor -%}
             </div>
           </div>
         </header>
