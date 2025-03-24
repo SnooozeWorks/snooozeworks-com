@@ -47,13 +47,7 @@
                 {%- endif -%}
                 
                 {%- if section.settings.sub-title != blank -%}
-                  <h3 class="SectionHeader__SubHeading Heading u-h3">{{ section.settings.sub-title | escape }}</h3>
-                {%- endif -%}
-              
-                {%- if collection.description != blank -%}
-                <div class="SectionHeader__Description Rte">
-                  {{- collection.description -}}
-                </div>
+                  <h3 class="SectionHeader__Description Rte">{{ section.settings.sub-title | escape }}</h3>
                 {%- endif -%}
 
             </div>
