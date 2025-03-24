@@ -17,15 +17,26 @@
 {%- capture section_settings -%}
 {
   "layout": {{ section.settings.layout_mode | json }}
-  "collectionUrl": {{ collection.url | default: '/collections/all' | json }},
-  "currentTags": {% if active_tags != blank %}{{ active_tags | split: '+' | json }}{% else %}[]{% endif %},
-  "sortBy": {{ collection.sort_by | default: collection.default_sort_by | json }},
-  "filterPosition": {{ section.settings.filter_position | json }}
 }
 {%- endcapture -%}
 
+  {%- capture section_settings -%}
+  {
+    "collectionUrl": {{ collection.url | default: '/collections/all' | json }},
+    "currentTags": {% if active_tags != blank %}{{ active_tags | split: '+' | json }}{% else %}[]{% endif %},
+    "sortBy": {{ collection.sort_by | default: collection.default_sort_by | json }},
+    "filterPosition": {{ section.settings.filter_position | json }}
+  }
+  {%- endcapture -%}
+
+
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
   <header class="SectionHeader SectionHeader--center">
+    
+
+
+    {%- if section.settings.show_collection_info and collection.all_products_count > 0 -%}
+      {%- if section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
         <div class="FlexboxIeFix">
         <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})">
           <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
@@ -54,7 +65,22 @@
           </div>
         </header>
         </div>
+      {%- else -%}
+        <header class="PageHeader">
+          <div class="Container">
+            <div class="SectionHeader SectionHeader--center">
+              <h1 class="SectionHeader__Heading Heading u-h1">{{ collection.title }}</h1>
 
+              {%- if collection.description != blank -%}
+                <div class="SectionHeader__Description Rte">
+                  {{- collection.description -}}
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </header>
+      {%- endif -%}
+    {%- endif -%}
     
     
     <div class="Container">
