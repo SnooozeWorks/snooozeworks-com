@@ -1179,8 +1179,7 @@
           "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-1": {
             "type": "collection",
             "settings": {
-              "collection": "",
-              "image": "shopify://shop_images/sale-sign-on-angled-pink-gray-background.jpg",
+              "collection": "illustrations",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Flash Sale Sitewide 40% Off",
