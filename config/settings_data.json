@@ -164,7 +164,7 @@
           "featured-collection-0"
         ],
         "settings": {
-          "sub-title": "A collection of some of our best selling products",
+          "sub-title": "A collection of some of our best selling products, hand-picked for your viewing pleasure.",
           "show_collection_image": true,
           "add_spacing": true,
           "apply_overlay": true,
@@ -217,8 +217,8 @@
           "show_sku": false,
           "description_below_add_to_cart": false,
           "selector_mode": "dropdown",
-          "show_color_swatch": true,
-          "show_color_carousel": false,
+          "show_color_swatch": false,
+          "show_color_carousel": true,
           "show_quantity_selector": true,
           "show_inventory_quantity": false,
           "inventory_quantity_threshold": 3,
