@@ -20,7 +20,7 @@
 }
 {%- endcapture -%}
 
-<section class="Section Section--spacingFeaturedCollection {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
+<section class="Section Section--spacingFeaturedCollection {% if section.settings.add_spacing %}FeaturedCollection--spaced{% endif %}" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
   <header class="SectionHeader SectionHeader--center">
     
       {%- if section.settings.show_collection_image and collection.image != 'no-image' -%}
@@ -171,7 +171,7 @@
 {% schema %}
 {
   "name": "Featured collections",
-  "class": "shopify-section--bordered",
+  "class": "shopify-section",
   "max_blocks": 2,
   "settings": [
     {
