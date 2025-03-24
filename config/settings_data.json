@@ -1168,9 +1168,9 @@
               "collection": "horror-patents",
               "image": "shopify://shop_images/Horror-Collection_MainHead.jpg",
               "image_alignment": "center center",
-              "content_position": "bottomCenter",
+              "content_position": "bottomRight",
               "subheading": "All-new historical creepy patent posters available now!",
-              "title": "Horror Patents",
+              "title": "Spooky Horror Patents",
               "button_text": "Death Awaits",
               "button_link": "shopify://collections/horror-patents",
               "apply_overlay": true
@@ -1182,8 +1182,8 @@
               "collection": "illustrations",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Flash Sale Sitewide 40% Off",
-              "title": "Everything on sale for a limited time!",
+              "subheading": "Flash Sale Sitewide • 40% Off",
+              "title": "Everything on sale!",
               "button_text": "Get the Deals!",
               "button_link": "shopify://collections/best-sellers",
               "apply_overlay": true
