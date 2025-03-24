@@ -44,7 +44,7 @@
                 {%- endif -%}
                 <br />
                 {%- if section.settings.title != blank -%}
-                  <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
+                  <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.sub-title | escape }}</h3>
                 {%- endif -%}
               
               {%- if collection.description != blank -%}
@@ -176,7 +176,7 @@
   "settings": [
     {
       "type": "text",
-      "id": "title",
+      "id": "sub-title",
       "label": "Sub-heading",
       "default": "Featured collection"
     },
