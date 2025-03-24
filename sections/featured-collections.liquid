@@ -25,10 +25,8 @@
     
       {%- if section.settings.show_collection_image and collection.image != 'no-image' -%}
         <div class="FlexboxIeFix">
-          
-        {% for block in section.blocks %}
-        {%- assign collection = collections[block.settings.collection] -%}
-            
+          {% for block in section.blocks %}
+          {%- assign collection = collections[block.settings.collection] -%}
         <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})">
           <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
                data-optimumx="1.2"
@@ -49,11 +47,17 @@
                 {%- endif -%}
                 
                 {%- if section.settings.sub-title != blank -%}
-                  <h3 class="SectionHeader__Description Rte">{{ section.settings.sub-title | escape }}</h3>
+                  <h3 class="SectionHeader__SubHeading Heading u-h3">{{ section.settings.sub-title | escape }}</h3>
                 {%- endif -%}
               
-            {%- endfor -%}
+                {%- if collection.description != blank -%}
+                <div class="SectionHeader__Description Rte">
+                  {{- collection.description -}}
+                </div>
+                {%- endif -%}
+
             </div>
+            {%- endfor -%}
           </div>
         </header>
         </div>
@@ -69,6 +73,7 @@
                 </div>
               {%- endif -%}
             </div>
+        
           </div>
         </header>
     {%- endif -%}
