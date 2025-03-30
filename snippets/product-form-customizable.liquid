@@ -194,7 +194,9 @@ for size, we use it to display a size chart (if applicable)
                 }
                 {%- endcapture -%}
 
-                <div id="{{ popover_id }}" class="VariantSelector" aria-hidden="true">
+
+
+             <div id="{{ popover_id2 }}" class="VariantSelector" aria-hidden="true">
                   {%- capture option_index -%}option{{ option.position }}{%- endcapture -%}
 
                   <div class="VariantSelector__Carousel Carousel" data-flickity-config='{{ flickity_options }}'>
@@ -299,6 +301,116 @@ for size, we use it to display a size chart (if applicable)
                 </div>
               {%- endif -%}
             {%- endcapture -%}
+
+
+
+
+                
+
+                <div id="{{ popover_id }}" class="VariantSelector" aria-hidden="true">
+                  {%- capture option_index -%}option{{ option.position }}{%- endcapture -%}
+
+                  <div class="VariantSelector__Carousel Carousel" data-flickity-config='{{ flickity_options }}'>
+                    {%- for value in option.values -%}
+                      {%- for variant in product.variants -%}
+                        {%- if variant[option_index] == value -%}
+                          {%- assign variant_image = variant.image | default: product.featured_image -%}
+                          {%- break -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+
+                      <div class="VariantSelector__Item Carousel__Cell {% if value == option.selected_value %}is-selected{% endif %}"
+                           data-background-color="{{ value | split: ' ' | last | handle }}"
+                           data-background-image="{{ value | handle | append: '.png' | asset_url }}"
+                           data-option-position="{{ option.position }}"
+                           data-option-value="{{ value | escape }}">
+                        <div class="VariantSelector__ImageWrapper AspectRatio AspectRatio--withFallback" style="max-width: {{ variant_image.width }}px; padding-bottom: {{ 100.0 | divided_by: variant_image.aspect_ratio }}%; --aspect-ratio: {{ variant_image.aspect_ratio }}">
+                          {%- include 'image-size', sizes: '200,400,600,800', image: variant_image -%}
+                          {%- assign image_url = variant_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+                          <img class="VariantSelector__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ variant_image.alt | escape }}">
+                          <span class="Image__Loader"></span>
+                        </div>
+                      </div>
+                    {%- endfor -%}
+                  </div>
+
+                  <div class="VariantSelector__Info">
+                    <div class="VariantSelector__ChoiceList">
+                      {%- for value in option.values -%}
+                        {%- assign min_price_for_variant = product.price_max -%}
+
+                        {%- for variant in product.variants -%}
+                          {%- if variant[option_index] == value -%}
+                            {%- assign min_price_for_variant = min_price_for_variant | at_most: variant.price -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+
+                        <div class="VariantSelector__Choice {% if value == option.selected_value %}is-selected{% endif %}">
+                          <div class="VariantSelector__ChoiceColor">
+                            {%- assign downcase_value = value | downcase -%}
+
+                            {%- assign color_swatch_name = value | handle | append: '.png' -%}
+                            {%- assign color_swatch_image = images[color_swatch_name] -%}
+
+                            <span class="VariantSelector__ColorSwatch {% if downcase_value == 'white' %}VariantSelector__ColorSwatch--white{% endif %}" style="background-color: {{ value | replace: ' ', '' | downcase }}; {% if color_swatch_image != blank %}background-image: url({{ color_swatch_image | img_url: '64x64' }}){% endif %}"></span>
+                            <span class="VariantSelector__ChoiceValue">{{ value }}</span>
+                          </div>
+
+                          <div class="VariantSelector__ChoicePrice">
+                            {%- if available_prices_for_option_value.size > 1 -%}
+                              {%- capture formatted_min_price -%}<span data-money-convertible>{{ min_price_for_variant | money_without_trailing_zeros }}</span>{%- endcapture -%}
+                              <span class="Heading Text--subdued">{{ 'product.form.from_price_html' | t: min_price: formatted_min_price }}</span>
+                            {%- else -%}
+                              <span class="Heading Text--subdued" data-money-convertible>{{ min_price_for_variant | money_without_trailing_zeros }}</span>
+                            {%- endif -%}
+                          </div>
+                        </div>
+                      {%- endfor -%}
+                    </div>
+
+                    <button type="button" class="VariantSelector__Button Button Button--primary Button--full" data-action="select-variant">{{- 'product.form.select_model' | t -}}</button>
+                  </div>
+                </div>
+              {%- else -%}
+                <div id="{{ popover_id }}" class="OptionSelector Popover Popover--withMinWidth" aria-hidden="true">
+                  <header class="Popover__Header">
+                    <button type="button" class="Popover__Close Icon-Wrapper--clickable" data-action="close-popover">{% include 'icon' with 'close' %}</button>
+                    <span class="Popover__Title Heading u-h4">{{ option.name | escape }}</span>
+                  </header>
+
+                  <div class="Popover__Content">
+                    <div class="Popover__ValueList" data-scrollable>
+                      {%- for value in option.values -%}
+                        <button type="button" class="Popover__Value {% if value == option.selected_value %}is-selected{% endif %} Heading Link Link--primary u-h6"
+                                data-value="{{ value | escape }}"
+                                data-option-position="{{ option.position }}"
+                                data-action="select-value">
+                          {{- value | escape -}}
+                        </button>
+                      {%- endfor -%}
+                    </div>
+                    
+                    {% comment %}
+                    {%- if show_option_label == false and color_label contains downcase_option and color_chart_page != empty -%}
+                    
+                      <button type="button" class="Popover__FooterHelp Heading Link Link--primary Text--subdued u-h6" data-action="open-modal" aria-controls="modal-color-chart">
+                        {{- 'product.form.color_chart' | t -}}
+                      </button>
+                    
+                    {%- elsif product.type == 'T-Shirts' -%}
+                    
+                      <button type="button" class="Popover__FooterHelp Heading Link Link--primary Text--subdued u-h6" data-action="open-modal" aria-controls="modal-size-chart">
+                        <div id="vitals-size_chart"></div>
+                      </button>
+                    
+                    {%- endif -%}  
+                    {% endcomment%}
+                    
+                  </div>
+                
+                </div>
+
 
             {%- assign product_popovers = product_popovers | append: popover_html -%}
           {%- endif -%}
