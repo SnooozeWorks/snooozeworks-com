@@ -43,7 +43,7 @@ for size, we use it to display a size chart (if applicable)
      {% assign patent_list = collections['Patents'].products | sort_natural: 'title' %}
      {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-patentList{%- endcapture -%}
 
-      <div class="option">
+      <div class="ProductForm__Option">
 
         <select name="properties[Patent 1]">       
           {% for product in patent_list %}
