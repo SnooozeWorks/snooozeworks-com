@@ -97,7 +97,7 @@
       {%- unless for_drawer -%}
         {{ item_actions }}
 
-        <span class="CartItem__LinePrice Price Heading Text--subdued u-h7" data-money-convertible style="text-align: right">{{ line_item.final_line_price | money_without_trailing_zeros }}</span>
+        <span class="CartItem__LinePrice Price Heading Text--subdued u-h7" data-money-convertible style="text-align: right">{{ line_item.price | money_without_trailing_zeros }}</span>
       {%- endunless -%}
     </div>
 
