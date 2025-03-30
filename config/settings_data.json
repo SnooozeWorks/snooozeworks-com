@@ -254,8 +254,9 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Patents",
-              "push_1_heading": "",
-              "push_1_subheading": "",
+              "push_1_image": "shopify://shop_images/40-sale-mega-menu.png",
+              "push_1_heading": "Flash Sale!",
+              "push_1_subheading": "Everything 40% off for a limited time.",
               "push_1_url": "#",
               "push_image_1_url_text": "",
               "push_2_heading": "",
@@ -264,7 +265,7 @@
               "push_image_2_url_text": "",
               "push_3_heading": "",
               "push_3_subheading": "",
-              "push_3_url": "shopify://collections/best-selling-patents",
+              "push_3_url": "",
               "push_image_3_url_text": ""
             }
           },
@@ -282,24 +283,6 @@
               "push_image_2_url_text": "Shop now",
               "push_3_heading": "Example heading",
               "push_3_subheading": "Example sub-heading",
-              "push_3_url": "",
-              "push_image_3_url_text": "Shop now"
-            }
-          },
-          "c0d57d5b-7ccd-4c6a-990a-87b11806e493": {
-            "type": "mega_menu",
-            "settings": {
-              "navigation_mega_menu": "Tees",
-              "push_1_heading": "Example heading",
-              "push_1_subheading": "Description",
-              "push_1_url": "",
-              "push_image_1_url_text": "Shop now",
-              "push_2_heading": "Example heading",
-              "push_2_subheading": "Description",
-              "push_2_url": "",
-              "push_image_2_url_text": "Shop now",
-              "push_3_heading": "Example heading",
-              "push_3_subheading": "Description",
               "push_3_url": "",
               "push_image_3_url_text": "Shop now"
             }
@@ -339,33 +322,13 @@
               "push_3_url": "",
               "push_image_3_url_text": "Shop now"
             }
-          },
-          "16675410-0675-4eb9-8a16-cca53abb2497": {
-            "type": "mega_menu",
-            "settings": {
-              "navigation_mega_menu": "Stickables",
-              "push_1_heading": "Example heading",
-              "push_1_subheading": "Example sub-heading",
-              "push_1_url": "",
-              "push_image_1_url_text": "Shop now",
-              "push_2_heading": "Example heading",
-              "push_2_subheading": "Example sub-heading",
-              "push_2_url": "",
-              "push_image_2_url_text": "Shop now",
-              "push_3_heading": "Example heading",
-              "push_3_subheading": "Example sub-heading",
-              "push_3_url": "",
-              "push_image_3_url_text": "Shop now"
-            }
           }
         },
         "block_order": [
           "2c45a09f-8973-4059-9e77-a4f176baecd3",
           "149ffe4f-b6ae-45b2-a076-d46babad8d25",
-          "c0d57d5b-7ccd-4c6a-990a-87b11806e493",
           "3d54d8ea-5295-4634-8fd0-741ad21d4635",
-          "59fa34aa-f6af-4735-b2b4-3b8acfb950a5",
-          "16675410-0675-4eb9-8a16-cca53abb2497"
+          "59fa34aa-f6af-4735-b2b4-3b8acfb950a5"
         ],
         "settings": {
           "use_sticky_header": true,
