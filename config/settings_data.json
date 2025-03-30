@@ -254,10 +254,9 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Patents",
-              "push_1_image": "shopify://shop_images/40-sale-mega-menu.png",
               "push_1_border_radius": 10,
-              "push_1_heading": "Flash Sale!",
-              "push_1_subheading": "Everything 40% off for a limited time.",
+              "push_1_heading": "",
+              "push_1_subheading": "",
               "push_1_url": "shopify://collections/best-sellers",
               "push_image_1_url_text": "",
               "push_2_border_radius": 10,
