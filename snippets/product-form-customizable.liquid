@@ -39,15 +39,14 @@ for size, we use it to display a size chart (if applicable)
     <span class="ProductForm__Label Text--subdued">
        <b style="letter-spacing: 0.5px;">Patent Selection:</b>
     </span>
-{% comment %}
 
      {% assign patent_list = collections['Patents'].products | sort_natural: 'title' %}
 
       <div class="option">
         <label for="patent-1" class="input">
-        <select>       
+        <select name="properties[Patent 1]">       
           {% for product in patent_list %}
-          <option value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 1]">{{ product.metafields.snoooze["short-title"] }}</option>
+          <option required value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 1]">{{ product.metafields.snoooze["short-title"] }}</option>
           {% endfor %}
         </select>
         </label>
@@ -55,9 +54,9 @@ for size, we use it to display a size chart (if applicable)
 
       <div class="option">
         <label for="patent-2" class="input">
-        <select>       
+        <select name="properties[Patent 2]">       
           {% for product in patent_list %}
-          <option value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 2]">{{ product.metafields.snoooze["short-title"] }}</option>
+          <option required value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 2]">{{ product.metafields.snoooze["short-title"] }}</option>
           {% endfor %}
         </select>
         </label>
@@ -65,15 +64,15 @@ for size, we use it to display a size chart (if applicable)
       
       <div class="option">
         <label for="patent-3" class="input">
-        <select>       
+        <select name="properties[Patent 3]">       
           {% for product in patent_list %}
-          <option value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 3]">{{ product.metafields.snoooze["short-title"] }}</option>
+          <option required value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 3]">{{ product.metafields.snoooze["short-title"] }}</option>
           {% endfor %}
         </select>
         </label>
       </div>
       
-{% endcomment %}
+{% comment %}
       
   <div class="option">
     <label for="patent-1" class="input">
@@ -96,7 +95,7 @@ for size, we use it to display a size chart (if applicable)
     </label>
   </div>
 
-
+{% endcomment %}
     
       {%- for option in product.options_with_values -%}
         {%- assign downcase_option = option.name | downcase -%}
