@@ -296,6 +296,7 @@
           },
           "3d54d8ea-5295-4634-8fd0-741ad21d4635": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "navigation_mega_menu": "Patent Mugs",
               "push_1_border_radius": 0,
