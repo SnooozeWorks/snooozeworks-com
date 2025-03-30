@@ -41,7 +41,7 @@ for size, we use it to display a size chart (if applicable)
     </span>
 
 
-     {% assign patent_list = product.type['Patents'] | sort_natural: 'title' %}
+     {% assign patent_list = collections['Patents'].products %}
 
       Products:
 
@@ -50,7 +50,7 @@ for size, we use it to display a size chart (if applicable)
       {%- endfor %}
 
         <select>       
-          {% for product in collections['Patents'].products | sort: "title" %}
+          {% for product in collections['Patents'].products %}
           <option value="{{ product.title }}">{{ product.title }}</option>
           {% endfor %}
         </select>
