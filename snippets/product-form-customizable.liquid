@@ -41,7 +41,7 @@ for size, we use it to display a size chart (if applicable)
     </span>
 
 
-     {% assign patent_list = collections['Patents'].products | sort %}
+     {% assign patent_list = collections['Patents'].products | sort: 'title' %}
 
         <select>       
           {% for product in patent_list %}
