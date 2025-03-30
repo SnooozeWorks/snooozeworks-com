@@ -41,11 +41,11 @@ for size, we use it to display a size chart (if applicable)
     </span>
 
 
-     {% assign patentList = product.type['Patents'] | sort_natural: 'title' %}
+     {% assign patent_list = product.type['Patents'] | sort_natural: 'title' %}
 
       Products:
 
-      {% for product in patentList -%}
+      {% for product in patent_list -%}
         - {{ product.title }}
       {%- endfor %}
 
