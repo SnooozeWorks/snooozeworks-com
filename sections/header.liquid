@@ -216,7 +216,7 @@ HEADER CONTENT
 
                                 {%- assign max_width = 400 | at_most: block.settings.push_1_image.width -%}
 
-                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
+                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}; border-radius: {{ block.settings.push_1_image.border_radius }}">
                                   <img class="Image--lazyLoad Image--fadeIn" data-src="{{ block.settings.push_1_image | img_url: '400x300', scale: 1 }}" alt="{{ block.settings.push_1_image.alt | escape }}">
                                   <span class="Image__Loader"></span>
                                 </div>
@@ -621,6 +621,16 @@ HEADER CONTENT
           "label": "Image",
           "info": "400x300px"
         },
+        {
+          "type": "range",
+          "id": "border-radius",
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "label": "Border Radius",
+          "default": 0
+        }, 
         {
           "type": "text",
           "id": "push_1_heading",
