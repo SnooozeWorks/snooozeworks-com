@@ -235,6 +235,8 @@ HEADER CONTENT
                               </div>
                             {%- endif -%}
 
+                            {%- assign max_width = 350 | at_most: block.settings.push_2_image.width -%}
+
                             {%- if block.settings.push_2_image -%}
                               <div class="MegaMenu__Push {% if push_image_count == 2 %}MegaMenu__Push--shrink--2{% elsif push_image_count > 2 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}px">
                                 
@@ -260,6 +262,8 @@ HEADER CONTENT
                                 {%- endif -%}
                               </div>
                             {%- endif -%}
+
+                            {%- assign max_width = 350 | at_most: block.settings.push_3_image.width -%}
 
                             {%- if block.settings.push_3_image -%}
                               <div class="MegaMenu__Push {% if push_image_count == 3 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}px">
