@@ -45,7 +45,7 @@ for size, we use it to display a size chart (if applicable)
 
         <select>       
           {% for product in patent_list %}
-          <option value="{{ product.title }}">{{ product.title }}</option>
+          <option value="{{ product.metafields.snoooze["short-title"] }}">{{ product.metafields.snoooze["short-title"] }}</option>
           {% endfor %}
         </select>
       
