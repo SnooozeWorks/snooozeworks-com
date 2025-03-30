@@ -1181,7 +1181,7 @@
             "settings": {
               "collection": "",
               "image": "shopify://shop_images/26009.jpg",
-              "image_alignment": "center center",
+              "image_alignment": "top center",
               "content_position": "bottomLeft",
               "subheading": "Flash Sale Sitewide • 40% Off",
               "title": "Everything on sale! GO GO GO!",
