@@ -207,7 +207,7 @@ HEADER CONTENT
                         {%- endfor -%}
 
                         {%- if push_image_count > 0 -%}
-                          <div class="MegaMenu__Item" style="{% if push_image_count == 1 %}width: 80%; text-align:left;{% else %}width: 50%{% endif %}; margin: auto;">
+                          <div class="MegaMenu__Item" style="{% if push_image_count == 1 %}width: 80%; text-align:left;{% else %}width: 80%{% endif %}; margin: auto;">
                             
                             {%- assign max_width = 350 | at_most: block.settings.push_1_image.width -%}
                             
