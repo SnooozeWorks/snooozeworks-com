@@ -261,7 +261,7 @@
               "push_1_url": "shopify://collections/best-sellers",
               "push_image_1_url_text": "",
               "push_2_image": "shopify://shop_images/40-sale-mega-menu.png",
-              "push_2_border_radius": 0,
+              "push_2_border_radius": 10,
               "push_2_heading": "",
               "push_2_subheading": "",
               "push_2_url": "#",
