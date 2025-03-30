@@ -49,9 +49,8 @@ for size, we use it to display a size chart (if applicable)
         - {{ product.title }}
       {%- endfor %}
 
-      <label for="{{ formId }}-product-one">Select product*</label>
         <select>              
-          {% for product in collections['Patent Prints'].products %}
+          {% for product in product.type['Patents'].products %}
           <option value="{{ product.title }}">{{ product.title }}</option>
           {% endfor %}              
         </select>
