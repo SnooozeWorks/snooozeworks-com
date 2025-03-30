@@ -41,9 +41,9 @@ for size, we use it to display a size chart (if applicable)
     </span>
 
 
-     {% assign patentList = collection.products | map: 'title' %}
+     {% assign patentList = product.Type='Patents' | sort_natural: 'title' %}
 
-      Products from other vendors than Polina's Potent Potions:
+      Products:
 
       {% for product in patentList -%}
         - {{ product.title }}
