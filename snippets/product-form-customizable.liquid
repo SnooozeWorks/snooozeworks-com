@@ -50,7 +50,7 @@ for size, we use it to display a size chart (if applicable)
       {%- endfor %}
 
         <select>              
-          {% for product in collections['Patents'].products %}
+          {% for product in collections['Patents'].products | sort_natural: 'title' %}
           <option value="{{ product.title }}">{{ product.title }}</option>
           {% endfor %}              
         </select>
