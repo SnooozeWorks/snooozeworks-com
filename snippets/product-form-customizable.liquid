@@ -49,10 +49,10 @@ for size, we use it to display a size chart (if applicable)
         - {{ product.title }}
       {%- endfor %}
 
-        <select>              
-          {% for product in collections['Patents'].products | sort_natural: 'title' %}
+        <select>       
+          {% paginate collections['Patents'].products %}
           <option value="{{ product.title }}">{{ product.title }}</option>
-          {% endfor %}              
+          {% endpaginate %}
         </select>
       
   <div class="option">
