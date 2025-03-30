@@ -240,7 +240,7 @@ HEADER CONTENT
                                 
                                 {%- assign max_width = 400 | at_most: block.settings.push_2_image.width -%}
 
-                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}">
+                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}; border-radius: {{ block.settings.image_2_border_radius }}px">
                                   <img class="Image--lazyLoad Image--fadeIn" data-src="{{ block.settings.push_2_image | img_url: '400x300', scale: 1 }}" alt="{{ block.settings.push_2_image.alt | escape }}">
                                   <span class="Image__Loader"></span>
                                 </div>
@@ -266,7 +266,7 @@ HEADER CONTENT
 
                                 {%- assign max_width = 400 | at_most: block.settings.push_3_image.width -%}
                             
-                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_3_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_3_image.aspect_ratio }}">
+                                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_3_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_3_image.aspect_ratio }}; border-radius: {{ block.settings.image_3_border_radius }}px">
                                   <img class="Image--lazyLoad Image--fadeIn" data-src="{{ block.settings.push_3_image | img_url: '400x300', scale: 1 }}" alt="{{ block.settings.push_3_image.alt | escape }}">
                                   <span class="Image__Loader"></span>
                                 </div>
@@ -663,6 +663,16 @@ HEADER CONTENT
           "info": "400x300px"
         },
         {
+          "type": "range",
+          "id": "image_2_border_radius",
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "label": "Border Radius",
+          "default": 0
+        }, 
+        {
           "type": "text",
           "id": "push_2_heading",
           "label": "Heading",
@@ -695,6 +705,16 @@ HEADER CONTENT
           "label": "Image",
           "info": "400x300px"
         },
+        {
+          "type": "range",
+          "id": "image_3_border_radius",
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "label": "Border Radius",
+          "default": 0
+        }, 
         {
           "type": "text",
           "id": "push_3_heading",
