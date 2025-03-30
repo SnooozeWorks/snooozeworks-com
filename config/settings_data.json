@@ -1179,7 +1179,7 @@
           "0919918a-45c0-4b0c-8afc-5d9111159f48-1687892853fda55bff-1": {
             "type": "collection",
             "settings": {
-              "collection": "illustrations",
+              "collection": "",
               "image": "shopify://shop_images/26009.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
@@ -1187,7 +1187,7 @@
               "title": "Everything on sale! GO GO GO!",
               "button_text": "Get the Deals!",
               "button_link": "shopify://collections/best-sellers",
-              "apply_overlay": true
+              "apply_overlay": false
             }
           }
         },
