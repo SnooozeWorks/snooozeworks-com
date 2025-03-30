@@ -41,12 +41,12 @@ for size, we use it to display a size chart (if applicable)
     </span>
 
      {% assign patent_list = collections['Patents'].products | sort_natural: 'title' %}
-     {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
       
       <div class="option">
 
         <select name="properties[Patent 1]">       
           {% for product in patent_list %}
+                    {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
           <option required value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 1]">{{ product.metafields.snoooze["short-title"] }}</option>
           {% endfor %}
         </select>
