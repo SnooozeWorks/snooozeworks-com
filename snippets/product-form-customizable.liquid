@@ -197,7 +197,7 @@ for size, we use it to display a size chart (if applicable)
 
 
              <div id="{{ popover_id2 }}" class="VariantSelector" aria-hidden="true">
-                  {%- capture option_index -%}option{{ option.position }}{%- endcapture -%}
+                  {%- capture option_index -%}{{ product.metafields.snoooze["short-title"] }}{%- endcapture -%}
 
                   <div class="VariantSelector__Carousel Carousel" data-flickity-config='{{ flickity_options }}'>
                     {%- for value in option.values -%}
