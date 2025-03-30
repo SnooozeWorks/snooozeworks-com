@@ -50,7 +50,7 @@ for size, we use it to display a size chart (if applicable)
       {%- endfor %}
 
         <select>       
-          {% paginate collections['Patents'].products %}
+          {% paginate collections in collections['Patents'].products %}
           <option value="{{ product.title }}">{{ product.title }}</option>
           {% endpaginate %}
         </select>
