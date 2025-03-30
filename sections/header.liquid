@@ -214,8 +214,6 @@ HEADER CONTENT
                             {%- if block.settings.push_1_image -%}
                               <div class="MegaMenu__Push {% if push_image_count == 2 %}MegaMenu__Push--shrink--2{% elsif push_image_count > 2 %}MegaMenu__Push--shrink{% endif %}" style="max-width: {{ max_width }}px">
 
-                                {%- assign max_width = 400 | at_most: block.settings.push_1_image.width -%}
-
                                 <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}; border-radius: {{ block.settings.image_1_border_radius }}px">
                                   <img class="Image--lazyLoad Image--fadeIn" data-src="{{ block.settings.push_1_image | img_url: '400x300', scale: 1 }}" alt="{{ block.settings.push_1_image.alt | escape }}">
                                   <span class="Image__Loader"></span>
