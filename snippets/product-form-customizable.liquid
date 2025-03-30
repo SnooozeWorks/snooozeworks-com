@@ -52,6 +52,28 @@ for size, we use it to display a size chart (if applicable)
         </select>
         </label>
       </div>
+
+      <div class="option">
+        <label for="patent-2" class="input">
+        <select>       
+          {% for product in patent_list %}
+          <option value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 2]">{{ product.metafields.snoooze["short-title"] }}</option>
+          {% endfor %}
+        </select>
+        </label>
+      </div>
+      
+      <div class="option">
+        <label for="patent-3" class="input">
+        <select>       
+          {% for product in patent_list %}
+          <option value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 3]">{{ product.metafields.snoooze["short-title"] }}</option>
+          {% endfor %}
+        </select>
+        </label>
+      </div>
+      
+{% comment %}
       
   <div class="option">
     <label for="patent-1" class="input">
@@ -60,20 +82,21 @@ for size, we use it to display a size chart (if applicable)
     </label>
   </div>
   
-   <div class="option">
+  <div class="option">
     <label for="patent-2" class="input">
       <input required class="input__field" type="text" name="properties[Patent 2]" placeholder=" ">
       <span class="input__label">Patent 2</span>
     </label>
   </div>
   
-   <div class="option">
+  <div class="option">
     <label for="patent-3" class="input">
       <input required class="input__field" type="text" name="properties[Patent 3]" placeholder=" ">
       <span class="input__label">Patent 3</span>
     </label>
   </div>
 
+{% endcomment %}
     
       {%- for option in product.options_with_values -%}
         {%- assign downcase_option = option.name | downcase -%}
