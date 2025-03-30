@@ -53,7 +53,9 @@ for size, we use it to display a size chart (if applicable)
       </div>
 
             <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
-              <span class="ProductForm__OptionName"><span class="ProductForm__SelectedValue">{{ option.selected_value }}</span></span>
+              <span class="ProductForm__OptionName"><span class="ProductForm__SelectedValue"> {% for product in patent_list %}
+          <option required value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 1]">{{ product.metafields.snoooze["short-title"] }}</option>
+          {% endfor %}</span></span>
               {%- include 'icon' with 'select-arrow' -%}
             </button>
       
