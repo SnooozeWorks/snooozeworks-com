@@ -39,7 +39,7 @@ for size, we use it to display a size chart (if applicable)
     <span class="ProductForm__Label Text--subdued">
        <b style="letter-spacing: 0.5px;">Patent Selection:</b>
     </span>
-
+{% comment %}
 
      {% assign patent_list = collections['Patents'].products | sort_natural: 'title' %}
 
@@ -73,7 +73,7 @@ for size, we use it to display a size chart (if applicable)
         </label>
       </div>
       
-{% comment %}
+{% endcomment %}
       
   <div class="option">
     <label for="patent-1" class="input">
@@ -96,7 +96,7 @@ for size, we use it to display a size chart (if applicable)
     </label>
   </div>
 
-{% endcomment %}
+
     
       {%- for option in product.options_with_values -%}
         {%- assign downcase_option = option.name | downcase -%}
