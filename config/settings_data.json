@@ -255,6 +255,7 @@
             "settings": {
               "navigation_mega_menu": "Patents",
               "push_1_image": "shopify://shop_images/40-sale-mega-menu.png",
+              "border-radius": 10,
               "push_1_heading": "Flash Sale!",
               "push_1_subheading": "Everything 40% off for a limited time.",
               "push_1_url": "#",
@@ -273,6 +274,7 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Posters",
+              "border-radius": 0,
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
@@ -291,6 +293,7 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Patent Mugs",
+              "border-radius": 0,
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
@@ -309,6 +312,7 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Coffee Mugs",
+              "border-radius": 0,
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
