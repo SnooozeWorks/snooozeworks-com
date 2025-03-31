@@ -39,9 +39,8 @@
               <span data-money-convertible>{{ cart.original_total_price | money_without_trailing_zeros }}</span>
 			  </span>
               {%- if shipping_and_taxes_notice != blank -%}
-                <span class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</span>
+                <span class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}<br />Discounts will be calcuated at checkout</span>
               {%- endif -%}
-              <span>Discounts will be calcuated at checkout</span>
               <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">{{ 'cart.general.checkout' | t }}</button>
             </div>
           </footer>
