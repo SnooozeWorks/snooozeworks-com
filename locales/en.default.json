@@ -112,7 +112,7 @@
       "note_placeholder": "How can we help you?",
       "free_shipping": "Woo! Your order is shipping for FREE!",
       "free_shipping_remaining_html": "Add <b>{{remaining_amount}}</b> to activate free shipping!",
-      "shipping_and_taxes_notice": "Shipping & taxes calculated at checkout",
+      "shipping_and_taxes_notice": "Discounts, Shipping and Taxes calculated at checkout",
       "total": "Total"
     },
     "label": {
