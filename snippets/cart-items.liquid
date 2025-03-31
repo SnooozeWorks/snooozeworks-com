@@ -59,7 +59,7 @@
 
           <div class="CartItem__PriceList">
             {%- if line_item.original_price > line_item.price -%}
-              <span class="CartItem__Price Price Price--highlight" data-money-convertible>Original Price: {{ line_item.original_price | money_without_trailing_zeros }} - Money Saved: {{ line_item.line_level_total_discount | money_without_trailing_zeros }}</span>
+              <span class="CartItem__Price Price Price--highlight" data-money-convertible>Price: {{ line_item.final_line_price | money_without_trailing_zeros }}</span>
             {%- else -%}
               <span class="CartItem__Price Price" data-money-convertible>Price: {{ line_item.final_line_price | money_without_trailing_zeros }}</span>
             {%- endif -%}
