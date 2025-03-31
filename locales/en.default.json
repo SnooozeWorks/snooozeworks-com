@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "404": {
     "general": {
@@ -9,7 +18,7 @@
   },
   "general": {
     "search": {
-      "no_results_html": "Please try a different search term or go back to the <a href=\"{{ link }}\">homepage<\/a>.",
+      "no_results_html": "Please try a different search term or go back to the <a href=\"{{ link }}\">homepage</a>.",
       "empty_search_message": "Search field cannot be empty",
       "results_with_count": {
         "one": "{{ count }} result for \"{{ terms }}\"",
@@ -73,7 +82,7 @@
       "vendor": "Vendor",
       "quantity_minimum_message": "Quantity must be 1 or more",
       "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "unit_price_label": "Unit price",
       "view_cart": "View cart"
     }
@@ -85,10 +94,10 @@
       "remove": "Remove",
       "subtotal": "Subtotal",
       "savings": "You're saving",
-      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
+      "taxes_and_shipping_at_checkout": "Discounts, Shipping and Taxes calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "update": "Update",
       "checkout": "Checkout",
       "empty": "I am empty :(",
@@ -102,7 +111,7 @@
       "save_note": "Save",
       "note_placeholder": "How can we help you?",
       "free_shipping": "Woo! Your order is shipping for FREE!",
-      "free_shipping_remaining_html": "Add <b>{{remaining_amount}}<\/b> to activate free shipping!",
+      "free_shipping_remaining_html": "Add <b>{{remaining_amount}}</b> to activate free shipping!",
       "shipping_and_taxes_notice": "Shipping & taxes calculated at checkout",
       "total": "Total"
     },
@@ -288,8 +297,8 @@
       "back_to_account": "Back to account",
       "cancelled_at": "Order cancelled on {{ date }}",
       "placed_at": "Order placed on {{ date }}",
-      "fulfillment_html": "Your order has been sent. Track the shipment with number {{tracking_number}} or by clicking here: <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}<\/a>",
-      "line_fulfillment_html": "Your product \"{{product_title}}\" has been sent. Track the shipment with number {{tracking_number}} or by clicking here: <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}<\/a>",
+      "fulfillment_html": "Your order has been sent. Track the shipment with number {{tracking_number}} or by clicking here: <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}</a>",
+      "line_fulfillment_html": "Your product \"{{product_title}}\" has been sent. Track the shipment with number {{tracking_number}} or by clicking here: <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}</a>",
       "product": "Product",
       "quantity": "Quantity",
       "line_price": "Total",
@@ -456,7 +465,7 @@
   },
   "date_formats": {
     "month_day_year": "%B %d, %Y",
-    "month_day_year_short": "%m\/%d\/%Y",
+    "month_day_year_short": "%m/%d/%Y",
     "month_day_year_time": "%B %d, %Y at %I:%M%p"
   },
   "pagefly": {
