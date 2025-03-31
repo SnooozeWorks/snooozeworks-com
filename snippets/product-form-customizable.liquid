@@ -40,7 +40,7 @@ for size, we use it to display a size chart (if applicable)
        <b style="letter-spacing: 0.5px;">Patent Selection: <span style="font-weight:400;">[Please Select All Three]</span></b>
     </span>
 
-     {% assign patent_list = collections['Patents'].products | sort_natural: 'title' | remove: "Pick 3! Patent Bundle" %}
+     {% assign patent_list = collections['Patents'].products | sort_natural: 'title' %}
      {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-patentList{%- endcapture -%}
 
       <div class="ProductForm__Option">
