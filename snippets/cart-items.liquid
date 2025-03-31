@@ -43,7 +43,7 @@
           {%- endunless -%}
 
           {%- if line_item.properties != empty -%}
-            <ul class="CartItem__PropertyList" style="font-weight: 400;">
+            <ul class="CartItem__PropertyList" style="font-family: Fira Sans; font-weight: 400;">
               {%- for property in line_item.properties -%}
                 {%- assign first_character_in_key = property.first | truncate: 1, '' -%}
 
