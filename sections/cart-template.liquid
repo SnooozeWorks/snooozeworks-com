@@ -34,9 +34,9 @@
             {%- endif -%}
             <div class="Cart__Recap">
               {% for discount_application in cart.discount_applications %}
-  Discount name: {{ discount_application.title }}
-  Savings: -{{ discount_application.total_allocated_amount | money }}
-{% endfor %}
+              <span>Discount name:</span> {{ discount_application.title }}
+              <span>Savings:</span> -{{ discount_application.total_allocated_amount | money }}
+              {% endfor %}
               {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
 				<div id="af-cart-subtotal"></div>
               <span class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: 
