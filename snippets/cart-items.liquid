@@ -99,8 +99,7 @@
       </div>
 
       {%- assign discounted_price = line_item.original_price | minus discount_allocation.value -%}
-
-       {{ discounted_price }}
+      
       
       {%- unless for_drawer -%}
         {{ item_actions }}
