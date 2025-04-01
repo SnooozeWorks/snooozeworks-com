@@ -33,6 +33,10 @@
               </div>
             {%- endif -%}
             <div class="Cart__Recap">
+              {% for discount_application in cart.discount_applications %}
+  Discount name: {{ discount_application.title }}
+  Savings: -{{ discount_application.total_allocated_amount | money }}
+{% endfor %}
               {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
 				<div id="af-cart-subtotal"></div>
               <span class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: 
@@ -41,12 +45,6 @@
               {%- if shipping_and_taxes_notice != blank -%}
                 <span class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</span>
               {%- endif -%}
-
-{% for discount_application in cart.discount_applications %}
-  Discount name: {{ discount_application.title }}
-  Savings: -{{ discount_application.total_allocated_amount | money }}
-{% endfor %}
-              
               <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">{{ 'cart.general.checkout' | t }}</button>
             </div>
           </footer>
