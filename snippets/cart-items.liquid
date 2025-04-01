@@ -59,9 +59,11 @@
 
           <hr class="discount_hr" />
           
+           {% if cart.cart_level_discount_applications != blank %}
               {% for discount_application in cart.cart_level_discount_applications %}
-              <span style="text-align: left; vertical-align: bottom;"><b>Discount applied:</b></span> {{ discount_application.title }}<br />
+              <span style="text-align: left;"><b>Discount applied:</b></span> {{ discount_application.title }}<br />
               {% endfor %}
+           {% endif %}
           
           {% comment %}
           <div class="CartItem__PriceList">
