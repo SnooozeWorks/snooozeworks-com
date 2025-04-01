@@ -34,7 +34,7 @@
             {%- endif -%}
             <div class="Cart__Recap">
               {% for discount_application in cart.discount_applications %}
-              <span><b>Discount name:</b></span> {{ discount_application.title }}<br />
+              <span style="text-align: left"><b>Discount name:</b></span> {{ discount_application.title }}<br />
               <span>Savings: {{ discount_application.total_allocated_amount | money_without_trailing_zeros }}</span>
               {% endfor %}
               {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
