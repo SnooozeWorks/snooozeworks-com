@@ -98,7 +98,7 @@
         {{ item_actions }}
       </div>      
 
-          {%- assign discounted_price = line_item.original_price | minus: line_item.discount_allocation.amount -%}
+          {%- assign discounted_price = line_item.original_price | minus: line_level_total_discount -%}
       
           {{ discounted_price | money_without_trailing_zeros }}
       
