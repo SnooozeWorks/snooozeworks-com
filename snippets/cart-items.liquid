@@ -57,7 +57,7 @@
             </ul>
           {%- endif -%}
 
-          {% comment %}
+
           <div class="CartItem__PriceList">
             {%- if line_item.original_price > line_item.price -%}
               <span class="CartItem__Price Price Price--highlight" data-money-convertible>Price: {{ line_item.final_line_price | money_without_trailing_zeros }}</span>
@@ -67,7 +67,7 @@
           </div>
         </div>
 
-        {% endcomment %}
+  
     
         {%- capture item_actions -%}
           <div class="CartItem__Actions Heading Text--subdued" style="text-align: center">
