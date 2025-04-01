@@ -98,9 +98,9 @@
         {{ item_actions }}
       </div>      
 
-          {%- assign discounted_price = line_item.original_price -%}
+          {%- assign discounted_price = line_item.original_price | minus: discount_application.value -%}
       
-          {{ discounted_price | minus: discount_application.value }}
+          {{ discounted_price }}
       
       {%- unless for_drawer -%}
         {{ item_actions }}
