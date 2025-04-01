@@ -99,7 +99,7 @@
       </div>      
 
           {%- assign discounted_price = line_item.original_price -%}
-          {%- assign discounted_total = discount_allocations.value -%}
+          {%- assign discounted_total = discount_application.value -%}
       
           {{ discounted_total | minus: discounted_total | money_without_trailing_zeros }}
       
