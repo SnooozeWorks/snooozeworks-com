@@ -97,12 +97,6 @@
 
         {{ item_actions }}
       </div>      
-
-          {%- assign discounted_price = line_item.original_price -%}
-          {%- assign discounted_total = discount_application.value -%}
-      
-          {{ discounted_price | money_without_trailing_zeros }}
-          {{ discounted_total }}
       
       {%- unless for_drawer -%}
         {{ item_actions }}
