@@ -101,7 +101,7 @@
           {%- assign discounted_price = line_item.original_price -%}
           {%- assign discounted_total = discount_application.value -%}
       
-          {{ discounted_total | money_without_trailing_zeros }}
+          {{ discounted_price | money_without_trailing_zeros }}
       
       {%- unless for_drawer -%}
         {{ item_actions }}
