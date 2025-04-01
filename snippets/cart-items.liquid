@@ -96,14 +96,12 @@
         {%- endcapture -%}
 
         {{ item_actions }}
-      </div>
-
-      {%- assign discounted_price = line_item.original_price | minus discount.amount -%}
-      
+      </div>      
       
       {%- unless for_drawer -%}
         {{ item_actions }}
-        
+              {%- assign discounted_price = line_item.original_price | minus discount.amount -%}
+
         {% if line_item.original_price > line_item.price %}
           <span class="CartItem__LinePrice Price Heading Text--subdued u-h7" data-money-convertible style="text-align: right">{{ line_item.final_price | money_without_trailing_zeros }}</span>
         {% endif %}
