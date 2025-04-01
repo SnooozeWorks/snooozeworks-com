@@ -98,7 +98,9 @@
         {{ item_actions }}
       </div>      
 
-      {{ discount_allocation.target_type }}
+      {% assign test = discount_allocation.target_type %}
+
+      {{ test }}
       
       {%- unless for_drawer -%}
         {{ item_actions }}
