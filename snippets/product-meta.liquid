@@ -38,7 +38,11 @@
         <span class="ProductMeta__Price Price Text--subdued u-h2" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
       {%- endif -%}
 
-      {% assign discount_price = product.selected_or_first_available_variant.price | minus discount_allocation.amount %}
+      {% for discount_application in discount_applications %}
+      <span style="font-family: Fira Sans !important; font-size: 14px !important; color: #ef3400 !important;">Total Discount Savings: {{ product.price | minus discount_application.total_allocated_amount | money_with_currency }}</span>
+      {% endfor %}
+        
+      {% assign discount_price = product.selected_or_first_available_variant.price | minus discount_application.total_allocated_amount | money_without_trailing_zeros %}
 
         {{ discount_price }}
         
