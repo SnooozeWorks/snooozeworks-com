@@ -39,6 +39,8 @@
       {%- endif -%}
 
       {% assign discount_price = product.selected_or_first_available_variant.price | minus discount_allocation.amount %}
+
+        {{ discount_price }}
         
       </div>
     </div>
