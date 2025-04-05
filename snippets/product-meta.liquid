@@ -39,7 +39,7 @@
       {%- endif -%}
 
       {% for discount_application in discount_applications %}
-      <span>Total Discount Savings: {{ product.price | minus discount_application.total_allocated_amount | money_with_currency }}</span>
+      <span>{{ product.selected_or_first_available_variant.price | minus discount_application.total_allocated_amount | money_with_currency }}</span>
       {% endfor %}
 
         
