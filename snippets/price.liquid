@@ -22,7 +22,7 @@
   endif
 
   assign compare_at_price = target.price
-  assign price = target.price | times: 0.85
+  assign price = target.price | times: 0.6
   assign price_min = product.price_min
   assign price_max = product.price_max
   assign available = target.available | default: false
