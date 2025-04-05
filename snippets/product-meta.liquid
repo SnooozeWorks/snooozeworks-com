@@ -37,6 +37,9 @@
       {%- else -%}
         <span class="ProductMeta__Price Price Text--subdued u-h2" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
       {%- endif -%}
+
+      {% assign discount_price = product.selected_or_first_available_variant.price | minus discount_allocation.amount %}
+        
       </div>
     </div>
      
