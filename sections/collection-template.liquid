@@ -66,9 +66,7 @@
     {%- assign tag_as_handle = tag | replace: '&#39;', '' | replace: '&#34;', '' | handle -%}
     {%- assign active_tags = active_tags | append: tag_as_handle -%}
 
-    {%- unless forloop.last -%}
-      {%- assign active_tags = active_tags | append: '+' -%}
-    {%- endunless -%}
+
   {%- endfor -%}
 
   {%- capture section_settings -%}
@@ -295,7 +293,7 @@
                         {%- endunless -%}
 
                         <li class="Linklist__Item">
-                          <button type="button" class="Link Link--primary Text--subdued {% unless current_tags == pat_tag %}is-active{% endunless %}" data-tag="{{ pat_tag | handle }}" data-action="toggle-tag">
+                          <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains pat_tag %}is-active{% endif %}" data-tag="{{ pat_tag | handle }}" data-action="toggle-tag">
                             {{- pat_tag | remove: "Patents" -}}
                           </button>
                         </li>
