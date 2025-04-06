@@ -277,12 +277,13 @@
               {% comment %} Adding second filter section on Coffee Mugs page only {% endcomment %}
               {% if collection.title == 'Coffee Mugs' %}
 
-              <div class="Collapsible">
-
+              <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
+                <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
                  Patent Categories <span class="Collapsible__Plus"></span>
+                </button>
 
-
-
+                <div class="Collapsible__Inner">
+                  <div class="Collapsible__Content">
                     <ul class="Linklist">
 
                       {% assign pat_tag = tag %}
@@ -298,7 +299,8 @@
                         </li>
                       {%- endfor -%}
                     </ul>
-
+                  </div>
+                </div>
               </div>
 
                 {% endif %} {% comment %}Ending second filter section {% endcomment %}
