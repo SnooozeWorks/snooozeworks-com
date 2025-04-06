@@ -262,7 +262,7 @@
                       {%- for tag in collection.all_tags -%}
                         {%- if tag contains '__' or tag contains 'Patents'-%}
                           {%- continue -%}
-                        {%- endif -%}
+                       
 
                         <li class="Linklist__Item">
                           <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
@@ -272,14 +272,14 @@
                         
                         {% else %}
                         <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
-                 Categories <span class="Collapsible__Plus"></span>
-                </button>
+                         Categories <span class="Collapsible__Plus"></span>
+                        </button>
                          <li class="Linklist__Item">
                           <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
                             {{- tag -}}
                           </button>
                         </li>
-                        
+                         {%- endif -%}
                       {%- endfor -%}
                     </ul>
                   </div>
