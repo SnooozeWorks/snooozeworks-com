@@ -259,7 +259,6 @@
                 <div class="Collapsible__Inner">
                   <div class="Collapsible__Content">
                     <ul class="Linklist">
-
                       {%- for tag in collection.all_tags -%}
                         {%- if tag contains '__' or tag contains 'Patents'-%}
                           {%- continue -%}
@@ -275,7 +274,6 @@
                   </div>
                 </div>
               </div>
-              
               {% if collection.title == 'Coffee Mugs' %} {% comment %} Adding second filter section on Coffee Mugs page only {% endcomment %}
 
               <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
@@ -286,16 +284,15 @@
                 <div class="Collapsible__Inner">
                   <div class="Collapsible__Content">
                     <ul class="Linklist">
-
-                      {% assign cat_tag = tag %}
-                      {%- for cat_tag in collection.all_tags -%}
-                        {%- unless cat_tag contains 'Patents' -%}
+                      
+                      {%- for tag in collection.all_tags -%}
+                        {%- unless tag contains 'Patents' -%}
                           {%- continue -%}
                         {%- endunless -%}
 
                         <li class="Linklist__Item">
-                          <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains cat_tag %}is-active{% endif %}" data-tag="{{ cat_tag | handle }}" data-action="toggle-tag">
-                            {{ cat_tag | remove: "Patents" }}
+                          <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
+                            {{ tag | remove: "Patents" }}
                           </button>
                         </li>
                       {%- endfor -%}
