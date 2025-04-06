@@ -240,13 +240,7 @@
                   <ul class="Linklist">
                     {%- for link in quick_links.links -%}
                       <li class="Linklist__Item {% if link.active %}is-selected{% endif %}">
-                        
-                        <a href="{{ link.url }}" class="Link Link--primary Text--subdued {% if link.active %}is-active{% endif %}">{{ link.title | escape }}</a>
-                        
-                          <button type="button" class="Link Link--primary Text--subdued {% if link.active %}is-active{% endif %}">
-                            {{- link.title -}}
-                          </button>
-                        
+                        <a href="{{ link.url }}" class="Link Link--primary Text--subdued {% if link.active %}is-active{% endif %}">{{ link.title | escape }}</
                       </li>
                     {%- endfor -%}
                   </ul>
