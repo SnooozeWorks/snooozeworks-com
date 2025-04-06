@@ -67,14 +67,14 @@
     {%- assign active_tags = active_tags | append: tag_as_handle -%}
 
     {%- unless forloop.last -%}
-      {%- assign active_tags = active_tags | append: '-' -%}
+      {%- assign active_tags = active_tags | append: '+' -%}
     {%- endunless -%}
   {%- endfor -%}
 
   {%- capture section_settings -%}
   {
     "collectionUrl": {{ collection.url | default: '/collections/all' | json }},
-    "currentTags": {% if active_tags != blank %}{{ active_tags | split: '+' | json }}{% else %}[]{% endif %},
+    "currentTags": {% if active_tags != blank %}{{ active_tags | json }}{% else %}[]{% endif %},
     "sortBy": {{ collection.sort_by | default: collection.default_sort_by | json }},
     "filterPosition": {{ section.settings.filter_position | json }}
   }
