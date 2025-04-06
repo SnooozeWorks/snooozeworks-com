@@ -253,7 +253,7 @@
             {%- if section.settings.filter_mode == 'tag' -%}
               <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
                 <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
-                  {{- 'collection.filter.all' | t -}} <span class="Collapsible__Plus"></span>
+                  {{- 'collection.filter.all' | t -}} <p>{{ filter.active_values.size }} selected</p><span class="Collapsible__Plus"></span>
                 </button>
 
                 <div class="Collapsible__Inner">
