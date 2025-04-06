@@ -73,12 +73,12 @@
 
 {% comment %} Adding pat_tag {% endcomment %}
   
-  {%- for pat_tag in current_tags -%}
-    {%- assign tag_as_handle = pat_tag | replace: '&#39;', '' | replace: '&#34;', '' | handle -%}
-    {%- assign active_tags = active_tags | append: tag_as_handle -%}
+  {%- for pat_tag in pat_current_tags -%}
+    {%- assign pat_tag_as_handle = pat_tag | replace: '&#39;', '' | replace: '&#34;', '' | handle -%}
+    {%- assign pat_active_tags = pat_active_tags | append: pat_tag_as_handle -%}
 
     {%- unless forloop.last -%}
-      {%- assign active_tags = active_tags | append: '+' -%}
+      {%- assign pat_active_tags = pat_active_tags | append: '+' -%}
     {%- endunless -%}
   {%- endfor -%}
 
