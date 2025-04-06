@@ -275,7 +275,7 @@
                 </div>
               </div>
 
-              {% comment %} Adding second filter section {% endcomment %}
+              {% comment %} Adding second filter section on Coffee Mugs page only {% endcomment %}
 
               {% if collection.title == 'Coffee Mugs' %}
 
@@ -288,9 +288,9 @@
                   <div class="Collapsible__Content">
                     <ul class="Linklist">
                       {%- for tag in collection.all_tags -%}
-                        {%- if tag contains '__' or tag contains 'Patents'-%}
-                          {%- break -%}
-                        {%- endif -%}
+                        {%- unless tag contains '__' or tag contains 'Patents'-%}
+                          {%- continue -%}
+                        {%- endunless -%}
 
                         <li class="Linklist__Item">
                           <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
