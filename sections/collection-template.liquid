@@ -289,7 +289,7 @@
                     <ul class="Linklist">
                       {%- for tag in collection.all_tags -%}
                         {%- if tag contains '__' or tag contains 'Patents'-%}
-                          {%- continue -%}
+                          {%- break -%}
                         {%- endif -%}
 
                         <li class="Linklist__Item">
