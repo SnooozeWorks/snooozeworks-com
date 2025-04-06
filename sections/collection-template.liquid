@@ -287,7 +287,7 @@
                   <div class="Collapsible__Content">
                     <ul class="Linklist">
 
-                      {% assign cat_tag = collection.tag %}
+                      {% assign cat_tag = products.tag %}
                       {%- for cat_tag in collection.all_tags -%}
                         {%- unless cat_tag contains 'Patents' -%}
                           {%- continue -%}
