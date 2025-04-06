@@ -249,14 +249,6 @@
             </div>
           {%- endif -%}
 
-          {% for filter in collection.filters %}
-           {% if product.tags contains '- tag -' %}
-            {% if forloop.last %}
-              {{forloop.index0}}
-            {% endif%}
-           {%endif %}
-          {% endfor%}
-
           {%- if has_visible_tags -%}
             {%- if section.settings.filter_mode == 'tag' -%}
               <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
@@ -274,7 +266,7 @@
 
                         <li class="Linklist__Item">
                           <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
-                            {{- tag -}}&nbsp;[{{ collection.products_count }}]
+                            {{- tag -}}
                           </button>
                         </li>
                       {%- endfor -%}
