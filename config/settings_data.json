@@ -128,13 +128,6 @@
               "menu": "social"
             }
           },
-          "newsletter_UaDHHY": {
-            "type": "newsletter",
-            "settings": {
-              "title": "Newsletter",
-              "content": "<p>A short sentence describing what someone will receive by subscribing</p>"
-            }
-          },
           "1577239580718": {
             "type": "text",
             "settings": {
@@ -148,7 +141,6 @@
           "1594832171945",
           "footer-1",
           "1594833267390",
-          "newsletter_UaDHHY",
           "1577239580718"
         ],
         "settings": {
