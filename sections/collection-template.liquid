@@ -260,7 +260,7 @@
                   <div class="Collapsible__Content">
                     <ul class="Linklist">
                       {%- for tag in collection.all_tags -%}
-                        {%- if tag contains '__' or tag contains 'Patents'-%}
+                        {%- if tag contains '_' or tag contains 'Patents'-%}
                           {%- continue -%}
                         {%- endif -%}
 
