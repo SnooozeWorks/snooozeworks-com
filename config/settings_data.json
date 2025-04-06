@@ -252,6 +252,7 @@
         "blocks": {
           "2c45a09f-8973-4059-9e77-a4f176baecd3": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "navigation_mega_menu": "Patents",
               "push_1_border_radius": 10,
@@ -273,6 +274,7 @@
           },
           "149ffe4f-b6ae-45b2-a076-d46babad8d25": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "navigation_mega_menu": "Posters",
               "push_1_border_radius": 0,
@@ -316,6 +318,7 @@
           },
           "59fa34aa-f6af-4735-b2b4-3b8acfb950a5": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "navigation_mega_menu": "Coffee Mugs",
               "push_1_border_radius": 0,
@@ -347,7 +350,7 @@
           "logo": "shopify://shop_images/snooozeworks_light-logo.png",
           "logo_max_width": 325,
           "mobile_logo_max_width": 200,
-          "navigation_menu": "mega-menu",
+          "navigation_menu": "simple-menu",
           "navigation_style": "inline",
           "show_icons": true,
           "enable_transparent_header": false,
