@@ -71,6 +71,8 @@
     {%- endunless -%}
   {%- endfor -%}
 
+{% comment %} Adding pat_tag {% endcomment %}
+  
   {%- for pat_tag in current_tags -%}
     {%- assign tag_as_handle = pat_tag | replace: '&#39;', '' | replace: '&#34;', '' | handle -%}
     {%- assign active_tags = active_tags | append: tag_as_handle -%}
