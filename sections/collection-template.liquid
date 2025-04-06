@@ -266,7 +266,7 @@
 
                         <li class="Linklist__Item">
                           <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
-                            {{- tag -}} [ {{ filter_value.count }} ]
+                            {{- tag -}} [ {{ filter.active_values }} ]
                           </button>
                         </li>
                       {%- endfor -%}
