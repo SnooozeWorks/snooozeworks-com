@@ -277,6 +277,8 @@
 
               {% comment %} Adding second filter section {% endcomment %}
 
+              {% if collection == 'Coffee Mugs' %}
+
               <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
                 <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
                  Patent Categories <span class="Collapsible__Plus"></span>
@@ -300,6 +302,9 @@
                   </div>
                 </div>
               </div>
+
+                {% else %}
+                {% endif %}
 
               {% comment %} Ending second filter section {% endcomment %}
               
