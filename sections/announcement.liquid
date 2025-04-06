@@ -13,7 +13,7 @@
               {{- 'cart.general.free_shipping' | t -}}
             {%- else -%}
               {%- capture remaining_amount -%}
-                {% assign cart_price = cart.total_price | round: 2 | abs %}
+                {% assign cart_price = cart.total_price | abs %}
                 {{ cart_price | minus: threshold_in_cents | abs | money }}
               {%- endcapture -%}
               {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}
