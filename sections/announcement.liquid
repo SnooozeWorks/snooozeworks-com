@@ -7,11 +7,11 @@
 
         {%- if section.settings.announcement_bar_show_free_shipping_threshold == true -%}
             {%- assign threshold_in_cents = section.settings.free_shipping_threshold | times: 100 -%}
-              <span>{%- if cart.total_price >= threshold_in_cents -%}</span>
+              {%- if cart.total_price >= threshold_in_cents -%}
                 {{- 'cart.general.free_shipping' | t -}}
             {%- else -%}
-              <span>{%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}{%- endcapture -%}</span></span>
-                {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount | money -}}
+              <span>{%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}</span>
+                {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}
             {%- endif -%}
         {%- else -%}    
             {{ section.settings.content }}
