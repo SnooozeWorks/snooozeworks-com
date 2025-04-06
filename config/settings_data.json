@@ -1161,10 +1161,10 @@
               "image": "shopify://shop_images/26009.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Flash Sale Sitewide • 40% Off",
-              "title": "Everything on sale! • GO GO GO!",
-              "button_text": "Get the Deals!",
-              "button_link": "shopify://collections/best-sellers",
+              "subheading": "Get all three at a low price • GO GO GO",
+              "title": "Three Patent Special!",
+              "button_text": "Get the Deal!",
+              "button_link": "shopify://products/custom-patent-bundle-testing",
               "apply_overlay": false
             }
           }
