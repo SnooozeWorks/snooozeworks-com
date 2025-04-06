@@ -265,7 +265,7 @@
                         {%- endif -%}
 
                         <li class="Linklist__Item">
-                          {% if tag contains 'Patent' %}
+                          {% if tag contains 'Patents' %}
                           <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
                             {{- tag -}}
                           </button>
