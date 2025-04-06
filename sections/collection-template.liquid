@@ -265,9 +265,15 @@
                         {%- endif -%}
 
                         <li class="Linklist__Item">
+                          {% if product.title contains 'Patent' %}
                           <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
                             {{- tag -}}
                           </button>
+                          {% else %}
+                          <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
+                            {{- tag -}}
+                          </button>
+                          {% endif %}
                         </li>
                       {%- endfor -%}
                     </ul>
