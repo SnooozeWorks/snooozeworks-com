@@ -753,10 +753,20 @@
               "grid_items_count": 7,
               "button_text": "View Collection"
             }
+          },
+          "collection_DtYzEt": {
+            "type": "collection",
+            "settings": {
+              "collection": "best-sellers",
+              "title": "Best Sellers",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
           }
         },
         "block_order": [
-          "16333964471f320cc9-0"
+          "16333964471f320cc9-0",
+          "collection_DtYzEt"
         ],
         "settings": {
           "sub-title": "A collection of some of our favorite horror patents, from vintage coffins and grave alarms, to strait jackets and beheading blocks. We have a little bit of everything spooky and scary.",
