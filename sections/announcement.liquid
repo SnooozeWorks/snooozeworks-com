@@ -13,8 +13,9 @@
               <span>{%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}{%- endcapture -%}</span></span>
                 {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}
             {%- endif -%}
-        {%- endif -%}    
+        {%- else -%}    
             {{ section.settings.content }}
+        {%- endif -%}
           </p>  
         </div>
       </div>
