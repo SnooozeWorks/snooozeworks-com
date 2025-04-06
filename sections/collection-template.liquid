@@ -264,12 +264,20 @@
                         {%- if tag contains '__' -%}
                           {%- continue -%}
                         {%- endif -%}
-
+                    {% unless tag == 'Patents' %}
                         <li class="Linklist__Item">
                           <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
                             {{- tag -}}
                           </button>
                         </li>
+                      {% else %}
+                        <li class="Linklist__Item" style="color: #ef3400 !important">
+                          <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
+                            {{- tag -}}
+                          </button>
+                        </li>
+                      {% endunless %}
+                        
                       {%- endfor -%}
                     </ul>
                   </div>
