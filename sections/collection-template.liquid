@@ -274,7 +274,8 @@
                   </div>
                 </div>
               </div>
-              {% if collection.title == 'Coffee Mugs' %} {% comment %} Adding second filter section on Coffee Mugs page only {% endcomment %}
+              {% comment %} Adding second filter section on Coffee Mugs page only
+              {% if collection.title == 'Coffee Mugs' %}
 
               <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
                 <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
@@ -301,7 +302,7 @@
                 </div>
               </div>
 
-                {% endif %} {% comment %} Ending second filter section {% endcomment %}
+                {% endif %} Ending second filter section {% endcomment %}
               
             {%- else -%}
               {%- assign groups = '' -%}
