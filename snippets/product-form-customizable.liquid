@@ -46,9 +46,10 @@ for size, we use it to display a size chart (if applicable)
       <div class="ProductForm__Option">
         <select class="ProductForm__Item" name="properties[Patent 1]">       
           {% for product in patent_list %}
-            {% unless product.title == "Pick 3! Patent Special" %}
-          <option required value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 1]">{{ product.metafields.snoooze["short-title"] }}</option>
-              {% endunless %}
+            {%- if product.title contains 'Pick 3' -%}
+              {%- continue -%}
+              <option required value="{{ product.metafields.snoooze["short-title"] }}" name="properties[Patent 1]">{{ product.metafields.snoooze["short-title"] }}</option>
+            {% endif %}
           {% endfor %}
         </select>
       </div>
