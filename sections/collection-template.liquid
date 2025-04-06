@@ -285,8 +285,9 @@
                 <div class="Collapsible__Inner">
                   <div class="Collapsible__Content">
                     <ul class="Linklist">
-                      
-                      {%- for tag in collection.all_tags -%}
+
+                      {% assign pat_tag = tag %}
+                      {%- for pat_tag in collection.all_tags -%}
                         {%- unless tag contains 'Patents' -%}
                           {%- continue -%}
                         {%- endunless -%}
