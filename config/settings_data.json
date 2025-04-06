@@ -188,7 +188,7 @@
           "collection_image_size": "small",
           "show_sort_by": true,
           "show_layout_switch": true,
-          "toolbar_position": "top",
+          "toolbar_position": "bottom",
           "filter_position": "sidebar",
           "filter_mode": "tag",
           "show_filter_color_swatch": false,
