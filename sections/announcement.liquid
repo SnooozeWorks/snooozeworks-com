@@ -10,8 +10,8 @@
               {%- if cart.total_price >= threshold_in_cents -%}
                 {{- 'cart.general.free_shipping' | t -}}
             {%- else -%}
-              <span>{%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}</span>
-                {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount | round: 2 -}}
+              <span>{%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | round: 2 | abs | money }}</span>{%- endcapture -%}</span>
+                {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}
             {%- endif -%}
         {%- else -%}    
             {{ section.settings.content }}
