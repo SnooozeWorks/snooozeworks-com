@@ -288,8 +288,8 @@
                   <div class="Collapsible__Content">
                     <ul class="Linklist">
                       
-                      {%- for cat_tag in collection.all_tags -%}
-                        {%- unless cat_tag contains 'Patents' -%}
+                      {%- for tag in collection.all_tags -%}
+                        {%- unless tag contains 'Patents' -%}
                           {%- continue -%}
                         {%- endunless -%}
 
