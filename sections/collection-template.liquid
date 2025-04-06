@@ -71,17 +71,6 @@
     {%- endunless -%}
   {%- endfor -%}
 
-{% comment %} Adding pat_tag {% endcomment %}
-  
-  {%- for pat_tag in current_tags -%}
-    {%- assign pat_tag_as_handle = pat_tag | replace: '&#39;', '' | replace: '&#34;', '' | handle -%}
-    {%- assign pat_active_tags = active_tags | append: pat_tag_as_handle -%}
-
-    {%- unless forloop.last -%}
-      {%- assign pat_active_tags = active_tags | append: '+' -%}
-    {%- endunless -%}
-  {%- endfor -%}
-
   {%- capture section_settings -%}
   {
     "collectionUrl": {{ collection.url | default: '/collections/all' | json }},
@@ -286,37 +275,6 @@
                   </div>
                 </div>
               </div>
-              
-              {% comment %} Adding second filter section on Coffee Mugs page only {% endcomment %}
-              {% if collection.title == 'Coffee Mugs' %}
-
-              <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
-                <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
-                 Patent Categories <span class="Collapsible__Plus"></span>
-                </button>
-
-                <div class="Collapsible__Inner">
-                  <div class="Collapsible__Content">
-                    <ul class="Linklist">
-
-                      {%- for pat_tag in collection.all_tags -%}
-                        {%- unless pat_tag contains 'Patents' -%}
-                          {%- continue -%}
-                        {%- endunless -%}
-
-                        <li class="Linklist__Item">
-                          <button type="button" class="Link Link--primary Text--subdued {% if pat_current_tags contains pat_tag %}is-active{% endif %}" data-tag="{{ pat_tag | handle }}" data-action="toggle-tag">
-                            {{- pat_tag | remove: "Patents" -}}
-                          </button>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {% endif %} 
-              {% comment %}Ending second filter section {% endcomment %}
               
             {%- else -%}
               {%- assign groups = '' -%}
