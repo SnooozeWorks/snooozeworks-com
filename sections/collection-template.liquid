@@ -274,6 +274,35 @@
                   </div>
                 </div>
               </div>
+
+              {% comment %} Adding second filter section {% endcomment %}
+
+              <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
+                <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+                 Categories <span class="Collapsible__Plus"></span>
+                </button>
+
+                <div class="Collapsible__Inner">
+                  <div class="Collapsible__Content">
+                    <ul class="Linklist">
+                      {%- for tag in collection.all_tags -%}
+                        {%- if tag contains '__' or tag contains 'Patents'-%}
+                          {%- continue -%}
+                        {%- endif -%}
+
+                        <li class="Linklist__Item">
+                          <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
+                            {{- tag -}}
+                          </button>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {% comment %} Ending second filter section {% endcomment %}
+              
             {%- else -%}
               {%- assign groups = '' -%}
 
