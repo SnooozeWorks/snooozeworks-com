@@ -240,7 +240,9 @@
                   <ul class="Linklist">
                     {%- for link in quick_links.links -%}
                       <li class="Linklist__Item {% if link.active %}is-selected{% endif %}">
-                          <button type="button" class="Link Link--primary Text--subdued {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
+                        
+                        
+                          <button type="button" class="Link Link--primary Text--subdued {% if link.active %}is-active{% endif %}">
                             {{- link -}}
                           </button>
                         
