@@ -190,7 +190,7 @@
           "show_layout_switch": true,
           "toolbar_position": "top",
           "filter_position": "sidebar",
-          "filter_mode": "group",
+          "filter_mode": "tag",
           "show_filter_color_swatch": false,
           "filter_menu": "",
           "grid_items_per_page": 16,
