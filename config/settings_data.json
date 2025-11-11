@@ -399,7 +399,7 @@
           "free_shipping_threshold": 4999,
           "background": "#1f1f1e",
           "text_color": "#ffffff",
-          "content": "Everything is 30% off for a limited time!",
+          "content": "",
           "link": ""
         }
       },
