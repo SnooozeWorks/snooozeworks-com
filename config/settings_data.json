@@ -1247,6 +1247,65 @@
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
         }
+      },
+      "slideshow_8FtX8W": {
+        "type": "slideshow",
+        "blocks": {
+          "image_8DAckV": {
+            "type": "image",
+            "settings": {
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "image_UKnEwU": {
+            "type": "image",
+            "settings": {
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "image_hNbaEP": {
+            "type": "image",
+            "settings": {
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_8DAckV",
+          "image_UKnEwU",
+          "image_hNbaEP"
+        ],
+        "name": "Slideshow",
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
       }
     },
     "content_for_index": [
@@ -1255,7 +1314,8 @@
       "custom_html_HFDzUW",
       "featured-collections",
       "1577237689645",
-      "1604945335f6874936"
+      "1604945335f6874936",
+      "slideshow_8FtX8W"
     ],
     "blocks": {
       "15573056287721514228": {
